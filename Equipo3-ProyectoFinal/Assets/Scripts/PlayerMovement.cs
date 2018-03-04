@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
 
 	float speed;
-	public bool diagonal = false; 
+	public bool diagonal = false;
 	public bool isRunning = false;
 	public float walkSpeed;
 	public float runSpeed;
@@ -14,13 +15,16 @@ public class PlayerMovement : MonoBehaviour {
 	public string right;
 	public string left;
 	public string run;
+	//public string jump;
 
 
-	void Start () {
-		
+	void Start ()
+	{
+
 	}
-		
-	void FixedUpdate () {
+
+	void FixedUpdate ()
+	{
 		if (Input.GetKey (up)) {
 			transform.Translate (0, 0, speed * Time.deltaTime);
 		}
@@ -38,15 +42,24 @@ public class PlayerMovement : MonoBehaviour {
 		} else {
 			isRunning = false;
 		}
-		if (isRunning == true) {
-			speed = runSpeed;
-		} else {
-			speed = walkSpeed;
-		}
 		if (Input.GetKey (up) && Input.GetKey (right) || Input.GetKey (up) && Input.GetKey (left) || Input.GetKey (down) && Input.GetKey (right) || Input.GetKey (down) && Input.GetKey (left)) {
 			diagonal = true;
 		} else {
 			diagonal = false;
 		}
+		if (isRunning == false && diagonal == false) {
+			speed = walkSpeed;
+		}
+		if (isRunning == true && diagonal == false) {
+			speed = runSpeed;
+		}
+		if (isRunning == false && diagonal == true) {
+			speed = Mathf.Sin (45f) * walkSpeed;
+		}
+		if (isRunning == true && diagonal == true) {
+			speed = Mathf.Sin (45f) * runSpeed;
+		}
+		/*if (Input.GetKeyDown (jump)){
+			Rigidbody.AddForce*/
 	}
 }
