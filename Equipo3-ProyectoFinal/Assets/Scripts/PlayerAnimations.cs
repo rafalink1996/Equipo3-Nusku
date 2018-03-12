@@ -12,7 +12,7 @@ public class PlayerAnimations : MonoBehaviour {
 		playerMovement = GetComponent<PlayerMovement> ();
 	}
 
-	void Update () {
+	void FixedUpdate () {
 		if (Input.GetKey (playerMovement.up) || Input.GetKey (playerMovement.down) || Input.GetKey (playerMovement.right) || Input.GetKey (playerMovement.left)) {
 			anim.SetBool ("IsMoving", true);
 		} else {

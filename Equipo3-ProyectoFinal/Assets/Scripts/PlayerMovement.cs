@@ -54,11 +54,12 @@ public class PlayerMovement : MonoBehaviour
 			speed = runSpeed;
 		}
 		if (isRunning == false && diagonal == true) {
-			speed = Mathf.Sin (45f) * walkSpeed;
+			speed = Mathf.Sin (0.785398163397448f) * walkSpeed;
 		}
 		if (isRunning == true && diagonal == true) {
-			speed = Mathf.Sin (45f) * runSpeed;
+			speed = Mathf.Sin (0.785398163397448f) * runSpeed;
 		}
+		Debug.LogFormat ("speed = {0}", speed);
 		/*if (Input.GetKeyDown (jump)){
 			Rigidbody.AddForce*/
 	}
