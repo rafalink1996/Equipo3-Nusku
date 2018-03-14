@@ -26,9 +26,9 @@ public class PlayerMovement : MonoBehaviour
 	void FixedUpdate ()
 	{
 		if (Input.GetKey (up)) {
-			transform.Translate (0, 0, speed * Time.deltaTime);
-		}
-		if (Input.GetKey (down)) {
+            transform.Translate(0, 0, speed * Time.deltaTime);
+        }
+        if (Input.GetKey (down)) {
 			transform.Translate (0, 0, -speed * Time.deltaTime);
 		}
 		if (Input.GetKey (right)) {
