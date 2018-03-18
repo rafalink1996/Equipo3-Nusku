@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-	float speed;
+	float speed = 0;
 	public bool diagonal = false;
 	public bool isRunning = false;
 	public float walkSpeed;
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
 	}
 
-	void FixedUpdate ()
+	void Update ()
 	{
 		if (Input.GetKey (up)) {
             transform.Translate(0, 0, speed * Time.deltaTime);
@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
 		if (isRunning == true && diagonal == true) {
 			speed = Mathf.Sin (0.785398163397448f) * runSpeed;
 		}
-		Debug.LogFormat ("speed = {0}", speed);
+		//Debug.LogFormat ("speed = {0}", speed);
 		/*if (Input.GetKeyDown (jump)){
 			Rigidbody.AddForce*/
 	}
