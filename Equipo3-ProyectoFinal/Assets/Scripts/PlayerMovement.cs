@@ -15,12 +15,16 @@ public class PlayerMovement : MonoBehaviour
 	public string right;
 	public string left;
 	public string run;
-	//public string jump;
-
+	public string jump;
+	private Rigidbody rb;
+	public LayerMask ground;
+	public float jumpForce;
+	BoxCollider col;
 
 	void Start ()
 	{
-
+		rb = GetComponent<Rigidbody> ();
+		col = GetComponent<BoxCollider> ();
 	}
 
 	void Update ()
@@ -59,8 +63,11 @@ public class PlayerMovement : MonoBehaviour
 		if (isRunning == true && diagonal == true) { //ajusta la velocidad de las diagonales al correr
 			speed = Mathf.Sin (0.785398163397448f) * runSpeed;
 		}
-		//Debug.LogFormat ("speed = {0}", speed);
-		/*if (Input.GetKeyDown (jump)){
-			Rigidbody.AddForce*/
+		if (Input.GetKeyDown (jump) /*&& isGrounded()*/) {
+			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
+		}
 	}
+	/*private bool isGrounded() {
+		return Physics.CheckBox ();
+	}*/
 }
