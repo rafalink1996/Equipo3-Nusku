@@ -1,0 +1,1287 @@
+fileFormatVersion: 2
+guid: 444a895ca159241c0b5c4e6ac8123414
+timeCreated: 1522273824
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SEL_WALK_SW_1
+    21300002: SEL_WALK_SW_2
+    21300004: SEL_WALK_SW_3
+    21300006: SEL_WALK_SW_4
+    21300008: SEL_WALK_SW_5
+    21300010: SEL_WALK_SW_6
+    21300012: SEL_WALK_SW_7
+    21300014: SEL_WALK_SW_8
+    21300016: SEL_WALK_SW_9
+    21300018: SEL_WALK_SW_10
+    21300020: SEL_WALK_SE_1
+    21300022: SEL_WALK_SE_2
+    21300024: SEL_WALK_SE_3
+    21300026: SEL_WALK_SE_4
+    21300028: SEL_WALK_SE_5
+    21300030: SEL_WALK_SE_6
+    21300032: SEL_WALK_SE_7
+    21300034: SEL_WALK_SE_8
+    21300036: SEL_WALK_SE_9
+    21300038: SEL_WALK_SE_10
+    21300040: SEL_WALK_NW_1
+    21300042: SEL_WALK_NW_2
+    21300044: SEL_WALK_NW_3
+    21300046: SEL_WALK_NW_4
+    21300048: SEL_WALK_NW_5
+    21300050: SEL_WALK_NW_6
+    21300052: SEL_WALK_NW_7
+    21300054: SEL_WALK_NW_8
+    21300056: SEL_WALK_NW_9
+    21300058: SEL_WALK_NW_10
+    21300060: SEL_WALK_NE_1
+    21300062: SEL_WALK_NE_2
+    21300064: SEL_WALK_NE_3
+    21300066: SEL_WALK_NE_4
+    21300068: SEL_WALK_NE_5
+    21300070: SEL_WALK_NE_6
+    21300072: SEL_WALK_NE_7
+    21300074: SEL_WALK_NE_8
+    21300076: SEL_WALK_NE_9
+    21300078: SEL_WALK_NE_10
+    21300080: SEL_WALK_E_1
+    21300082: SEL_WALK_E_2
+    21300084: SEL_WALK_E_3
+    21300086: SEL_WALK_E_4
+    21300088: SEL_WALK_E_5
+    21300090: SEL_WALK_E_6
+    21300092: SEL_WALK_E_7
+    21300094: SEL_WALK_E_8
+    21300096: SEL_WALK_E_9
+    21300098: SEL_WALK_E_10
+    21300100: SEL_WALK_W_1
+    21300102: SEL_WALK_W_2
+    21300104: SEL_WALK_W_3
+    21300106: SEL_WALK_W_4
+    21300108: SEL_WALK_W_5
+    21300110: SEL_WALK_W_6
+    21300112: SEL_WALK_W_7
+    21300114: SEL_WALK_W_8
+    21300116: SEL_WALK_W_9
+    21300118: SEL_WALK_W_10
+    21300120: SEL_WALK_S_1
+    21300122: SEL_WALK_S_2
+    21300124: SEL_WALK_S_3
+    21300126: SEL_WALK_S_4
+    21300128: SEL_WALK_S_5
+    21300130: SEL_WALK_S_6
+    21300132: SEL_WALK_S_7
+    21300134: SEL_WALK_S_8
+    21300136: SEL_WALK_S_9
+    21300138: SEL_WALK_S_10
+    21300140: SEL_WALK_N_1
+    21300142: SEL_WALK_N_2
+    21300144: SEL_WALK_N_3
+    21300146: SEL_WALK_N_4
+    21300148: SEL_WALK_N_5
+    21300150: SEL_WALK_N_6
+    21300152: SEL_WALK_N_7
+    21300154: SEL_WALK_N_8
+    21300156: SEL_WALK_N_9
+    21300158: SEL_WALK_N_10
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SEL_WALK_SW_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2569
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SW_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2569
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SW_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2569
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SW_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 2569
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SW_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2569
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SW_6
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2569
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SW_7
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 2569
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SW_8
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 2569
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SW_9
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2569
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SW_10
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 2569
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SE_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2202
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SE_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2202
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SE_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2202
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SE_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 2202
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SE_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2202
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SE_6
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2202
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SE_7
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 2202
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SE_8
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 2202
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SE_9
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2202
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_SE_10
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 2202
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NW_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1835
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NW_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1835
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NW_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1835
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NW_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1835
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NW_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1835
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NW_6
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1835
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NW_7
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1835
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NW_8
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1835
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NW_9
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1835
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NW_10
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1835
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NE_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1468
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NE_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1468
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NE_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1468
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NE_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1468
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NE_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1468
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NE_6
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1468
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NE_7
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1468
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NE_8
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1468
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NE_9
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1468
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_NE_10
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1468
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_E_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1101
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_E_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1101
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_E_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1101
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_E_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1101
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_E_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1101
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_E_6
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1101
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_E_7
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1101
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_E_8
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1101
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_E_9
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1101
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_E_10
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1101
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_W_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 734
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_W_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 734
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_W_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 734
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_W_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 734
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_W_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 734
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_W_6
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 734
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_W_7
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 734
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_W_8
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 734
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_W_9
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 734
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_W_10
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 734
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_S_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 367
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_S_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 367
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_S_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 367
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_S_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 367
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_S_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 367
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_S_6
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 367
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_S_7
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 367
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_S_8
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 367
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_S_9
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 367
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_S_10
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 367
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_N_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_N_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_N_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_N_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_N_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_N_6
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_N_7
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_N_8
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 0
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_N_9
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SEL_WALK_N_10
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 0
+        width: 224
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
