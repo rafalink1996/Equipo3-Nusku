@@ -17,14 +17,12 @@ public class PlayerMovement : MonoBehaviour
 	public string run;
 	public string jump;
 	private Rigidbody rb;
-	public LayerMask ground;
 	public float jumpForce;
-	BoxCollider col;
+	public bool isGrounded = true;
 
 	void Start ()
 	{
 		rb = GetComponent<Rigidbody> ();
-		col = GetComponent<BoxCollider> ();
 	}
 
 	void Update ()
@@ -63,11 +61,19 @@ public class PlayerMovement : MonoBehaviour
 		if (isRunning == true && diagonal == true) { //ajusta la velocidad de las diagonales al correr
 			speed = Mathf.Sin (0.785398163397448f) * runSpeed;
 		}
-		if (Input.GetKeyDown (jump) /*&& isGrounded()*/) {
+		if (Input.GetKeyDown (jump) && isGrounded == true) {
 			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
+			//isGrounded = false;
 		}
 	}
-	/*private bool isGrounded() {
-		return Physics.CheckBox ();
-	}*/
+	void OnCollisionEnter (Collision collision) {
+		if (collision.collider.gameObject.tag == "Ground") {
+			isGrounded = true;
+		}
+	}
+	void OnCollisionExit (Collision collision) {
+		if (collision.collider.gameObject.tag == "Ground") {
+			isGrounded = false;
+		}
+	}
 }
