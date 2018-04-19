@@ -1,0 +1,12 @@
+Adobe After Effects v13.5 Windows 64 render log for project “SEL FRONT DEATH copy (CC (13)).aep”
+
+Rendering started on 19/04/2018 at 12:05:45 a. m.
+
+  19/04/2018 12:05:45 a. m.: Starting composition “SEL FRONT”.
+
+  Output To: C:\Users\ASUS\Documents\Equipo3-Nusku\ARTE\SPRITES\ANIMACIONES\SEL\FRONT\SEL FRONT DEATH\SEL FRONT\SEL FRONT_[#####].png    19/04/2018 12:05:45 a. m.: Finished composition “SEL FRONT”.
+
+
+  Total Time Elapsed: 0 Seconds
+Log closed on 19/04/2018 at 12:05:45 a. m.
+
