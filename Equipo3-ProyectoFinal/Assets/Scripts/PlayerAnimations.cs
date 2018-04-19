@@ -5,42 +5,38 @@ using UnityEngine;
 public class PlayerAnimations : MonoBehaviour {
 	
 	Animator anim;
-	private PlayerMovement playerMovement;
+	private PlayerMovement playerMovement; 
 
 	void Start () {
 		anim = GetComponent<Animator> ();
-		playerMovement = GetComponent<PlayerMovement> ();
+		playerMovement = GetComponent<PlayerMovement> (); //Llamamos al script de movimiento para poder usar sus variables
 	}
 
-	void FixedUpdate () {
+	void Update () {
 		if (Input.GetKey (playerMovement.up) || Input.GetKey (playerMovement.down) || Input.GetKey (playerMovement.right) || Input.GetKey (playerMovement.left)) {
-			anim.SetBool ("IsMoving", true);
+			anim.SetBool ("IsMoving", true); //Determina si se está presionando una tecla de movimiento para saber si se está moviendo y reproducir las respectivas animaciones
 		} else {
 			anim.SetBool ("IsMoving", false);
 		}
-		if (Input.GetKey (playerMovement.up)) {
-			anim.SetInteger ("Direction", 1);
+		if (Input.GetKey (playerMovement.up)) { //playerMovement.up significa que se está usando la variable "up" del script playerMovement
+			anim.SetBool ("North", true); // Cada uno de estos "ifs" pone el valor de una variable para las cuatro direcciones
+		} else {						  // en true. Si por ejemplo, North y East son true, entonces se reproducirá la animación
+			anim.SetBool ("North", false); // correspondiente. Pero todas esas condiciones se manejan desde el Animator en Unity
 		}
-		if (Input.GetKey (playerMovement.right) && Input.GetKey (playerMovement.up)) {
-			anim.SetInteger ("Direction", 2);
-		}
-		if (Input.GetKey (playerMovement.right)){
-			anim.SetInteger ("Direction", 3);
-		}
-		if (Input.GetKey (playerMovement.right) && Input.GetKey (playerMovement.down)) {
-			anim.SetInteger ("Direction", 4);
+		if (Input.GetKey (playerMovement.right)) {
+			anim.SetBool ("East", true);
+		} else {
+			anim.SetBool ("East", false);
 		}
 		if (Input.GetKey (playerMovement.down)) {
-			anim.SetInteger ("Direction", 5);
-		}
-		if (Input.GetKey (playerMovement.left) && Input.GetKey (playerMovement.down)) {
-			anim.SetInteger ("Direction", 6);
+			anim.SetBool ("South", true);
+		} else {
+			anim.SetBool ("South", false);
 		}
 		if (Input.GetKey (playerMovement.left)) {
-			anim.SetInteger ("Direction", 7);
-		}
-		if (Input.GetKey (playerMovement.left) && Input.GetKey (playerMovement.up)) {
-			anim.SetInteger ("Direction", 8);
+			anim.SetBool ("West", true);
+		} else {
+			anim.SetBool ("West", false);
 		}
 	}
 }

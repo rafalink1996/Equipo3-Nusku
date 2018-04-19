@@ -16,8 +16,7 @@ public class Footsteps : MonoBehaviour
     {
         if (Input.GetKey(up) || Input.GetKey(down) ||  Input.GetKey(left) ||  Input.GetKey(right)) 
         {
-            audioS.volume = Random.Range(0.8f, 1);
-            audioS.pitch = Random.Range(0.8f, 1.1f);
+            audioS.volume = Random.Range(0.5f, 1);
             audioS.enabled = true;
         } else {
             audioS.enabled = false;
