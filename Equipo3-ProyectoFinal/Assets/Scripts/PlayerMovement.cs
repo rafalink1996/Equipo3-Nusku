@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 	public string jump;
 	private Rigidbody rb;
 	public float jumpForce;
-	public bool isGrounded = true;
+	bool isGrounded = true;
 
 	void Start ()
 	{

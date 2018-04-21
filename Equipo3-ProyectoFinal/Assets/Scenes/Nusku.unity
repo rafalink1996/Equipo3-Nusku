@@ -1453,8 +1453,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02a7a6a8da7b24fb7a8371a1bf364b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 3
-  runSpeed: 5
+  walkSpeed: 7
+  runSpeed: 10
   up: w
   down: s
   right: d
@@ -1462,7 +1462,6 @@ MonoBehaviour:
   run: left shift
   jump: space
   jumpForce: 6
-  isGrounded: 1
 --- !u!1 &797520363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,7 +2372,6 @@ MonoBehaviour:
   run: left shift
   jump: space
   jumpForce: 6
-  isGrounded: 1
 --- !u!114 &1353728097
 MonoBehaviour:
   m_ObjectHideFlags: 0

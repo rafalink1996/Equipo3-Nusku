@@ -12,7 +12,7 @@ public class Shadow : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void LateUpdate () {
 		
 		transform.position = new Vector3 (character.transform.position.x, -1f, character.transform.position.z);;
 	}
