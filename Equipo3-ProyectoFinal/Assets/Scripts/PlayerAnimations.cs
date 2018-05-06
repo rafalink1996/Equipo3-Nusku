@@ -12,6 +12,10 @@ public class PlayerAnimations : MonoBehaviour {
 		playerMovement = GetComponent<PlayerMovement> (); //Llamamos al script de movimiento para poder usar sus variables
 	}
 
+	// Temporal
+	//public void animatorMoving(bool newState){
+		//anim.SetBool ("IsMoving", newState);
+	//} 
 	void Update () {
 		if (Input.GetKey (playerMovement.up) || Input.GetKey (playerMovement.down) || Input.GetKey (playerMovement.right) || Input.GetKey (playerMovement.left)) {
 			anim.SetBool ("IsMoving", true); //Determina si se está presionando una tecla de movimiento para saber si se está moviendo y reproducir las respectivas animaciones

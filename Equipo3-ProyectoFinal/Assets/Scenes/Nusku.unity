@@ -1455,10 +1455,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 7
   runSpeed: 10
-  up: w
-  down: s
-  right: d
-  left: a
+  up: up
+  down: down
+  right: right
+  left: left
   run: left shift
   jump: space
   jumpForce: 6

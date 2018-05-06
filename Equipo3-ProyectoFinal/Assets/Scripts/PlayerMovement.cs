@@ -20,18 +20,30 @@ public class PlayerMovement : MonoBehaviour
 	public float jumpForce;
 	bool isGrounded = true;
 
+
+	// Temporal
+	//PlayerAnimations playeranims;
+
+	//GameObject rigo;
+
 	void Start ()
 	{
 		rb = GetComponent<Rigidbody> ();
+
+		//GameObject rigo = this.transform.Find ("padre/hijoA/player/animations");
+
+		//rigo.GetComponent<PlayerAnimations> ().movingUp ();
 	}
 
 	void Update ()
 	{
 		if (Input.GetKey (up)) { //moverse hacia el norte
             transform.Translate(0, 0, speed * Time.deltaTime);
+			//this.gameObject.GetComponent<PlayerAnimations> ().animatorMoving (true);
         }
         if (Input.GetKey (down)) { //moverse hacia el sur
 			transform.Translate (0, 0, -speed * Time.deltaTime);
+			//this.gameObject.GetComponent<PlayerAnimations> ().animatorMoving (false);
 		}
 		if (Input.GetKey (right)) { //moverse hacia el este
 			transform.Translate (speed * Time.deltaTime, 0, 0);
@@ -65,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
 			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
 			//isGrounded = false;
 		}
+		print ("speed =" + speed);
 	}
 	void OnCollisionEnter (Collision collision) {
 		if (collision.collider.gameObject.tag == "Ground") {
