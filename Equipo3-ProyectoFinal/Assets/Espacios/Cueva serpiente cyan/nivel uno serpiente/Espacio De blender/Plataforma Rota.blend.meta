@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: ee5f6fb3fdb814b88bf2859b10113bf9
-timeCreated: 1522303045
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -510,6 +508,7 @@ ModelImporter:
     4300198: Cube_cell_100
     7400000: Default Take
     9500000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -529,6 +528,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
