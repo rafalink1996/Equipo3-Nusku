@@ -616,7 +616,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 63
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 10.59
   MaxDistance: 3420.4
   Pan2D: 0
   rolloffMode: 0
@@ -1552,10 +1552,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioS: {fileID: 496846525}
-  up: w
-  down: s
-  right: d
-  left: a
+  up: up
+  down: down
+  right: right
+  left: left
 --- !u!114 &793918710
 MonoBehaviour:
   m_ObjectHideFlags: 0
