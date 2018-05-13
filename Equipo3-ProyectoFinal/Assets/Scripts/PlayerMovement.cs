@@ -20,13 +20,12 @@ public class PlayerMovement : MonoBehaviour
 	public float jumpForce;
 	bool isGrounded = true;
 
+    // Temporal
+    //PlayerAnimations playeranims;
 
-	// Temporal
-	//PlayerAnimations playeranims;
+    //GameObject rigo;
 
-	//GameObject rigo;
-
-	void Start ()
+    void Start ()
 	{
 		rb = GetComponent<Rigidbody> ();
 
@@ -75,8 +74,8 @@ public class PlayerMovement : MonoBehaviour
 		}*/
 		if (Input.GetKeyDown (jump) && isGrounded == true) {
 			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
-			//isGrounded = false;
-		}
+            //isGrounded = false;
+        }
 		print ("speed =" + speed);
 	}
 	void OnCollisionEnter (Collision collision) {

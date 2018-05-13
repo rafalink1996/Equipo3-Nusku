@@ -10,11 +10,14 @@ public class Footsteps : MonoBehaviour
     public string down;
     public string right;
     public string left;
+    bool isGrounded = true;
+
+
 
 
     void Update()
     {
-        if (Input.GetKey(up) || Input.GetKey(down) ||  Input.GetKey(left) ||  Input.GetKey(right)) 
+        if (Input.GetKey(up) && isGrounded == true || Input.GetKey(down) && isGrounded == true ||  Input.GetKey(left) && isGrounded == true ||  Input.GetKey(right) && isGrounded == true)
         {
             audioS.volume = Random.Range(0.5f, 1);
             audioS.enabled = true;
@@ -24,4 +27,20 @@ public class Footsteps : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.gameObject.tag == "Ground")
+        {
+            isGrounded = true;
+        }
+    }
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.gameObject.tag == "Ground")
+        {
+            isGrounded = false;
+        }
+    }
+
 }
+
