@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731316, g: 0.38074896, b: 0.3587254, a: 1}
+<<<<<<< .merge_file_nfJBEK
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+>>>>>>> .merge_file_dRQzbe
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -574,7 +578,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 476332875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.02, y: 0.5999999, z: -4.05}
+  m_LocalPosition: {x: 10.17, y: 0.5999999, z: -4.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -614,9 +618,9 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 63
-  DopplerLevel: 1
-  MinDistance: 1
+  Priority: 0
+  DopplerLevel: 4.65
+  MinDistance: 6.54
   MaxDistance: 3420.4
   Pan2D: 0
   rolloffMode: 0
@@ -699,7 +703,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 496846524}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -1, z: -0.16999996}
+  m_LocalPosition: {x: 2.15, y: 12.35, z: -4.8}
   m_LocalScale: {x: 0.3238615, y: 0.32386133, z: 0.32386133}
   m_Children: []
   m_Father: {fileID: 793918706}
@@ -1552,10 +1556,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioS: {fileID: 496846525}
-  up: w
-  down: s
-  right: d
-  left: a
+  up: up
+  down: down
+  right: right
+  left: left
 --- !u!114 &793918710
 MonoBehaviour:
   m_ObjectHideFlags: 0
