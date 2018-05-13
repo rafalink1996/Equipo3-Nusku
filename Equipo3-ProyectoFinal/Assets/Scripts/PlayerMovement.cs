@@ -7,9 +7,9 @@ public class PlayerMovement : MonoBehaviour
 
 	float speed = 0; //variable interna para la velocidad. toma el valor de walkSpeed o de runSpeed
 	bool diagonal = false; // determina si está en diagonal
-	bool isRunning = false; //determina si está corriendo
+	//bool isRunning = false; //determina si está corriendo
 	public float walkSpeed; // velocidad normal de caminar, el valor se pone en el inspector
-	public float runSpeed; // velocidad de correr, el valor se pone en el inspector
+	//public float runSpeed; // velocidad de correr, el valor se pone en el inspector
 	public string up; //estas variables nos dejan asignar la tecla desde el inspector
 	public string down;
 	public string right;
@@ -51,28 +51,28 @@ public class PlayerMovement : MonoBehaviour
 		if (Input.GetKey (left)) { //moverse hacia el oeste
 			transform.Translate (-speed * Time.deltaTime, 0, 0);
 		}
-		if (Input.GetKey (run)) { //correr; aumenta la velocidad
+		/*if (Input.GetKey (run)) { //correr; aumenta la velocidad
 			isRunning = true;
 		} else {
 			isRunning = false;
-		}
+		}*/
 		if (Input.GetKey (up) && Input.GetKey (right) || Input.GetKey (up) && Input.GetKey (left) || Input.GetKey (down) && Input.GetKey (right) || Input.GetKey (down) && Input.GetKey (left)) {
 			diagonal = true; //determina si está moviéndose en una diagonal
 		} else {
 			diagonal = false;
 		}
-		if (isRunning == false && diagonal == false) { // hace que la velocidad sea la normal
+		if (/*isRunning == false && */diagonal == false) { // hace que la velocidad sea la normal
 			speed = walkSpeed;
 		}
-		if (isRunning == true && diagonal == false) { // hace que la velocidad sea la de correr
+		/*if (isRunning == true && diagonal == false) { // hace que la velocidad sea la de correr
 			speed = runSpeed;
-		}
-		if (isRunning == false && diagonal == true) { // ajusta la velocidad de caminada en las diagonales, para que no sea más rápido
+		}*/
+		if (/*isRunning == false && */diagonal == true) { // ajusta la velocidad de caminada en las diagonales, para que no sea más rápido
 			speed = Mathf.Sin (0.785398163397448f) * walkSpeed;
 		}
-		if (isRunning == true && diagonal == true) { //ajusta la velocidad de las diagonales al correr
+		/*if (isRunning == true && diagonal == true) { //ajusta la velocidad de las diagonales al correr
 			speed = Mathf.Sin (0.785398163397448f) * runSpeed;
-		}
+		}*/
 		if (Input.GetKeyDown (jump) && isGrounded == true) {
 			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
 			//isGrounded = false;
