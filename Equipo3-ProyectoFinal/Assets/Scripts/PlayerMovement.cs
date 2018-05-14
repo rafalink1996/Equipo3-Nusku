@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
 	private Rigidbody rb;
 	public float jumpForce;
 	bool isGrounded = true;
+    Animator anim;
 
     // Temporal
     //PlayerAnimations playeranims;
@@ -28,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     void Start ()
 	{
 		rb = GetComponent<Rigidbody> ();
+        anim = GetComponent<Animator>();
 
 		//GameObject rigo = this.transform.Find ("padre/hijoA/player/animations");
 
@@ -36,20 +38,41 @@ public class PlayerMovement : MonoBehaviour
 
 	void Update ()
 	{
+        if (Input.GetKey(up) || Input.GetKey(down) || Input.GetKey(right) || Input.GetKey(left))
+        {
+            anim.SetBool("IsMoving", true); //Determina si se está presionando una tecla de movimiento para saber si se está moviendo y reproducir las respectivas animaciones
+        }
+        else
+        {
+            anim.SetBool("IsMoving", false);
+        }
 		if (Input.GetKey (up)) { //moverse hacia el norte
             transform.Translate(0, 0, speed * Time.deltaTime);
 			//this.gameObject.GetComponent<PlayerAnimations> ().animatorMoving (true);
+            anim.SetBool("North", true); //Determina si se está presionando una tecla de movimiento para saber si se está moviendo y reproducir las respectivas animaciones
+        }else{
+            anim.SetBool("North", false);
         }
         if (Input.GetKey (down)) { //moverse hacia el sur
 			transform.Translate (0, 0, -speed * Time.deltaTime);
 			//this.gameObject.GetComponent<PlayerAnimations> ().animatorMoving (false);
-		}
-		if (Input.GetKey (right)) { //moverse hacia el este
-			transform.Translate (speed * Time.deltaTime, 0, 0);
-		}
+            anim.SetBool("South", true);
+        }else{
+            anim.SetBool("South", false);
+        }
+        if (Input.GetKey(right))
+        { //moverse hacia el este
+            transform.Translate(speed * Time.deltaTime, 0, 0);
+            anim.SetBool("East", true);
+        }else{
+            anim.SetBool("East", false);
+        }
 		if (Input.GetKey (left)) { //moverse hacia el oeste
 			transform.Translate (-speed * Time.deltaTime, 0, 0);
-		}
+            anim.SetBool("West", true);
+        }else{
+            anim.SetBool("West", false);
+        }
 		/*if (Input.GetKey (run)) { //correr; aumenta la velocidad
 			isRunning = true;
 		} else {
