@@ -21,19 +21,11 @@ public class PlayerMovement : MonoBehaviour
 	bool isGrounded = true;
     Animator anim;
 
-    // Temporal
-    //PlayerAnimations playeranims;
-
-    //GameObject rigo;
-
     void Start ()
 	{
 		rb = GetComponent<Rigidbody> ();
         anim = GetComponent<Animator>();
 
-		//GameObject rigo = this.transform.Find ("padre/hijoA/player/animations");
-
-		//rigo.GetComponent<PlayerAnimations> ().movingUp ();
 	}
 
 	void Update ()
@@ -48,30 +40,66 @@ public class PlayerMovement : MonoBehaviour
         }
 		if (Input.GetKey (up)) { //moverse hacia el norte
             transform.Translate(0, 0, speed * Time.deltaTime);
-			//this.gameObject.GetComponent<PlayerAnimations> ().animatorMoving (true);
             anim.SetBool("North", true); //Determina si se está presionando una tecla de movimiento para saber si se está moviendo y reproducir las respectivas animaciones
-        }else{
-            anim.SetBool("North", false);
+            anim.SetBool("South", false);
+            anim.SetBool("West", false);
+            anim.SetBool("East", false);
+            /* }else{
+            anim.SetBool("North", false);*/
         }
         if (Input.GetKey (down)) { //moverse hacia el sur
 			transform.Translate (0, 0, -speed * Time.deltaTime);
-			//this.gameObject.GetComponent<PlayerAnimations> ().animatorMoving (false);
             anim.SetBool("South", true);
-        }else{
-            anim.SetBool("South", false);
+            anim.SetBool("North", false);
+            anim.SetBool("West", false);
+            anim.SetBool("East", false);
+        /*}else{
+            anim.SetBool("South", false);*/
         }
-        if (Input.GetKey(right))
-        { //moverse hacia el este
+        if (Input.GetKey(right)) { //moverse hacia el este
             transform.Translate(speed * Time.deltaTime, 0, 0);
             anim.SetBool("East", true);
-        }else{
-            anim.SetBool("East", false);
-        }
+            anim.SetBool("West", false);
+            anim.SetBool("North", false);
+            anim.SetBool("South", false);
+            }
+        /*}else{
+            anim.SetBool("East", false);*/
 		if (Input.GetKey (left)) { //moverse hacia el oeste
 			transform.Translate (-speed * Time.deltaTime, 0, 0);
             anim.SetBool("West", true);
-        }else{
+            anim.SetBool("North", false);
+            anim.SetBool("South", false);
+            anim.SetBool("East", false);
+       /* }else{
+            anim.SetBool("West", false);*/
+        }
+        if (Input.GetKey(up) && Input.GetKey(right)){
             anim.SetBool("West", false);
+            anim.SetBool("North", true);
+            anim.SetBool("South", false);
+            anim.SetBool("East", true);
+        }
+        if (Input.GetKey(up) && Input.GetKey(left))
+        {
+            anim.SetBool("West", true);
+            anim.SetBool("North", true);
+            anim.SetBool("South", false);
+            anim.SetBool("East", false);
+        }
+        if (Input.GetKey(down) && Input.GetKey(left))
+        {
+            anim.SetBool("West", true);
+            anim.SetBool("North", false);
+            anim.SetBool("South", true);
+            anim.SetBool("East", false);
+        }
+        if (Input.GetKey(down) && Input.GetKey(right))
+        {
+            anim.SetBool("West", false);
+            anim.SetBool("North", false);
+            anim.SetBool("South", true);
+            anim.SetBool("East", true);
         }
 		/*if (Input.GetKey (run)) { //correr; aumenta la velocidad
 			isRunning = true;
@@ -97,13 +125,14 @@ public class PlayerMovement : MonoBehaviour
 		}*/
 		if (Input.GetKeyDown (jump) && isGrounded == true) {
 			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
-            //isGrounded = false;
+            anim.SetBool("Jump", true);
         }
 		print ("speed =" + speed);
 	}
 	void OnCollisionEnter (Collision collision) {
 		if (collision.collider.gameObject.tag == "Ground") {
 			isGrounded = true;
+            anim.SetBool("Jump", false);
 		}
 	}
 	void OnCollisionExit (Collision collision) {
