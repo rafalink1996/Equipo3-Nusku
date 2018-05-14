@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-	float speed = 0; //variable interna para la velocidad. toma el valor de walkSpeed o de runSpeed
-	bool diagonal = false; // determina si está en diagonal
+	float speed; //variable interna para la velocidad. toma el valor de walkSpeed o de runSpeed
+	bool diagonal; // determina si está en diagonal
 	//bool isRunning = false; //determina si está corriendo
 	public float walkSpeed; // velocidad normal de caminar, el valor se pone en el inspector
 	//public float runSpeed; // velocidad de correr, el valor se pone en el inspector
@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 	public string left;
 	public string run;
 	public string jump;
-	private Rigidbody rb;
+	Rigidbody rb;
 	public float jumpForce;
 	bool isGrounded = true;
     Animator anim;
