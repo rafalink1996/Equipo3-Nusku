@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 	public string down;
 	public string right;
 	public string left;
-	public string run;
+	//public string run;
 	public string jump;
     public string attack;
     public int direction = 5;
@@ -137,7 +137,12 @@ public class PlayerMovement : MonoBehaviour
 			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
             anim.SetBool("Jump", true);
         }
-		print ("speed =" + speed);
+        if (Input.GetKey(attack)){
+            anim.SetBool("Attack", true);
+        }else{
+            anim.SetBool("Attack", false);
+        }
+		
 	}
 	void OnCollisionEnter (Collision collision) {
 		if (collision.collider.gameObject.tag == "Ground") {

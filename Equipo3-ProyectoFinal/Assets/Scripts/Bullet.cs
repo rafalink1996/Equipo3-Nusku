@@ -27,7 +27,7 @@ public class Bullet : MonoBehaviour {
             attackIsPressed = false;
         }
         if (attackIsPressed == false){
-            this.transform.Translate(speed * Time.deltaTime, 0, 0);
+           // this.transform.Translate(speed * Time.deltaTime, 0, 0);
         }
 
 	}
