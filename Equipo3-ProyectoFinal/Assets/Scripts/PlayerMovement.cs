@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
 	public string left;
 	public string run;
 	public string jump;
+    public string attack;
+    public int direction = 5;
 	Rigidbody rb;
 	public float jumpForce;
 	bool isGrounded = true;
@@ -44,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("South", false);
             anim.SetBool("West", false);
             anim.SetBool("East", false);
+            direction = 1;
             /* }else{
             anim.SetBool("North", false);*/
         }
@@ -53,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("North", false);
             anim.SetBool("West", false);
             anim.SetBool("East", false);
+            direction = 5;
         /*}else{
             anim.SetBool("South", false);*/
         }
@@ -62,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("West", false);
             anim.SetBool("North", false);
             anim.SetBool("South", false);
+            direction = 3;
             }
         /*}else{
             anim.SetBool("East", false);*/
@@ -71,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("North", false);
             anim.SetBool("South", false);
             anim.SetBool("East", false);
+            direction = 7;
        /* }else{
             anim.SetBool("West", false);*/
         }
@@ -79,6 +85,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("North", true);
             anim.SetBool("South", false);
             anim.SetBool("East", true);
+            direction = 2;
         }
         if (Input.GetKey(up) && Input.GetKey(left))
         {
@@ -86,6 +93,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("North", true);
             anim.SetBool("South", false);
             anim.SetBool("East", false);
+            direction = 8;
         }
         if (Input.GetKey(down) && Input.GetKey(left))
         {
@@ -93,6 +101,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("North", false);
             anim.SetBool("South", true);
             anim.SetBool("East", false);
+            direction = 6;
         }
         if (Input.GetKey(down) && Input.GetKey(right))
         {
@@ -100,6 +109,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("North", false);
             anim.SetBool("South", true);
             anim.SetBool("East", true);
+            direction = 4;
         }
 		/*if (Input.GetKey (run)) { //correr; aumenta la velocidad
 			isRunning = true;
