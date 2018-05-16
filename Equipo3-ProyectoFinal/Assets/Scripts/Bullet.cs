@@ -5,30 +5,26 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 
 
-    float speed = 3.0f;
-    int sel;
+    float speed = 5.0f;
+
     string attack;
-    bool attackIsPressed;
+    bool attackIsPressed = true;
 
 	// Use this for initialization
 	void Start () {
-        attack = GameObject.Find("Sel").GetComponent<PlayerMovement>().attack;
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        sel = GameObject.Find("Sel").GetComponent<PlayerMovement>().direction;
-        if (sel == 1){
-            this.transform.rotation = Quaternion.Euler(0,-90, 0);
-        }
-        if (Input.GetKey(attack)){
-            attackIsPressed = true;
-        }else{
+        
+        if (Input.GetKeyUp(attack)){
             attackIsPressed = false;
         }
-        if (attackIsPressed == false){
-           // this.transform.Translate(speed * Time.deltaTime, 0, 0);
-        }
+
+       // if (attackIsPressed == false){
+        this.transform.Translate(0, 0, speed * Time.deltaTime);
+        //}
 
 	}
     void OnCollisionEnter(Collision collision)

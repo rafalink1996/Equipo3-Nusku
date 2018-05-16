@@ -47,8 +47,6 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("West", false);
             anim.SetBool("East", false);
             direction = 1;
-            /* }else{
-            anim.SetBool("North", false);*/
         }
         if (Input.GetKey (down)) { //moverse hacia el sur
 			transform.Translate (0, 0, -speed * Time.deltaTime);
@@ -57,8 +55,6 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("West", false);
             anim.SetBool("East", false);
             direction = 5;
-        /*}else{
-            anim.SetBool("South", false);*/
         }
         if (Input.GetKey(right)) { //moverse hacia el este
             transform.Translate(speed * Time.deltaTime, 0, 0);
@@ -68,8 +64,6 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("South", false);
             direction = 3;
             }
-        /*}else{
-            anim.SetBool("East", false);*/
 		if (Input.GetKey (left)) { //moverse hacia el oeste
 			transform.Translate (-speed * Time.deltaTime, 0, 0);
             anim.SetBool("West", true);
@@ -77,8 +71,6 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("South", false);
             anim.SetBool("East", false);
             direction = 7;
-       /* }else{
-            anim.SetBool("West", false);*/
         }
         if (Input.GetKey(up) && Input.GetKey(right)){
             anim.SetBool("West", false);
@@ -136,9 +128,11 @@ public class PlayerMovement : MonoBehaviour
 		if (Input.GetKeyDown (jump) && isGrounded == true) {
 			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
             anim.SetBool("Jump", true);
+            anim.SetBool("Button", true);
         }
         if (Input.GetKey(attack)){
             anim.SetBool("Attack", true);
+            anim.SetBool("Button", true);
         }else{
             anim.SetBool("Attack", false);
         }
@@ -155,4 +149,7 @@ public class PlayerMovement : MonoBehaviour
 			isGrounded = false;
 		}
 	}
+    void AnimButton (){
+        anim.SetBool("Button", false);
+    }
 }
