@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 
 
-    float speed = 5.0f;
+    float speed = 10.0f;
 
     string attack;
     bool attackIsPressed = true;
@@ -18,12 +18,12 @@ public class Bullet : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-        if (Input.GetKeyUp(attack)){
-            attackIsPressed = false;
-        }
+       // if (Input.GetKeyUp(attack)){
+         //   attackIsPressed = false;
+        //}
 
        // if (attackIsPressed == false){
-        this.transform.Translate(0, 0, speed * Time.deltaTime);
+        this.transform.Translate(speed * Time.deltaTime, 0, 0);
         //}
 
 	}
