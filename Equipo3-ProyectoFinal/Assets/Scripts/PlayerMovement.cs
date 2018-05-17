@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
 	public float jumpForce;
 	bool isGrounded = true;
     Animator anim;
+    public bool attackReady = false;
 
     void Start ()
 	{
@@ -151,5 +152,12 @@ public class PlayerMovement : MonoBehaviour
 	}
     void AnimButton (){
         anim.SetBool("Button", false);
+
+    }
+    void AttackReady(){
+        attackReady = true;
+    }
+    void AttackLoaded(){
+        attackReady = false;
     }
 }

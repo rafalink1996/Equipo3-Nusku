@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 
 
-    float speed = 10.0f;
+    float speed = 20.0f;
 
     string attack;
     bool attackIsPressed = true;
@@ -20,15 +20,17 @@ public class Bullet : MonoBehaviour {
         if (Input.GetKey(attack)){
             this.transform.SetParent(GameObject.Find("Glove").transform);
         }
-        
-        if (Input.GetKeyUp(attack)){
-            this.transform.Translate(speed * Time.deltaTime, 0, 0);
+
+        if (Input.GetKeyUp(attack))
+        {
+            attackIsPressed = false;
             this.transform.SetParent(null);
         }
-        //   attackIsPressed = false;
-        //}
 
-        // if (attackIsPressed == false){
+        if (attackIsPressed == false)
+        {
+            this.transform.Translate(speed * Time.deltaTime, 0, 0);
+        }
 	}
     void OnCollisionEnter(Collision collision)
     {
