@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 
 
-    float speed = 20.0f;
+    float speed = 30.0f;
 
     string attack;
     //bool attackIsPressed = true;

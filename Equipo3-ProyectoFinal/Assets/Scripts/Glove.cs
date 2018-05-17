@@ -11,19 +11,20 @@ public class Glove : MonoBehaviour {
 	void Start () {
         attack = GameObject.Find("Sel").GetComponent<PlayerMovement>().attack;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         sel = GameObject.Find("Sel").GetComponent<PlayerMovement>().direction;
         if (sel == 1)
         {
             this.transform.rotation = Quaternion.Euler(0, 270, 0.13f);
-            this.transform.localPosition = new Vector3(0.31f, 0, 0);
+            this.transform.localPosition = new Vector3(-0.39f, 0, 0.24f);
         }
         if (sel == 2)
         {
             this.transform.rotation = Quaternion.Euler(0, 315, 0.13f);
-            this.transform.localPosition = new Vector3(-0.14f, -0.17f, 0);
+            this.transform.localPosition = new Vector3(-0.14f, -0.17f, 0.24f);
         }
         if (sel == 3)
         {
@@ -57,11 +58,16 @@ public class Glove : MonoBehaviour {
         }
         //attackReady = GameObject.Find("Sel").GetComponent<PlayerMovement>().attackReady;
         //if (attackReady == true){
-        if (Input.GetKeyDown(attack)){
+        if (Input.GetKeyDown(attack))
+        {
+            Invoke("FireBullet", 0.7f);
+            /*}
+        }
+        void FireBullet (){*/
             GameObject bullet = GameObject.Instantiate(Resources.Load("Prefabs/Bullet") as GameObject);
             bullet.transform.SetParent(this.gameObject.transform);
-            bullet.transform.localPosition = new Vector3(0,0,0);
+            bullet.transform.localPosition = new Vector3(0, 0, 0);
             bullet.transform.rotation = this.gameObject.transform.rotation;
         }
-	}
+    }
 }
