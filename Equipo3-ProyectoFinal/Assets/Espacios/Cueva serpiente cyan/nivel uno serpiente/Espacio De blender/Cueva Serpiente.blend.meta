@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 2fc4f9889f9a041c0b6691a704ca07b2
-timeCreated: 1522303031
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -24,6 +22,9 @@ ModelImporter:
     100032: Plane_003
     100034: Plane_004
     100036: Fuente
+    100038: Agua
+    100040: Pared
+    100042: Pared_001
     400000: Cube
     400002: Cube_001
     400004: Cube_002
@@ -43,6 +44,9 @@ ModelImporter:
     400032: Plane_003
     400034: Plane_004
     400036: Fuente
+    400038: Agua
+    400040: Pared
+    400042: Pared_001
     2100000: Material_001
     2100002: Material
     2100004: Material_004
@@ -76,6 +80,9 @@ ModelImporter:
     2300030: Plane_003
     2300032: Plane_004
     2300034: Fuente
+    2300036: Agua
+    2300038: Pared
+    2300040: Pared_001
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -94,6 +101,9 @@ ModelImporter:
     3300030: Plane_003
     3300032: Plane_004
     3300034: Fuente
+    3300036: Agua
+    3300038: Pared
+    3300040: Pared_001
     4300000: Cube
     4300002: Cube_025
     4300004: Cube_024
@@ -112,6 +122,9 @@ ModelImporter:
     4300030: Cube_001
     4300032: Cube_002
     4300034: Fuente
+    4300036: Agua
+    4300038: Pared_001
+    4300040: Pared
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
@@ -133,6 +146,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
