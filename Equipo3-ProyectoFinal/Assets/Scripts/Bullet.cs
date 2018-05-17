@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour {
     float speed = 20.0f;
 
     string attack;
-    bool attackIsPressed = true;
+    //bool attackIsPressed = true;
 
 	// Use this for initialization
 	void Start () {
@@ -17,19 +17,23 @@ public class Bullet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey(attack)){
+       /* if (Input.GetKey(attack)){
             this.transform.SetParent(GameObject.Find("Glove").transform);
-        }
+        }*/
 
         if (Input.GetKeyUp(attack))
         {
-            attackIsPressed = false;
+            //attackIsPressed = false;
             this.transform.SetParent(null);
         }
 
-        if (attackIsPressed == false)
+       /* if (attackIsPressed == false)
         {
             this.transform.Translate(speed * Time.deltaTime, 0, 0);
+        }*/
+        if (transform.parent == null){
+            this.transform.Translate(speed * Time.deltaTime, 0, 0);
+            Destroy(this.gameObject, 1);
         }
 	}
     void OnCollisionEnter(Collision collision)

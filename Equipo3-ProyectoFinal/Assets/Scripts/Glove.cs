@@ -6,7 +6,7 @@ public class Glove : MonoBehaviour {
 
     int sel;
     string attack;
-    bool attackReady;
+    //bool attackReady;
 	// Use this for initialization
 	void Start () {
         attack = GameObject.Find("Sel").GetComponent<PlayerMovement>().attack;
@@ -55,11 +55,13 @@ public class Glove : MonoBehaviour {
             this.transform.rotation = Quaternion.Euler(0, 225, 0);
             this.transform.localPosition = new Vector3(-0.39f, -0.14f, 0.13f);
         }
-        attackReady = GameObject.Find("Sel").GetComponent<PlayerMovement>().attackReady;
-        if (attackReady == true){
+        //attackReady = GameObject.Find("Sel").GetComponent<PlayerMovement>().attackReady;
+        //if (attackReady == true){
+        if (Input.GetKeyDown(attack)){
             GameObject bullet = GameObject.Instantiate(Resources.Load("Prefabs/Bullet") as GameObject);
             bullet.transform.SetParent(this.gameObject.transform);
             bullet.transform.localPosition = new Vector3(0,0,0);
+            bullet.transform.rotation = this.gameObject.transform.rotation;
         }
 	}
 }

@@ -154,10 +154,10 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("Button", false);
 
     }
-    void AttackReady(){
+    /*void AttackReady(){
         attackReady = true;
     }
     void AttackLoaded(){
         attackReady = false;
-    }
+    }*/
 }

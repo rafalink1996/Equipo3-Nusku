@@ -14,6 +14,6 @@ public class Shadow : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
 		
-        transform.position = new Vector3 (character.transform.position.x, -1.238529f, character.transform.position.z);
+        transform.position = new Vector3 (character.transform.position.x, -0.750138f, character.transform.position.z);
 	}
 }
