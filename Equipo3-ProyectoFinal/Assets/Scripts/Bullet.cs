@@ -12,20 +12,23 @@ public class Bullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        
+        attack = GameObject.Find("Sel").GetComponent<PlayerMovement>().attack;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        if (Input.GetKey(attack)){
+            this.transform.SetParent(GameObject.Find("Glove").transform);
+        }
         
-       // if (Input.GetKeyUp(attack)){
-         //   attackIsPressed = false;
+        if (Input.GetKeyUp(attack)){
+            this.transform.Translate(speed * Time.deltaTime, 0, 0);
+            this.transform.SetParent(null);
+        }
+        //   attackIsPressed = false;
         //}
 
-       // if (attackIsPressed == false){
-        this.transform.Translate(speed * Time.deltaTime, 0, 0);
-        //}
-
+        // if (attackIsPressed == false){
 	}
     void OnCollisionEnter(Collision collision)
     {

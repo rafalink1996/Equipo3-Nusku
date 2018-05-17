@@ -54,5 +54,9 @@ public class Glove : MonoBehaviour {
             this.transform.rotation = Quaternion.Euler(0, 225, 0);
             this.transform.localPosition = new Vector3(-0.39f, -0.14f, 0.13f);
         }
+        if (Input.GetKeyDown(attack)){
+            GameObject bullet = GameObject.Instantiate(Resources.Load("Prefabs/Bullet") as GameObject);
+            bullet.transform.SetParent(this.gameObject.transform);
+        }
 	}
 }
