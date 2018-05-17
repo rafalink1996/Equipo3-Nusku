@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44746912, g: 0.4974184, b: 0.5752937, a: 1}
+  m_IndirectSpecularColor: {r: 0.44745356, g: 0.4974004, b: 0.57528573, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3220,9 +3220,10 @@ MonoBehaviour:
   right: right
   left: left
   jump: space
-  attack: 
+  attack: z
   direction: 5
   jumpForce: 6
+  attackReady: 0
 --- !u!1 &794556700
 GameObject:
   m_ObjectHideFlags: 0
@@ -5294,6 +5295,7 @@ MonoBehaviour:
   attack: 
   direction: 5
   jumpForce: 6
+  attackReady: 0
 --- !u!114 &1353728097
 MonoBehaviour:
   m_ObjectHideFlags: 0

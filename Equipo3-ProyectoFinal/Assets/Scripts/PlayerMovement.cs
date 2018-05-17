@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("IsMoving", false);
         }
-		if (Input.GetKey (up)) { //moverse hacia el norte
+        if (Input.GetKey (up)) { //moverse hacia el norte
             transform.Translate(0, 0, speed * Time.deltaTime);
             anim.SetBool("North", true); //Determina si se está presionando una tecla de movimiento para saber si se está moviendo y reproducir las respectivas animaciones
             anim.SetBool("South", false);
