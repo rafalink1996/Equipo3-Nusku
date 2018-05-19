@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     int health = 100;
     public bool dead = false;
 
+
+
     //public bool attackReady = false;
 
     void Start ()
@@ -144,7 +146,7 @@ public class PlayerMovement : MonoBehaviour
             dead = true;
             anim.SetBool("Dead", true);
         }
-		print("health ="+ health); 
+		//print("health ="+ health); 
 	}
 	void OnCollisionEnter (Collision collision) {
 		if (collision.collider.gameObject.tag == "Ground") {
@@ -163,6 +165,7 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
     void AttackButton (){
+        print("Se deberia poner en FALSE");
         anim.SetBool("AttackButton", false);
 
     }

@@ -21,11 +21,11 @@ public class Bullet : MonoBehaviour {
             this.transform.SetParent(GameObject.Find("Glove").transform);
         }*/
 
-        if (Input.GetKeyUp(attack))
+        /*if (Input.GetKeyUp(attack))
         {
             //attackIsPressed = false;
             this.transform.SetParent(null);
-        }
+        }*/
 
        /* if (attackIsPressed == false)
         {
