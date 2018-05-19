@@ -22,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
 	public float jumpForce;
 	bool isGrounded = true;
     Animator anim;
+    int health = 100;
+    public bool dead = false;
+
     //public bool attackReady = false;
 
     void Start ()
@@ -41,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("IsMoving", false);
         }
-        if (Input.GetKey (up)) { //moverse hacia el norte
+        if (Input.GetKey (up) && dead == false) { //moverse hacia el norte
             transform.Translate(0, 0, speed * Time.deltaTime);
             anim.SetBool("North", true); //Determina si se está presionando una tecla de movimiento para saber si se está moviendo y reproducir las respectivas animaciones
             anim.SetBool("South", false);
@@ -49,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", false);
             direction = 1;
         }
-        if (Input.GetKey (down)) { //moverse hacia el sur
+        if (Input.GetKey (down) && dead == false) { //moverse hacia el sur
 			transform.Translate (0, 0, -speed * Time.deltaTime);
             anim.SetBool("South", true);
             anim.SetBool("North", false);
@@ -57,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", false);
             direction = 5;
         }
-        if (Input.GetKey(right)) { //moverse hacia el este
+        if (Input.GetKey(right) && dead == false) { //moverse hacia el este
             transform.Translate(speed * Time.deltaTime, 0, 0);
             anim.SetBool("East", true);
             anim.SetBool("West", false);
@@ -65,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("South", false);
             direction = 3;
             }
-		if (Input.GetKey (left)) { //moverse hacia el oeste
+        if (Input.GetKey (left) && dead == false) { //moverse hacia el oeste
 			transform.Translate (-speed * Time.deltaTime, 0, 0);
             anim.SetBool("West", true);
             anim.SetBool("North", false);
@@ -73,14 +76,14 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", false);
             direction = 7;
         }
-        if (Input.GetKey(up) && Input.GetKey(right)){
+        if (Input.GetKey(up) && Input.GetKey(right) && dead == false){
             anim.SetBool("West", false);
             anim.SetBool("North", true);
             anim.SetBool("South", false);
             anim.SetBool("East", true);
             direction = 2;
         }
-        if (Input.GetKey(up) && Input.GetKey(left))
+        if (Input.GetKey(up) && Input.GetKey(left) && dead == false)
         {
             anim.SetBool("West", true);
             anim.SetBool("North", true);
@@ -88,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", false);
             direction = 8;
         }
-        if (Input.GetKey(down) && Input.GetKey(left))
+        if (Input.GetKey(down) && Input.GetKey(left) && dead == false)
         {
             anim.SetBool("West", true);
             anim.SetBool("North", false);
@@ -96,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", false);
             direction = 6;
         }
-        if (Input.GetKey(down) && Input.GetKey(right))
+        if (Input.GetKey(down) && Input.GetKey(right) && dead == false)
         {
             anim.SetBool("West", false);
             anim.SetBool("North", false);
@@ -126,38 +129,45 @@ public class PlayerMovement : MonoBehaviour
 		/*if (isRunning == true && diagonal == true) { //ajusta la velocidad de las diagonales al correr
 			speed = Mathf.Sin (0.785398163397448f) * runSpeed;
 		}*/
-		if (Input.GetKeyDown (jump) && isGrounded == true) {
+        if (Input.GetKeyDown (jump) && isGrounded == true && dead == false) {
 			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
             anim.SetBool("Jump", true);
             //anim.SetBool("Button", true);
         }
-        if (Input.GetKey(attack)){
+        if (Input.GetKey(attack) && dead == false){
             anim.SetBool("Attack", true);
             anim.SetBool("AttackButton", true);
         }else{
             anim.SetBool("Attack", false);
         }
-		
+        if (health <= 0){
+            dead = true;
+            anim.SetBool("Dead", true);
+        }
+		print("health ="+ health); 
 	}
 	void OnCollisionEnter (Collision collision) {
 		if (collision.collider.gameObject.tag == "Ground") {
 			isGrounded = true;
             anim.SetBool("Jump", false);
 		}
+        if (collision.collider.gameObject.tag == "Enemy")
+        {
+            health = health - 10;
+        }
 	}
 	void OnCollisionExit (Collision collision) {
 		if (collision.collider.gameObject.tag == "Ground") {
 			isGrounded = false;
+            anim.SetBool("Jumping", true);
 		}
 	}
     void AttackButton (){
         anim.SetBool("AttackButton", false);
 
     }
-    /*void AttackReady(){
-        attackReady = true;
+    void Jumping(){
+        anim.SetBool("Jumping", false);
     }
-    void AttackLoaded(){
-        attackReady = false;
-    }*/
+   
 }

@@ -6,6 +6,7 @@ public class Glove : MonoBehaviour {
 
     int sel;
     string attack;
+    bool dead;
     //bool attackReady;
 	// Use this for initialization
 	void Start () {
@@ -16,6 +17,7 @@ public class Glove : MonoBehaviour {
     void Update()
     {
         sel = GameObject.Find("Sel").GetComponent<PlayerMovement>().direction;
+        dead = GameObject.Find("Sel").GetComponent<PlayerMovement>().dead;
         if (sel == 1)
         {
             this.transform.rotation = Quaternion.Euler(0, 270, 0.13f);
@@ -58,7 +60,7 @@ public class Glove : MonoBehaviour {
         }
         //attackReady = GameObject.Find("Sel").GetComponent<PlayerMovement>().attackReady;
         //if (attackReady == true){
-        if (Input.GetKeyDown(attack))
+        if (Input.GetKeyDown(attack) && dead == false)
         {
             //Invoke("FireBullet", 0.7f);
             /*}
