@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     Animator anim;
     int health = 100;
     public bool dead = false;
+    public AudioSource caminata;
+    public AudioSource salto;
 
 
 
@@ -149,8 +151,24 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("Dead", true);
 
         }
-		//print("health ="+ health); 
-	}
+        //print("health ="+ health); 
+
+        if (Input.GetKey(up) && isGrounded == true && dead == false || Input.GetKey(down) && isGrounded == true && dead == false || Input.GetKey(left) && isGrounded == true && dead == false || Input.GetKey(right) && isGrounded == true && dead == false)
+        {
+            caminata.volume = Random.Range(0.5f, 1);
+            caminata.enabled = true;
+        }
+        else
+        {
+            caminata.enabled = false;
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true && dead == false)
+        {
+            salto.Play();
+        }
+    }
 	void OnCollisionEnter (Collision collision) {
 		if (collision.collider.gameObject.tag == "Ground") {
 			isGrounded = true;

@@ -3256,11 +3256,9 @@ GameObject:
   - component: {fileID: 793918711}
   - component: {fileID: 793918710}
   - component: {fileID: 793918713}
-  - component: {fileID: 793918709}
   - component: {fileID: 793918708}
   - component: {fileID: 793918707}
-  - component: {fileID: 793918712}
-  - component: {fileID: 793918714}
+  - component: {fileID: 793918709}
   m_Layer: 8
   m_Name: Sel
   m_TagString: Player
@@ -3386,14 +3384,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 793918703}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8803a14fca02e6242b7d89f9412b4340, type: 3}
+  m_Script: {fileID: 11500000, guid: 8599cece0e1e0f5469a4932bb81c077c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioS: {fileID: 496846525}
-  up: up
-  down: down
-  right: right
-  left: left
+  damage: {fileID: 826869450}
 --- !u!114 &793918710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3426,18 +3420,8 @@ MonoBehaviour:
   direction: 5
   jumpForce: 10
   dead: 0
---- !u!114 &793918712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 793918703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c7100b88bce19a4abdd5fefff139deb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jump: {fileID: 2031172528}
+  caminata: {fileID: 496846525}
+  salto: {fileID: 2031172528}
 --- !u!114 &793918713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3450,18 +3434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityScale: 2
---- !u!114 &793918714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 793918703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8599cece0e1e0f5469a4932bb81c077c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: {fileID: 826869450}
 --- !u!1 &794556700
 GameObject:
   m_ObjectHideFlags: 0
