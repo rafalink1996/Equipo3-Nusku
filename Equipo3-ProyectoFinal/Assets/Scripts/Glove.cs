@@ -19,22 +19,22 @@ public class Glove : MonoBehaviour {
         if (sel == 1)
         {
             this.transform.rotation = Quaternion.Euler(0, 270, 0.13f);
-            this.transform.localPosition = new Vector3(-0.39f, 0, 0.24f);
+            this.transform.localPosition = new Vector3(-0.21f, 0, 0.24f);
         }
         if (sel == 2)
         {
             this.transform.rotation = Quaternion.Euler(0, 315, 0.13f);
-            this.transform.localPosition = new Vector3(-0.14f, -0.17f, 0.24f);
+            this.transform.localPosition = new Vector3(0.34f, 0f, 0.24f);
         }
         if (sel == 3)
         {
             this.transform.rotation = Quaternion.Euler(0, 0, 0);
-            this.transform.localPosition = new Vector3(0.51f, 0.05f, -0.13f);
+            this.transform.localPosition = new Vector3(0.53f, 0.05f, -0.13f);
         }
         if (sel == 4)
         {
             this.transform.rotation = Quaternion.Euler(0, 45, 0);
-            this.transform.localPosition = new Vector3(0.41f, -0.14f, -0.13f);
+            this.transform.localPosition = new Vector3(0.68f, -0.14f, -0.13f);
         }
         if (sel == 5)
         {
@@ -44,23 +44,23 @@ public class Glove : MonoBehaviour {
         if (sel == 6)
         {
             this.transform.rotation = Quaternion.Euler(0, 135, 0);
-            this.transform.localPosition = new Vector3(-0.02f, -0.13f, -0.13f);
+            this.transform.localPosition = new Vector3(-0.42f, -0.13f, -0.13f);
         }
         if (sel == 7)
         {
             this.transform.rotation = Quaternion.Euler(0, 180, 0);
-            this.transform.localPosition = new Vector3(-0.45f, 0.01f, -0.13f);
+            this.transform.localPosition = new Vector3(-0.48f, 0.05f, -0.13f);
         }
         if (sel == 8)
         {
             this.transform.rotation = Quaternion.Euler(0, 225, 0);
-            this.transform.localPosition = new Vector3(-0.39f, -0.14f, 0.13f);
+            this.transform.localPosition = new Vector3(-0.64f, 0f, 0.13f);
         }
         //attackReady = GameObject.Find("Sel").GetComponent<PlayerMovement>().attackReady;
         //if (attackReady == true){
         if (Input.GetKeyDown(attack))
         {
-            Invoke("FireBullet", 0.7f);
+            //Invoke("FireBullet", 0.7f);
             /*}
         }
         void FireBullet (){*/

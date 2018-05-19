@@ -129,11 +129,11 @@ public class PlayerMovement : MonoBehaviour
 		if (Input.GetKeyDown (jump) && isGrounded == true) {
 			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
             anim.SetBool("Jump", true);
-            anim.SetBool("Button", true);
+            //anim.SetBool("Button", true);
         }
         if (Input.GetKey(attack)){
             anim.SetBool("Attack", true);
-            anim.SetBool("Button", true);
+            //anim.SetBool("AttackButton", true);
         }else{
             anim.SetBool("Attack", false);
         }
@@ -150,8 +150,8 @@ public class PlayerMovement : MonoBehaviour
 			isGrounded = false;
 		}
 	}
-    void AnimButton (){
-        anim.SetBool("Button", false);
+    void AttackButton (){
+        anim.SetBool("AttackButton", false);
 
     }
     /*void AttackReady(){
