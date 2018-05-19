@@ -22,43 +22,43 @@ public class Glove : MonoBehaviour {
         dead = GameObject.Find("Sel").GetComponent<PlayerMovement>().dead;
         if (sel == 1)
         {
-            this.transform.rotation = Quaternion.Euler(0, 270, 0.13f);
-            this.transform.localPosition = new Vector3(-0.21f, 0, 0.24f);
+            this.transform.rotation = Quaternion.Euler(0, 270, 0);
+            this.transform.localPosition = new Vector3(-0.21f, 0, 0.38f);
         }
         if (sel == 2)
         {
-            this.transform.rotation = Quaternion.Euler(0, 315, 0.13f);
-            this.transform.localPosition = new Vector3(0.34f, 0f, 0.24f);
+            this.transform.rotation = Quaternion.Euler(0, 315, 0);
+            this.transform.localPosition = new Vector3(0.34f, 0f, 0.38f);
         }
         if (sel == 3)
         {
             this.transform.rotation = Quaternion.Euler(0, 0, 0);
-            this.transform.localPosition = new Vector3(0.53f, 0.05f, -0.38f);
+            this.transform.localPosition = new Vector3(0.59f, 0.16f, -0.38f);
         }
         if (sel == 4)
         {
             this.transform.rotation = Quaternion.Euler(0, 45, 0);
-            this.transform.localPosition = new Vector3(0.68f, -0.14f, -0.38f);
+            this.transform.localPosition = new Vector3(0.68f, 0.04f, -0.38f);
         }
         if (sel == 5)
         {
             this.transform.rotation = Quaternion.Euler(0, 90, 0);
-            this.transform.localPosition = new Vector3(0.35f, -0f, -0.38f);
+            this.transform.localPosition = new Vector3(0.34f, 0.04f, -0.38f);
         }
         if (sel == 6)
         {
             this.transform.rotation = Quaternion.Euler(0, 135, 0);
-            this.transform.localPosition = new Vector3(-0.42f, -0.13f, -0.38f);
+            this.transform.localPosition = new Vector3(-0.45f, -0.11f, -0.38f);
         }
         if (sel == 7)
         {
             this.transform.rotation = Quaternion.Euler(0, 180, 0);
-            this.transform.localPosition = new Vector3(-0.48f, 0.05f, -0.38f);
+            this.transform.localPosition = new Vector3(-0.54f, 0.09f, -0.38f);
         }
         if (sel == 8)
         {
             this.transform.rotation = Quaternion.Euler(0, 225, 0);
-            this.transform.localPosition = new Vector3(-0.64f, 0f, 0.38f);
+            this.transform.localPosition = new Vector3(-0.64f, 0.16f, 0.38f);
         }
         //attackReady = GameObject.Find("Sel").GetComponent<PlayerMovement>().attackReady;
 

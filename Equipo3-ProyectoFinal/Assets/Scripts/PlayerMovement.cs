@@ -165,7 +165,6 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
     void AttackButton (){
-        print("Se deberia poner en FALSE");
         anim.SetBool("AttackButton", false);
 
     }
