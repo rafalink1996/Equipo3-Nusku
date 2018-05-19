@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 	public float jumpForce;
 	bool isGrounded = true;
     Animator anim;
-    public bool attackReady = false;
+    //public bool attackReady = false;
 
     void Start ()
 	{
@@ -133,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(attack)){
             anim.SetBool("Attack", true);
-            //anim.SetBool("AttackButton", true);
+            anim.SetBool("AttackButton", true);
         }else{
             anim.SetBool("Attack", false);
         }
