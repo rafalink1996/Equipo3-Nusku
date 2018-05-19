@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+
+
     //public bool attackReady = false;
 
     void Start ()
@@ -34,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 		rb = GetComponent<Rigidbody> ();
         anim = GetComponent<Animator>();
 
-	}
+    }
 
 	void Update ()
 	{
@@ -145,6 +147,7 @@ public class PlayerMovement : MonoBehaviour
         if (health <= 0){
             dead = true;
             anim.SetBool("Dead", true);
+
         }
 		//print("health ="+ health); 
 	}
@@ -156,6 +159,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.collider.gameObject.tag == "Enemy")
         {
             health = health - 10;
+            
         }
 	}
 	void OnCollisionExit (Collision collision) {
