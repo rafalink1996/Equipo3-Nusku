@@ -9,9 +9,12 @@ public class Glove : MonoBehaviour {
     bool dead;
     public bool oneSecInProgress = false;
     public bool attacking = false;
+    public AudioSource powerup;
+    public AudioSource hold;
+    public AudioSource shoot;
 
 
-	void Start () {
+    void Start () {
         attack = GameObject.Find("Sel").GetComponent<PlayerMovement>().attack;
 	}
 
@@ -67,6 +70,11 @@ public class Glove : MonoBehaviour {
         if(Input.GetKeyDown(attack) && oneSecInProgress == false) {
             oneSecInProgress = true;
 
+            powerup.Play();
+            hold.Play();
+
+
+
             // Agendo la funcion de terminacion
             Invoke("OneSecondAfter", 1.0f);
         }
@@ -79,6 +87,8 @@ public class Glove : MonoBehaviour {
                 CancelInvoke("OneSecondAfter");
                 oneSecInProgress = false;
 
+
+
             }
             else
             {
@@ -88,6 +98,10 @@ public class Glove : MonoBehaviour {
                     // Esta accion la realiza un script en la bolita
                     GameObject bullet = GameObject.Find("Bullet");
                     bullet.transform.SetParent(null);
+
+                    hold.Stop();
+                    shoot.Play();
+
                 }
             }
         }
