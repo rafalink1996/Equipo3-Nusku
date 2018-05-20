@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public bool dead = false;
     public AudioSource caminata;
     public AudioSource salto;
+    public AudioSource muerte;
 
 
 
@@ -149,6 +150,7 @@ public class PlayerMovement : MonoBehaviour
         if (health <= 0){
             dead = true;
             anim.SetBool("Dead", true);
+            muerte.enabled = true;
 
         }
         //print("health ="+ health); 
