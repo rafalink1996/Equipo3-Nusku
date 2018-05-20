@@ -10,7 +10,6 @@ public class Glove : MonoBehaviour {
     public bool oneSecInProgress = false;
     public bool attacking = false;
     public AudioSource powerup;
-    public AudioSource hold;
     public AudioSource shoot;
 
 
@@ -71,7 +70,7 @@ public class Glove : MonoBehaviour {
             oneSecInProgress = true;
 
             powerup.Play();
-            hold.Play();
+           
 
 
 
@@ -99,7 +98,7 @@ public class Glove : MonoBehaviour {
                     GameObject bullet = GameObject.Find("Bullet");
                     bullet.transform.SetParent(null);
 
-                    hold.Stop();
+                   
                     shoot.Play();
 
                 }
