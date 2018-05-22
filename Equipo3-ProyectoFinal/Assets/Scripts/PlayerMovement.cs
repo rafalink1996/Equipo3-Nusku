@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public int direction = 5;
 	Rigidbody rb;
 	public float jumpForce;
-	bool isGrounded = true;
+	public bool isGrounded = true;
     Animator anim;
     int health = 100;
     public bool dead = false;
@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("IsMoving", false);
         }
         if (Input.GetKey (up) && dead == false) { //moverse hacia el norte
-            transform.Translate(0, 0, speed * Time.deltaTime);
+            transform.Translate(0, 0, speed * Time.deltaTime, Space.World);
             anim.SetBool("North", true); //Determina si se está presionando una tecla de movimiento para saber si se está moviendo y reproducir las respectivas animaciones
             anim.SetBool("South", false);
             anim.SetBool("West", false);
@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
             direction = 1;
         }
         if (Input.GetKey (down) && dead == false) { //moverse hacia el sur
-			transform.Translate (0, 0, -speed * Time.deltaTime);
+            transform.Translate (0, 0, -speed * Time.deltaTime, Space.World);
             anim.SetBool("South", true);
             anim.SetBool("North", false);
             anim.SetBool("West", false);
@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
             direction = 5;
         }
         if (Input.GetKey(right) && dead == false) { //moverse hacia el este
-            transform.Translate(speed * Time.deltaTime, 0, 0);
+            transform.Translate(speed * Time.deltaTime, 0, 0, Space.World);
             anim.SetBool("East", true);
             anim.SetBool("West", false);
             anim.SetBool("North", false);
@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
             direction = 3;
             }
         if (Input.GetKey (left) && dead == false) { //moverse hacia el oeste
-			transform.Translate (-speed * Time.deltaTime, 0, 0);
+            transform.Translate (-speed * Time.deltaTime, 0, 0, Space.World);
             anim.SetBool("West", true);
             anim.SetBool("North", false);
             anim.SetBool("South", false);
@@ -175,6 +175,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true && dead == false)
         {
             salto.Play();
+        }
+        if (this.transform.parent == null){
+            this.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }else{
+            this.transform.rotation = Quaternion.Euler(-this.transform.parent.rotation.x, -this.transform.parent.rotation.y, -this.transform.parent.rotation.z);
         }
     }
 	void OnCollisionEnter (Collision collision) {
