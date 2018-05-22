@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44745302, g: 0.49739963, b: 0.5752829, a: 1}
+  m_IndirectSpecularColor: {r: 0.44745356, g: 0.4974004, b: 0.57528573, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 1390070}
   m_Layer: 0
   m_Name: Stalagdita.031 (9)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 89307736}
   m_Layer: 0
   m_Name: Stalagdita.014
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 91831080}
   m_Layer: 0
   m_Name: Stalagdita.023
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 101855407}
   m_Layer: 0
   m_Name: Stalagdita.031 (8)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 153818042}
   m_Layer: 0
   m_Name: Stalagdita.032
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -693,7 +693,7 @@ GameObject:
   - component: {fileID: 190430200}
   m_Layer: 0
   m_Name: Stalagdita.031 (1)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -782,7 +782,7 @@ GameObject:
   - component: {fileID: 214499644}
   m_Layer: 0
   m_Name: Stalagdita.029 (5)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1090,7 +1090,7 @@ GameObject:
   - component: {fileID: 260158659}
   m_Layer: 0
   m_Name: Stalagdita.005
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1489,7 +1489,7 @@ GameObject:
   - component: {fileID: 316220552}
   m_Layer: 0
   m_Name: Stalagdita
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1578,7 +1578,7 @@ GameObject:
   - component: {fileID: 319656360}
   m_Layer: 0
   m_Name: Stalagdita.030 (6)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1667,7 +1667,7 @@ GameObject:
   - component: {fileID: 324591786}
   m_Layer: 0
   m_Name: Stalagdita.029 (3)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1756,7 +1756,7 @@ GameObject:
   - component: {fileID: 366739246}
   m_Layer: 0
   m_Name: Stalagdita.017
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1845,7 +1845,7 @@ GameObject:
   - component: {fileID: 371526322}
   m_Layer: 0
   m_Name: Stalagdita.030
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2008,7 +2008,7 @@ GameObject:
   - component: {fileID: 439201362}
   m_Layer: 0
   m_Name: Stalagdita.033
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2097,7 +2097,7 @@ GameObject:
   - component: {fileID: 446941228}
   m_Layer: 0
   m_Name: Stalagdita.024
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2251,7 +2251,7 @@ GameObject:
   - component: {fileID: 454224711}
   m_Layer: 0
   m_Name: Stalagdita.016
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2340,7 +2340,7 @@ GameObject:
   - component: {fileID: 471139607}
   m_Layer: 0
   m_Name: Stalagdita.002
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2573,7 +2573,7 @@ GameObject:
   - component: {fileID: 493260266}
   m_Layer: 0
   m_Name: Stalagdita.035
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2662,7 +2662,7 @@ GameObject:
   - component: {fileID: 495132364}
   m_Layer: 0
   m_Name: Stalagdita.030 (1)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2966,7 +2966,7 @@ GameObject:
   - component: {fileID: 506691174}
   m_Layer: 0
   m_Name: Stalagdita.001
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3055,7 +3055,7 @@ GameObject:
   - component: {fileID: 522866400}
   m_Layer: 0
   m_Name: Stalagdita.029 (4)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3317,7 +3317,7 @@ GameObject:
   - component: {fileID: 537634508}
   m_Layer: 0
   m_Name: Stalagdita.031
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3406,7 +3406,7 @@ GameObject:
   - component: {fileID: 549615418}
   m_Layer: 0
   m_Name: Stalagdita.031 (6)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3579,7 +3579,7 @@ GameObject:
   - component: {fileID: 573387791}
   m_Layer: 0
   m_Name: Fuente
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3761,7 +3761,7 @@ MeshCollider:
   m_GameObject: {fileID: 615181490}
   m_Material: {fileID: 13400000, guid: 04bb05fa2d1c844ad9af96b187f9e938, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -3845,7 +3845,7 @@ BoxCollider:
   m_GameObject: {fileID: 615181490}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.022515098, y: 0.02417978, z: 0.0027218922}
   m_Center: {x: 0.0011105429, y: 0.0015647593, z: -0.008639056}
@@ -4148,7 +4148,7 @@ GameObject:
   - component: {fileID: 692814532}
   m_Layer: 0
   m_Name: stalagdita 2
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4326,7 +4326,7 @@ GameObject:
   - component: {fileID: 744663001}
   m_Layer: 0
   m_Name: Stalagdita.018
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4415,7 +4415,7 @@ GameObject:
   - component: {fileID: 770745375}
   m_Layer: 0
   m_Name: Stalagdita.030 (3)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4504,7 +4504,7 @@ GameObject:
   - component: {fileID: 786929105}
   m_Layer: 0
   m_Name: Stalagdita.029 (1)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4593,7 +4593,7 @@ GameObject:
   - component: {fileID: 788606786}
   m_Layer: 0
   m_Name: Stalagdita.030 (8)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4744,6 +4744,7 @@ GameObject:
   - component: {fileID: 793918706}
   - component: {fileID: 793918705}
   - component: {fileID: 793918704}
+  - component: {fileID: 793918712}
   - component: {fileID: 793918711}
   - component: {fileID: 793918710}
   - component: {fileID: 793918713}
@@ -4915,6 +4916,18 @@ MonoBehaviour:
   caminata: {fileID: 496846525}
   salto: {fileID: 2031172528}
   muerte: {fileID: 1490927338}
+--- !u!114 &793918712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793918703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9834c4e4526b43d7bf9eba245ba6ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderHealth: {fileID: 2098700327}
 --- !u!114 &793918713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5036,7 +5049,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.54, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 5.42, y: 0.16}
   m_SizeDelta: {x: -0.84, y: -4.27}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5086,7 +5099,7 @@ GameObject:
   - component: {fileID: 812286178}
   m_Layer: 0
   m_Name: Stalagdita.028
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5175,7 +5188,7 @@ GameObject:
   - component: {fileID: 813350076}
   m_Layer: 0
   m_Name: Stalagdita.029 (6)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5667,7 +5680,7 @@ RectTransform:
   m_Children:
   - {fileID: 1213254095}
   m_Father: {fileID: 2098700328}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5693,7 +5706,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &910424123
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5875,7 +5888,7 @@ GameObject:
   - component: {fileID: 1018691100}
   m_Layer: 0
   m_Name: Stalagdita.015
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5964,7 +5977,7 @@ GameObject:
   - component: {fileID: 1021541425}
   m_Layer: 0
   m_Name: Stalagdita.019
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6057,7 +6070,7 @@ GameObject:
   - component: {fileID: 1077601401}
   m_Layer: 0
   m_Name: Stalagdita.011
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6146,7 +6159,7 @@ GameObject:
   - component: {fileID: 1090427561}
   m_Layer: 0
   m_Name: Stalagdita.031 (5)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6235,7 +6248,7 @@ GameObject:
   - component: {fileID: 1091324682}
   m_Layer: 0
   m_Name: Stalagdita.030 (7)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6328,7 +6341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1094790236
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6449,7 +6462,7 @@ GameObject:
   - component: {fileID: 1132369216}
   m_Layer: 0
   m_Name: Stalagdita.012
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6753,7 +6766,7 @@ GameObject:
   - component: {fileID: 1180567771}
   m_Layer: 0
   m_Name: Stalagdita.034
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6859,8 +6872,8 @@ RectTransform:
   m_Father: {fileID: 909678988}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.54, y: 0}
-  m_AnchorMax: {x: 0.54, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7137,7 +7150,7 @@ GameObject:
   - component: {fileID: 1292978390}
   m_Layer: 0
   m_Name: Stalagdita.029 (8)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7226,7 +7239,7 @@ GameObject:
   - component: {fileID: 1294618113}
   m_Layer: 0
   m_Name: Stalagdita.027
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7315,7 +7328,7 @@ GameObject:
   - component: {fileID: 1312129713}
   m_Layer: 0
   m_Name: Stalagdita.009
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7404,7 +7417,7 @@ GameObject:
   - component: {fileID: 1334481297}
   m_Layer: 0
   m_Name: Stalagdita.029 (9)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7578,7 +7591,7 @@ GameObject:
   - component: {fileID: 1337603967}
   m_Layer: 0
   m_Name: Stalagdita.013
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7667,7 +7680,7 @@ GameObject:
   - component: {fileID: 1344960064}
   m_Layer: 0
   m_Name: Stalagdita.010
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7891,7 +7904,7 @@ GameObject:
   - component: {fileID: 1412994365}
   m_Layer: 0
   m_Name: Stalagdita.022
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7981,7 +7994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1441853743
 Transform:
   m_ObjectHideFlags: 0
@@ -8017,7 +8030,7 @@ GameObject:
   - component: {fileID: 1443671560}
   m_Layer: 0
   m_Name: Stalagdita.031 (7)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8197,7 +8210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1477759043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8451,7 +8464,7 @@ GameObject:
   - component: {fileID: 1512999025}
   m_Layer: 0
   m_Name: Fuente
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8541,7 +8554,7 @@ GameObject:
   - component: {fileID: 1529765060}
   m_Layer: 0
   m_Name: Stalagdita.031 (3)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8843,7 +8856,7 @@ GameObject:
   - component: {fileID: 1563191112}
   m_Layer: 0
   m_Name: Stalagdita.030 (4)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9079,7 +9092,7 @@ GameObject:
   - component: {fileID: 1590235331}
   m_Layer: 0
   m_Name: Stalagdita.031 (2)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9168,7 +9181,7 @@ GameObject:
   - component: {fileID: 1607270472}
   m_Layer: 0
   m_Name: Stalagdita.004
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9257,7 +9270,7 @@ GameObject:
   - component: {fileID: 1607478652}
   m_Layer: 0
   m_Name: Stalagdita.029 (2)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9346,7 +9359,7 @@ GameObject:
   - component: {fileID: 1636665854}
   m_Layer: 0
   m_Name: Stalagdita.029
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9436,7 +9449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1645537826
 Transform:
   m_ObjectHideFlags: 0
@@ -9479,7 +9492,7 @@ RectTransform:
   m_Children:
   - {fileID: 811865515}
   m_Father: {fileID: 2098700328}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
@@ -9657,7 +9670,7 @@ GameObject:
   - component: {fileID: 1741874378}
   m_Layer: 0
   m_Name: Stalagdita.029 (7)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9829,85 +9842,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1758374703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1758374704}
-  - component: {fileID: 1758374705}
-  m_Layer: 5
-  m_Name: RightEnd
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1758374704
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1758374703}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2098700328}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 71.03, y: -0.0012283325}
-  m_SizeDelta: {x: -147.93, y: -10}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!212 &1758374705
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1758374703}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 78110856b4239407292ba84202caf0f1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
 --- !u!1 &1773400933
 GameObject:
   m_ObjectHideFlags: 0
@@ -9921,7 +9855,7 @@ GameObject:
   - component: {fileID: 1773400937}
   m_Layer: 0
   m_Name: Stalagdita.031 (4)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10010,7 +9944,7 @@ GameObject:
   - component: {fileID: 1782198891}
   m_Layer: 0
   m_Name: Stalagdita.003
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10200,7 +10134,7 @@ GameObject:
   - component: {fileID: 1841525572}
   m_Layer: 0
   m_Name: Stalagdita.006
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10290,7 +10224,7 @@ GameObject:
   - component: {fileID: 1859871541}
   m_Layer: 0
   m_Name: Stalagdita.007
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10458,7 +10392,7 @@ GameObject:
   - component: {fileID: 1879230088}
   m_Layer: 0
   m_Name: Stalagdita.025 (1)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10547,7 +10481,7 @@ GameObject:
   - component: {fileID: 1888471303}
   m_Layer: 0
   m_Name: Stalagdita.020
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10636,7 +10570,7 @@ GameObject:
   - component: {fileID: 1903321104}
   m_Layer: 0
   m_Name: Stalagdita.030 (9)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10725,7 +10659,7 @@ GameObject:
   - component: {fileID: 1932930639}
   m_Layer: 0
   m_Name: Stalagdita.030 (5)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10814,7 +10748,7 @@ GameObject:
   - component: {fileID: 1935957648}
   m_Layer: 0
   m_Name: Stalagdita.026
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10972,7 +10906,7 @@ GameObject:
   - component: {fileID: 1961475394}
   m_Layer: 0
   m_Name: Stalagdita.021
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11059,7 +10993,6 @@ GameObject:
   - component: {fileID: 1988172498}
   - component: {fileID: 1988172497}
   - component: {fileID: 1988172496}
-  - component: {fileID: 1988172495}
   - component: {fileID: 1988172499}
   m_Layer: 0
   m_Name: Plataforma R 6
@@ -11081,17 +11014,6 @@ Transform:
   m_Father: {fileID: 1441853743}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1988172495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1988172493}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c652792e984c47d38e8bd485c14f617, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &1988172496
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11174,7 +11096,7 @@ GameObject:
   - component: {fileID: 1999151102}
   m_Layer: 0
   m_Name: Stalagdita.030 (2)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11476,7 +11398,7 @@ GameObject:
   - component: {fileID: 2035628326}
   m_Layer: 0
   m_Name: Stalagdita.008
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11843,7 +11765,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1511191966}
-  - {fileID: 1758374704}
   - {fileID: 1707323880}
   - {fileID: 909678988}
   m_Father: {fileID: 1094790236}
@@ -11867,7 +11788,7 @@ GameObject:
   - component: {fileID: 2116803399}
   m_Layer: 0
   m_Name: Stalagdita.025
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

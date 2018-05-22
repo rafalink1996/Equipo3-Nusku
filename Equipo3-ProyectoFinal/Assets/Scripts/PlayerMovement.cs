@@ -139,6 +139,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown (jump) && isGrounded == true && dead == false) {
 			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
             anim.SetBool("Jump", true);
+            anim.SetBool("JumpButtonPressed", true);
+
             //anim.SetBool("Button", true);
         }
         if (Input.GetKey(attack) && dead == false){
@@ -147,6 +149,10 @@ public class PlayerMovement : MonoBehaviour
         }else{
             anim.SetBool("Attack", false);
         }
+        if (Input.GetKeyUp(attack) && isGrounded == false){
+            anim.SetBool("AttackButton", false);
+        }
+       
         if (health <= 0){
             dead = true;
             anim.SetBool("Dead", true);
@@ -175,6 +181,8 @@ public class PlayerMovement : MonoBehaviour
 		if (collision.collider.gameObject.tag == "Ground") {
 			isGrounded = true;
             anim.SetBool("Jump", false);
+            //anim.SetBool("Jumping", false);
+            //anim.SetBool("JumpButtonPressed", false);
 		}
         if (collision.collider.gameObject.tag == "Enemy")
         {
@@ -187,6 +195,9 @@ public class PlayerMovement : MonoBehaviour
 			isGrounded = false;
             anim.SetBool("Jumping", true);
 		}
+        if (collision.collider.gameObject.tag == "Object"){
+            anim.SetBool("Jumping", false);
+        }
 	}
     void AttackButton (){
         anim.SetBool("AttackButton", false);
@@ -194,6 +205,9 @@ public class PlayerMovement : MonoBehaviour
     }
     void Jumping(){
         anim.SetBool("Jumping", false);
+    }
+    void JumpButtonPressed(){
+        anim.SetBool("JumpButtonPressed", false);
     }
    
 }
