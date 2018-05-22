@@ -10,9 +10,9 @@ public class RotateAround : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void LateUpdate () {
+	void FixedUpdate () {
         
-            transform.RotateAround(Vector3.zero, Vector3.up, 20 * Time.deltaTime);
+            transform.RotateAround(Vector3.zero, Vector3.up, 15 * Time.deltaTime);
         }
     
 	}
