@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 	public float jumpForce;
 	public bool isGrounded = true;
     Animator anim;
-    int health = 100;
+    public int health = 100;
     public bool dead = false;
     public AudioSource caminata;
     public AudioSource salto;

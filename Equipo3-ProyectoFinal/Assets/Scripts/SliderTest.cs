@@ -16,8 +16,8 @@ public class SliderTest : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        sliderHealth.value = sliderHealth.value + 0.2f;
+        sliderHealth.value = GetComponent<PlayerMovement>().health;
 
-	}
+    }
 
 }
