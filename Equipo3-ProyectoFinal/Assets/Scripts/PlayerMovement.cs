@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 	public float jumpForce;
 	public bool isGrounded = true;
     Animator anim;
-    public int health = 100;
+    float health;
     public bool dead = false;
     public AudioSource caminata;
     public AudioSource salto;
@@ -43,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
 	void Update ()
 	{
+        health = GetComponent<SliderTest>().sliderHealth.value;
         if (Input.GetKey(up) || Input.GetKey(down) || Input.GetKey(right) || Input.GetKey(left))
         {
             anim.SetBool("IsMoving", true); //Determina si se está presionando una tecla de movimiento para saber si se está moviendo y reproducir las respectivas animaciones
@@ -51,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("IsMoving", false);
         }
-        if (Input.GetKey (up) && dead == false) { //moverse hacia el norte
+        if (Input.GetKey (up) /*&& dead == false*/) { //moverse hacia el norte
             transform.Translate(0, 0, speed * Time.deltaTime, Space.World);
             anim.SetBool("North", true); //Determina si se está presionando una tecla de movimiento para saber si se está moviendo y reproducir las respectivas animaciones
             anim.SetBool("South", false);
@@ -59,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", false);
             direction = 1;
         }
-        if (Input.GetKey (down) && dead == false) { //moverse hacia el sur
+        if (Input.GetKey (down) /*&& dead == false*/) { //moverse hacia el sur
             transform.Translate (0, 0, -speed * Time.deltaTime, Space.World);
             anim.SetBool("South", true);
             anim.SetBool("North", false);
@@ -67,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", false);
             direction = 5;
         }
-        if (Input.GetKey(right) && dead == false) { //moverse hacia el este
+        if (Input.GetKey(right) /*&& dead == false*/) { //moverse hacia el este
             transform.Translate(speed * Time.deltaTime, 0, 0, Space.World);
             anim.SetBool("East", true);
             anim.SetBool("West", false);
@@ -75,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("South", false);
             direction = 3;
             }
-        if (Input.GetKey (left) && dead == false) { //moverse hacia el oeste
+        if (Input.GetKey (left) /*&& dead == false*/) { //moverse hacia el oeste
             transform.Translate (-speed * Time.deltaTime, 0, 0, Space.World);
             anim.SetBool("West", true);
             anim.SetBool("North", false);
@@ -83,14 +84,14 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", false);
             direction = 7;
         }
-        if (Input.GetKey(up) && Input.GetKey(right) && dead == false){
+        if (Input.GetKey(up) && Input.GetKey(right) /*&& dead == false*/){
             anim.SetBool("West", false);
             anim.SetBool("North", true);
             anim.SetBool("South", false);
             anim.SetBool("East", true);
             direction = 2;
         }
-        if (Input.GetKey(up) && Input.GetKey(left) && dead == false)
+        if (Input.GetKey(up) && Input.GetKey(left) /*&& dead == false*/)
         {
             anim.SetBool("West", true);
             anim.SetBool("North", true);
@@ -98,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", false);
             direction = 8;
         }
-        if (Input.GetKey(down) && Input.GetKey(left) && dead == false)
+        if (Input.GetKey(down) && Input.GetKey(left) /*&& dead == false*/)
         {
             anim.SetBool("West", true);
             anim.SetBool("North", false);
@@ -106,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", false);
             direction = 6;
         }
-        if (Input.GetKey(down) && Input.GetKey(right) && dead == false)
+        if (Input.GetKey(down) && Input.GetKey(right) /*&& dead == false*/)
         {
             anim.SetBool("West", false);
             anim.SetBool("North", false);
@@ -136,14 +137,14 @@ public class PlayerMovement : MonoBehaviour
 		/*if (isRunning == true && diagonal == true) { //ajusta la velocidad de las diagonales al correr
 			speed = Mathf.Sin (0.785398163397448f) * runSpeed;
 		}*/
-        if (Input.GetKeyDown (jump) && isGrounded == true && dead == false) {
+        if (Input.GetKeyDown (jump) && isGrounded == true /*&& dead == false*/) {
 			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
             anim.SetBool("Jump", true);
             anim.SetBool("JumpButtonPressed", true);
 
             //anim.SetBool("Button", true);
         }
-        if (Input.GetKey(attack) && dead == false){
+        if (Input.GetKey(attack) /*&& dead == false*/){
             anim.SetBool("Attack", true);
             anim.SetBool("AttackButton", true);
         }else{
@@ -153,15 +154,15 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("AttackButton", false);
         }
        
-        if (health <= 0){
-            dead = true;
+        if ( health <= 0){
+            //dead = true;
             anim.SetBool("Dead", true);
             muerte.enabled = true;
 
         }
-        //print("health ="+ health); 
+        print("health ="+ health); 
 
-        if (Input.GetKey(up) && isGrounded == true && dead == false || Input.GetKey(down) && isGrounded == true && dead == false || Input.GetKey(left) && isGrounded == true && dead == false || Input.GetKey(right) && isGrounded == true && dead == false)
+        if (Input.GetKey(up) && isGrounded == true /*&& dead == false*/ || Input.GetKey(down) && isGrounded == true /*&& dead == false*/ || Input.GetKey(left) && isGrounded == true /*&& dead == false*/ || Input.GetKey(right) && isGrounded == true /*&& dead == false*/)
         {
             caminata.volume = Random.Range(0.5f, 1);
             caminata.enabled = true;
@@ -172,7 +173,7 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true && dead == false)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true /*&& dead == false*/)
         {
             salto.Play();
         }
@@ -189,18 +190,18 @@ public class PlayerMovement : MonoBehaviour
             //anim.SetBool("Jumping", false);
             //anim.SetBool("JumpButtonPressed", false);
 		}
-        if (collision.collider.gameObject.tag == "Enemy")
+        /*if (collision.collider.gameObject.tag == "Enemy")
         {
             health = health - 10;
             
-        }
+        }*/
 	}
 	void OnCollisionExit (Collision collision) {
 		if (collision.collider.gameObject.tag == "Ground") {
 			isGrounded = false;
             anim.SetBool("Jumping", true);
 		}
-        if (collision.collider.gameObject.tag == "Object"){
+        if (collision.collider.gameObject.tag != "Ground"){
             anim.SetBool("Jumping", false);
         }
 	}
