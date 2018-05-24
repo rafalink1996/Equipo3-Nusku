@@ -18,10 +18,11 @@ public class SliderTest : MonoBehaviour {
 	void Update () {
 
         //sliderHealth.value = GetComponent<PlayerMovement>().health;
-        if (sliderHealth.value <= 10){
+        if (sliderHealth.value <= 0){
             anim.SetBool("Dead", true);
             GetComponent<PlayerMovement>().enabled = false;
             GameObject.Find("Glove").GetComponent<Glove>().enabled = false;
+            GameObject.Find("Footsteps").active = false;
         }
 
     }
