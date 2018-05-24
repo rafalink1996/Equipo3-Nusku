@@ -23,9 +23,14 @@ public class SliderTest : MonoBehaviour {
             GetComponent<PlayerMovement>().enabled = false;
             GameObject.Find("Glove").GetComponent<Glove>().enabled = false;
             GameObject.Find("Footsteps").active = false;
+            GameObject.Find("Damage").active = false;
+
+
         }
+       
 
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.gameObject.tag == "Enemy")
