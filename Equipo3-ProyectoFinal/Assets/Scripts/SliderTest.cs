@@ -12,6 +12,7 @@ public class SliderTest : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
+        sliderHealth = GameObject.Find("Canvas/HUD/Health").GetComponent<Slider>();
 	}
 	
 	// Update is called once per frame
@@ -37,6 +38,9 @@ public class SliderTest : MonoBehaviour {
         {
             sliderHealth.value = sliderHealth.value - 10;
 
+        }
+        if (collision.collider.gameObject.name == "Respawn Zone"){
+            sliderHealth.value = sliderHealth.value - 5;
         }
     }
 

@@ -160,7 +160,7 @@ public class PlayerMovement : MonoBehaviour
             muerte.enabled = true;
 
         }
-        print("health ="+ health); 
+        //print("health ="+ health); 
 
         if (Input.GetKey(up) && isGrounded == true /*&& dead == false*/ || Input.GetKey(down) && isGrounded == true /*&& dead == false*/ || Input.GetKey(left) && isGrounded == true /*&& dead == false*/ || Input.GetKey(right) && isGrounded == true /*&& dead == false*/)
         {
@@ -177,11 +177,7 @@ public class PlayerMovement : MonoBehaviour
         {
             salto.Play();
         }
-        if (this.transform.parent == null){
-            this.transform.rotation = Quaternion.Euler(0, 0, 0);
-        }else{
-            this.transform.rotation = Quaternion.Euler(-this.transform.parent.rotation.x, -this.transform.parent.rotation.y, -this.transform.parent.rotation.z);
-        }
+
     }
 	void OnCollisionEnter (Collision collision) {
 		if (collision.collider.gameObject.tag == "Ground") {

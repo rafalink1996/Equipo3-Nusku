@@ -12,6 +12,7 @@ public class MoveWithPlatform : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
        // this.transform.rotation = Quaternion.Euler(0, 0, 0, Space.World);
+
 	}
     private void OnCollisionEnter(Collision collision)
     {
