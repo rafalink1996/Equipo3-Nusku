@@ -66,11 +66,16 @@ public class Glove : MonoBehaviour {
 
 
         // El usuario no esta atacando, ni hay presionado la tecla, ni el segundo ha transucrrido
-        if(Input.GetKeyDown(attack) && oneSecInProgress == false) {
-            oneSecInProgress = true;
+        if(Input.GetKeyDown(attack)) {
+            GameObject attackLoad = GameObject.Instantiate(Resources.Load("Prefabs/AttackLoad") as GameObject);
+            attackLoad.name = "AttackLoad";
+            attackLoad.transform.SetParent(this.gameObject.transform);
+            attackLoad.transform.localPosition = new Vector3(0, 0, 0);
+            if (oneSecInProgress == false){
+                oneSecInProgress = true;
 
-            powerup.Play();
-           
+                powerup.Play();
+            }
 
 
 
@@ -80,6 +85,8 @@ public class Glove : MonoBehaviour {
 
         if (Input.GetKeyUp(attack))
         {
+            GameObject attackLoad = GameObject.Find("AttackLoad");
+            Destroy(attackLoad);
             if (oneSecInProgress == true)
             {
                 // No pasa nada, porque queremos evitar que presiona la tecla repetidas veces
