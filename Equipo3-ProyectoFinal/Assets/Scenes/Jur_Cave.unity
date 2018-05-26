@@ -1046,7 +1046,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 254147139}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1089,7 +1089,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 254147139}
   m_LocalRotation: {x: -0, y: 0.27258542, z: -0, w: 0.9621316}
-  m_LocalPosition: {x: -32.5, y: 3.7, z: 12.1}
+  m_LocalPosition: {x: -29.9, y: 9.71, z: 10.5}
   m_LocalScale: {x: 8.881556, y: 18.496977, z: 55.61456}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7178,6 +7178,22 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300072, guid: 9019e5412ef66486d87681dd9c8ec932, type: 3}
+--- !u!1 &1840751028 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1408331641490618, guid: 2c89c486438b34ac29842b72d0691e66,
+    type: 2}
+  m_PrefabInternal: {fileID: 315860037}
+--- !u!114 &1840751039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1840751028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f77ffd2e05264843aa6ef7a95d571b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1841525568
 GameObject:
   m_ObjectHideFlags: 0
