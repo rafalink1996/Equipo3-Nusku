@@ -22,5 +22,10 @@ public class Damage : MonoBehaviour {
         {
             damage.Play();
         }
+
+        if (collision.collider.gameObject.tag == "Respawn")
+        {
+            damage.Play();
+        }
     }
 }

@@ -150,6 +150,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114172361637313356
@@ -193,6 +204,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114297938202097460}
         m_MethodName: OnClickPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -373,6 +395,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114899477176433260
@@ -469,7 +502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6786831, y: 0.31823438}
   m_AnchorMax: {x: 0.7725847, y: 0.41347268}
-  m_AnchoredPosition: {x: 0.50601196, y: 1.0000076}
+  m_AnchoredPosition: {x: 0.50601196, y: 1}
   m_SizeDelta: {x: 0.79999924, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224364461605207806
@@ -487,7 +520,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4732678, y: 0.52478135}
   m_AnchorMax: {x: 0.9515847, y: 1}
-  m_AnchoredPosition: {x: 0.05987549, y: -0.6056366}
+  m_AnchoredPosition: {x: 0.05987549, y: -0.60562134}
   m_SizeDelta: {x: 0.59991455, y: 1.2019043}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224657074518771774
@@ -505,7 +538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6915355, y: 0.15059961}
   m_AnchorMax: {x: 0.7632502, y: 0.24043559}
-  m_AnchoredPosition: {x: 1.1000061, y: 0.1242218}
+  m_AnchoredPosition: {x: 1.1000061, y: 0.12423706}
   m_SizeDelta: {x: -1.9000015, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224687798919999574

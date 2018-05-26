@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class JurBullet : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public AudioSource hit;
+
+    // Use this for initialization
+    void Start () {
         Destroy(this.gameObject, 2);
 	}
 	
@@ -13,4 +15,6 @@ public class JurBullet : MonoBehaviour {
 	void Update () {
         this.transform.Translate(20f * Time.deltaTime, 0, 0);
 	}
+
+   
 }
