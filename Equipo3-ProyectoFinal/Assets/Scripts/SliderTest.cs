@@ -25,7 +25,7 @@ public class SliderTest : MonoBehaviour {
             GameObject.Find("Glove").GetComponent<Glove>().enabled = false;
             GameObject.Find("Footsteps").active = false;
             GameObject.Find("Damage").active = false;
-
+            Invoke("GameOver", 3f); 
 
         }
        
@@ -42,6 +42,17 @@ public class SliderTest : MonoBehaviour {
         if (collision.collider.gameObject.name == "Respawn Zone"){
             sliderHealth.value = sliderHealth.value - 5;
         }
+    }
+    void GameOver (){
+        Time.timeScale = 0f;
+        GameObject gameOverScreen = GameObject.Instantiate(Resources.Load("UI Menus/UI/Screens/GameOverScreen") as GameObject);
+        gameOverScreen.name = "GameOverScreen";
+        GameObject canvas = GameObject.Find("Canvas");
+        gameOverScreen.transform.parent = canvas.transform;
+        gameOverScreen.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
+        gameOverScreen.GetComponent<RectTransform>().localPosition = Vector2.zero;
+        GetComponent<PauseCommand>().enabled = false;
+
     }
 
 }

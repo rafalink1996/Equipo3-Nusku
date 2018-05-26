@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource salto;
     public AudioSource muerte;
 
+    //bool pause = false;
+
 
 
 
@@ -41,8 +44,9 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-	void Update ()
-	{
+    void Update()
+    {
+        
         health = GetComponent<SliderTest>().sliderHealth.value;
         if (Input.GetKey(up) || Input.GetKey(down) || Input.GetKey(right) || Input.GetKey(left))
         {
@@ -52,7 +56,8 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("IsMoving", false);
         }
-        if (Input.GetKey (up) /*&& dead == false*/) { //moverse hacia el norte
+        if (Input.GetKey(up) /*&& dead == false*/)
+        { //moverse hacia el norte
             transform.Translate(0, 0, speed * Time.deltaTime, Space.World);
             anim.SetBool("North", true); //Determina si se está presionando una tecla de movimiento para saber si se está moviendo y reproducir las respectivas animaciones
             anim.SetBool("South", false);
@@ -60,31 +65,35 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", false);
             direction = 1;
         }
-        if (Input.GetKey (down) /*&& dead == false*/) { //moverse hacia el sur
-            transform.Translate (0, 0, -speed * Time.deltaTime, Space.World);
+        if (Input.GetKey(down) /*&& dead == false*/)
+        { //moverse hacia el sur
+            transform.Translate(0, 0, -speed * Time.deltaTime, Space.World);
             anim.SetBool("South", true);
             anim.SetBool("North", false);
             anim.SetBool("West", false);
             anim.SetBool("East", false);
             direction = 5;
         }
-        if (Input.GetKey(right) /*&& dead == false*/) { //moverse hacia el este
+        if (Input.GetKey(right) /*&& dead == false*/)
+        { //moverse hacia el este
             transform.Translate(speed * Time.deltaTime, 0, 0, Space.World);
             anim.SetBool("East", true);
             anim.SetBool("West", false);
             anim.SetBool("North", false);
             anim.SetBool("South", false);
             direction = 3;
-            }
-        if (Input.GetKey (left) /*&& dead == false*/) { //moverse hacia el oeste
-            transform.Translate (-speed * Time.deltaTime, 0, 0, Space.World);
+        }
+        if (Input.GetKey(left) /*&& dead == false*/)
+        { //moverse hacia el oeste
+            transform.Translate(-speed * Time.deltaTime, 0, 0, Space.World);
             anim.SetBool("West", true);
             anim.SetBool("North", false);
             anim.SetBool("South", false);
             anim.SetBool("East", false);
             direction = 7;
         }
-        if (Input.GetKey(up) && Input.GetKey(right) /*&& dead == false*/){
+        if (Input.GetKey(up) && Input.GetKey(right) /*&& dead == false*/)
+        {
             anim.SetBool("West", false);
             anim.SetBool("North", true);
             anim.SetBool("South", false);
@@ -115,6 +124,11 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", true);
             direction = 4;
         }
+
+
+    
+
+       
 		/*if (Input.GetKey (run)) { //correr; aumenta la velocidad
 			isRunning = true;
 		} else {

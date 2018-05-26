@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 40d9e18615a4e40f080f6b85d503a771,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -1235,7 +1236,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4811091533663880, guid: 2c89c486438b34ac29842b72d0691e66, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.2
+      value: 4.23
       objectReference: {fileID: 0}
     - target: {fileID: 4811091533663880, guid: 2c89c486438b34ac29842b72d0691e66, type: 2}
       propertyPath: m_LocalPosition.z

@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 212204135566450344}
   - component: {fileID: 95063870500207514}
   - component: {fileID: 114868059164216906}
+  - component: {fileID: 114671384656947768}
   - component: {fileID: 114780865121399316}
   - component: {fileID: 114454606211508320}
   - component: {fileID: 54565749959968490}
@@ -1272,6 +1273,17 @@ MonoBehaviour:
   attacking: 0
   powerup: {fileID: 82408748871513096}
   shoot: {fileID: 82460191984238820}
+--- !u!114 &114671384656947768
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1408331641490618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb652a4ca23ef45b999921d079578271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114780865121399316
 MonoBehaviour:
   m_ObjectHideFlags: 1

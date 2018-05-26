@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Jur : MonoBehaviour {
 
-    int health = 100;
+    public int health = 100;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,7 +12,9 @@ public class Jur : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		print("health = " + health); 
+        if (health <= 0){
+            Invoke("Die", 3f);
+        }
 	}
     private void OnCollisionEnter(Collision collision)
     {
@@ -22,5 +24,15 @@ public class Jur : MonoBehaviour {
     }
     public void Attack(){
         GameObject.Find("Mouth").GetComponent<JurMouth>().JurAttack();
+    }
+    void Die(){
+        Time.timeScale = 0f;
+        GameObject winScreen = GameObject.Instantiate(Resources.Load("UI Menus/UI/Screens/WinScreen") as GameObject);
+        winScreen.name = "WinScreen";
+        GameObject canvas = GameObject.Find("Canvas");
+        winScreen.transform.parent = canvas.transform;
+        winScreen.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
+        winScreen.GetComponent<RectTransform>().localPosition = Vector2.zero;
+        GetComponent<PauseCommand>().enabled = false;
     }
 }
