@@ -5,6 +5,7 @@ using UnityEngine;
 public class Damage : MonoBehaviour {
 
     public AudioSource damage;
+    public AudioSource splashdamage;
 
     // Use this for initialization
     void Start () {
@@ -21,6 +22,7 @@ public class Damage : MonoBehaviour {
         if (collision.collider.gameObject.tag == "Enemy")
         {
             damage.Play();
+            splashdamage.Play();
         }
 
         if (collision.collider.gameObject.tag == "Respawn")

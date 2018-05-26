@@ -20,6 +20,8 @@ public class JurBullet : MonoBehaviour {
         if (collision.collider.gameObject.tag == "Player")
         {
             Destroy(this.gameObject);
+
+            hit.Play();
         }
         if (collision.collider.gameObject.tag == "Ground"){
             print("bullet hit platform"); 
