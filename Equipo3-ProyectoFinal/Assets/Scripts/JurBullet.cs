@@ -15,6 +15,16 @@ public class JurBullet : MonoBehaviour {
 	void Update () {
         this.transform.Translate(20f * Time.deltaTime, 0, 0);
 	}
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.gameObject.tag == "Player")
+        {
+            Destroy(this.gameObject);
+        }
+        if (collision.collider.gameObject.tag == "Ground"){
+            print("bullet hit platform"); 
+        }
+    }
 
-   
+
 }

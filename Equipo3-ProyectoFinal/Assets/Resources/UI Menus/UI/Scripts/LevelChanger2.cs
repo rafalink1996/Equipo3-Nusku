@@ -9,11 +9,11 @@ public class LevelChanger2 : MonoBehaviour {
 
 
 
-    /*public void ChangeSceneTriggered ()
+    public void ChangeSceneTriggered()
     {
         FadeToLevel(2);
     }
-*/
+
 
     /*void OnTriggerEnter(Collider other)
     {
@@ -22,10 +22,10 @@ public class LevelChanger2 : MonoBehaviour {
 */
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButtonDown(0))
-        {
-            FadeToLevel(2);
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    FadeToLevel(2);
+        //}
 	}
 
     public void FadeToLevel(int levelIndex)
@@ -36,6 +36,6 @@ public class LevelChanger2 : MonoBehaviour {
 
     public void OnFadeComplete ()
     {
-        SceneManager.LoadScene(LevelToLoad);
+        SceneManager.LoadScene("Jur_Battle");
     }
 }

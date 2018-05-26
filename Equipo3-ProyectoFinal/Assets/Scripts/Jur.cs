@@ -5,21 +5,23 @@ using UnityEngine;
 public class Jur : MonoBehaviour {
 
     public int health = 100;
+    Animator anim;
 	// Use this for initialization
 	void Start () {
-		
+        anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (health <= 0){
+            anim.SetTrigger("Dead");
             Invoke("Die", 3f);
         }
 	}
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Bullet"){
-            health = health - 10;
+            health = health - 5;
         }
     }
     public void Attack(){
@@ -33,6 +35,6 @@ public class Jur : MonoBehaviour {
         winScreen.transform.parent = canvas.transform;
         winScreen.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
         winScreen.GetComponent<RectTransform>().localPosition = Vector2.zero;
-        GetComponent<PauseCommand>().enabled = false;
+        GameObject.Find("Sel").GetComponent<PauseCommand>().enabled = false;
     }
 }

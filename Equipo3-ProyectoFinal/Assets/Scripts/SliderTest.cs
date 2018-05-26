@@ -22,7 +22,7 @@ public class SliderTest : MonoBehaviour {
         if (sliderHealth.value <= 0){
             anim.SetBool("Dead", true);
             GetComponent<PlayerMovement>().enabled = false;
-            GameObject.Find("Glove").GetComponent<Glove>().enabled = false;
+            GameObject.Find("Sel/Glove").GetComponent<Glove>().enabled = false;
             GameObject.Find("Footsteps").active = false;
             GameObject.Find("Damage").active = false;
             Invoke("GameOver", 3f); 
@@ -36,11 +36,11 @@ public class SliderTest : MonoBehaviour {
     {
         if (collision.collider.gameObject.tag == "Enemy")
         {
-            sliderHealth.value = sliderHealth.value - 10;
+            sliderHealth.value = sliderHealth.value - 20;
 
         }
         if (collision.collider.gameObject.name == "Respawn Zone"){
-            sliderHealth.value = sliderHealth.value - 5;
+            sliderHealth.value = sliderHealth.value - 10;
         }
     }
     void GameOver (){

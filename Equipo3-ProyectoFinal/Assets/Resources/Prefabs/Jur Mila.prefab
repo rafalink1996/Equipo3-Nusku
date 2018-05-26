@@ -22,12 +22,13 @@ GameObject:
   - component: {fileID: 212055506344256682}
   - component: {fileID: 95682269367146044}
   - component: {fileID: 65007795464801044}
+  - component: {fileID: 136499926196685258}
   - component: {fileID: 136646833931289706}
   - component: {fileID: 114199289403699942}
   - component: {fileID: 54714740861756800}
   - component: {fileID: 65460063056272006}
   m_Layer: 0
-  m_Name: Jur
+  m_Name: Jur Mila
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -409,6 +410,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0be6c0f2cc52f4e3a9b4f9225dfb22fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &136499926196685258
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098461319568464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.2285862
+  m_Height: 3.955573
+  m_Direction: 0
+  m_Center: {x: -2.4092145, y: 3.1108522, z: 3.1809955}
 --- !u!136 &136646833931289706
 CapsuleCollider:
   m_ObjectHideFlags: 1
