@@ -1291,7 +1291,7 @@ MonoBehaviour:
   jump: space
   attack: z
   direction: 5
-  jumpForce: 10
+  jumpForce: 13
   isGrounded: 1
   health: 0
   dead: 0
