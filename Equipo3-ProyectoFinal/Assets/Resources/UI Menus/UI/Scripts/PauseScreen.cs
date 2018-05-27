@@ -26,6 +26,7 @@ public class PauseScreen : MonoBehaviour {
 
     }
     public void OnClickMenu(){
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MenuScene");
     }
 }
