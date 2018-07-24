@@ -7,12 +7,13 @@ public class SliderTest : MonoBehaviour {
 
     public Slider sliderHealth;
     Animator anim;
-
+    SpriteRenderer spriteRenderer;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
         sliderHealth = GameObject.Find("Canvas/HUD/Health").GetComponent<Slider>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -37,10 +38,14 @@ public class SliderTest : MonoBehaviour {
         if (collision.collider.gameObject.tag == "Enemy")
         {
             sliderHealth.value = sliderHealth.value - 20;
+            spriteRenderer.color = new Color(255, 0, 0);
+            Invoke("ChangeColorBack", 0.5f); 
 
         }
         if (collision.collider.gameObject.name == "Respawn Zone"){
             sliderHealth.value = sliderHealth.value - 10;
+            spriteRenderer.color = new Color(255, 0, 0);
+            Invoke("ChangeColorBack", 1.5f);
         }
     }
     void GameOver (){
@@ -53,6 +58,10 @@ public class SliderTest : MonoBehaviour {
         gameOverScreen.GetComponent<RectTransform>().localPosition = Vector2.zero;
         GetComponent<PauseCommand>().enabled = false;
 
+    }
+    void ChangeColorBack()
+    {
+        spriteRenderer.color = new Color(255, 255, 255);
     }
 
 }

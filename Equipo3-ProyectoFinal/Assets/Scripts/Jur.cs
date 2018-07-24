@@ -10,10 +10,11 @@ public class Jur : MonoBehaviour {
     public AudioSource splash;
     public AudioSource jurdamage;
     public AudioSource damagehiss;
-
+    SpriteRenderer spriteRenderer;
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -34,6 +35,8 @@ public class Jur : MonoBehaviour {
             health = health - 5;
             jurdamage.Play();
             damagehiss.Play();
+            spriteRenderer.color = new Color(255, 0, 0);
+            Invoke("ChangeColorBack", 0.5f); 
 
         }
     }
@@ -52,5 +55,8 @@ public class Jur : MonoBehaviour {
         GameObject.Find("Sel").GetComponent<PauseCommand>().enabled = false;
         
 
+    }
+    void ChangeColorBack (){
+        spriteRenderer.color = new Color(255, 255, 255);
     }
 }
