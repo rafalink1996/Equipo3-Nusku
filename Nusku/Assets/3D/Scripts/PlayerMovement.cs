@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-
 	float speed; //variable interna para la velocidad. toma el valor de walkSpeed o de runSpeed
 	bool diagonal; // determina si está en diagonal
 	//bool isRunning = false; //determina si está corriendo
@@ -28,25 +27,16 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource caminata;
     public AudioSource salto;
     public AudioSource muerte;
-
     //bool pause = false;
-
-
-
-
-
     //public bool attackReady = false;
-
     void Start ()
 	{
 		rb = GetComponent<Rigidbody> ();
         anim = GetComponent<Animator>();
-
     }
 
     void Update()
     {
-        
         health = GetComponent<SliderTest>().sliderHealth.value;
         if (Input.GetKey(up) || Input.GetKey(down) || Input.GetKey(right) || Input.GetKey(left))
         {
@@ -124,16 +114,6 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("East", true);
             direction = 4;
         }
-
-
-    
-
-       
-		/*if (Input.GetKey (run)) { //correr; aumenta la velocidad
-			isRunning = true;
-		} else {
-			isRunning = false;
-		}*/
 		if (Input.GetKey (up) && Input.GetKey (right) || Input.GetKey (up) && Input.GetKey (left) || Input.GetKey (down) && Input.GetKey (right) || Input.GetKey (down) && Input.GetKey (left)) {
 			diagonal = true; //determina si está moviéndose en una diagonal
 		} else {
@@ -142,15 +122,9 @@ public class PlayerMovement : MonoBehaviour
 		if (/*isRunning == false && */diagonal == false) { // hace que la velocidad sea la normal
 			speed = walkSpeed;
 		}
-		/*if (isRunning == true && diagonal == false) { // hace que la velocidad sea la de correr
-			speed = runSpeed;
-		}*/
 		if (/*isRunning == false && */diagonal == true) { // ajusta la velocidad de caminada en las diagonales, para que no sea más rápido
 			speed = Mathf.Sin (0.785398163397448f) * walkSpeed;
 		}
-		/*if (isRunning == true && diagonal == true) { //ajusta la velocidad de las diagonales al correr
-			speed = Mathf.Sin (0.785398163397448f) * runSpeed;
-		}*/
         if (Input.GetKeyDown (jump) && isGrounded == true /*&& dead == false*/) {
 			rb.AddForce (Vector3.up * jumpForce, ForceMode.Impulse);
             anim.SetBool("Jump", true);
