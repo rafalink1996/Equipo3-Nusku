@@ -12,6 +12,7 @@ public class PlayerMovement2D : MonoBehaviour {
     //public float jumpForce;
     //public bool isGrounded = true;
     Animator anim;
+    Animator armAnim;
     //public float health;
     //public bool dead = false;
     //public AudioSource caminata;
@@ -22,6 +23,7 @@ public class PlayerMovement2D : MonoBehaviour {
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
+        armAnim = this.transform.Find("Graphics/Arm").gameObject.GetComponent<Animator>();
     }
     void Update()
     {
@@ -29,25 +31,33 @@ public class PlayerMovement2D : MonoBehaviour {
         if (Input.GetAxisRaw("Horizontal") != 0){
             this.transform.Translate(Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime, 0f, 0f);
             anim.SetFloat("LastX", Input.GetAxisRaw("Horizontal"));
+            armAnim.SetFloat("LastX", Input.GetAxisRaw("Horizontal"));
         }
         if (Input.GetAxisRaw("Vertical") != 0)
         {
             this.transform.Translate(0f, Input.GetAxisRaw("Vertical") * speed * Time.deltaTime, 0f);
             anim.SetFloat("LastY", Input.GetAxisRaw("Vertical"));
+            armAnim.SetFloat("LastY", Input.GetAxisRaw("Vertical"));
         }
         anim.SetFloat("DirectionX", Input.GetAxisRaw("Horizontal"));
         anim.SetFloat("DirectionY", Input.GetAxisRaw("Vertical"));
+        armAnim.SetFloat("DirectionX", Input.GetAxisRaw("Horizontal"));
+        armAnim.SetFloat("DirectionY", Input.GetAxisRaw("Vertical"));
         if (Input.GetAxisRaw("Horizontal") != 0 && Input.GetAxisRaw("Vertical") == 0){
             anim.SetFloat("LastY", 0f);
+            armAnim.SetFloat("LastY", 0f);
         }
         if (Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") != 0)
         {
             anim.SetFloat("LastX", 0f);
+            armAnim.SetFloat("LastX", 0f);
         }
         if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0){
             anim.SetBool("IsMoving", true);
+            armAnim.SetBool("IsMoving", true);
         }else{
             anim.SetBool("IsMoving", false);
+            armAnim.SetBool("IsMoving", false);
         }
         if (Input.GetAxisRaw("Horizontal") != 0 && Input.GetAxisRaw("Vertical") != 0)
         {
