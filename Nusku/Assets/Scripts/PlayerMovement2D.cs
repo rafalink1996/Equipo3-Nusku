@@ -27,6 +27,7 @@ public class PlayerMovement2D : MonoBehaviour {
     }
     void Update()
     {
+        
         //health = GetComponent<SliderTest>().sliderHealth.value;
         if (Input.GetAxisRaw("Horizontal") != 0){
             this.transform.Translate(Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime, 0f, 0f);
