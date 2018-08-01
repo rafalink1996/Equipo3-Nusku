@@ -59,6 +59,11 @@ public class PlayerMovement2D : MonoBehaviour {
             anim.SetBool("IsMoving", false);
             armAnim.SetBool("IsMoving", false);
         }
+        if (Input.GetAxisRaw("Fire1") == 1){
+            armAnim.SetBool("Attack",true);
+        }else{
+            armAnim.SetBool("Attack", false);
+        }
         if (Input.GetAxisRaw("Horizontal") != 0 && Input.GetAxisRaw("Vertical") != 0)
         {
             diagonal = true; //determina si está moviéndose en una diagonal
