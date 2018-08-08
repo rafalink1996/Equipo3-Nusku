@@ -13,11 +13,11 @@ public class AttackLoad : MonoBehaviour {
 	void Update () {
         if (Input.GetAxisRaw("Vertical") == 1)
         {
-            this.GetComponent<ParticleSystemRenderer>().sortingOrder = 0;
+            this.GetComponent<ParticleSystemRenderer>().sortingOrder = 3;
         }
         if (Input.GetAxisRaw("Vertical") == -1)
         {
-            this.GetComponent<ParticleSystemRenderer>().sortingOrder = 3;
+            this.GetComponent<ParticleSystemRenderer>().sortingOrder = 6;
         }
 	}
 }
