@@ -22,7 +22,7 @@ public class Jur2D : MonoBehaviour {
             isAttacking = true;
             anim.SetBool("isAttacking", true);
         }
-        print("timeToAttack = " + timeToAttack);
+
 	}
     void resetTimer (){
         timeToAttack = Random.Range(1.0f, 4.0f);
