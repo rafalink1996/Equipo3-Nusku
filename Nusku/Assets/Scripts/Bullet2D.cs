@@ -6,11 +6,11 @@ using UnityEngine;
 public class Bullet2D : MonoBehaviour {
 
     float speed = 10.0f;
-
+   
 
     void Start()
     {
-
+        
     }
 
     void Update()
@@ -22,6 +22,7 @@ public class Bullet2D : MonoBehaviour {
             Destroy(this.gameObject, 1);
         }
         if (this.transform.parent != null){
+            this.transform.position = this.transform.parent.position;
             if (Input.GetAxisRaw("Vertical") == 1){
                 this.GetComponent<ParticleSystemRenderer>().sortingOrder = 3;
             }

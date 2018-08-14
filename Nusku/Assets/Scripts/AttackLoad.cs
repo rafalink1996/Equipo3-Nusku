@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class AttackLoad : MonoBehaviour {
 
-	// Use this for initialization
+  
+	
 	void Start () {
-		
+
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
+        this.transform.position = this.transform.parent.position;
         if (Input.GetAxisRaw("Vertical") == 1)
         {
             this.GetComponent<ParticleSystemRenderer>().sortingOrder = 3;
