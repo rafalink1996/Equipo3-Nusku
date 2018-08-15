@@ -1,21 +1,21 @@
 fileFormatVersion: 2
-guid: 157a52b356d104824888849d1f3c0785
+guid: 27d6ef9407a7c4237b93ac92d69baafe
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SpriteSheetStalagmita_0
-    21300002: SpriteSheetStalagmita_1
-    21300004: SpriteSheetStalagmita_2
-    21300006: SpriteSheetStalagmita_3
-    21300008: SpriteSheetStalagmita_4
-    21300010: SpriteSheetStalagmita_5
-    21300012: SpriteSheetStalagmita_6
-    21300014: SpriteSheetStalagmita_7
-    21300016: SpriteSheetStalagmita_8
-    21300018: SpriteSheetStalagmita_9
-    21300020: SpriteSheetStalagmita_10
-    21300022: SpriteSheetStalagmita_11
-    21300024: SpriteSheetStalagmita_12
-    21300026: SpriteSheetStalagmita_13
+    21300000: SpriteSheetStalagmita 0.2_0
+    21300002: SpriteSheetStalagmita 0.2_1
+    21300004: SpriteSheetStalagmita 0.2_2
+    21300006: SpriteSheetStalagmita 0.2_3
+    21300008: SpriteSheetStalagmita 0.2_4
+    21300010: SpriteSheetStalagmita 0.2_5
+    21300012: SpriteSheetStalagmita 0.2_6
+    21300014: SpriteSheetStalagmita 0.2_7
+    21300016: SpriteSheetStalagmita 0.2_8
+    21300018: SpriteSheetStalagmita 0.2_9
+    21300020: SpriteSheetStalagmita 0.2_10
+    21300022: SpriteSheetStalagmita 0.2_11
+    21300024: SpriteSheetStalagmita 0.2_12
+    21300026: SpriteSheetStalagmita 0.2_13
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_0
+      name: SpriteSheetStalagmita 0.2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,13 +112,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b51435fd77fd64096b7edf5c4c6f89b5
+      spriteID: 0cf6597bd2dc44b61abdc91e14b0655d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_1
+      name: SpriteSheetStalagmita 0.2_1
       rect:
         serializedVersion: 2
         x: 200
@@ -132,13 +132,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7d473b85101c49dcac820c5bbf5017e
+      spriteID: f700c36eee1c546f29a72fc77622a0f8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_2
+      name: SpriteSheetStalagmita 0.2_2
       rect:
         serializedVersion: 2
         x: 400
@@ -152,13 +152,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 235cbfb7b0dad489fab2c6006e9123a7
+      spriteID: 5fe60bf96a48144cdb0b0a174ae82373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_3
+      name: SpriteSheetStalagmita 0.2_3
       rect:
         serializedVersion: 2
         x: 600
@@ -172,13 +172,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0ba06455571c4a9b9a11a9a639230c3
+      spriteID: 0dd56ce1092c8419fb5f2ce04aff32c5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_4
+      name: SpriteSheetStalagmita 0.2_4
       rect:
         serializedVersion: 2
         x: 800
@@ -192,13 +192,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a20301b989547d4bb7e9940caa08e2
+      spriteID: 968273a6e7dd74b8594d2881d995b55c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_5
+      name: SpriteSheetStalagmita 0.2_5
       rect:
         serializedVersion: 2
         x: 1000
@@ -212,13 +212,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf08de577568e4f0687acda899913380
+      spriteID: e9e24fb21dcaf4b39a84c5612f9b71e1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_6
+      name: SpriteSheetStalagmita 0.2_6
       rect:
         serializedVersion: 2
         x: 1200
@@ -232,13 +232,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbb5d4dcb729a4f51ae9c98e0add952f
+      spriteID: b37eb372ad4eb43b291c454188cdc5ef
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_7
+      name: SpriteSheetStalagmita 0.2_7
       rect:
         serializedVersion: 2
         x: 1400
@@ -252,13 +252,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9294e26af8a3d495aa6305eecbc01a8e
+      spriteID: be36dfb7dbd1c4986ae61aa46e5710fb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_8
+      name: SpriteSheetStalagmita 0.2_8
       rect:
         serializedVersion: 2
         x: 1600
@@ -272,13 +272,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aee89aa769ceb479aa47c1087bc3a0f4
+      spriteID: 3e9c43bbae26540c8ac75f2cf9ba11ac
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_9
+      name: SpriteSheetStalagmita 0.2_9
       rect:
         serializedVersion: 2
         x: 1800
@@ -292,13 +292,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b8789aabe6d34c159e5593a87ac541f
+      spriteID: e6b00db0341c9445ea6990ab2cf00a47
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_10
+      name: SpriteSheetStalagmita 0.2_10
       rect:
         serializedVersion: 2
         x: 2000
@@ -312,13 +312,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fd086f1184c742c899d7fcd545ddf7e
+      spriteID: c26abd6c53bf1487fb28c0b43e6e40aa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_11
+      name: SpriteSheetStalagmita 0.2_11
       rect:
         serializedVersion: 2
         x: 2200
@@ -332,13 +332,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d2241dbd437e4ff892355ea57f42244
+      spriteID: f150c7bda97fe4bfe8a9514b65cafc5d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_12
+      name: SpriteSheetStalagmita 0.2_12
       rect:
         serializedVersion: 2
         x: 2400
@@ -352,13 +352,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 453070101ae584fdaac9627f144d9c95
+      spriteID: c33bec545289a42fb94be3cc0cb277d3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetStalagmita_13
+      name: SpriteSheetStalagmita 0.2_13
       rect:
         serializedVersion: 2
         x: 2600
@@ -372,7 +372,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ae4913d77d9844789c9cf9678adda44
+      spriteID: c5c86f45a5b7045c4a10ad8ba08c6c41
       vertices: []
       indices: 
       edges: []
@@ -380,7 +380,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: cb22c6e2cde674f6f8d8c4b82e19ef0e
+    spriteID: 9162ee03c550a4e079a0886143ef79d6
     vertices: []
     indices: 
     edges: []
