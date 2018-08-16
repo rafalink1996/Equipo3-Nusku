@@ -7,8 +7,8 @@ public class Glove2D : MonoBehaviour {
     int sel;
     string attack;
     bool dead;
-    public bool oneSecInProgress = false;
-    public bool attacking = false;
+    bool oneSecInProgress = false;
+    bool attacking = false;
     //public AudioSource powerup;
     //public AudioSource shoot;
 
@@ -30,7 +30,7 @@ public class Glove2D : MonoBehaviour {
         }
         if (Input.GetAxisRaw("Horizontal") == 1 && Input.GetAxisRaw("Vertical") == 1)
         {
-            this.transform.rotation = Quaternion.Euler(0, 0, 45);
+            this.transform.rotation = Quaternion.Euler(0, 0, 35);
             this.transform.localPosition = new Vector3(0.317f, -0.046f, 0);
         }
         if (Input.GetAxisRaw("Horizontal") == 1 && Input.GetAxisRaw("Vertical") == 0)
@@ -40,7 +40,7 @@ public class Glove2D : MonoBehaviour {
         }
         if (Input.GetAxisRaw("Horizontal") == 1 && Input.GetAxisRaw("Vertical") == -1)
         {
-            this.transform.rotation = Quaternion.Euler(0, 0, 315);
+            this.transform.rotation = Quaternion.Euler(0, 0, -35);
             this.transform.localPosition = new Vector3(0.184f, -0.075f, 0f);
         }
         if (Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == -1)
@@ -50,7 +50,7 @@ public class Glove2D : MonoBehaviour {
         }
         if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == -1)
         {
-            this.transform.rotation = Quaternion.Euler(0, 0, 225);
+            this.transform.rotation = Quaternion.Euler(0, 0, -145);
             this.transform.localPosition = new Vector3(-0.278f, -0.075f, 0f);
         }
         if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == 0)
@@ -60,7 +60,7 @@ public class Glove2D : MonoBehaviour {
         }
         if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetAxisRaw("Vertical") == 1)
         {
-            this.transform.rotation = Quaternion.Euler(0, 0, 135);
+            this.transform.rotation = Quaternion.Euler(0, 0, 145);
             this.transform.localPosition = new Vector3(-0.283f, -0.063f, 0f);
         }
         //attackReady = GameObject.Find("Sel").GetComponent<PlayerMovement>().attackReady;
