@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Object
   - Platform
+  - Hazard
   layers:
   - Default
   - TransparentFX

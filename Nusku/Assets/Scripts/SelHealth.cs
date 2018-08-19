@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SelHealth : MonoBehaviour {
 
     public Slider healthSlider;
+    bool invincible = false;
 	// Use this for initialization
 	void Start () {
         healthSlider = GameObject.Find("Canvas/HUD/Health").GetComponent<Slider>();
@@ -13,14 +14,27 @@ public class SelHealth : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+       
 	}
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.gameObject.tag == "Enemy")
+        if (invincible == false)
         {
-            healthSlider.value = healthSlider.value - 10;
-
+            if (collision.collider.gameObject.tag == "Enemy")
+            {
+                healthSlider.value = healthSlider.value - 10;
+                invincible = true;
+                Invoke("ResetInvincibility", 2.5f);
+            }
+            if (collision.collider.gameObject.tag == "Hazard")
+            {
+                healthSlider.value = healthSlider.value - 5;
+                invincible = true;
+                Invoke("ResetInvincibility", 2.5f);
+            }
         }
+    }
+    void ResetInvincibility(){
+        invincible = false;
     }
 }
