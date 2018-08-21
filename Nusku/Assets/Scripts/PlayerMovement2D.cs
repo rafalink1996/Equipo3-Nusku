@@ -20,14 +20,27 @@ public class PlayerMovement2D : MonoBehaviour {
     //public AudioSource muerte;
     //bool pause = false;
     //public bool attackReady = false;
+    public bool canMove;
+    GameObject bullet;
+    GameObject attackLoad;
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
         armAnim = this.transform.Find("Graphics/Arm").gameObject.GetComponent<Animator>();
+
     }
     void Update()
     {
-        
+        bullet = GameObject.Find("Sel/Graphics/Arm/Glove/Bullet");
+        attackLoad = GameObject.Find("Sel/Graphics/Arm/Glove/AttackLoad");
+        if (!canMove){
+            anim.SetBool("IsMoving",false);
+            armAnim.SetBool("IsMoving",false);
+            armAnim.SetBool("Attack",false);
+            Destroy(bullet.gameObject);
+            Destroy(attackLoad.gameObject);
+            return;
+        }
         //health = GetComponent<SliderTest>().sliderHealth.value;
         if (Input.GetAxisRaw("Horizontal") != 0){
             this.transform.Translate(Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime, 0f, 0f);

@@ -9,6 +9,7 @@ public class Glove2D : MonoBehaviour {
     bool dead;
     bool oneSecInProgress = false;
     bool attacking = false;
+    PlayerMovement2D player;
     //public AudioSource powerup;
     //public AudioSource shoot;
 
@@ -16,11 +17,16 @@ public class Glove2D : MonoBehaviour {
     void Start()
     {
         //attack = GameObject.Find("Sel").GetComponent<PlayerMovement>().attack;
+        player = FindObjectOfType<PlayerMovement2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!player.canMove)
+        {
+            return;
+        }
         //sel = GameObject.Find("Sel").GetComponent<PlayerMovement>().direction;
         //dead = GameObject.Find("Sel").GetComponent<PlayerMovement>().dead;
         if (Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 1)
