@@ -1,11 +1,15 @@
 fileFormatVersion: 2
-guid: 9e190e0007d644949a43fe252965846f
+guid: c9f0913e381fb450eb41c6a62c6d3763
 TextureImporter:
   fileIDToRecycleName:
     21300000: SP_Trono_0
     21300002: SP_Trono_1
     21300004: SP_Trono_2
     21300006: SP_Trono_3
+    21300008: SP_Trono_4
+    21300010: SP_Trono_5
+    21300012: SP_Trono_6
+    21300014: SP_Trono_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -92,9 +96,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2160
-        width: 3840
-        height: 2160
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -102,7 +106,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3113a42a872f54593961bbcb7c924323
+      spriteID: aa128f4bb4525477f8bb1558149c4d21
       vertices: []
       indices: 
       edges: []
@@ -111,10 +115,10 @@ TextureImporter:
       name: SP_Trono_1
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 2160
-        width: 3840
-        height: 2160
+        x: 1920
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,7 +126,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce3c2a143f3b64b9da21a6bcad42a709
+      spriteID: f431ceec5dd48491fba8730b1e75a506
       vertices: []
       indices: 
       edges: []
@@ -131,10 +135,10 @@ TextureImporter:
       name: SP_Trono_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 3840
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,7 +146,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cb782eb1d7de4fb1baa318950a2112f
+      spriteID: 78c4b8b6cf05e4a8183d5e7c7218be6f
       vertices: []
       indices: 
       edges: []
@@ -151,10 +155,10 @@ TextureImporter:
       name: SP_Trono_3
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 3840
-        height: 2160
+        x: 5760
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,7 +166,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c5d50d1f63aa4228921e7a79e761685
+      spriteID: 99c4cc08fb86c4e0da33936bdb4bc4a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_Trono_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719d5de1329464830afe119e96adb46e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_Trono_5
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb4a70153676492fb419d9001494d06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_Trono_6
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea618c31b55041e9a7137b6d92c72bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_Trono_7
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e13915e85b104b0d949903f4a9caa72
       vertices: []
       indices: 
       edges: []
@@ -170,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 80b5adcdc39a8467a902fb04df214af4
+    spriteID: ca51c25ce114547d6852a907fc61e0be
     vertices: []
     indices: 
     edges: []
