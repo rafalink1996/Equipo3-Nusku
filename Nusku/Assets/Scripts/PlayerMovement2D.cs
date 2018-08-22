@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement2D : MonoBehaviour {
 
-    float speed; //variable interna para la velocidad. toma el valor de walkSpeed o de runSpeed
+    float speedX; //variable interna para la velocidad. toma el valor de walkSpeed
+    float speedY;
     bool diagonal; // determina si está en diagonal
     public float walkSpeed; // velocidad normal de caminar, el valor se pone en el inspector
-    //public int direction = 5;
     Rigidbody rb;
-    //public float jumpForce;
-    //public bool isGrounded = true;
     Animator anim;
     Animator armAnim;
     //public float health;
@@ -21,8 +19,7 @@ public class PlayerMovement2D : MonoBehaviour {
     //bool pause = false;
     //public bool attackReady = false;
     public bool canMove;
-    GameObject bullet;
-    GameObject attackLoad;
+  
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
@@ -31,25 +28,22 @@ public class PlayerMovement2D : MonoBehaviour {
     }
     void Update()
     {
-        bullet = GameObject.Find("Sel/Graphics/Arm/Glove/Bullet");
-        attackLoad = GameObject.Find("Sel/Graphics/Arm/Glove/AttackLoad");
+
         if (!canMove){
             anim.SetBool("IsMoving",false);
             armAnim.SetBool("IsMoving",false);
             armAnim.SetBool("Attack",false);
-            Destroy(bullet.gameObject);
-            Destroy(attackLoad.gameObject);
             return;
         }
         //health = GetComponent<SliderTest>().sliderHealth.value;
         if (Input.GetAxisRaw("Horizontal") != 0){
-            this.transform.Translate(Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime, 0f, 0f);
+            this.transform.Translate(Input.GetAxisRaw("Horizontal") * speedX * Time.deltaTime, 0f, 0f);
             anim.SetFloat("LastX", Input.GetAxisRaw("Horizontal"));
             armAnim.SetFloat("LastX", Input.GetAxisRaw("Horizontal"));
         }
         if (Input.GetAxisRaw("Vertical") != 0)
         {
-            this.transform.Translate(0f, Input.GetAxisRaw("Vertical") * speed * Time.deltaTime, 0f);
+            this.transform.Translate(0f, Input.GetAxisRaw("Vertical") * speedY * Time.deltaTime, 0f);
             anim.SetFloat("LastY", Input.GetAxisRaw("Vertical"));
             armAnim.SetFloat("LastY", Input.GetAxisRaw("Vertical"));
         }
@@ -88,33 +82,15 @@ public class PlayerMovement2D : MonoBehaviour {
         }
         if (diagonal == false)
         { // hace que la velocidad sea la normal
-            speed = walkSpeed;
+            speedX = walkSpeed;
+            speedY = walkSpeed;
         }
 
         if (diagonal == true)
         { // ajusta la velocidad de caminada en las diagonales, para que no sea más rápido
-            speed = Mathf.Sin(0.785398163397448f) * walkSpeed;
+            speedX = Mathf.Cos(0.523598775f) * walkSpeed;
+            speedY = Mathf.Sin(0.523598775f) * walkSpeed;
         }
-        // /*if (Input.GetKeyDown(jump) && isGrounded == true /*&& dead == false*/)
-        //{
-        //    rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        //    anim.SetBool("Jump", true);
-        //    anim.SetBool("JumpButtonPressed", true);
-        //    //anim.SetBool("Button", true);
-        //}
-        //if (Input.GetKey(attack) /*&& dead == false*/)
-        //{
-        //    anim.SetBool("Attack", true);
-        //    anim.SetBool("AttackButton", true);
-        //}
-        //else
-        //{
-        //    anim.SetBool("Attack", false);
-        //}
-        //if (Input.GetKeyUp(attack) && isGrounded == false)
-        //{
-        //    anim.SetBool("AttackButton", false);
-        //}
 
         //if (health <= 0)
         //{

@@ -6,16 +6,20 @@ using UnityEngine;
 public class Bullet2D : MonoBehaviour {
 
     float speed = 10.0f;
+    PlayerMovement2D sel;
    
 
     void Start()
     {
-        
+        sel = FindObjectOfType<PlayerMovement2D>();
     }
 
     void Update()
     {
-
+        if (sel.canMove == false)
+        {
+            Destroy(this.gameObject);
+        }
         if (transform.parent == null)
         {
             this.transform.Translate(speed * Time.deltaTime, 0, 0);
