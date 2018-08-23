@@ -6,6 +6,8 @@ public class Bridge : MonoBehaviour
 {
 
     Animator anim;
+    public Animator column;
+    public Animator column2;
     // Use this for initialization
     void Start()
     {
@@ -22,6 +24,8 @@ public class Bridge : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             anim.SetTrigger("Break");
+            column.SetTrigger("Fade");
+            column2.SetTrigger("Fade");
         }
     }
 }
