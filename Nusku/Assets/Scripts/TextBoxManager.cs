@@ -8,18 +8,26 @@ public class TextBoxManager : MonoBehaviour
 
     public GameObject textBox;
     public Text theText;
+    public Text characterName;
+    public Image characterImage;
     public TextAsset textFile;
+    public Sprite image;
     public string[] textlines;
     public int currentLine;
     public int endAtLine;
     public PlayerMovement2D player;
     public bool isActive;
     public bool stopPlayerMovement;
+    bool isTyping = false;
+    bool cancelTyping = false;
+    public float typeSpeed;
+    AudioSource audioSource;
 
     // Use this for initialization
     void Start()
     {
         player = FindObjectOfType<PlayerMovement2D>();
+        audioSource = GetComponent<AudioSource>();
         if (textFile != null)
         {
             textlines = (textFile.text.Split('\n'));
@@ -33,9 +41,13 @@ public class TextBoxManager : MonoBehaviour
         if (isActive)
         {
             EnableTextBox();
-        }else{
+        }
+        else
+        {
             DisableTextBox();
         }
+
+
     }
 
     void Update()
@@ -44,17 +56,56 @@ public class TextBoxManager : MonoBehaviour
         {
             return;
         }
+        if (image != null)
+        {
+            characterImage.sprite = image;
+        }
+        else
+        {
+            characterImage.sprite = null;
+        }
 
-        theText.text = textlines[currentLine];
+        //theText.text = textlines[currentLine];
 
         if (Input.GetButtonDown("Interact"))
         {
-            currentLine += 1;
+            if (!isTyping)
+            {
+                currentLine += 1;
+
+
+                if (currentLine > endAtLine)
+                {
+                    DisableTextBox();
+                }
+                else
+                {
+                    StartCoroutine(TextScroll(textlines[currentLine]));
+                }
+            }
+            else if (isTyping == !cancelTyping)
+            {
+                cancelTyping = true;
+            }
         }
-        if (currentLine > endAtLine)
+    }
+
+    private IEnumerator TextScroll (string lineOfText)
+    {
+        int letter = 0;
+        theText.text = "";
+        isTyping = true;
+        cancelTyping = false;
+        while (isTyping && !cancelTyping && (letter < lineOfText.Length - 1))
         {
-            DisableTextBox();
+            theText.text += lineOfText[letter];
+            letter += 1;
+            yield return new WaitForSeconds(typeSpeed);
+            audioSource.Play();
         }
+        theText.text = lineOfText;
+        isTyping = false;
+        cancelTyping = false;
     }
 
     public void EnableTextBox()
@@ -65,6 +116,7 @@ public class TextBoxManager : MonoBehaviour
         {
             player.canMove = false;
         }
+        StartCoroutine(TextScroll(textlines[currentLine]));
     }
 
     public void DisableTextBox()
@@ -73,10 +125,10 @@ public class TextBoxManager : MonoBehaviour
         isActive = false;
         player.canMove = true;
 
-   
+
     }
 
-    public void ReloadScript (TextAsset theText)
+    public void ReloadScript(TextAsset theText)
     {
         if (theText != null)
         {

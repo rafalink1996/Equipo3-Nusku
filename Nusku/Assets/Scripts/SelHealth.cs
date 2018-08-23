@@ -7,14 +7,25 @@ public class SelHealth : MonoBehaviour {
 
     public Slider healthSlider;
     bool invincible = false;
+    Animator anim;
+    PlayerMovement2D sel;
+    GameObject arm;
 	// Use this for initialization
 	void Start () {
         healthSlider = GameObject.Find("Canvas/HUD/Health").GetComponent<Slider>();
+        anim = GetComponentInChildren<Animator>();
+        sel = FindObjectOfType<PlayerMovement2D>();
+        arm = GameObject.Find("Sel/Graphics/Arm");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-       
+        if (healthSlider.value <= 0)
+        {
+            anim.SetBool("Dead", true);
+            sel.canMove = false;
+            arm.SetActive(false);
+        }
 	}
     private void OnCollisionEnter2D(Collision2D collision)
     {
