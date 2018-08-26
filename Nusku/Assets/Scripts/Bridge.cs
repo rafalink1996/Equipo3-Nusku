@@ -9,10 +9,12 @@ public class Bridge : MonoBehaviour
     public Animator column;
     public Animator column2;
     public GameObject jur;
+    FollowPlayer cam;
     // Use this for initialization
     void Start()
     {
         anim = GetComponentInParent<Animator>();
+        cam = FindObjectOfType<FollowPlayer>();
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class Bridge : MonoBehaviour
             column.SetTrigger("Fade");
             column2.SetTrigger("Fade");
             jur.SetActive(true);
+            cam.player = null; 
         }
     }
 }
