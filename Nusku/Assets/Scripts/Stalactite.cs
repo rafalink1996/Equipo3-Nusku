@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stalagtite : MonoBehaviour {
+public class Stalactite : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -14,6 +14,6 @@ public class Stalagtite : MonoBehaviour {
 		
 	}
     void NotFalling (){
-        this.gameObject.tag = "Untagged";
+        this.gameObject.tag = "Stalactite";
     }
 }

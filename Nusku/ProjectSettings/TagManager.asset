@@ -10,6 +10,7 @@ TagManager:
   - Object
   - Platform
   - Hazard
+  - Stalactite
   layers:
   - Default
   - TransparentFX

@@ -18,6 +18,6 @@ public class Jur2D : MonoBehaviour {
        
 	}
     void Shoot (){
-        print("shoot");
+        GameObject bullet = GameObject.Instantiate(Resources.Load("Prefabs/Jur_Bullet") as GameObject);
     }
 }
