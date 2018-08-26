@@ -18,16 +18,30 @@ public class Jur_Idle : StateMachineBehaviour {
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         if (timeToAttack <= 0 && !isAttacking)
         {
-            animator.SetInteger("attackType", Random.Range(0, 2));
+            animator.SetInteger("attackType", Random.Range(0, 3));
             animator.SetTrigger("Attack");
             isAttacking = true;
         }else{
             timeToAttack -= Time.deltaTime;
         }
-        if (timeToAttack <= -2f)
+        if (timeToAttack <= -1f)
         {
-            timeToAttack = Random.Range(minTime, maxTime);
+            timeToAttack = minTime;
             isAttacking = false;
+        }
+        if (animator.GetBool("StalactitesFalling") == true)
+        {
+            GameObject stalactite1 = GameObject.Instantiate(Resources.Load("Prefabs/Stalactite") as GameObject);
+            GameObject stalactite2 = GameObject.Instantiate(Resources.Load("Prefabs/Stalactite") as GameObject);
+            GameObject stalactite3 = GameObject.Instantiate(Resources.Load("Prefabs/Stalactite") as GameObject);
+            stalactite1.transform.SetParent(GameObject.Find("Lanes/1").transform);
+            stalactite2.transform.SetParent(GameObject.Find("Lanes/2").transform);
+            stalactite3.transform.SetParent(GameObject.Find("Lanes/3").transform);
+            stalactite1.transform.localPosition = new Vector3(Random.Range(3.72f, 4.8f), Random.Range(0.2f, 4.36f), 0f);
+            stalactite2.transform.localPosition = new Vector3(Random.Range(3.72f, 4.8f), Random.Range(0.2f, 4.36f), 0f);
+            stalactite3.transform.localPosition = new Vector3(Random.Range(3.72f, 4.8f), Random.Range(0.2f, 4.36f), 0f);
+            timeToAttack = maxTime;
+            animator.SetBool("StalactitesFalling", false);
         }
 	}
 
