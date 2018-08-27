@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7ca95c0aa510bba4ca630e3b757a115b
+guid: 07febc18621bccf47bf73b43e85ddf1b
 TextureImporter:
   fileIDToRecycleName:
     21300000: Jur ataque U_0
@@ -12,8 +12,12 @@ TextureImporter:
     21300014: Jur ataque U_7
     21300016: Jur ataque U_8
     21300018: Jur ataque U_9
+    21300020: Jur ataque U_10
+    21300022: Jur ataque U_11
+    21300024: Jur ataque U_12
+    21300026: Jur ataque U_13
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -31,8 +35,6 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
-  streamingMipmaps: 0
-  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -43,7 +45,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -100
+    mipBias: -1
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -55,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,9 +122,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 800
-        width: 800
-        height: 800
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,7 +132,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0379c4540513e9a49a4a97c90d944df6
+      spriteID: 1e760cfc35ef1fd41b3710937725e470
       vertices: []
       indices: 
       edges: []
@@ -139,10 +141,10 @@ TextureImporter:
       name: Jur ataque U_1
       rect:
         serializedVersion: 2
-        x: 800
-        y: 800
-        width: 800
-        height: 800
+        x: 1000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,7 +152,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09dd8b72ba887204e837ec5eb83cc8af
+      spriteID: 49e6c8e271987c342bc3110dbfb18842
       vertices: []
       indices: 
       edges: []
@@ -159,10 +161,10 @@ TextureImporter:
       name: Jur ataque U_2
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 800
-        width: 800
-        height: 800
+        x: 2000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,7 +172,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3c50cb5163bbba4983a7c185565aa66
+      spriteID: 7c26ea2af6faf39408205f1022b6836c
       vertices: []
       indices: 
       edges: []
@@ -179,10 +181,10 @@ TextureImporter:
       name: Jur ataque U_3
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 800
-        width: 800
-        height: 800
+        x: 3000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,7 +192,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2d41546fb5f5484382e53fda3bcfbd4
+      spriteID: 6014ea354697e3944bbfae60e86a3328
       vertices: []
       indices: 
       edges: []
@@ -199,10 +201,10 @@ TextureImporter:
       name: Jur ataque U_4
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 800
-        width: 800
-        height: 800
+        x: 4000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,7 +212,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c6325a3cc645d2429f6bd37039682b2
+      spriteID: 317166e9420c2464a9987df9634f6ec0
       vertices: []
       indices: 
       edges: []
@@ -219,10 +221,10 @@ TextureImporter:
       name: Jur ataque U_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 800
-        height: 800
+        x: 5000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,7 +232,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28a726d5ecd972d428c0c0016154731b
+      spriteID: 14c76a6f8eca1d24aab0375e314026b5
       vertices: []
       indices: 
       edges: []
@@ -239,10 +241,10 @@ TextureImporter:
       name: Jur ataque U_6
       rect:
         serializedVersion: 2
-        x: 800
-        y: 0
-        width: 800
-        height: 800
+        x: 6000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,7 +252,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91774e79909fb3d4db8b1d2498d75898
+      spriteID: 5e3967c5eeb10bc41bf6c905b1eafb3c
       vertices: []
       indices: 
       edges: []
@@ -259,10 +261,10 @@ TextureImporter:
       name: Jur ataque U_7
       rect:
         serializedVersion: 2
-        x: 1600
+        x: 0
         y: 0
-        width: 800
-        height: 800
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,7 +272,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3c52837518a793449153f1a8019d3c2
+      spriteID: b5118e29adbad46439d4f5fafa3ff94f
       vertices: []
       indices: 
       edges: []
@@ -279,10 +281,10 @@ TextureImporter:
       name: Jur ataque U_8
       rect:
         serializedVersion: 2
-        x: 2400
+        x: 1000
         y: 0
-        width: 800
-        height: 800
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,7 +292,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e32db630ab6da0644a0c48ee39e7a256
+      spriteID: ab26cb6d58921454cb6cf7ea5c829a05
       vertices: []
       indices: 
       edges: []
@@ -299,10 +301,10 @@ TextureImporter:
       name: Jur ataque U_9
       rect:
         serializedVersion: 2
-        x: 3200
+        x: 2000
         y: 0
-        width: 800
-        height: 800
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,7 +312,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15fc6d37a70d6804c99a3beabfa40bc2
+      spriteID: 74126e4c41036de4e82d5fb80fe1ee0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jur ataque U_10
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529f7f36f5080d240a8cd047e96c7d30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jur ataque U_11
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ab993f87306ae46aaa64ad462a6a74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jur ataque U_12
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8101e2c5fbea60f4da8248a5e5196f37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jur ataque U_13
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e055f26f1e5e3f4bbe609f0f13599b3
       vertices: []
       indices: 
       edges: []
@@ -318,14 +400,12 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8df4af5352d639649a3cf68a14bd0f22
+    spriteID: e7caf092b41a37b419afee72fcffdf93
     vertices: []
     indices: 
     edges: []
     weights: []
   spritePackingTag: 
-  pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

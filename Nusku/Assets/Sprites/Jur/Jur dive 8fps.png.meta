@@ -19,8 +19,10 @@ TextureImporter:
     21300028: Jur dive 8fps_14
     21300030: Jur dive 8fps_15
     21300032: Jur dive 8fps_16
+    21300034: Jur dive 8fps_17
+    21300036: Jur dive 8fps_18
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -38,8 +40,6 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
-  streamingMipmaps: 0
-  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -50,7 +50,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -100
+    mipBias: -1
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -62,7 +62,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,7 +127,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2000
+        y: 3000
         width: 1000
         height: 1000
       alignment: 0
@@ -137,7 +137,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caf2b6361dd2eb94f8cd7b933fa1ff37
+      spriteID: de0ec62e5d471c44e904c5fbce2a00ac
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1000
-        y: 2000
+        y: 3000
         width: 1000
         height: 1000
       alignment: 0
@@ -157,7 +157,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7ce0e960532797498df7c5375e8578b
+      spriteID: 418a470715221d44780a893e5d7e2bea
       vertices: []
       indices: 
       edges: []
@@ -167,7 +167,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2000
-        y: 2000
+        y: 3000
         width: 1000
         height: 1000
       alignment: 0
@@ -177,7 +177,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0698dc33293a23478b1be169c80acc4
+      spriteID: 3f1d0f573e961cb418986d9549d898f3
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3000
-        y: 2000
+        y: 3000
         width: 1000
         height: 1000
       alignment: 0
@@ -197,7 +197,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eef9262de7ce6c744aea16f4a6994883
+      spriteID: e77bc3b6e0a29804882c0dc4c80173d6
       vertices: []
       indices: 
       edges: []
@@ -207,7 +207,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4000
-        y: 2000
+        y: 3000
         width: 1000
         height: 1000
       alignment: 0
@@ -217,7 +217,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1805c1d0554351d4ea9f9d4121614be3
+      spriteID: 558fc1b240766b04996ec2fc8bd34b1a
       vertices: []
       indices: 
       edges: []
@@ -226,7 +226,7 @@ TextureImporter:
       name: Jur dive 8fps_5
       rect:
         serializedVersion: 2
-        x: 5000
+        x: 0
         y: 2000
         width: 1000
         height: 1000
@@ -237,7 +237,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9df9413f1d452b846bdf1d4ef3ce414a
+      spriteID: c446d0c0d589b124cb3fe85e33188ace
       vertices: []
       indices: 
       edges: []
@@ -246,8 +246,8 @@ TextureImporter:
       name: Jur dive 8fps_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1000
+        x: 1000
+        y: 2000
         width: 1000
         height: 1000
       alignment: 0
@@ -257,7 +257,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 476abb018aed137408f0633b05ce5389
+      spriteID: 2b53977a76f4f8b43a0a40e76bc45fbc
       vertices: []
       indices: 
       edges: []
@@ -266,6 +266,86 @@ TextureImporter:
       name: Jur dive 8fps_7
       rect:
         serializedVersion: 2
+        x: 2000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8832d31e919c44fbc16f6979f59d33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jur dive 8fps_8
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835b25ae5eff87741bfd513b5a474df4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jur dive 8fps_9
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d4b4f00c82d1e4e81e83ba7bc0c847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jur dive 8fps_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658090f4ccf683d488ff18832eaffdc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jur dive 8fps_11
+      rect:
+        serializedVersion: 2
         x: 1000
         y: 1000
         width: 1000
@@ -277,13 +357,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49333605aea8bab4dad6e9a3aa6e0f11
+      spriteID: 7e9fe4893c24e0045881841df637ef9b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur dive 8fps_8
+      name: Jur dive 8fps_12
       rect:
         serializedVersion: 2
         x: 2000
@@ -297,13 +377,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e057ac0a342db04e9f0fddc0176fb89
+      spriteID: c25be7fa7ebb41048942eac5a70348db
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur dive 8fps_9
+      name: Jur dive 8fps_13
       rect:
         serializedVersion: 2
         x: 3000
@@ -317,13 +397,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edaa03cdba846d64da74ea42924760b9
+      spriteID: 03011be9227a3f447a5bc00664c64a1d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur dive 8fps_10
+      name: Jur dive 8fps_14
       rect:
         serializedVersion: 2
         x: 4000
@@ -337,33 +417,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 920ac32cf6b0f9849930e2337347ea8e
+      spriteID: 359c25e4725416b4f96676c92989c9b4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur dive 8fps_11
-      rect:
-        serializedVersion: 2
-        x: 5000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8227424e7ba1d842b2695c138060e10
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jur dive 8fps_12
+      name: Jur dive 8fps_15
       rect:
         serializedVersion: 2
         x: 0
@@ -377,13 +437,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6eb360c1c49f0db48a16e993c9246032
+      spriteID: 2931643d658878c44811161fb723aaf9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur dive 8fps_13
+      name: Jur dive 8fps_16
       rect:
         serializedVersion: 2
         x: 1000
@@ -397,13 +457,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 428b8fde0fcb23e459cf16036def8c76
+      spriteID: dfe500e7b33335d489a540ae63b21108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur dive 8fps_14
+      name: Jur dive 8fps_17
       rect:
         serializedVersion: 2
         x: 2000
@@ -417,13 +477,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2070508f5bab8147b3240123969f8a6
+      spriteID: 73d7ed531ae54e149ab919afc07ff629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur dive 8fps_15
+      name: Jur dive 8fps_18
       rect:
         serializedVersion: 2
         x: 3000
@@ -437,27 +497,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a15ac2a964b9f145b7798e515a27596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jur dive 8fps_16
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a31e9bcbfe110934ea3ee21e5e66d8f9
+      spriteID: 945b8a6f711e471439849e24918f2dfd
       vertices: []
       indices: 
       edges: []
@@ -465,14 +505,12 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 12d7dcd7f25e784419e6773816b0b864
+    spriteID: 79f6f69d317263946bfad7aa61b9bc85
     vertices: []
     indices: 
     edges: []
     weights: []
   spritePackingTag: 
-  pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
