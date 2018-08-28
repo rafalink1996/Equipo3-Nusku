@@ -9,6 +9,7 @@ public class Jur_Bullet : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
+        Destroy(this.gameObject, 4);
 	}
 	
 	// Update is called once per frame
@@ -22,6 +23,7 @@ public class Jur_Bullet : MonoBehaviour {
         speed = 0;
         if (collision.collider.tag == "Stalactite")
         {
+            //print("Crashed with stalctite");
             Destroy(collision.gameObject);
         }
     }
