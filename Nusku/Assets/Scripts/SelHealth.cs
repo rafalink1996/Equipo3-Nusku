@@ -39,7 +39,13 @@ public class SelHealth : MonoBehaviour {
             }
             if (collision.collider.gameObject.tag == "Hazard")
             {
-                healthSlider.value = healthSlider.value - 5;
+                healthSlider.value = healthSlider.value - 10;
+                invincible = true;
+                Invoke("ResetInvincibility", 2.5f);
+            }
+            if (collision.collider.gameObject.name == "Jur_Bullet")
+            {
+                healthSlider.value = healthSlider.value - 30;
                 invincible = true;
                 Invoke("ResetInvincibility", 2.5f);
             }
