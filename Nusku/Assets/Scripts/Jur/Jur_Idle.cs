@@ -37,9 +37,9 @@ public class Jur_Idle : StateMachineBehaviour {
             stalactite1.transform.SetParent(GameObject.Find("Lanes/1").transform);
             stalactite2.transform.SetParent(GameObject.Find("Lanes/2").transform);
             stalactite3.transform.SetParent(GameObject.Find("Lanes/3").transform);
-            stalactite1.transform.localPosition = new Vector3(Random.Range(3.72f, 4.8f), Random.Range(0.2f, 4.36f), 0f);
-            stalactite2.transform.localPosition = new Vector3(Random.Range(3.72f, 4.8f), Random.Range(0.2f, 4.36f), 0f);
-            stalactite3.transform.localPosition = new Vector3(Random.Range(3.72f, 4.8f), Random.Range(0.2f, 4.36f), 0f);
+            stalactite1.transform.localPosition = new Vector3(Random.Range(-0.85f, 0.02f), Random.Range(-2.27f, 1.71f), 0f);
+            stalactite2.transform.localPosition = new Vector3(Random.Range(-0.85f, 0.02f), Random.Range(-2.27f, 1.71f), 0f);
+            stalactite3.transform.localPosition = new Vector3(Random.Range(-0.85f, 0.02f), Random.Range(-2.27f, 1.71f), 0f);
             timeToAttack = maxTime;
             animator.SetBool("StalactitesFalling", false);
         }

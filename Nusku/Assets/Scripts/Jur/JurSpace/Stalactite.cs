@@ -19,12 +19,18 @@ public class Stalactite : MonoBehaviour {
     {
         if (collision.collider.tag == "Stalactite")
         {
-            Destroy(collision.gameObject);
+            collision.collider.GetComponent<Animator>().SetTrigger("Destroy");
+            collision.transform.Find("StalactiteTop").gameObject.SetActive(false);
+            //collision.collider.transform.chil;
         }
     }
     void NotFalling()
     {
         this.gameObject.tag = "Stalactite";
+    }
+    void Destroyed ()
+    {
+        Destroy(this.gameObject);
     }
 }
 

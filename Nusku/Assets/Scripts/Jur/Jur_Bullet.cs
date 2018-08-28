@@ -23,7 +23,8 @@ public class Jur_Bullet : MonoBehaviour {
         speed = 0;
         if (collision.collider.tag == "Stalactite")
         {
-            Destroy(collision.gameObject);
+            collision.collider.GetComponent<Animator>().SetTrigger("Destroy");
+            collision.transform.Find("StalactiteTop").gameObject.SetActive(false);
         }
     }
     void Crash ()
