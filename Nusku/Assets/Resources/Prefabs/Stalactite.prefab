@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4414082001972078}
   - component: {fileID: 212313583337782108}
   - component: {fileID: 95582990386095172}
-  - component: {fileID: 114470255685151982}
+  - component: {fileID: 114984179916469354}
   m_Layer: 0
   m_Name: Stalactite
   m_TagString: Untagged
@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553736228765908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.48, y: 5.38, z: 0}
+  m_LocalPosition: {x: 0.41671506, y: 3.214661, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4962302757409252}
@@ -157,17 +157,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114470255685151982
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1553736228765908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 038e8fe66af984d02b18ad7b9e530b31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114703166496997458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -176,7 +165,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1714099936589012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff1303535009d4bf59f6525a8e21aac5, type: 3}
+  m_Script: {fileID: 11500000, guid: 260241d5b68594386975c3899d2c029f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114984179916469354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1553736228765908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9da3c81b0fcb4ba28ba8520d99466ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212313583337782108

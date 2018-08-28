@@ -23,7 +23,6 @@ public class Jur_Bullet : MonoBehaviour {
         speed = 0;
         if (collision.collider.tag == "Stalactite")
         {
-            //print("Crashed with stalctite");
             Destroy(collision.gameObject);
         }
     }
