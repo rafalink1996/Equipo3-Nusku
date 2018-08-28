@@ -6,6 +6,7 @@ public class Jur2D : MonoBehaviour {
 
 
     Animator anim;
+    public float direction;
 
 	// Use this for initialization
 	void Start () {
@@ -19,5 +20,8 @@ public class Jur2D : MonoBehaviour {
 	}
     void Shoot (){
         GameObject bullet = GameObject.Instantiate(Resources.Load("Prefabs/Jur_Bullet") as GameObject);
+        bullet.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
+        bullet.name = "Jur_Bullet";
+      
     }
 }

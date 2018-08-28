@@ -24,9 +24,9 @@ public class Jur_Idle : StateMachineBehaviour {
         }else{
             timeToAttack -= Time.deltaTime;
         }
-        if (timeToAttack <= -1f)
+        if (timeToAttack <= -0.5f)
         {
-            timeToAttack = minTime;
+            timeToAttack = 1;
             isAttacking = false;
         }
         if (animator.GetBool("StalactitesFalling") == true)

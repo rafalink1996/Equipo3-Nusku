@@ -38,7 +38,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Blend
+  - m_Name: Direction
     m_Type: 1
     m_DefaultFloat: 2
     m_DefaultInt: 0
@@ -79,8 +79,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0de34553bde974e23983ecab9b582b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minTime: 2
-  maxTime: 4
+  minTime: 0.8
+  maxTime: 3
   timeToAttack: 0
   isAttacking: 0
 --- !u!114 &114580613114260702
@@ -94,6 +94,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9687aa9944a45a184b48f001411682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114837525347620666
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8095848c4da8542a4af7df451619c61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!206 &206880457022208762
 BlendTree:
   m_ObjectHideFlags: 1
@@ -102,7 +113,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 0}
+    m_Motion: {fileID: 7400000, guid: c4e4ad514ac594014a73bf8f5542016e, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -118,14 +129,14 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 0}
+    m_Motion: {fileID: 7400000, guid: 81cf6ae6b602d423a9f535c78f9b6b38, type: 2}
     m_Threshold: 3
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: Blend
+  m_BlendParameter: Direction
   m_BlendParameterY: Blend
   m_MinThreshold: 1
   m_MaxThreshold: 3
@@ -147,7 +158,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.75
+  m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
@@ -249,7 +260,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.8181818
+  m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
@@ -270,7 +281,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.75
+  m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
@@ -370,7 +381,8 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101623025147805118}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114837525347620666}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
