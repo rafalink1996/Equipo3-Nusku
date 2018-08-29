@@ -12,6 +12,11 @@ public class TextBoxManager : MonoBehaviour
     public Image characterImage;
     public TextAsset textFile;
     public Sprite image;
+    public bool choices;
+    public Button option1;
+    public Text option1Text;
+    public Button option2;
+    public Text option2Text;
     public string[] textlines;
     public int currentLine;
     public int endAtLine;
@@ -86,6 +91,18 @@ public class TextBoxManager : MonoBehaviour
             else if (isTyping == !cancelTyping)
             {
                 cancelTyping = true;
+            }
+        }
+        if (choices)
+        {
+            if (!isTyping && currentLine == endAtLine)
+            {
+                print("choices appear");
+                option1.enabled = true;
+                option2.enabled = false;
+                option1Text.enabled = true;
+                option2Text.enabled = true;
+                choices = false;
             }
         }
     }

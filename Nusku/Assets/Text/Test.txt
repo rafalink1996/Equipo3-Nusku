@@ -6,4 +6,14 @@ Testing
 
 
 This seems to be working
-Bye
+Bye.....
+
+
+This is the test for Option 1
+I think it works
+Yes
+
+
+This is the test for Option 2
+Holy sheet, it works
+Wow
