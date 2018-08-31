@@ -19,8 +19,11 @@ public class Jur_Bullet : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        animator.SetTrigger("Crash");
-        speed = 0;
+        if (collision.collider.tag != "Bullet")
+        {
+            animator.SetTrigger("Crash");
+            speed = 0;
+        }
         if (collision.collider.tag == "Stalactite")
         {
             collision.collider.GetComponent<Animator>().SetTrigger("Destroy");
