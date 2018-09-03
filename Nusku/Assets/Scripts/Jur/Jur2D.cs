@@ -35,6 +35,11 @@ public class Jur2D : MonoBehaviour {
         GameObject bullet = GameObject.Instantiate(Resources.Load("Prefabs/Jur_Bullet") as GameObject);
         bullet.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
         bullet.name = "Jur_Bullet";
-      
+    }
+    void HomingBullet()
+    {
+        GameObject bullet = GameObject.Instantiate(Resources.Load("Prefabs/JurHomingBullet") as GameObject);
+        bullet.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
+        bullet.name = "JurHomingBullet";
     }
 }
