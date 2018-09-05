@@ -8,10 +8,14 @@ public class Jur2D : MonoBehaviour {
     Animator anim;
     public float direction;
     public float health;
+    public GameObject freeze;
+    public GameObject water;
+    TextBoxManager textBox;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
+        textBox = FindObjectOfType<TextBoxManager>();
    
 	}
 	
@@ -20,6 +24,12 @@ public class Jur2D : MonoBehaviour {
        if (health <= 0)
         {
             this.gameObject.SetActive(false);
+            freeze.SetActive(true);
+            water.SetActive(false);
+        }
+        if (textBox.currentLine > textBox.endAtLine)
+        {
+            anim.SetTrigger("BattleStart");
         }
 	}
 
@@ -41,5 +51,12 @@ public class Jur2D : MonoBehaviour {
         GameObject bullet = GameObject.Instantiate(Resources.Load("Prefabs/JurHomingBullet") as GameObject);
         bullet.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
         bullet.name = "JurHomingBullet";
+    }
+    void IceJavelin()
+    {
+        GameObject javelin1 = GameObject.Instantiate(Resources.Load("Prefabs/IceJavelin") as GameObject);
+        javelin1.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
+        javelin1.transform.rotation = Quaternion.Euler(0, 0, -83);
+        javelin1.name = "IceJavelin";
     }
 }

@@ -7,7 +7,7 @@ public class Bridge : MonoBehaviour {
     Animator anim;
     public Animator column;
     public Animator column2;
-    public GameObject jur;
+    public Animator jur;
     FollowPlayer cam;
     // Use this for initialization
     void Start()
@@ -28,8 +28,9 @@ public class Bridge : MonoBehaviour {
             anim.SetTrigger("Break");
             column.SetTrigger("Fade");
             column2.SetTrigger("Fade");
-            jur.SetActive(true);
+            jur.SetTrigger("Emerge");
             cam.player = null;
+            Destroy(this.gameObject);
         }
     }
 }

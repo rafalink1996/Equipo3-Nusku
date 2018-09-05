@@ -18,7 +18,7 @@ public class Jur_Idle : StateMachineBehaviour {
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         if (timeToAttack <= 0 && !isAttacking)
         {
-            animator.SetInteger("attackType", Random.Range(0, 4));
+            animator.SetInteger("attackType", Random.Range(0, 5));
             animator.SetTrigger("Attack");
             isAttacking = true;
         }else{
@@ -26,7 +26,7 @@ public class Jur_Idle : StateMachineBehaviour {
         }
         if (timeToAttack <= -0.5f)
         {
-            timeToAttack = 1;
+            timeToAttack = 0.1f;
             isAttacking = false;
         }
         if (animator.GetBool("StalactitesFalling") == true)

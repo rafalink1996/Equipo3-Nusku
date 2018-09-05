@@ -19,7 +19,7 @@ public class Jur_Bullet : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag != "Bullet")
+        if (collision.collider.tag != "Bullet" && collision.collider.name != "Jur")
         {
             animator.SetTrigger("Crash");
             speed = 0;

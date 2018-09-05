@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32be31ffeb7774e529758c82f16baba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1.7
 --- !u!164 &164174987639445042
 AudioReverbFilter:
   m_ObjectHideFlags: 1

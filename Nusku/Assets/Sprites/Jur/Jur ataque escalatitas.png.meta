@@ -109,7 +109,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5459b317dcb2c416681ba6fcf9b50dbb
+      spriteID: 9b2169cb75a06462f85152489a21b5bc
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db7a9281fc74d464b9ddb2600b3d37f2
+      spriteID: 023bec1fc44d04aa5b792d28d8a7a6d4
       vertices: []
       indices: 
       edges: []
@@ -149,7 +149,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 902095ea877934c4eb8fe2625d2bdbbf
+      spriteID: b0439fd0f24a14b1caff8756236d5e71
       vertices: []
       indices: 
       edges: []
@@ -169,7 +169,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9cf8c68e288f4c9e85218144c6cc862
+      spriteID: 0ac01311dc8794796918be03e5382e08
       vertices: []
       indices: 
       edges: []
@@ -189,7 +189,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32a15c8a995a842b393ba1c4572e929d
+      spriteID: f0393eda6544948b4b98dc19b6d21d02
       vertices: []
       indices: 
       edges: []
@@ -209,7 +209,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89453806fe56648018d95ca5987f98d1
+      spriteID: b171bfedd51cf46f8a5c05d9ec0564e1
       vertices: []
       indices: 
       edges: []
@@ -229,7 +229,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8af90b1c7986459ab9ee6e8c8b51d97
+      spriteID: 22cbcb80bf5354a5eb45274728d6b35b
       vertices: []
       indices: 
       edges: []
@@ -249,7 +249,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e2310ea477e64ea992cc355f38b92cc
+      spriteID: 3a04a9dc6ca30448083a553e9a85c248
       vertices: []
       indices: 
       edges: []
@@ -258,7 +258,7 @@ TextureImporter:
       name: Jur ataque escalatitas_8
       rect:
         serializedVersion: 2
-        x: 2608
+        x: 2600
         y: 0
         width: 1300
         height: 1300
@@ -269,7 +269,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d57b2fb557f3b48918b05979ec610ecf
+      spriteID: f12f9627e816f4bd3a1bb8c8cc89e056
       vertices: []
       indices: 
       edges: []
@@ -289,7 +289,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 488017e392bfa437d87d0675f7abb310
+      spriteID: 8574c9207e0b6470b88509d9e0e31128
       vertices: []
       indices: 
       edges: []
@@ -309,7 +309,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e88b56e50ee0b459f80ff74750afb97e
+      spriteID: f4f11786701c74319a7870ff686fd6a9
       vertices: []
       indices: 
       edges: []

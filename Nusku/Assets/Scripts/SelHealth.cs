@@ -51,7 +51,7 @@ public class SelHealth : MonoBehaviour {
             }
             if (collision.collider.gameObject.name == "JurHomingBullet")
             {
-                healthSlider.value = healthSlider.value - 30;
+                healthSlider.value = healthSlider.value - 15;
                 invincible = true;
                 Invoke("ResetInvincibility", 2.5f);
             }
