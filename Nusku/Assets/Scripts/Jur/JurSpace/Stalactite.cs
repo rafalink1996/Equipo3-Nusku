@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stalactite : MonoBehaviour {
+public class Stalactite : MonoBehaviour
+{
 
     // Use this for initialization
     void Start()
     {
-
+        Invoke("DestroyAfterTime", 60f);
     }
 
     // Update is called once per frame
@@ -28,9 +29,13 @@ public class Stalactite : MonoBehaviour {
     {
         this.gameObject.tag = "Stalactite";
     }
-    void Destroyed ()
+    void Destroyed()
     {
         Destroy(this.gameObject);
+    }
+    void DestroyAfterTime()
+    {
+        GetComponent<Animator>().SetTrigger("Destroy");
     }
 }
 

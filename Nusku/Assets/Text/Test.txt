@@ -1,8 +1,8 @@
-Hello
-Test
-Testing
-...
-...
+Hello there!
+My name is Jur.
+I'm terribly sorry, but I must kill you.
+.........
+Goodbye!
 
 
 This seems to be working

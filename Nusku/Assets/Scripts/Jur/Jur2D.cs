@@ -56,7 +56,15 @@ public class Jur2D : MonoBehaviour {
     {
         GameObject javelin1 = GameObject.Instantiate(Resources.Load("Prefabs/IceJavelin") as GameObject);
         javelin1.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
-        javelin1.transform.rotation = Quaternion.Euler(0, 0, -83);
+        javelin1.transform.rotation = Quaternion.Euler(0, 0, Random.Range(-75f, -60f));
         javelin1.name = "IceJavelin";
+        GameObject javelin2 = GameObject.Instantiate(Resources.Load("Prefabs/IceJavelin") as GameObject);
+        javelin2.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
+        javelin2.transform.rotation = Quaternion.Euler(0, 0, Random.Range(-45f, -30f));
+        javelin2.name = "IceJavelin";
+        GameObject javelin3 = GameObject.Instantiate(Resources.Load("Prefabs/IceJavelin") as GameObject);
+        javelin3.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
+        javelin3.transform.rotation = Quaternion.Euler(0, 0, Random.Range(-5f, 10f));
+        javelin3.name = "IceJavelin";
     }
 }

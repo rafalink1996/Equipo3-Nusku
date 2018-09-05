@@ -55,6 +55,12 @@ public class SelHealth : MonoBehaviour {
                 invincible = true;
                 Invoke("ResetInvincibility", 2.5f);
             }
+            if (collision.collider.gameObject.name == "IceJavelin")
+            {
+                healthSlider.value = healthSlider.value - 20;
+                invincible = true;
+                Invoke("ResetInvincibility", 2.5f);
+            }
         }
     }
     void ResetInvincibility(){

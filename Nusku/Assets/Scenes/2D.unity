@@ -944,7 +944,6 @@ GameObject:
   - component: {fileID: 553830330}
   - component: {fileID: 553830334}
   - component: {fileID: 553830333}
-  - component: {fileID: 553830335}
   m_Layer: 0
   m_Name: Jur
   m_TagString: Enemy
@@ -1060,26 +1059,6 @@ MonoBehaviour:
   health: 250
   freeze: {fileID: 1376023141}
   water: {fileID: 742532799}
---- !u!50 &553830335
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 553830329}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1000000
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!1 &557306147
 GameObject:
   m_ObjectHideFlags: 0
@@ -3777,7 +3756,7 @@ MonoBehaviour:
   hasOptions: 0
   option1: 
   option2: 
-  typingSpeed: 0.2
+  typingSpeed: 0.09
 --- !u!1 &1642864539
 GameObject:
   m_ObjectHideFlags: 0

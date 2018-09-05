@@ -19,7 +19,7 @@ public class Jur_IceJavelin : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.name != "Jur")
+        if (collision.collider.name != "Jur" && collision.collider.name != "IceJavelin")
         {
             anim.SetTrigger("Crash");
             speed = 0;
