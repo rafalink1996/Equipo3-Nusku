@@ -18,7 +18,7 @@ public class Jur_Idle : StateMachineBehaviour {
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         if (timeToAttack <= 0 && !isAttacking)
         {
-            animator.SetInteger("attackType", Random.Range(0, 5));
+            animator.SetInteger("attackType", Random.Range(0, 6));
             animator.SetTrigger("Attack");
             isAttacking = true;
         }else{

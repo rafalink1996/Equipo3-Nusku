@@ -9,7 +9,7 @@ public class Jur_IceJavelin : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         anim = GetComponentInChildren<Animator>();
-        Destroy(this.gameObject, 3);
+        Destroy(this.gameObject, 2);
 	}
 	
 	// Update is called once per frame

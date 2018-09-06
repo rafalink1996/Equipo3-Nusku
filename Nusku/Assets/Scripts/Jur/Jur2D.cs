@@ -38,7 +38,9 @@ public class Jur2D : MonoBehaviour {
         if (collision.collider.tag == "Bullet")
         {
             health = health - 10f;
-            print("hit");
+            GetComponent<SpriteRenderer>().color = new Color(179, 0, 255);
+            Invoke("ChangeColorBack", 0.5f); 
+
         }
     }
     void Shoot (){
@@ -56,15 +58,37 @@ public class Jur2D : MonoBehaviour {
     {
         GameObject javelin1 = GameObject.Instantiate(Resources.Load("Prefabs/IceJavelin") as GameObject);
         javelin1.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
-        javelin1.transform.rotation = Quaternion.Euler(0, 0, Random.Range(-75f, -60f));
+        javelin1.transform.rotation = Quaternion.Euler(0, 0, Random.Range(-85f, -50f));
         javelin1.name = "IceJavelin";
         GameObject javelin2 = GameObject.Instantiate(Resources.Load("Prefabs/IceJavelin") as GameObject);
         javelin2.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
-        javelin2.transform.rotation = Quaternion.Euler(0, 0, Random.Range(-45f, -30f));
+        javelin2.transform.rotation = Quaternion.Euler(0, 0, Random.Range(-49f, -15f));
         javelin2.name = "IceJavelin";
         GameObject javelin3 = GameObject.Instantiate(Resources.Load("Prefabs/IceJavelin") as GameObject);
         javelin3.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
-        javelin3.transform.rotation = Quaternion.Euler(0, 0, Random.Range(-5f, 10f));
+        javelin3.transform.rotation = Quaternion.Euler(0, 0, Random.Range(-14f, 20f));
         javelin3.name = "IceJavelin";
+    }
+    void BiteLeft()
+    {
+        GameObject biteL = GameObject.Instantiate(Resources.Load("Prefabs/Bite_L") as GameObject);
+        biteL.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
+        biteL.name = "Bite";
+    }
+    void BiteCenter()
+    {
+        GameObject biteC = GameObject.Instantiate(Resources.Load("Prefabs/Bite_C") as GameObject);
+        biteC.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
+        biteC.name = "Bite";
+    }
+    void BiteRight()
+    {
+        GameObject biteR = GameObject.Instantiate(Resources.Load("Prefabs/Bite_R") as GameObject);
+        biteR.transform.position = (GameObject.Find("Jur/Mouth").transform.position);
+        biteR.name = "Bite";
+    }
+    void ChangeColorBack()
+    {
+        GetComponent<SpriteRenderer>().color = new Color(255, 255, 255);
     }
 }
