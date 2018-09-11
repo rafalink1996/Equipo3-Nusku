@@ -8,26 +8,56 @@ public class Jur_Idle : StateMachineBehaviour {
     public float maxTime;
     public float timeToAttack;
     public bool isAttacking;
+    public int attackType;
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         timeToAttack = Random.Range(minTime, maxTime);
         isAttacking = false;
+        animator.ResetTrigger("BattleStart");
+        animator.ResetTrigger("Emerge");
+        animator.ResetTrigger("Stal");
+        animator.ResetTrigger("Bite");
+        animator.ResetTrigger("Bullet");
+        animator.ResetTrigger("Javalin");
+        animator.ResetTrigger("Dive");
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         if (timeToAttack <= 0 && !isAttacking)
         {
-            animator.SetInteger("attackType", Random.Range(0, 6));
-            animator.SetTrigger("Attack");
+            attackType = Random.Range(1, 101);
+            //animator.SetInteger("attackType", Random.Range(0, 6));
+            //animator.SetTrigger("Attack");
             isAttacking = true;
         }else{
             timeToAttack -= Time.deltaTime;
+            attackType = 0;
         }
         if (timeToAttack <= -0.5f)
         {
             timeToAttack = 0.1f;
             isAttacking = false;
+        }
+        if (attackType >= 1 && attackType <=20)
+        {
+            animator.SetTrigger("Stal");
+        }
+        if (attackType >= 21 && attackType <= 40)
+        {
+            animator.SetTrigger("Bite");
+        }
+        if (attackType >= 41 && attackType <= 60)
+        {
+            animator.SetTrigger("Bullet");
+        }
+        if (attackType >= 61 && attackType <= 80)
+        {
+            animator.SetTrigger("Javalin");
+        }
+        if (attackType >= 81 && attackType <= 100)
+        {
+            animator.SetTrigger("Dive");
         }
         if (animator.GetBool("StalactitesFalling") == true)
         {
