@@ -6,10 +6,13 @@ public class Bite : MonoBehaviour {
 
     public float speed;
     float scale = 0.04f;
+    public int damage = 10;
+    SelHealth sel;
 
 	// Use this for initialization
 	void Start () {
         Destroy(this.gameObject, 2f);
+        sel = FindObjectOfType<SelHealth>();
 	}
 	
 	// Update is called once per frame
@@ -21,6 +24,7 @@ public class Bite : MonoBehaviour {
     {
         if (collision.collider.tag == "Player")
         {
+            sel.TakeDamage(damage);
             Invoke("DisableCollider", 0.1f); 
         }
     }

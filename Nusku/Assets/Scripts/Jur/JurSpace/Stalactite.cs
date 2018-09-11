@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Stalactite : MonoBehaviour
 {
-
+    public int damage;
+    SelHealth sel;
     // Use this for initialization
     void Start()
     {
         Invoke("DestroyAfterTime", 60f);
+        sel = FindObjectOfType<SelHealth>();
     }
 
     // Update is called once per frame
@@ -23,6 +25,10 @@ public class Stalactite : MonoBehaviour
             collision.collider.GetComponent<Animator>().SetTrigger("Destroy");
             collision.transform.Find("StalactiteTop").gameObject.SetActive(false);
             //collision.collider.transform.chil;
+        }
+        if (collision.collider.tag == "Player" && this.gameObject.tag == "Hazard")
+        {
+            sel.TakeDamage(damage);
         }
     }
     void NotFalling()

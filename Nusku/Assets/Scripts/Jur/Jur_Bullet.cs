@@ -5,11 +5,14 @@ using UnityEngine;
 public class Jur_Bullet : MonoBehaviour {
 
     public float speed;
+    public int damage;
+    SelHealth sel;
     Animator animator;
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
         Destroy(this.gameObject, 4);
+        sel = FindObjectOfType<SelHealth>();
 	}
 	
 	// Update is called once per frame
@@ -28,6 +31,10 @@ public class Jur_Bullet : MonoBehaviour {
         {
             collision.collider.GetComponent<Animator>().SetTrigger("Destroy");
             collision.transform.Find("StalactiteTop").gameObject.SetActive(false);
+        }
+        if (collision.collider.tag == "Player")
+        {
+            sel.TakeDamage(damage);
         }
     }
     void Crash ()

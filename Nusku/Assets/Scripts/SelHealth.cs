@@ -11,6 +11,8 @@ public class SelHealth : MonoBehaviour
     Animator anim;
     PlayerMovement2D sel;
     GameObject arm;
+    SpriteRenderer body;
+    SpriteRenderer armG;
     // Use this for initialization
     void Start()
     {
@@ -18,6 +20,8 @@ public class SelHealth : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         sel = FindObjectOfType<PlayerMovement2D>();
         arm = GameObject.Find("Sel/Graphics/Arm");
+        body = GetComponentInChildren<SpriteRenderer>();
+        armG = this.transform.Find("Graphics/Arm").gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -34,53 +38,66 @@ public class SelHealth : MonoBehaviour
     {
         if (invincible == false)
         {
-            if (collision.collider.gameObject.tag == "Enemy")
-            {
-                healthSlider.value = healthSlider.value - 10;
-                invincible = true;
-                Invoke("ResetInvincibility", 2.5f);
-            }
-            if (collision.collider.gameObject.tag == "Hazard")
-            {
-                healthSlider.value = healthSlider.value - 10;
-                invincible = true;
-                Invoke("ResetInvincibility", 2.5f);
-            }
-            if (collision.collider.gameObject.name == "Jur_Bullet")
-            {
-                healthSlider.value = healthSlider.value - 30;
-                invincible = true;
-                Invoke("ResetInvincibility", 2.5f);
-            }
-            if (collision.collider.gameObject.name == "JurHomingBullet")
-            {
-                healthSlider.value = healthSlider.value - 15;
-                invincible = true;
-                Invoke("ResetInvincibility", 2.5f);
-            }
-            if (collision.collider.gameObject.name == "IceJavelin")
-            {
-                healthSlider.value = healthSlider.value - 20;
-                invincible = true;
-                Invoke("ResetInvincibility", 2.5f);
-            }
-            if (collision.collider.gameObject.name == "Bite")
-            {
-                healthSlider.value = healthSlider.value - 10;
-                invincible = true;
-                Invoke("ResetInvincibility", 2.5f);
-            }
+            //if (collision.collider.gameObject.tag == "Enemy")
+            //{
+            //    healthSlider.value = healthSlider.value - 10;
+            //    invincible = true;
+            //    Invoke("ResetInvincibility", 2.5f);
+            //}
+            //if (collision.collider.gameObject.tag == "Hazard")
+            //{
+            //    healthSlider.value = healthSlider.value - 10;
+            //    invincible = true;
+            //    Invoke("ResetInvincibility", 2.5f);
+            //}
+            //if (collision.collider.gameObject.name == "Jur_Bullet")
+            //{
+            //    healthSlider.value = healthSlider.value - 30;
+            //    invincible = true;
+            //    Invoke("ResetInvincibility", 2.5f);
+            //}
+            //if (collision.collider.gameObject.name == "JurHomingBullet")
+            //{
+            //    healthSlider.value = healthSlider.value - 15;
+            //    invincible = true;
+            //    Invoke("ResetInvincibility", 2.5f);
+            //}
+            //if (collision.collider.gameObject.name == "IceJavelin")
+            //{
+            //    healthSlider.value = healthSlider.value - 20;
+            //    invincible = true;
+            //    Invoke("ResetInvincibility", 2.5f);
+            //}
+            //if (collision.collider.gameObject.name == "Bite")
+            //{
+            //    healthSlider.value = healthSlider.value - 10;
+            //    invincible = true;
+            //    Invoke("ResetInvincibility", 2.5f);
+            //}
 
-            if (collision.collider.gameObject.name == "DiveBeam")
-            {
-                healthSlider.value = healthSlider.value - 50;
-                invincible = true;
-                Invoke("ResetInvincibility", 2.5f);
-            }
+            //if (collision.collider.gameObject.name == "DiveBeam")
+            //{
+            //    healthSlider.value = healthSlider.value - 50;
+            //    invincible = true;
+            //    Invoke("ResetInvincibility", 2.5f);
+            //}
+        }
+    }
+    public void TakeDamage (int damageTaken)
+    {
+        if (invincible == false)
+        {
+            healthSlider.value = healthSlider.value - damageTaken;
+            invincible = true;
+            body.color = new Color(255, 225, 0);
+            armG.color = new Color(255, 225, 0);
+            Invoke("ResetInvincibility", 2.5f);
         }
     }
     void ResetInvincibility()
     {
         invincible = false;
+        body.color = new Color(255, 255, 255);
+        armG.color = new Color(255, 255, 255);
     }
 }

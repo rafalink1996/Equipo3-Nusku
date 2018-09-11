@@ -633,6 +633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.7
+  damage: 15
 --- !u!164 &164174987639445042
 AudioReverbFilter:
   m_ObjectHideFlags: 1

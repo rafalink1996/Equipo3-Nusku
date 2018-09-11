@@ -89,7 +89,7 @@ public class Glove2D : MonoBehaviour {
 
 
             // Agendo la funcion de terminacion
-            Invoke("OneSecondAfter", 1.0f);
+            Invoke("OneSecondAfter", 0.5f);
         }
 
         if (Input.GetButtonUp("Fire1"))
@@ -101,8 +101,6 @@ public class Glove2D : MonoBehaviour {
                 // No pasa nada, porque queremos evitar que presiona la tecla repetidas veces
                 CancelInvoke("OneSecondAfter");
                 oneSecInProgress = false;
-
-
 
             }
             else

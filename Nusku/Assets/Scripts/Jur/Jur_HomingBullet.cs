@@ -6,11 +6,14 @@ public class Jur_HomingBullet : MonoBehaviour {
 
     public float speed;
     Transform target;
+    public int damage;
+    SelHealth sel;
 
 	// Use this for initialization
 	void Start () {
         Destroy(this.gameObject, 3);
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        sel = FindObjectOfType<SelHealth>();
 	}
 	
 	// Update is called once per frame
@@ -23,6 +26,10 @@ public class Jur_HomingBullet : MonoBehaviour {
         if (collision.collider.tag != "Stalactite")
         {
             Destroy(this.gameObject);
+        }
+        if (collision.collider.tag == "Player")
+        {
+            sel.TakeDamage(damage);
         }
     }
 }

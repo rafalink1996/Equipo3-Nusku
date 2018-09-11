@@ -34,6 +34,10 @@ public class Bullet2D : MonoBehaviour {
             {
                 this.GetComponent<ParticleSystemRenderer>().sortingOrder = 6;
             }
+            if (Input.GetAxisRaw("Fire1") == 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
