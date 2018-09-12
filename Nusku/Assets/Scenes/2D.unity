@@ -258,10 +258,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
+  m_SubmitButton: Interact
   m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
+  m_InputActionsPerSecond: 1
+  m_RepeatDelay: 1
   m_ForceModuleActive: 0
 --- !u!114 &245503083
 MonoBehaviour:
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1254098341}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &245503084
@@ -875,7 +875,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &553830330
 Animator:
   serializedVersion: 3
@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1902,13 +1902,14 @@ GameObject:
   - component: {fileID: 922645183}
   - component: {fileID: 922645182}
   - component: {fileID: 922645186}
+  - component: {fileID: 922645187}
   m_Layer: 0
   m_Name: NPC test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!58 &922645182
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2014,7 +2015,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 922645181}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee7d4ea05cb4141c8b6b28125be47f86, type: 3}
   m_Name: 
@@ -2028,8 +2029,35 @@ MonoBehaviour:
   destroyWhenActivated: 0
   requireButtonPress: 1
   hasOptions: 1
-  option1: 1
-  option2: 2
+  option1: Hello
+  option2: Goodbye
+  typingSpeed: 0.05
+--- !u!114 &922645187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 922645181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 139a9bc04b71e42f79aab4b50c225ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Sel
+  characterImage: {fileID: 21300054, guid: da6ff1e1dd24c4f47b086ca4ac1897a7, type: 3}
+  theText: {fileID: 4900000, guid: 737bcb275633d4d87a3783c3c55d0d99, type: 3}
+  startLine: 6
+  endLine: 8
+  theTextBox: {fileID: 0}
+  destroyWhenActivated: 0
+  requireButtonPress: 1
+  hasOptions: 1
+  option1: Hello
+  option1Line: 11
+  option1EndLine: 13
+  option2: Goodbye
+  option2Line: 16
+  option2EndLine: 18
   typingSpeed: 0.05
 --- !u!1 &995857868
 GameObject:
@@ -2520,7 +2548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3087,7 +3115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 1
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -4314,13 +4342,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 2.9667258, y: -1.1915252}
-  - {x: 2.293994, y: -1.7321062}
+  - {x: 3.505615, y: -1.4662535}
+  - {x: 2.875149, y: -2.123064}
   - {x: -2.0962925, y: 0.87158275}
   - {x: -1.254817, y: 1.6735319}
   - {x: -1.3468413, y: 1.4046104}
   - {x: -1.2383227, y: 1.1926569}
-  - {x: 2.969473, y: -1.1881423}
+  - {x: 3.4766626, y: -1.4523039}
 --- !u!1 &1875606288
 GameObject:
   m_ObjectHideFlags: 0

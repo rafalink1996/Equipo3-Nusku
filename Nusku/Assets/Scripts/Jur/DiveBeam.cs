@@ -13,6 +13,7 @@ public class DiveBeam : StateMachineBehaviour {
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         sel = GameObject.FindWithTag("Player").GetComponent<Transform>();
         time = 1.5f;
+        beams = 3;
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

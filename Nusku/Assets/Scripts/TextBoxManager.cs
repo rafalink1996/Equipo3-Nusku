@@ -15,6 +15,8 @@ public class TextBoxManager : MonoBehaviour
     public bool choices;
     public Button option1;
     public Text option1Text;
+    //public int option1Line;
+    //public int option1EndLine;
     public Button option2;
     public Text option2Text;
     public string[] textlines;
@@ -27,6 +29,7 @@ public class TextBoxManager : MonoBehaviour
     bool cancelTyping = false;
     public float typeSpeed;
     AudioSource audioSource;
+
 
     // Use this for initialization
     void Start()
@@ -79,7 +82,7 @@ public class TextBoxManager : MonoBehaviour
                 currentLine += 1;
 
 
-                if (currentLine > endAtLine)
+                if (currentLine > endAtLine && !choices)
                 {
                     DisableTextBox();
                 }
@@ -99,15 +102,16 @@ public class TextBoxManager : MonoBehaviour
             {
                 print("choices appear");
                 option1.enabled = true;
-                option2.enabled = false;
+                option2.enabled = true;
                 option1Text.enabled = true;
                 option2Text.enabled = true;
-                choices = false;
+
             }
+  
         }
     }
 
-    private IEnumerator TextScroll (string lineOfText)
+    public IEnumerator TextScroll (string lineOfText)
     {
         int letter = 0;
         theText.text = "";
@@ -141,7 +145,10 @@ public class TextBoxManager : MonoBehaviour
         textBox.SetActive(false);
         isActive = false;
         player.canMove = true;
-
+        option1.enabled = false;
+        option2.enabled = false;
+        option1Text.enabled = false;
+        option2Text.enabled = false;
 
     }
 
@@ -153,4 +160,26 @@ public class TextBoxManager : MonoBehaviour
             textlines = (theText.text.Split('\n'));
         }
     }
+
+    //public void Option1(int newCurrentLine, int newEndAtLine)
+    //{
+    //    currentLine = newCurrentLine;
+    //    endAtLine = newEndAtLine;
+    //    StartCoroutine(TextScroll(textlines[currentLine]));
+    //    option1.enabled = false;
+    //    option2.enabled = false;
+    //    option1Text.enabled = false;
+    //    option2Text.enabled = false;
+    //    //choices = false;
+    //}
+    //public void Option2()
+    //{
+    //    currentLine = 15;
+    //    endAtLine = 18;
+    //    option1.enabled = false;
+    //    option2.enabled = false;
+    //    option1Text.enabled = false;
+    //    option2Text.enabled = false;
+    //    choices = false;
+    //}
 }

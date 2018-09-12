@@ -36,52 +36,7 @@ public class SelHealth : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (invincible == false)
-        {
-            //if (collision.collider.gameObject.tag == "Enemy")
-            //{
-            //    healthSlider.value = healthSlider.value - 10;
-            //    invincible = true;
-            //    Invoke("ResetInvincibility", 2.5f);
-            //}
-            //if (collision.collider.gameObject.tag == "Hazard")
-            //{
-            //    healthSlider.value = healthSlider.value - 10;
-            //    invincible = true;
-            //    Invoke("ResetInvincibility", 2.5f);
-            //}
-            //if (collision.collider.gameObject.name == "Jur_Bullet")
-            //{
-            //    healthSlider.value = healthSlider.value - 30;
-            //    invincible = true;
-            //    Invoke("ResetInvincibility", 2.5f);
-            //}
-            //if (collision.collider.gameObject.name == "JurHomingBullet")
-            //{
-            //    healthSlider.value = healthSlider.value - 15;
-            //    invincible = true;
-            //    Invoke("ResetInvincibility", 2.5f);
-            //}
-            //if (collision.collider.gameObject.name == "IceJavelin")
-            //{
-            //    healthSlider.value = healthSlider.value - 20;
-            //    invincible = true;
-            //    Invoke("ResetInvincibility", 2.5f);
-            //}
-            //if (collision.collider.gameObject.name == "Bite")
-            //{
-            //    healthSlider.value = healthSlider.value - 10;
-            //    invincible = true;
-            //    Invoke("ResetInvincibility", 2.5f);
-            //}
-
-            //if (collision.collider.gameObject.name == "DiveBeam")
-            //{
-            //    healthSlider.value = healthSlider.value - 50;
-            //    invincible = true;
-            //    Invoke("ResetInvincibility", 2.5f);
-            //}
-        }
+        
     }
     public void TakeDamage (int damageTaken)
     {
