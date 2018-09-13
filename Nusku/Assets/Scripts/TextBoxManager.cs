@@ -100,7 +100,6 @@ public class TextBoxManager : MonoBehaviour
         {
             if (!isTyping && currentLine == endAtLine)
             {
-                print("choices appear");
                 option1.enabled = true;
                 option2.enabled = true;
                 option1Text.enabled = true;

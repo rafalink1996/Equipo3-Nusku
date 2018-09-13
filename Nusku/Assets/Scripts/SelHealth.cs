@@ -13,6 +13,7 @@ public class SelHealth : MonoBehaviour
     GameObject arm;
     SpriteRenderer body;
     SpriteRenderer armG;
+ 
     // Use this for initialization
     void Start()
     {
@@ -27,32 +28,41 @@ public class SelHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        armG.color = body.color;
         if (healthSlider.value <= 0)
         {
             anim.SetBool("Dead", true);
             sel.canMove = false;
             arm.SetActive(false);
+            body.color = Color.white;
+            StopCoroutine("Flashing");
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-    }
+
     public void TakeDamage (int damageTaken)
     {
         if (invincible == false)
         {
             healthSlider.value = healthSlider.value - damageTaken;
             invincible = true;
-            body.color = new Color(255, 225, 0);
-            armG.color = new Color(255, 225, 0);
+            StartCoroutine("Flashing");
             Invoke("ResetInvincibility", 2.5f);
+        }
+    }
+    IEnumerator Flashing()
+    {
+        for (int i = 0; i < 30; i++)
+        {
+            body.color = new Color(255, 255, 255, 0);
+            yield return new WaitForSeconds(.1f);
+            body.color = Color.white;
+            yield return new WaitForSeconds(.1f);
         }
     }
     void ResetInvincibility()
     {
         invincible = false;
-        body.color = new Color(255, 255, 255);
-        armG.color = new Color(255, 255, 255);
+        StopCoroutine("Flashing");
+        body.color = Color.white;
     }
 }
