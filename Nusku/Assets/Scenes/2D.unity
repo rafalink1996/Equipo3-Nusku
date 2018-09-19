@@ -3565,6 +3565,7 @@ GameObject:
   - component: {fileID: 1578663705}
   - component: {fileID: 1578663704}
   - component: {fileID: 1578663706}
+  - component: {fileID: 1578663707}
   m_Layer: 0
   m_Name: DialogueTrigger
   m_TagString: Untagged
@@ -3633,6 +3634,33 @@ MonoBehaviour:
   option1: 
   option2: 
   typingSpeed: 0.09
+--- !u!114 &1578663707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1578663703}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c923fecca95f246399204e4dc7cfada0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Jur
+  characterImage: {fileID: 21300000, guid: e53c75438ff7fce43b02c0b6cb307beb, type: 3}
+  theText: {fileID: 4900000, guid: a6695f8f1553143a785d2cf44dc860f5, type: 3}
+  startLine: 0
+  endLine: 1
+  theTextBox: {fileID: 0}
+  destroyWhenActivated: 1
+  requireButtonPress: 0
+  hasOptions: 1
+  option1: Sel
+  option1Line: 6
+  option1EndLine: 6
+  option2: Aren't you an oracle?
+  option2Line: 13
+  option2EndLine: 16
+  typingSpeed: 0.5
 --- !u!1 &1642864539
 GameObject:
   m_ObjectHideFlags: 0
@@ -4176,7 +4204,7 @@ MonoBehaviour:
   theText: {fileID: 199615391}
   characterName: {fileID: 421158699}
   characterImage: {fileID: 460401924}
-  textFile: {fileID: 4900000, guid: 0845af37ee12d46a1b22f5d77c4c0493, type: 3}
+  textFile: {fileID: 0}
   image: {fileID: 21300000, guid: da6ff1e1dd24c4f47b086ca4ac1897a7, type: 3}
   choices: 0
   option1: {fileID: 1254098344}
