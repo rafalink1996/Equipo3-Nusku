@@ -21,6 +21,7 @@ public class JurDialogue : MonoBehaviour {
     public int option2Line, option2EndLine;
     bool waitForPress;
     public float typingSpeed;
+    bool lastOne;
 
 
 
@@ -28,7 +29,12 @@ public class JurDialogue : MonoBehaviour {
     void Start()
     {
         theTextBox = FindObjectOfType<TextBoxManager>();
-
+        if (hasOptions)
+        {
+            lastOne = false;
+        }else{
+            lastOne = true;
+        }
     }
 
     // Update is called once per frame
@@ -48,7 +54,10 @@ public class JurDialogue : MonoBehaviour {
 
             if (destroyWhenActivated)
             {
-                Destroy(gameObject);
+                if (theTextBox.currentLine > theTextBox.endAtLine && lastOne == true)
+                {
+                    Destroy(gameObject);
+                }
             }
             if (hasOptions == true)
             {
@@ -57,11 +66,7 @@ public class JurDialogue : MonoBehaviour {
                 theTextBox.option2Text.text = option2;
                 theTextBox.option1.onClick.AddListener(Option1);
                 theTextBox.option2.onClick.AddListener(Option2);
-                //theTextBox.option1.enabled = true;
-                //theTextBox.option2.enabled = true;
-                //theTextBox.option1Text.enabled = true;
-                //theTextBox.option2Text.enabled = true;
-
+            
             }
             else
             {
@@ -73,15 +78,10 @@ public class JurDialogue : MonoBehaviour {
                 theTextBox.option2Text.enabled = false;
             }
         }
-        //if (theTextBox.currentLine == 13 || theTextBox.currentLine == 18)
-        //{
-        //    option1Line = 21;
-        //    option1EndLine = 22;
-        //}
-        //if (theTextBox.endAtLine == 22)
-        //{
-        //    theTextBox.choices = false;
-        //}
+        if (theTextBox.currentLine == 8){
+            theTextBox.currentLine = 16;
+            theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
+        }
 
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -104,7 +104,10 @@ public class JurDialogue : MonoBehaviour {
 
             if (destroyWhenActivated)
             {
-                Destroy(gameObject);
+                if (theTextBox.currentLine > theTextBox.endAtLine && lastOne == true)
+                {
+                    Destroy(gameObject);
+                }
             }
             if (hasOptions == true)
             {
@@ -138,7 +141,7 @@ public class JurDialogue : MonoBehaviour {
             waitForPress = false;
         }
     }
-    public void Option1()
+    public void Option1() //Sel
     {
         theTextBox.currentLine = option1Line;
         theTextBox.endAtLine = option1EndLine;
@@ -150,8 +153,10 @@ public class JurDialogue : MonoBehaviour {
         theTextBox.option1.onClick.AddListener(Option3);
         theTextBox.option2.onClick.AddListener(Option4);
         theTextBox.choices = true;
+        theTextBox.option1Text.text = "Not really";
+        theTextBox.option2Text.text = "Yes";
     }
-    public void Option2()
+    public void Option2() //Aren't you an oracle?
     {
         theTextBox.currentLine = option2Line;
         theTextBox.endAtLine = option2EndLine;
@@ -163,33 +168,37 @@ public class JurDialogue : MonoBehaviour {
         theTextBox.option1.onClick.AddListener(Option3);
         theTextBox.option2.onClick.AddListener(Option4);
         theTextBox.choices = true;
+        theTextBox.option1Text.text = "Not really";
+        theTextBox.option2Text.text = "Yes";
     }
-    public void Option3()
+    public void Option3() //Not really
     {
-        theTextBox.option1.onClick.AddListener(Option1);
-        theTextBox.option2.onClick.AddListener(Option2);
-        theTextBox.currentLine = 21;
-        theTextBox.endAtLine = 22;
+        theTextBox.currentLine = 22;
+        theTextBox.endAtLine = 50;
         theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         theTextBox.option1.enabled = false;
         theTextBox.option2.enabled = false;
         theTextBox.option1Text.enabled = false;
         theTextBox.option2Text.enabled = false;
+        theTextBox.option1.onClick.AddListener(Option1);
+        theTextBox.option2.onClick.AddListener(Option2);
         theTextBox.choices = false;
 
     }
-    public void Option4()
+    public void Option4() //Yes
     {
-        theTextBox.option1.onClick.AddListener(Option1);
-        theTextBox.option2.onClick.AddListener(Option2);
-        theTextBox.currentLine = 25;
-        theTextBox.endAtLine = 26;
+        theTextBox.currentLine = 32;
+        theTextBox.endAtLine = 32;
         theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         theTextBox.option1.enabled = false;
         theTextBox.option2.enabled = false;
         theTextBox.option1Text.enabled = false;
         theTextBox.option2Text.enabled = false;
-        theTextBox.choices = false;
+        theTextBox.option1.onClick.AddListener(Option1);
+        theTextBox.option2.onClick.AddListener(Option2);
+        theTextBox.choices = true;
+        theTextBox.option1Text.text = "About the tide";
+        theTextBox.option2Text.text = "About you";
 
     }
 }

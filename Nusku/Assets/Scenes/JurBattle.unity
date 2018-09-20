@@ -1023,10 +1023,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 23
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 557306147}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -2557,10 +2557,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 23
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -2575,7 +2575,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1254098341}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -3617,7 +3617,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1578663703}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee7d4ea05cb4141c8b6b28125be47f86, type: 3}
   m_Name: 
@@ -3640,14 +3640,14 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1578663703}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c923fecca95f246399204e4dc7cfada0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Jur
   characterImage: {fileID: 21300000, guid: e53c75438ff7fce43b02c0b6cb307beb, type: 3}
-  theText: {fileID: 4900000, guid: a6695f8f1553143a785d2cf44dc860f5, type: 3}
+  theText: {fileID: 4900000, guid: 0845af37ee12d46a1b22f5d77c4c0493, type: 3}
   startLine: 0
   endLine: 1
   theTextBox: {fileID: 0}
@@ -3655,12 +3655,12 @@ MonoBehaviour:
   requireButtonPress: 0
   hasOptions: 1
   option1: Sel
-  option1Line: 6
-  option1EndLine: 6
+  option1Line: 7
+  option1EndLine: 16
   option2: Aren't you an oracle?
   option2Line: 13
   option2EndLine: 16
-  typingSpeed: 0.5
+  typingSpeed: 0.05
 --- !u!1 &1642864539
 GameObject:
   m_ObjectHideFlags: 0
