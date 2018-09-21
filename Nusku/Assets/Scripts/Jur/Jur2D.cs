@@ -11,11 +11,13 @@ public class Jur2D : MonoBehaviour {
     public GameObject freeze;
     public GameObject water;
     TextBoxManager textBox;
+    JurDialogue dialogue;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
         textBox = FindObjectOfType<TextBoxManager>();
+        dialogue = FindObjectOfType<JurDialogue>();
    
 	}
 	
@@ -27,7 +29,7 @@ public class Jur2D : MonoBehaviour {
             freeze.SetActive(true);
             water.SetActive(false);
         }
-        if (textBox.currentLine > textBox.endAtLine)
+        if (textBox.currentLine > textBox.endAtLine && dialogue.lastOne == true)
         {
             anim.SetTrigger("BattleStart");
         }

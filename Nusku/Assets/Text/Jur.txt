@@ -3,13 +3,13 @@ JUR: I was not expecting anyone here.
 
 --
 
-SEL:Sel
+Sel
 
 JUR:Oh right, I knew it. Hohoho
 
 --
 
-SEL:Aren't you an oracle?
+Aren't you an oracle?
 
 JUR:Ohohohoho!! You are a clever one
 SEL:...?
@@ -18,7 +18,7 @@ Did you come for a prediction too?
 
 --
 
-SEL:Not really
+Not really
 
 JUR:Oh, that's too bad. I would have done it for free.
 Not that I charge, clearly.
@@ -28,20 +28,20 @@ SEL:...?
 
 --
 
-SEL:Yes
+Yes
 
 JUR:What would you like to know?
 
 --
 
-SEL:About the tide
+About the tide
 
 JUR:I'm sorry about it
 SEL:What do you mean?
 
 --
 
-SEL:About you
+About you
 
 JUR:I'm actually very nice, the other two are worse
 
@@ -52,11 +52,11 @@ I'm too modest, am I not?
 
 --
 
-SEL: You are not
+You are not
 
 --
 
-SEL:You are
+You are
 
 JUR:Of course! I'm a delight
 Although I can't move. Not like this anyway...

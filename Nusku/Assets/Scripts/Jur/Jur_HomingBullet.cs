@@ -23,7 +23,7 @@ public class Jur_HomingBullet : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag != "Stalactite")
+        if (collision.collider.tag != "Stalactite" && collision.collider.name != "Bullet")
         {
             Destroy(this.gameObject);
         }
