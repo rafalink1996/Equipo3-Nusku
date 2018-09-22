@@ -86,6 +86,11 @@ public class JurDialogue : MonoBehaviour {
             theTextBox.currentLine = 49;
             theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         }
+        if (theTextBox.currentLine == 40)
+        {
+            theTextBox.currentLine = 49;
+            theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
+        }
         if (theTextBox.currentLine == 56)
         {
             theTextBox.currentLine = 49;

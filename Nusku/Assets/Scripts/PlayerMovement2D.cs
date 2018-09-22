@@ -19,6 +19,7 @@ public class PlayerMovement2D : MonoBehaviour {
     //bool pause = false;
     //public bool attackReady = false;
     public bool canMove;
+    public GameObject HUD;
   
     void Start()
     {
@@ -33,7 +34,10 @@ public class PlayerMovement2D : MonoBehaviour {
             anim.SetBool("IsMoving",false);
             armAnim.SetBool("IsMoving",false);
             armAnim.SetBool("Attack",false);
+            HUD.SetActive(false);
             return;
+        }else{
+            HUD.SetActive(true);
         }
         //health = GetComponent<SliderTest>().sliderHealth.value;
         if (Input.GetAxisRaw("Horizontal") != 0){

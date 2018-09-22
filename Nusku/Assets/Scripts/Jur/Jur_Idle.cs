@@ -20,6 +20,7 @@ public class Jur_Idle : StateMachineBehaviour {
         animator.ResetTrigger("Bullet");
         animator.ResetTrigger("Javalin");
         animator.ResetTrigger("Dive");
+        FindObjectOfType<PlayerMovement2D>().canMove = true;
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

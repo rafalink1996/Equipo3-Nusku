@@ -9,7 +9,6 @@ public class Stalactite : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Invoke("DestroyAfterTime", 60f);
         sel = FindObjectOfType<SelHealth>();
     }
 
@@ -38,10 +37,6 @@ public class Stalactite : MonoBehaviour
     void Destroyed()
     {
         Destroy(this.gameObject);
-    }
-    void DestroyAfterTime()
-    {
-        GetComponent<Animator>().SetTrigger("Destroy");
     }
 }
 

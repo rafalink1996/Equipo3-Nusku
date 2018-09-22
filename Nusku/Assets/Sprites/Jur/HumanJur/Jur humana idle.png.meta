@@ -1,24 +1,23 @@
 fileFormatVersion: 2
-guid: 96ec86cc1796547129d844f448fa47c7
+guid: 752be3d45eea645e9aab9e8497ccd455
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Jur emerge_0
-    21300002: Jur emerge_1
-    21300004: Jur emerge_2
-    21300006: Jur emerge_3
-    21300008: Jur emerge_4
-    21300010: Jur emerge_5
-    21300012: Jur emerge_6
-    21300014: Jur emerge_7
-    21300016: Jur emerge_8
-    21300018: Jur emerge_9
-    21300020: Jur emerge_10
-    21300022: Jur emerge_11
-    21300024: Jur emerge_12
-    21300026: Jur emerge_13
-    21300028: Jur emerge_14
-    21300030: Jur emerge_15
-    21300032: Jur emerge_16
+    21300000: Jur humana idle_0
+    21300002: Jur humana idle_1
+    21300004: Jur humana idle_2
+    21300006: Jur humana idle_3
+    21300008: Jur humana idle_4
+    21300010: Jur humana idle_5
+    21300012: Jur humana idle_6
+    21300014: Jur humana idle_7
+    21300016: Jur humana idle_8
+    21300018: Jur humana idle_9
+    21300020: Jur humana idle_10
+    21300022: Jur humana idle_11
+    21300024: Jur humana idle_12
+    21300026: Jur humana idle_13
+    21300028: Jur humana idle_14
+    21300030: Jur humana idle_15
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -77,7 +76,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -88,7 +87,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -101,341 +100,321 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jur emerge_0
+      name: Jur humana idle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        y: 1200
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc1262d3f2b9842f5b413190597ddc7b
+      spriteID: 9ee0dd606745f4b67b1668b1dc7eb8ec
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_1
+      name: Jur humana idle_1
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        x: 400
+        y: 1200
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaceff069e5644790a06fcabda6762a8
+      spriteID: 81181a6fb3fac4eb7a3fc89491b2620b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_2
+      name: Jur humana idle_2
       rect:
         serializedVersion: 2
-        x: 2000
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        x: 800
+        y: 1200
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 298c5331530e546febe6a60337d20405
+      spriteID: 0c0c08787f8c64657a01ee579904155c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_3
+      name: Jur humana idle_3
       rect:
         serializedVersion: 2
-        x: 3000
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        x: 1200
+        y: 1200
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c3909a5cd91640bfa474e119176da7f
+      spriteID: c72b8c7aff7ef4fc5b37858f9c651b77
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_4
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aba5f3d33945e40fe8539686195a7be8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jur emerge_5
-      rect:
-        serializedVersion: 2
-        x: 5000
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 947fea68b97d34ba1802c3352e7dfdb7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jur emerge_6
+      name: Jur humana idle_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        y: 800
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86e823d86fe424c819363b473bd2b06e
+      spriteID: 357f0a85431c24dc3bd2ac066c70f579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_7
+      name: Jur humana idle_5
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        x: 400
+        y: 800
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7e8535db309f44b59edb1c04e539d2e
+      spriteID: 3e5f88aea47aa4431bafa2bc188cb65f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_8
+      name: Jur humana idle_6
       rect:
         serializedVersion: 2
-        x: 2000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        x: 800
+        y: 800
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d0ebfc7cb84f4fd1af957a5f662a3f6
+      spriteID: fc44ded12ec4e422d929ad023428e31b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_9
+      name: Jur humana idle_7
       rect:
         serializedVersion: 2
-        x: 3000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        x: 1200
+        y: 800
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d41727e00c87b463581b7b377e173e6e
+      spriteID: 705b7f2551dd545a295ee896a91b99e3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_10
+      name: Jur humana idle_8
       rect:
         serializedVersion: 2
-        x: 4000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        x: 0
+        y: 400
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed97af18780b64758aa8229618eb0ddf
+      spriteID: 4f8b51fe5c41842d490b2957ee86b073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_11
+      name: Jur humana idle_9
       rect:
         serializedVersion: 2
-        x: 5000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        x: 400
+        y: 400
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13aba1f88271649d5b8d568b898e54ca
+      spriteID: 9fbca6503f4c54f8fa7535ffe1525c8d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_12
+      name: Jur humana idle_10
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 400
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d2f4b15b41d49ffa75cd77dcf0a74d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jur humana idle_11
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 400
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174cbd6fb639a4b1dadaa3781a411f0f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jur humana idle_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eac94c56ecf31478ba9d177dde1b0c7b
+      spriteID: 101d7d61603b5464485d412818c70087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_13
+      name: Jur humana idle_13
       rect:
         serializedVersion: 2
-        x: 1000
+        x: 400
         y: 0
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e866369c394dc45fe8fbb4bce133ce96
+      spriteID: 60930dee79dc64fa2b440d798efa7abe
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_14
+      name: Jur humana idle_14
       rect:
         serializedVersion: 2
-        x: 2000
+        x: 800
         y: 0
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a08d9048b1746fc89689bca9a34588
+      spriteID: 1d205ad63303649c896ff383264e7171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jur emerge_15
+      name: Jur humana idle_15
       rect:
         serializedVersion: 2
-        x: 3000
+        x: 1200
         y: 0
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44b3e7cc361d54b2f918442d546816c2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jur emerge_16
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d2e1df6c4ad64aa1a1631976397de33
+      spriteID: 18450037b5205409a86a9a0908c7e7a3
       vertices: []
       indices: 
       edges: []
@@ -443,7 +422,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: cadd967ab0bca4397b5d5e1a98959d7b
+    spriteID: a6b12f9d636dc467e97920f614893380
     vertices: []
     indices: 
     edges: []

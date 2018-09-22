@@ -12,6 +12,7 @@ public class Jur2D : MonoBehaviour {
     public GameObject water;
     TextBoxManager textBox;
     JurDialogue dialogue;
+    bool dead;
 
 	// Use this for initialization
 	void Start () {
@@ -25,13 +26,19 @@ public class Jur2D : MonoBehaviour {
 	void Update () {
        if (health <= 0)
         {
-            this.gameObject.SetActive(false);
+            dead = true;
             freeze.SetActive(true);
             water.SetActive(false);
         }
         if (textBox.currentLine > textBox.endAtLine && dialogue.lastOne == true)
         {
             anim.SetTrigger("BattleStart");
+        }
+        if (dead == true)
+        {
+            anim.SetTrigger("Death");
+            dead = false;
+            health = 9999999;
         }
 	}
 
