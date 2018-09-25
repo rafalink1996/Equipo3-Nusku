@@ -826,7 +826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 275.75, y: -2.225006}
+  m_AnchoredPosition: {x: 275.75, y: -2.2250366}
   m_SizeDelta: {x: -600, y: -47.950012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &503305659
@@ -1059,7 +1059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
-  health: 30
+  health: 200
   freeze: {fileID: 1376023141}
   water: {fileID: 742532799}
 --- !u!1 &557306147
@@ -4880,7 +4880,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1936666015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.43, y: -3.64, z: -3.1574914}
+  m_LocalPosition: {x: 10.03, y: -5.85, z: -3.1574914}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1731726495}

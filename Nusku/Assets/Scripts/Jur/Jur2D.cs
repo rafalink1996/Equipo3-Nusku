@@ -27,8 +27,7 @@ public class Jur2D : MonoBehaviour {
        if (health <= 0)
         {
             dead = true;
-            freeze.SetActive(true);
-            water.SetActive(false);
+        
         }
         if (textBox.currentLine > textBox.endAtLine && dialogue.lastOne == true)
         {
@@ -99,5 +98,9 @@ public class Jur2D : MonoBehaviour {
     void ChangeColorBack()
     {
         GetComponent<SpriteRenderer>().color = new Color(255, 255, 255);
+    }
+    void FreezeWater(){
+        freeze.SetActive(true);
+        water.SetActive(false);
     }
 }
