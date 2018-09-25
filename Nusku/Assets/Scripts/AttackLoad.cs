@@ -19,7 +19,7 @@ public class AttackLoad : MonoBehaviour {
         this.transform.position = this.transform.parent.position;
         if (Input.GetAxisRaw("Vertical") == 1)
         {
-            this.GetComponent<ParticleSystemRenderer>().sortingOrder = 3;
+            this.GetComponent<ParticleSystemRenderer>().sortingOrder = 4;
         }
         if (Input.GetAxisRaw("Vertical") == -1)
         {

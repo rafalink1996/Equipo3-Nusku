@@ -132,7 +132,6 @@ public class TextBoxManager : MonoBehaviour
     public void EnableTextBox()
     {
         textBox.SetActive(true);
-        HUD.SetActive(false);
         isActive = true;
         if (stopPlayerMovement)
         {
@@ -144,7 +143,6 @@ public class TextBoxManager : MonoBehaviour
     public void DisableTextBox()
     {
         textBox.SetActive(false);
-        HUD.SetActive(true);
         isActive = false;
         player.canMove = true;
         option1.enabled = false;

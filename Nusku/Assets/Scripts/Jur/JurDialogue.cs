@@ -104,7 +104,7 @@ public class JurDialogue : MonoBehaviour {
         //Nombre e imagen de Sel
         if (theTextBox.currentLine == 14 || theTextBox.currentLine == 24 || theTextBox.currentLine == 26 || theTextBox.currentLine == 39 || theTextBox.currentLine == 63 || theTextBox.currentLine == 67){
             theTextBox.image = selImage;
-            theTextBox.characterName.text = "Sel";
+            theTextBox.characterName.text = "SEL";
         }else{
             theTextBox.characterName.text = characterName;
             theTextBox.image = characterImage;
