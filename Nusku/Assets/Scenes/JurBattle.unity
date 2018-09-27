@@ -342,8 +342,8 @@ EdgeCollider2D:
   - {x: 0.16629863, y: -0.49160403}
   - {x: 0.37824965, y: -0.04417324}
   - {x: 2.0251403, y: 0.89728594}
-  - {x: 1.4846447, y: 1.1626525}
-  - {x: -3.4056108, y: -1.8704274}
+  - {x: -0.3819034, y: 2.2709155}
+  - {x: -5.505477, y: -0.67467}
   - {x: -2.9319642, y: -2.1017127}
 --- !u!1 &362985446
 GameObject:
@@ -492,6 +492,7 @@ GameObject:
   - component: {fileID: 407443584}
   - component: {fileID: 407443586}
   - component: {fileID: 407443585}
+  - component: {fileID: 407443587}
   m_Layer: 0
   m_Name: Rumble_2
   m_TagString: Untagged
@@ -576,6 +577,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &407443587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 407443583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d669aa8824e254ebb8516e0b4d21fad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &413918711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1074,7 @@ MonoBehaviour:
   health: 200
   freeze: {fileID: 1376023141}
   water: {fileID: 742532799}
+  froze: 0
 --- !u!1 &557306147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,6 +1371,7 @@ GameObject:
   - component: {fileID: 728529491}
   - component: {fileID: 728529493}
   - component: {fileID: 728529492}
+  - component: {fileID: 728529494}
   m_Layer: 0
   m_Name: Rumble_1
   m_TagString: Untagged
@@ -1442,6 +1456,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &728529494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 728529490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d669aa8824e254ebb8516e0b4d21fad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &742532799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,6 +1815,7 @@ GameObject:
   - component: {fileID: 900023181}
   - component: {fileID: 900023183}
   - component: {fileID: 900023182}
+  - component: {fileID: 900023184}
   m_Layer: 0
   m_Name: Columna Small
   m_TagString: Untagged
@@ -1874,6 +1900,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &900023184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900023180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d669aa8824e254ebb8516e0b4d21fad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &910375862
 GameObject:
   m_ObjectHideFlags: 0
@@ -2322,6 +2359,7 @@ GameObject:
   - component: {fileID: 1055278249}
   - component: {fileID: 1055278251}
   - component: {fileID: 1055278250}
+  - component: {fileID: 1055278252}
   m_Layer: 0
   m_Name: Columna Small (1)
   m_TagString: Untagged
@@ -2406,6 +2444,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1055278252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1055278248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d669aa8824e254ebb8516e0b4d21fad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1154212005
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,13 +2620,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -3.8652952, y: 2.3842225}
+  - {x: -2.7263532, y: 3.443459}
   - {x: -4.446599, y: 1.9620521}
   - {x: -4.1240387, y: 1.8670063}
   - {x: -3.8354445, y: 1.9210372}
   - {x: 0.35143805, y: -0.5147003}
-  - {x: 0.7319913, y: -0.28649914}
-  - {x: -3.8574529, y: 2.394443}
+  - {x: 2.3170447, y: 1.005026}
+  - {x: -2.6833398, y: 3.4217927}
 --- !u!1 &1254098341
 GameObject:
   m_ObjectHideFlags: 0
@@ -3454,6 +3503,7 @@ GameObject:
   - component: {fileID: 1545530029}
   - component: {fileID: 1545530031}
   - component: {fileID: 1545530030}
+  - component: {fileID: 1545530032}
   m_Layer: 0
   m_Name: Plataforma P
   m_TagString: Untagged
@@ -3538,6 +3588,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1545530032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1545530028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d669aa8824e254ebb8516e0b4d21fad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1566511322
 GameObject:
   m_ObjectHideFlags: 0
@@ -4503,8 +4564,8 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: 3.505615, y: -1.4662535}
-  - {x: 2.875149, y: -2.123064}
-  - {x: -2.0962925, y: 0.87158275}
+  - {x: 2.1437924, y: -3.00839}
+  - {x: -2.9238806, y: 0.31344295}
   - {x: -1.254817, y: 1.6735319}
   - {x: -1.3468413, y: 1.4046104}
   - {x: -1.2383227, y: 1.1926569}
@@ -5068,6 +5129,7 @@ GameObject:
   - component: {fileID: 2114415859}
   - component: {fileID: 2114415861}
   - component: {fileID: 2114415860}
+  - component: {fileID: 2114415862}
   m_Layer: 0
   m_Name: Trono
   m_TagString: Untagged
@@ -5152,3 +5214,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2114415862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2114415858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d669aa8824e254ebb8516e0b4d21fad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

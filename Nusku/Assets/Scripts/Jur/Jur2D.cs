@@ -13,6 +13,7 @@ public class Jur2D : MonoBehaviour {
     TextBoxManager textBox;
     JurDialogue dialogue;
     bool dead;
+    public bool froze;
 
 	// Use this for initialization
 	void Start () {
@@ -102,5 +103,6 @@ public class Jur2D : MonoBehaviour {
     void FreezeWater(){
         freeze.SetActive(true);
         water.SetActive(false);
+        froze = true;
     }
 }
