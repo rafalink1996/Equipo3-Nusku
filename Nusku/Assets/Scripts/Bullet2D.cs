@@ -32,7 +32,7 @@ public class Bullet2D : MonoBehaviour {
             }
             if (Input.GetAxisRaw("Vertical") == -1)
             {
-                this.GetComponent<ParticleSystemRenderer>().sortingOrder = 6;
+                this.GetComponent<ParticleSystemRenderer>().sortingOrder = 7;
             }
             if (Input.GetAxisRaw("Fire1") == 0)
             {

@@ -30,6 +30,8 @@ public class TextBoxManager : MonoBehaviour
     public float typeSpeed;
     AudioSource audioSource;
     public GameObject HUD;
+    int selectButtons = 0;
+    bool buttonSelected;
 
 
     // Use this for initialization
@@ -56,7 +58,8 @@ public class TextBoxManager : MonoBehaviour
             DisableTextBox();
         }
 
-
+        option1.Select();
+        option1.OnSelect(null);
     }
 
     void Update()
@@ -101,14 +104,17 @@ public class TextBoxManager : MonoBehaviour
         {
             if (!isTyping && currentLine == endAtLine)
             {
-                option1.enabled = true;
-                option2.enabled = true;
-                option1Text.enabled = true;
-                option2Text.enabled = true;
+                ActivateButtons();
+                selectButtons += 1;
 
             }
-  
         }
+        //if (selectButtons >= 2 || selectButtons <= 5)
+        //{
+        //    option1.Select();
+        //    option1.OnSelect(null);
+        //}
+
     }
 
     public IEnumerator TextScroll (string lineOfText)
@@ -160,26 +166,12 @@ public class TextBoxManager : MonoBehaviour
             textlines = (theText.text.Split('\n'));
         }
     }
-
-    //public void Option1(int newCurrentLine, int newEndAtLine)
-    //{
-    //    currentLine = newCurrentLine;
-    //    endAtLine = newEndAtLine;
-    //    StartCoroutine(TextScroll(textlines[currentLine]));
-    //    option1.enabled = false;
-    //    option2.enabled = false;
-    //    option1Text.enabled = false;
-    //    option2Text.enabled = false;
-    //    //choices = false;
-    //}
-    //public void Option2()
-    //{
-    //    currentLine = 15;
-    //    endAtLine = 18;
-    //    option1.enabled = false;
-    //    option2.enabled = false;
-    //    option1Text.enabled = false;
-    //    option2Text.enabled = false;
-    //    choices = false;
-    //}
+    public void ActivateButtons()
+    {
+        option1.enabled = true;
+        option2.enabled = true;
+        option1Text.enabled = true;
+        option2Text.enabled = true;
+ 
+    }
 }
