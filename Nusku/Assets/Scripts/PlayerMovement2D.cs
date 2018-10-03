@@ -13,7 +13,7 @@ public class PlayerMovement2D : MonoBehaviour {
     Animator armAnim;
     //public float health;
     //public bool dead = false;
-    //public AudioSource caminata;
+    public AudioSource caminata;
     //public AudioSource salto;
     //public AudioSource muerte;
     //bool pause = false;
@@ -25,6 +25,7 @@ public class PlayerMovement2D : MonoBehaviour {
     {
         anim = GetComponentInChildren<Animator>();
         armAnim = this.transform.Find("Graphics/Arm").gameObject.GetComponent<Animator>();
+      
 
     }
     void Update()
@@ -35,6 +36,7 @@ public class PlayerMovement2D : MonoBehaviour {
             armAnim.SetBool("IsMoving",false);
             armAnim.SetBool("Attack",false);
             HUD.SetActive(false);
+            caminata.enabled = false;
             return;
         }else{
             HUD.SetActive(true);
@@ -44,12 +46,20 @@ public class PlayerMovement2D : MonoBehaviour {
             this.transform.Translate(Input.GetAxisRaw("Horizontal") * speedX * Time.deltaTime, 0f, 0f);
             anim.SetFloat("LastX", Input.GetAxisRaw("Horizontal"));
             armAnim.SetFloat("LastX", Input.GetAxisRaw("Horizontal"));
+            caminata.enabled = true;
+            caminata.volume = 0.3f;
         }
         if (Input.GetAxisRaw("Vertical") != 0)
         {
             this.transform.Translate(0f, Input.GetAxisRaw("Vertical") * speedY * Time.deltaTime, 0f);
             anim.SetFloat("LastY", Input.GetAxisRaw("Vertical"));
             armAnim.SetFloat("LastY", Input.GetAxisRaw("Vertical"));
+            caminata.enabled = true;
+            caminata.volume = 0.3f;
+        }
+        if (Input.GetAxisRaw("Vertical") == 0 && Input.GetAxisRaw("Horizontal") == 0)
+        {
+            caminata.enabled = false;
         }
         anim.SetFloat("DirectionX", Input.GetAxisRaw("Horizontal"));
         anim.SetFloat("DirectionY", Input.GetAxisRaw("Vertical"));
@@ -95,6 +105,7 @@ public class PlayerMovement2D : MonoBehaviour {
             speedX = Mathf.Cos(0.523598775f) * walkSpeed;
             speedY = Mathf.Sin(0.523598775f) * walkSpeed;
         }
+
 
 
     }

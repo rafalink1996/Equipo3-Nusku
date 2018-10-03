@@ -9,6 +9,8 @@ public class Jur_Idle : StateMachineBehaviour {
     public float timeToAttack;
     public bool isAttacking;
     public int attackType;
+    public AudioSource jur;
+    public AudioClip javelins;
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
@@ -22,7 +24,7 @@ public class Jur_Idle : StateMachineBehaviour {
         animator.ResetTrigger("Javalin");
         animator.ResetTrigger("Dive");
         FindObjectOfType<PlayerMovement2D>().canMove = true;
-
+        jur = GameObject.Find("Jur").GetComponent<AudioSource>();
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -57,6 +59,7 @@ public class Jur_Idle : StateMachineBehaviour {
         if (attackType >= 76 && attackType <= 90)
         {
             animator.SetTrigger("Javalin");
+            jur.PlayOneShot(javelins, 1);
         }
         if (attackType >= 91 && attackType <= 100)
         {

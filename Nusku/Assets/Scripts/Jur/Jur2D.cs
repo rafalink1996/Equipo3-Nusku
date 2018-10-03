@@ -8,38 +8,50 @@ public class Jur2D : MonoBehaviour {
     Animator anim;
     public float direction;
     public float health;
+    public float maxHealth;
     public GameObject freeze;
     public GameObject water;
     TextBoxManager textBox;
     JurDialogue dialogue;
     bool dead;
     public bool froze;
+    bool half;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
         textBox = FindObjectOfType<TextBoxManager>();
         dialogue = FindObjectOfType<JurDialogue>();
+        health = maxHealth;
    
 	}
 	
 	// Update is called once per frame
 	void Update () {
-       if (health <= 0)
+       if (health <= 0 && !dead)
         {
+            anim.SetTrigger("Death");
             dead = true;
-        
+
+        }
+
+        if (health <= maxHealth * 0.5f && !half)
+        {
+            GameObject hp = GameObject.Instantiate(Resources.Load("Prefabs/HP_Bottle") as GameObject);
+            hp.transform.position = new Vector3(0.4f, -0.01f);
+            hp.name = "HP_Bottle";
+            half = true;
         }
         if (textBox.currentLine > textBox.endAtLine && dialogue.lastOne == true)
         {
             anim.SetTrigger("BattleStart");
         }
-        if (dead == true)
-        {
-            anim.SetTrigger("Death");
-            dead = false;
-            health = 9999999;
-        }
+        //if (dead == true)
+        //{
+        //    anim.SetTrigger("Death");
+        //    dead = false;
+        //    health = 9999999;
+        //}
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)

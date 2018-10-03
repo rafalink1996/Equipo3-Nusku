@@ -13,6 +13,8 @@ public class SelHealth : MonoBehaviour
     GameObject arm;
     SpriteRenderer body;
     SpriteRenderer armG;
+    public AudioSource Audio;
+    public AudioClip Hit;
  
     // Use this for initialization
     void Start()
@@ -47,7 +49,12 @@ public class SelHealth : MonoBehaviour
             invincible = true;
             StartCoroutine("Flashing");
             Invoke("ResetInvincibility", 2.5f);
+            Audio.PlayOneShot(Hit, 1);
         }
+    }
+    public void RecoverHealth (int healthRecovered)
+    {
+        healthSlider.value = healthSlider.value + healthRecovered;
     }
     IEnumerator Flashing()
     {

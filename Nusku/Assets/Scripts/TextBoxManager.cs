@@ -30,7 +30,6 @@ public class TextBoxManager : MonoBehaviour
     public float typeSpeed;
     AudioSource audioSource;
     public GameObject HUD;
-    int selectButtons = 0;
     bool buttonSelected;
 
 
@@ -102,11 +101,12 @@ public class TextBoxManager : MonoBehaviour
         }
         if (choices)
         {
-            if (!isTyping && currentLine == endAtLine)
+            if (!isTyping && currentLine == endAtLine && !buttonSelected)
             {
                 ActivateButtons();
-                selectButtons += 1;
-
+                option1.Select();
+                option1.OnSelect(null);
+                buttonSelected = true;
             }
         }
         //if (selectButtons >= 2 || selectButtons <= 5)
@@ -173,5 +173,13 @@ public class TextBoxManager : MonoBehaviour
         option1Text.enabled = true;
         option2Text.enabled = true;
  
+    }
+    public void DeactivateButtons()
+    {
+        option1.enabled = false;
+        option2.enabled = false;
+        option1Text.enabled = false;
+        option2Text.enabled = false;
+        buttonSelected = false;
     }
 }

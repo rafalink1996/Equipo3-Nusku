@@ -7,11 +7,13 @@ public class Bullet2D : MonoBehaviour {
 
     float speed = 10.0f;
     PlayerMovement2D sel;
+    Animator selAnim;
    
 
     void Start()
     {
         sel = FindObjectOfType<PlayerMovement2D>();
+        selAnim = GameObject.Find("Sel/Graphics").GetComponent<Animator>();
     }
 
     void Update()
@@ -27,10 +29,10 @@ public class Bullet2D : MonoBehaviour {
         }
         if (this.transform.parent != null){
             this.transform.position = this.transform.parent.position;
-            if (Input.GetAxisRaw("Vertical") == 1){
+            if (selAnim.GetFloat("LastY") == 1){
                 this.GetComponent<ParticleSystemRenderer>().sortingOrder = 4;
             }
-            if (Input.GetAxisRaw("Vertical") == -1)
+            if (selAnim.GetFloat("LastY") == -1)
             {
                 this.GetComponent<ParticleSystemRenderer>().sortingOrder = 7;
             }
