@@ -9,6 +9,8 @@ public class Bridge : MonoBehaviour {
     public Animator column2;
     public Animator jur;
     FollowPlayer cam;
+    public AudioSource audio;
+    public AudioClip end;
     // Use this for initialization
     void Start()
     {
@@ -31,6 +33,7 @@ public class Bridge : MonoBehaviour {
             jur.SetTrigger("Emerge");
             cam.player = null;
             Destroy(this.gameObject);
+            audio.PlayOneShot(end, 1);
         }
     }
 }

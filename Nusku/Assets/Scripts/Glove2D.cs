@@ -5,7 +5,6 @@ using UnityEngine;
 public class Glove2D : MonoBehaviour {
 
     int sel;
-    string attack;
     bool dead;
     bool oneSecInProgress = false;
     bool attacking = false;
@@ -16,7 +15,6 @@ public class Glove2D : MonoBehaviour {
 
     void Start()
     {
-        //attack = GameObject.Find("Sel").GetComponent<PlayerMovement>().attack;
         player = FindObjectOfType<PlayerMovement2D>();
     }
 
@@ -111,8 +109,6 @@ public class Glove2D : MonoBehaviour {
                     // Esta accion la realiza un script en la bolita
                     GameObject bullet = GameObject.Find("Bullet");
                     bullet.transform.SetParent(null);
-
-
                     //shoot.Play();
 
                 }

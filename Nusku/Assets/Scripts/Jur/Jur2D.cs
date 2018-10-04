@@ -16,7 +16,15 @@ public class Jur2D : MonoBehaviour {
     bool dead;
     public bool froze;
     bool half;
-
+    public SpriteRenderer neck;
+    public AudioSource pre;
+    public AudioSource batle;
+    public AudioSource jurAudio;
+    public AudioClip death;
+    public AudioClip hit;
+    public AudioClip dive;
+    public AudioClip emerge;
+    public AudioClip whip;
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
@@ -32,6 +40,7 @@ public class Jur2D : MonoBehaviour {
         {
             anim.SetTrigger("Death");
             dead = true;
+            jurAudio.PlayOneShot(death, 1.5f);
 
         }
 
@@ -46,12 +55,7 @@ public class Jur2D : MonoBehaviour {
         {
             anim.SetTrigger("BattleStart");
         }
-        //if (dead == true)
-        //{
-        //    anim.SetTrigger("Death");
-        //    dead = false;
-        //    health = 9999999;
-        //}
+        neck.color = GetComponent<SpriteRenderer>().color;
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -61,6 +65,7 @@ public class Jur2D : MonoBehaviour {
             health = health - 10f;
             GetComponent<SpriteRenderer>().color = new Color(179, 0, 255);
             Invoke("ChangeColorBack", 0.5f); 
+            jurAudio.PlayOneShot(hit , 0.7f);
 
         }
     }
@@ -116,5 +121,23 @@ public class Jur2D : MonoBehaviour {
         freeze.SetActive(true);
         water.SetActive(false);
         froze = true;
+    }
+    void ChangeMusic(){
+        pre.enabled = false;
+        batle.enabled = true;
+
+    }
+    void ReturnMusic() {
+        pre.enabled = true;
+        batle.enabled = false;
+    }
+    void DiveSound() {
+        jurAudio.PlayOneShot(dive, 1);
+    }
+    void EmergeSound() {
+        jurAudio.PlayOneShot(emerge, 3);
+    }
+    void WhipSound() {
+        jurAudio.PlayOneShot(whip, 1);
     }
 }

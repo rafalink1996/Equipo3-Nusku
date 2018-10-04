@@ -47,7 +47,8 @@ public class DialogueBox : MonoBehaviour
 
             if (destroyWhenActivated)
             {
-                Destroy(gameObject);
+                GetComponent<BoxCollider2D>().enabled = false;
+                GetComponent<EdgeCollider2D>().enabled = false;
             }
             if (hasOptions == true)
             {
@@ -93,7 +94,8 @@ public class DialogueBox : MonoBehaviour
 
             if (destroyWhenActivated)
             {
-                Destroy(gameObject);
+                GetComponent<BoxCollider2D>().enabled = false;
+                GetComponent<EdgeCollider2D>().enabled = false;
             }
             if (hasOptions == true)
             {
