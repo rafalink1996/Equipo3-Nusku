@@ -1,15 +1,14 @@
 fileFormatVersion: 2
-guid: bfec711b4493dc6448d087b591cf40da
+guid: f9826fa17f280485ba00e8e1a3aee6e8
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Escudo_girando_0
-    21300002: Escudo_girando_1
-    21300004: Escudo_girando_2
-    21300006: Escudo_girando_3
-    21300008: Escudo_girando_4
-    21300010: Escudo_girando_5
-    21300012: Escudo_girando_6
-    21300014: Escudo_girando_7
+    21300000: Zombie 1 front_0
+    21300002: Zombie 1 front_1
+    21300004: Zombie 1 front_2
+    21300006: Zombie 1 front_3
+    21300008: Zombie 1 front_4
+    21300010: Zombie 1 front_5
+    21300012: Zombie 1 front_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -88,119 +87,17 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Escudo_girando_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 300
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8623a688032cb294fac574d2cb2c0ac9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Escudo_girando_1
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 300
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bff81fa3c9438744b565b83ba2bcc4f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Escudo_girando_2
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 300
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 465875cacc0aed340a82656faec9f97f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Escudo_girando_3
-      rect:
-        serializedVersion: 2
-        x: 900
-        y: 300
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa80337e5ef1a474c9eb3f54d0a4ecf1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Escudo_girando_4
+      name: Zombie 1 front_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 300
-        height: 300
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,19 +105,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 102e4e33d40561f46ab28f489f5699c1
+      spriteID: 1f2b87652141043759c3c949c871076d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Escudo_girando_5
+      name: Zombie 1 front_1
       rect:
         serializedVersion: 2
-        x: 300
+        x: 250
         y: 0
-        width: 300
-        height: 300
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,19 +125,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edcca17c06a67ef4281e476210ef05c5
+      spriteID: 1f1024e1e5b3b49c899c8d2d438912bc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Escudo_girando_6
+      name: Zombie 1 front_2
       rect:
         serializedVersion: 2
-        x: 600
+        x: 500
         y: 0
-        width: 300
-        height: 300
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,19 +145,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a2a0696c05b7ad4ea27d51652465b4b
+      spriteID: f499db20272d940b7b9e41d17853ce26
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Escudo_girando_7
+      name: Zombie 1 front_3
       rect:
         serializedVersion: 2
-        x: 900
+        x: 750
         y: 0
-        width: 300
-        height: 300
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,7 +165,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3443f7765db4228489afc31fa7d2bbaa
+      spriteID: 0842ba7b97e9f4b8690d16c0163f9a2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie 1 front_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9c4d531ba534044aa6c54af6364d34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie 1 front_5
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f566e606c78ce4a3eab0da5548fcf174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie 1 front_6
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627944a75fafb401ba10a551a7f4745a
       vertices: []
       indices: 
       edges: []
@@ -276,7 +233,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 22bc298e4dfedfc479cdde3ff057817d
+    spriteID: a4e2bc68e281e405a9cc95fff52ba2d4
     vertices: []
     indices: 
     edges: []

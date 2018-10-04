@@ -11,6 +11,7 @@ public class Jur2D : MonoBehaviour {
     public float maxHealth;
     public GameObject freeze;
     public GameObject water;
+    GameObject sel;
     TextBoxManager textBox;
     JurDialogue dialogue;
     bool dead;
@@ -25,12 +26,15 @@ public class Jur2D : MonoBehaviour {
     public AudioClip dive;
     public AudioClip emerge;
     public AudioClip whip;
+    Component[] animator;
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
         textBox = FindObjectOfType<TextBoxManager>();
         dialogue = FindObjectOfType<JurDialogue>();
         health = maxHealth;
+        sel = GameObject.Find("Sel");
+        animator = sel.GetComponentsInChildren<Animator>();
    
 	}
 	
@@ -130,6 +134,15 @@ public class Jur2D : MonoBehaviour {
     void ReturnMusic() {
         pre.enabled = true;
         batle.enabled = false;
+        GameObject shield = GameObject.Instantiate(Resources.Load("Prefabs/Shield") as GameObject);
+        shield.name = "Shield";
+        sel.transform.localPosition = new Vector3(1.731807f, -0.9665074f, -3.157491f);
+        foreach (Animator child in animator)
+        {
+            child.SetFloat("LastX", -1f);
+            child.SetFloat("LastY", 1f);
+        }
+        
     }
     void DiveSound() {
         jurAudio.PlayOneShot(dive, 1);

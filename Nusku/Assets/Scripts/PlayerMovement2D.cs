@@ -11,21 +11,17 @@ public class PlayerMovement2D : MonoBehaviour {
     Rigidbody rb;
     Animator anim;
     Animator armAnim;
-    //public float health;
-    //public bool dead = false;
     public AudioSource caminata;
     //public AudioSource salto;
     //public AudioSource muerte;
     //bool pause = false;
-    //public bool attackReady = false;
-    public bool canMove;
+    public bool canMove = true;
     public GameObject HUD;
   
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
         armAnim = this.transform.Find("Graphics/Arm").gameObject.GetComponent<Animator>();
-      
 
     }
     void Update()
