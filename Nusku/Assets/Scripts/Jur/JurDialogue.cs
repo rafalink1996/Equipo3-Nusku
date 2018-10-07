@@ -23,6 +23,7 @@ public class JurDialogue : MonoBehaviour {
     bool waitForPress;
     public float typingSpeed;
     public bool lastOne;
+    public Sprite[] expression;
 
 
 
@@ -102,14 +103,53 @@ public class JurDialogue : MonoBehaviour {
             theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         }
         //Nombre e imagen de Sel
-        if (theTextBox.currentLine == 14 || theTextBox.currentLine == 24 || theTextBox.currentLine == 26 || theTextBox.currentLine == 39 || theTextBox.currentLine == 63 || theTextBox.currentLine == 67){
+        if (theTextBox.currentLine == 14 || theTextBox.currentLine == 24 || theTextBox.currentLine == 26 || theTextBox.currentLine == 39 || theTextBox.currentLine == 63 || theTextBox.currentLine == 68)
+        {
             theTextBox.image = selImage;
             theTextBox.characterName.text = "SEL";
-        }else{
-            theTextBox.characterName.text = characterName;
-            theTextBox.image = characterImage;
         }
+        else
+        {
+            theTextBox.characterName.text = characterName;
 
+            //Expresiones de Jur
+            if (theTextBox.currentLine == 0 || theTextBox.currentLine == 16 || theTextBox.currentLine == 32)
+            {
+                theTextBox.image = expression[0];
+            }
+            if (theTextBox.currentLine == 13 || theTextBox.currentLine == 49 || theTextBox.currentLine == 50 || theTextBox.currentLine == 60 || theTextBox.currentLine == 64 || theTextBox.currentLine == 65)
+            {
+                theTextBox.image = expression[1];
+            }
+            if (theTextBox.currentLine == 7 || theTextBox.currentLine == 66)
+            {
+                theTextBox.image = expression[2];
+            }
+            if (theTextBox.currentLine == 15)
+            {
+                theTextBox.image = expression[3];
+            }
+            if (theTextBox.currentLine == 22 || theTextBox.currentLine == 23 || theTextBox.currentLine == 25 || theTextBox.currentLine == 38)
+            {
+                theTextBox.image = expression[5];
+            }
+            if (theTextBox.currentLine == 45 || theTextBox.currentLine == 67)
+            {
+                theTextBox.image = expression[7];
+            }
+            if (theTextBox.currentLine == 60 || theTextBox.currentLine == 61 || theTextBox.currentLine == 62)
+            {
+                theTextBox.image = expression[8];
+            }
+            if (theTextBox.currentLine == 69)
+            {
+                theTextBox.image = expression[9];
+            }
+            if (theTextBox.currentLine == 70)
+            {
+                theTextBox.image = expression[10];
+            }
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -242,7 +282,7 @@ public class JurDialogue : MonoBehaviour {
     public void Option7() //You are
     {
         theTextBox.currentLine = 60;
-        theTextBox.endAtLine = 69;
+        theTextBox.endAtLine = 70;
         theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         theTextBox.DeactivateButtons();
         theTextBox.option1.onClick.AddListener(Option1);
@@ -254,8 +294,8 @@ public class JurDialogue : MonoBehaviour {
     }
     public void Option8() //You are not
     {
-        theTextBox.currentLine = 66;
-        theTextBox.endAtLine = 69;
+        theTextBox.currentLine = 67;
+        theTextBox.endAtLine = 70;
         theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         theTextBox.DeactivateButtons();
         theTextBox.option1.onClick.AddListener(Option1);

@@ -7,21 +7,41 @@ public class Zombie : MonoBehaviour {
 
     Animator animator;
     GameObject sel;
+    float distanceX;
+    float distanceY;
+    Transform target;
+    public float speed;
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
         sel = GameObject.FindGameObjectWithTag("Player");
+        target = GameObject.FindWithTag("Player").transform;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (this.transform.position.y > sel.transform.position.y)
+        if (Vector2.Distance(transform.position, target.position) > 0.2f && Vector2.Distance(transform.position, target.position) < 4f)
         {
-            animator.SetInteger("Direction", 3);
-        }
-        if (this.transform.position.y < sel.transform.position.y)
-        {
-            animator.SetInteger("Direction", 1);
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+
+            distanceX = Mathf.Abs(this.transform.position.x - sel.transform.position.x);
+            distanceY = Mathf.Abs(this.transform.position.y - sel.transform.position.y);
+            if (this.transform.position.y < sel.transform.position.y && distanceY > distanceX)
+            {
+                animator.SetInteger("Direction", 1);
+            }
+            if (this.transform.position.x < sel.transform.position.x && distanceX > distanceY)
+            {
+                animator.SetInteger("Direction", 2);
+            }
+            if (this.transform.position.y > sel.transform.position.y && distanceY > distanceX)
+            {
+                animator.SetInteger("Direction", 3);
+            }
+            if (this.transform.position.x > sel.transform.position.x && distanceX > distanceY)
+            {
+                animator.SetInteger("Direction", 4);
+            }
         }
 	}
 }
