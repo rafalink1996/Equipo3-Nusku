@@ -14,7 +14,7 @@ public class Jur2D : MonoBehaviour {
     GameObject sel;
     TextBoxManager textBox;
     JurDialogue dialogue;
-    bool dead;
+    public bool dead;
     public bool froze;
     bool half;
     public SpriteRenderer neck;
@@ -26,6 +26,7 @@ public class Jur2D : MonoBehaviour {
     public AudioClip dive;
     public AudioClip emerge;
     public AudioClip whip;
+    bool invincible;
     Component[] animator;
 	// Use this for initialization
 	void Start () {
@@ -45,7 +46,7 @@ public class Jur2D : MonoBehaviour {
             anim.SetTrigger("Death");
             dead = true;
             jurAudio.PlayOneShot(death, 1.5f);
-
+            GetComponent<CircleCollider2D>().enabled = false;
         }
 
         if (health <= maxHealth * 0.5f && !half)
@@ -64,12 +65,13 @@ public class Jur2D : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Bullet")
+        if (collision.collider.tag == "Bullet" && !invincible)
         {
             health = health - 10f;
             GetComponent<SpriteRenderer>().color = new Color(179, 0, 255);
-            Invoke("ChangeColorBack", 0.5f); 
+            Invoke("ChangeColorBack", 1.5f); 
             jurAudio.PlayOneShot(hit , 0.7f);
+            invincible = true;
 
         }
     }
@@ -120,6 +122,7 @@ public class Jur2D : MonoBehaviour {
     void ChangeColorBack()
     {
         GetComponent<SpriteRenderer>().color = new Color(255, 255, 255);
+        invincible = false;
     }
     void FreezeWater(){
         freeze.SetActive(true);

@@ -374,6 +374,11 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224417583204479682, guid: d597187e6fa9748448459e90d38006f5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -13.299927
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d597187e6fa9748448459e90d38006f5, type: 2}
   m_IsPrefabAsset: 0
@@ -1045,6 +1050,7 @@ MonoBehaviour:
   maxHealth: 200
   freeze: {fileID: 1376023141}
   water: {fileID: 742532799}
+  dead: 0
   froze: 0
   neck: {fileID: 708143612}
   pre: {fileID: 1772470344}
@@ -1231,7 +1237,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.5, y: 6.5}
+  m_Size: {x: 6, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

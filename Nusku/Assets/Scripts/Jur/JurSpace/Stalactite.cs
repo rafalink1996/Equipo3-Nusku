@@ -6,16 +6,21 @@ public class Stalactite : MonoBehaviour
 {
     public int damage;
     SelHealth sel;
+    Jur2D jur;
     // Use this for initialization
     void Start()
     {
         sel = FindObjectOfType<SelHealth>();
+        jur = FindObjectOfType<Jur2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (jur.dead){
+            GetComponent<Animator>().SetTrigger("Destroy");
+            transform.Find("StalactiteTop").gameObject.SetActive(false);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

@@ -54,10 +54,7 @@ public class JurDialogue : MonoBehaviour {
             theTextBox.characterName.text = characterName;
             theTextBox.image = characterImage;
 
-            //if (destroyWhenActivated)
-            //{
-            //        Destroy(gameObject);
-            //}
+
             if (hasOptions == true)
             {
                 theTextBox.choices = true;
@@ -148,6 +145,9 @@ public class JurDialogue : MonoBehaviour {
             if (theTextBox.currentLine == 70)
             {
                 theTextBox.image = expression[10];
+                print("destroy");
+                Destroy(gameObject);
+
             }
         }
     }
