@@ -10,9 +10,11 @@ public class Zombie : MonoBehaviour {
     float distanceX;
     float distanceY;
     Transform target;
+    public int zombieType = 1;
     public float speed;
 	// Use this for initialization
 	void Start () {
+        GetComponent<Animator>().SetFloat("ZombieType", zombieType);
         animator = GetComponent<Animator>();
         sel = GameObject.FindGameObjectWithTag("Player");
         target = GameObject.FindWithTag("Player").transform;
