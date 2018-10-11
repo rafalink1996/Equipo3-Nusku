@@ -1061,6 +1061,9 @@ MonoBehaviour:
   dive: {fileID: 8300000, guid: 8c0471b560bb34c098744efefbfc14f7, type: 3}
   emerge: {fileID: 8300000, guid: 0df3922456fa047159ed0ec666099d9e, type: 3}
   whip: {fileID: 8300000, guid: 65c45064a4eac492b85e468610866a3f, type: 3}
+  down: {fileID: 8300000, guid: 958f66d08f68c40819990e9032bd9e9c, type: 3}
+  rayo: {fileID: 8300000, guid: 88e7d900c168e42979de3dccebca8d2b, type: 3}
+  stalactite: {fileID: 8300000, guid: e422b2e41bfff48ecb003419a61af58e, type: 3}
 --- !u!82 &553830335
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1237,7 +1240,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6, y: 6}
+  m_Size: {x: 6.5, y: 6.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

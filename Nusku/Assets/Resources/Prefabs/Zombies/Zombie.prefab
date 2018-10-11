@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zombieType: 1
-  speed: 1.5
+  speed: 1.3
 --- !u!212 &212801302792710588
 SpriteRenderer:
   m_ObjectHideFlags: 1

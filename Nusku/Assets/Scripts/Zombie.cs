@@ -44,6 +44,8 @@ public class Zombie : MonoBehaviour {
             {
                 animator.SetInteger("Direction", 4);
             }
+        }else{
+            animator.SetInteger("Direction", 3);
         }
 	}
 }

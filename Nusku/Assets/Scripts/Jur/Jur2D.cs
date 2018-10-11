@@ -26,6 +26,9 @@ public class Jur2D : MonoBehaviour {
     public AudioClip dive;
     public AudioClip emerge;
     public AudioClip whip;
+    public AudioClip down;
+    public AudioClip rayo;
+    public AudioClip stalactite;
     bool invincible;
     Component[] animator;
 	// Use this for initialization
@@ -155,5 +158,14 @@ public class Jur2D : MonoBehaviour {
     }
     void WhipSound() {
         jurAudio.PlayOneShot(whip, 1);
+    }
+    void DownSound() {
+        jurAudio.PlayOneShot(down, 1);
+    }
+    void RayoSound() {
+        jurAudio.PlayOneShot(rayo, 1);
+    }
+    void StalactiteSound() {
+        jurAudio.PlayOneShot(stalactite, 2);
     }
 }
