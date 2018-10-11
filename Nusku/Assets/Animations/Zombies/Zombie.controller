@@ -13,13 +13,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: ZombieType
     m_Type: 1
     m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -49,7 +49,7 @@ BlendTree:
     m_DirectBlendParameter: ZombieType
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: ea51c97ee63464f92931656c0e425ae3, type: 2}
+    m_Motion: {fileID: 7400000, guid: 674fc56abc6c04b4bbbf77bf088e3462, type: 2}
     m_Threshold: 2
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -57,7 +57,7 @@ BlendTree:
     m_DirectBlendParameter: ZombieType
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 9796312ef4f954284b5ae62be20a75de, type: 2}
+    m_Motion: {fileID: 7400000, guid: 58b565d7bfdf44664b3d5099c38eb2ff, type: 2}
     m_Threshold: 3
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -87,7 +87,7 @@ BlendTree:
     m_DirectBlendParameter: ZombieType
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 9ec4673e3c31d4b819b9a2cc275f1156, type: 2}
+    m_Motion: {fileID: 7400000, guid: 469f7471b991c4106b573dfe880c7758, type: 2}
     m_Threshold: 2
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -95,7 +95,7 @@ BlendTree:
     m_DirectBlendParameter: ZombieType
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 956f9b778a1ec4fd5b61cd2efc81c782, type: 2}
+    m_Motion: {fileID: 7400000, guid: 9f838740cae764b3c937c8afcc923bea, type: 2}
     m_Threshold: 3
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -125,7 +125,7 @@ BlendTree:
     m_DirectBlendParameter: ZombieType
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: a2de10958f7dc4dc28162eac03d74313, type: 2}
+    m_Motion: {fileID: 7400000, guid: f552bb436524d4d8284b224e99185bb0, type: 2}
     m_Threshold: 2
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -133,7 +133,7 @@ BlendTree:
     m_DirectBlendParameter: ZombieType
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: b51912346268440ae90ee206e9dd02ab, type: 2}
+    m_Motion: {fileID: 7400000, guid: d41abcf40640f42368ca7b7a1e5be870, type: 2}
     m_Threshold: 3
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -163,7 +163,7 @@ BlendTree:
     m_DirectBlendParameter: ZombieType
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 46f3ba78998bf409bafffc334dadfa77, type: 2}
+    m_Motion: {fileID: 7400000, guid: 51dc42d93c9894495acbd95440a99245, type: 2}
     m_Threshold: 2
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -171,7 +171,7 @@ BlendTree:
     m_DirectBlendParameter: ZombieType
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 58488273da8ba44e7857f79afd7e6c3e, type: 2}
+    m_Motion: {fileID: 7400000, guid: 62090f6469a394c7db68f90ebb106762, type: 2}
     m_Threshold: 3
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
