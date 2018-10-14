@@ -66,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1187073579929642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -0.01, z: 0}
+  m_LocalPosition: {x: 10.928309, y: -5.573914, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4493172545897722}
@@ -195,6 +195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpRecovered: 30
+  audiosource: {fileID: 82550132656363436, guid: 7be92edd153494160862323fe7638633,
+    type: 2}
+  drink: {fileID: 8300000, guid: ad353f011b89a472c8edde34dd5c9392, type: 3}
 --- !u!212 &212558266106736610
 SpriteRenderer:
   m_ObjectHideFlags: 1

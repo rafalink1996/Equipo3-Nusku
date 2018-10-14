@@ -44,11 +44,11 @@ public class Jur_Idle : StateMachineBehaviour {
             timeToAttack = 0.1f;
             isAttacking = false;
         }
-        if (attackType >= 1 && attackType <=15)
+        if (attackType >= 1 && attackType <=20)
         {
             animator.SetTrigger("Stal");
         }
-        if (attackType >= 16 && attackType <= 55)
+        if (attackType >= 21 && attackType <= 55)
         {
             animator.SetTrigger("Bite");
         }

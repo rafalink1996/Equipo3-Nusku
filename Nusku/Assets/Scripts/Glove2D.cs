@@ -9,8 +9,7 @@ public class Glove2D : MonoBehaviour {
     bool oneSecInProgress = false;
     bool attacking = false;
     PlayerMovement2D player;
-    //public AudioSource powerup;
-    //public AudioSource shoot;
+    public AudioClip shoot;
 
 
     void Start()
@@ -109,7 +108,7 @@ public class Glove2D : MonoBehaviour {
                     // Esta accion la realiza un script en la bolita
                     GameObject bullet = GameObject.Find("Bullet");
                     bullet.transform.SetParent(null);
-                    //shoot.Play();
+                    GetComponent<AudioSource>().PlayOneShot(shoot, 1);
 
                 }
             }

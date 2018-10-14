@@ -8,12 +8,13 @@ public class Bullet2D : MonoBehaviour {
     float speed = 10.0f;
     PlayerMovement2D sel;
     Animator selAnim;
-   
+    public AudioClip charge;
 
     void Start()
     {
         sel = FindObjectOfType<PlayerMovement2D>();
         selAnim = GameObject.Find("Sel/Graphics").GetComponent<Animator>();
+        GetComponent<AudioSource>().PlayOneShot(charge, 4);
     }
 
     void Update()
