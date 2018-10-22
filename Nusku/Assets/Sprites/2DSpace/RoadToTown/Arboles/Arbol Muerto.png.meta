@@ -89,10 +89,10 @@ TextureImporter:
       name: Arbol Muerto_0
       rect:
         serializedVersion: 2
-        x: 1099
-        y: 544
-        width: 1483
-        height: 1499
+        x: 1104
+        y: 546
+        width: 1213
+        height: 1602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -100,7 +100,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dab942caa986245168fd484fca4f7e9b
+      spriteID: 50c436a4389e4459697d0879fd7c1b16
       vertices: []
       indices: 
       edges: []
@@ -109,10 +109,10 @@ TextureImporter:
       name: Arbol Muerto_1
       rect:
         serializedVersion: 2
-        x: 1092
-        y: 53
-        width: 1493
-        height: 491
+        x: 1104
+        y: 45
+        width: 1213
+        height: 501
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,7 +120,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3909c0852098b48aba9757b36cddad33
+      spriteID: 483ecc852f9f04aeca77ef92bac96822
       vertices: []
       indices: 
       edges: []

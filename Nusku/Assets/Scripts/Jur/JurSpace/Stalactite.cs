@@ -28,8 +28,7 @@ public class Stalactite : MonoBehaviour
         {
             collision.collider.GetComponent<Animator>().SetTrigger("Destroy");
             collision.transform.Find("StalactiteTop").gameObject.SetActive(false);
-            //collision.collider.transform.chil;
-        }
+      }
         if (collision.collider.tag == "Player" && this.gameObject.tag == "Hazard")
         {
             sel.TakeDamage(damage);

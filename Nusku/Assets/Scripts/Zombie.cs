@@ -8,12 +8,14 @@ public class Zombie : MonoBehaviour
 
     Animator animator;
     GameObject sel;
+    SelHealth selHealth;
     float distanceX;
     float distanceY;
     Transform target;
     public int zombieType = 1;
     public bool randomType = true;
     public float speed;
+    public int damage = 10;
     // Use this for initialization
     void Start()
     {
@@ -25,7 +27,7 @@ public class Zombie : MonoBehaviour
         animator = GetComponent<Animator>();
         sel = GameObject.FindGameObjectWithTag("Player");
         target = GameObject.FindWithTag("Player").transform;
-
+        selHealth = FindObjectOfType<SelHealth>();
     }
 
     // Update is called once per frame
@@ -57,6 +59,13 @@ public class Zombie : MonoBehaviour
         else
         {
             animator.SetInteger("Direction", 3);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Player")
+        {
+            selHealth.TakeDamage(damage);
         }
     }
 }
