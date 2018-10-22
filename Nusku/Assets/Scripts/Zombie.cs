@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Zombie : MonoBehaviour {
+public class Zombie : MonoBehaviour
+{
 
 
     Animator animator;
@@ -11,17 +12,25 @@ public class Zombie : MonoBehaviour {
     float distanceY;
     Transform target;
     public int zombieType = 1;
+    public bool randomType = true;
     public float speed;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
+        if (randomType)
+        {
+            zombieType = Random.Range(1, 4);
+        }
         GetComponent<Animator>().SetFloat("ZombieType", zombieType);
         animator = GetComponent<Animator>();
         sel = GameObject.FindGameObjectWithTag("Player");
         target = GameObject.FindWithTag("Player").transform;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         if (Vector2.Distance(transform.position, target.position) > 0.2f && Vector2.Distance(transform.position, target.position) < 4f)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
@@ -44,8 +53,10 @@ public class Zombie : MonoBehaviour {
             {
                 animator.SetInteger("Direction", 4);
             }
-        }else{
+        }
+        else
+        {
             animator.SetInteger("Direction", 3);
         }
-	}
+    }
 }
