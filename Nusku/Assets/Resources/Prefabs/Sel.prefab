@@ -306,9 +306,9 @@ AudioSource:
   m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6cc6da5967a3449a589929b7cf19bd6b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 98341cdec0f7a4a0dbbdbda2fcc72850, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.47
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -551,7 +551,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthSlider: {fileID: 0}
   Audio: {fileID: 82550132656363436}
-  Hit: {fileID: 8300000, guid: 75a934905374241519b5debab908abc1, type: 3}
+  Hit: {fileID: 8300000, guid: 7629c86e8b4b443b78e38e6374700eb4, type: 3}
+  death: {fileID: 8300000, guid: 0d0b972aae80c4a85bc8c67677a0373a, type: 3}
 --- !u!114 &114960206458638532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -563,7 +564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d6898ca25f764d1986b6678d2673b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shoot: {fileID: 8300000, guid: 73e7a08e511a84d8ba35c11a7c2f50b0, type: 3}
+  shoot: {fileID: 8300000, guid: b0d746875384e474d985c24c6a00a658, type: 3}
 --- !u!212 &212019230134783678
 SpriteRenderer:
   m_ObjectHideFlags: 1

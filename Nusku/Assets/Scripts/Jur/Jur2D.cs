@@ -26,9 +26,9 @@ public class Jur2D : MonoBehaviour {
     public AudioClip dive;
     public AudioClip emerge;
     public AudioClip whip;
-    public AudioClip down;
-    public AudioClip rayo;
+    public AudioClip diveBeams;
     public AudioClip stalactite;
+    public AudioClip change;
     bool invincible;
     Component[] animator;
 	// Use this for initialization
@@ -64,6 +64,7 @@ public class Jur2D : MonoBehaviour {
             anim.SetTrigger("BattleStart");
         }
         neck.color = GetComponent<SpriteRenderer>().color;
+     
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -154,18 +155,19 @@ public class Jur2D : MonoBehaviour {
         jurAudio.PlayOneShot(dive, 1);
     }
     void EmergeSound() {
-        jurAudio.PlayOneShot(emerge, 3);
+        jurAudio.PlayOneShot(emerge, 1);
     }
     void WhipSound() {
         jurAudio.PlayOneShot(whip, 1);
     }
     void DownSound() {
-        jurAudio.PlayOneShot(down, 1);
-    }
-    void RayoSound() {
-        jurAudio.PlayOneShot(rayo, 1);
+        jurAudio.PlayOneShot(diveBeams, 1);
     }
     void StalactiteSound() {
-        jurAudio.PlayOneShot(stalactite, 2);
+        jurAudio.PlayOneShot(stalactite, 1);
+    }
+    void FlashIn()
+    {
+        jurAudio.PlayOneShot(change, 1);
     }
 }

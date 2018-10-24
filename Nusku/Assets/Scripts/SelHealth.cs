@@ -8,6 +8,7 @@ public class SelHealth : MonoBehaviour
 
     public Slider healthSlider;
     bool invincible = false;
+    bool dead;
     Animator anim;
     PlayerMovement2D sel;
     GameObject arm;
@@ -15,6 +16,7 @@ public class SelHealth : MonoBehaviour
     SpriteRenderer armG;
     public AudioSource Audio;
     public AudioClip Hit;
+    public AudioClip death;
  
     // Use this for initialization
     void Start()
@@ -31,13 +33,15 @@ public class SelHealth : MonoBehaviour
     void Update()
     {
         armG.color = body.color;
-        if (healthSlider.value <= 0)
+        if (healthSlider.value <= 0 && !dead)
         {
             anim.SetBool("Dead", true);
+            Audio.PlayOneShot(death, 1);
             sel.canMove = false;
             arm.SetActive(false);
             body.color = Color.white;
             StopCoroutine("Flashing");
+            dead = true;
         }
     }
 
