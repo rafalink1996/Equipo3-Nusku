@@ -550,6 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSlider: {fileID: 0}
+  health: 100
   Audio: {fileID: 82550132656363436}
   Hit: {fileID: 8300000, guid: 7629c86e8b4b443b78e38e6374700eb4, type: 3}
   death: {fileID: 8300000, guid: 0d0b972aae80c4a85bc8c67677a0373a, type: 3}

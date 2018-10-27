@@ -9,6 +9,7 @@ public class Zombie : MonoBehaviour
     Animator animator;
     GameObject sel;
     SelHealth selHealth;
+    PlayerMovement2D move;
     float distanceX;
     float distanceY;
     Transform target;
@@ -16,6 +17,7 @@ public class Zombie : MonoBehaviour
     public bool randomType = true;
     public float speed;
     public int damage = 10;
+    int health = 10;
     // Use this for initialization
     void Start()
     {
@@ -28,17 +30,19 @@ public class Zombie : MonoBehaviour
         sel = GameObject.FindGameObjectWithTag("Player");
         target = GameObject.FindWithTag("Player").transform;
         selHealth = FindObjectOfType<SelHealth>();
+        move = FindObjectOfType<PlayerMovement2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Vector2.Distance(transform.position, target.position) > 0.2f && Vector2.Distance(transform.position, target.position) < 4f)
+        if (Vector2.Distance(transform.position, target.position) > 0.2f && Vector2.Distance(transform.position, target.position) < 4f && move.canMove)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
             distanceX = Mathf.Abs(this.transform.position.x - sel.transform.position.x);
             distanceY = Mathf.Abs(this.transform.position.y - sel.transform.position.y);
+            GetComponent<AudioSource>().enabled = true;
             if (this.transform.position.y < sel.transform.position.y && distanceY > distanceX)
             {
                 animator.SetInteger("Direction", 1);
@@ -59,6 +63,11 @@ public class Zombie : MonoBehaviour
         else
         {
             animator.SetInteger("Direction", 3);
+            GetComponent<AudioSource>().enabled = false;
+        }
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -66,6 +75,10 @@ public class Zombie : MonoBehaviour
         if (collision.collider.tag == "Player")
         {
             selHealth.TakeDamage(damage);
+        }
+        if (collision.collider.name == "Bullet")
+        {
+            health = health - 10;
         }
     }
 }

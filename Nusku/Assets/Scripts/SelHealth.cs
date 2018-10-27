@@ -7,6 +7,7 @@ public class SelHealth : MonoBehaviour
 {
 
     public Slider healthSlider;
+    public int health;
     bool invincible = false;
     bool dead;
     Animator anim;
@@ -32,8 +33,9 @@ public class SelHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        healthSlider.value = health;
         armG.color = body.color;
-        if (healthSlider.value <= 0 && !dead)
+        if (health <= 0 && !dead)
         {
             anim.SetBool("Dead", true);
             Audio.PlayOneShot(death, 1);
@@ -49,7 +51,7 @@ public class SelHealth : MonoBehaviour
     {
         if (invincible == false)
         {
-            healthSlider.value = healthSlider.value - damageTaken;
+            health = health - damageTaken;
             invincible = true;
             StartCoroutine("Flashing");
             Invoke("ResetInvincibility", 2.5f);
@@ -58,7 +60,7 @@ public class SelHealth : MonoBehaviour
     }
     public void RecoverHealth (int healthRecovered)
     {
-        healthSlider.value = healthSlider.value + healthRecovered;
+        health = health + healthRecovered;
     }
     IEnumerator Flashing()
     {

@@ -197,6 +197,7 @@ public class AmirDialogue : MonoBehaviour {
     }
     public void Option1() //Well, I was in the train...
     {
+        
         theTextBox.currentLine = option1Line;
         theTextBox.endAtLine = option1EndLine;
         theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));

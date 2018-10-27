@@ -28,6 +28,7 @@ public class Jur2D : MonoBehaviour {
     public AudioClip whip;
     public AudioClip diveBeams;
     public AudioClip stalactite;
+    public AudioClip bite;
     public AudioClip change;
     bool invincible;
     Component[] animator;
@@ -165,6 +166,9 @@ public class Jur2D : MonoBehaviour {
     }
     void StalactiteSound() {
         jurAudio.PlayOneShot(stalactite, 1);
+    }
+    void BiteSound(){
+        jurAudio.PlayOneShot(bite, 1);
     }
     void FlashIn()
     {
