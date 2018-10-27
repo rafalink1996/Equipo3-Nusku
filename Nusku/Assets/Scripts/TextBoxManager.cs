@@ -117,7 +117,7 @@ public class TextBoxManager : MonoBehaviour
 
     }
 
-    public IEnumerator TextScroll (string lineOfText)
+    public IEnumerator TextScroll(string lineOfText)
     {
         int letter = 0;
         theText.text = "";
@@ -172,7 +172,7 @@ public class TextBoxManager : MonoBehaviour
         option2.enabled = true;
         option1Text.enabled = true;
         option2Text.enabled = true;
- 
+
     }
     public void DeactivateButtons()
     {

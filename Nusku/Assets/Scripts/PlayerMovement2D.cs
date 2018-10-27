@@ -26,7 +26,7 @@ public class PlayerMovement2D : MonoBehaviour {
     }
     void Update()
     {
-
+        print("canMove = " + canMove); 
         if (!canMove){
             anim.SetBool("IsMoving",false);
             armAnim.SetBool("IsMoving",false);
