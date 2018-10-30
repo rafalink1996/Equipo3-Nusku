@@ -26,11 +26,12 @@ public class TextBoxManager : MonoBehaviour
     public bool isActive;
     public bool stopPlayerMovement;
     bool isTyping = false;
-    bool cancelTyping = false;
+    public bool cancelTyping = false;
     public float typeSpeed;
     AudioSource audioSource;
     public GameObject HUD;
     bool buttonSelected;
+    public bool canCancel = true;
 
 
     // Use this for initialization
@@ -94,7 +95,7 @@ public class TextBoxManager : MonoBehaviour
                     StartCoroutine(TextScroll(textlines[currentLine]));
                 }
             }
-            else if (isTyping == !cancelTyping)
+            else if (isTyping == !cancelTyping && canCancel)
             {
                 cancelTyping = true;
             }
@@ -109,11 +110,7 @@ public class TextBoxManager : MonoBehaviour
                 buttonSelected = true;
             }
         }
-        //if (selectButtons >= 2 || selectButtons <= 5)
-        //{
-        //    option1.Select();
-        //    option1.OnSelect(null);
-        //}
+       
 
     }
 
@@ -133,6 +130,7 @@ public class TextBoxManager : MonoBehaviour
         theText.text = lineOfText;
         isTyping = false;
         cancelTyping = false;
+        canCancel = true;
     }
 
     public void EnableTextBox()
@@ -172,6 +170,7 @@ public class TextBoxManager : MonoBehaviour
         option2.enabled = true;
         option1Text.enabled = true;
         option2Text.enabled = true;
+        canCancel = false;
 
     }
     public void DeactivateButtons()

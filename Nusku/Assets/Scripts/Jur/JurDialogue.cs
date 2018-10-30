@@ -34,7 +34,9 @@ public class JurDialogue : MonoBehaviour {
         if (hasOptions)
         {
             lastOne = false;
-        }else{
+        }
+        else
+        {
             lastOne = true;
         }
     }
@@ -62,7 +64,7 @@ public class JurDialogue : MonoBehaviour {
                 theTextBox.option2Text.text = option2;
                 theTextBox.option1.onClick.AddListener(Option1);
                 theTextBox.option2.onClick.AddListener(Option2);
-            
+
             }
             else
             {
@@ -75,7 +77,8 @@ public class JurDialogue : MonoBehaviour {
             }
         }
         //Cuando tiene que ir de una línea a otra
-        if (theTextBox.currentLine == 8){
+        if (theTextBox.currentLine == 8)
+        {
             theTextBox.currentLine = 16;
             theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         }
