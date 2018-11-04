@@ -26,12 +26,11 @@ public class TextBoxManager : MonoBehaviour
     public bool isActive;
     public bool stopPlayerMovement;
     bool isTyping = false;
-    public bool cancelTyping = false;
+    bool cancelTyping = false;
     public float typeSpeed;
     AudioSource audioSource;
     public GameObject HUD;
     bool buttonSelected;
-    public bool canCancel = true;
 
 
     // Use this for initialization
@@ -58,8 +57,8 @@ public class TextBoxManager : MonoBehaviour
             DisableTextBox();
         }
 
-        option1.Select();
-        option1.OnSelect(null);
+        //option1.Select();
+        //option1.OnSelect(null);
     }
 
     void Update()
@@ -95,7 +94,7 @@ public class TextBoxManager : MonoBehaviour
                     StartCoroutine(TextScroll(textlines[currentLine]));
                 }
             }
-            else if (isTyping == !cancelTyping && canCancel)
+            else if (isTyping == !cancelTyping)
             {
                 cancelTyping = true;
             }
@@ -105,12 +104,16 @@ public class TextBoxManager : MonoBehaviour
             if (!isTyping && currentLine == endAtLine && !buttonSelected)
             {
                 ActivateButtons();
-                option1.Select();
-                option1.OnSelect(null);
+                //option1.Select();
+                //option1.OnSelect(null);
                 buttonSelected = true;
             }
         }
-       
+        //if (selectButtons >= 2 || selectButtons <= 5)
+        //{
+        //    option1.Select();
+        //    option1.OnSelect(null);
+        //}
 
     }
 
@@ -130,7 +133,6 @@ public class TextBoxManager : MonoBehaviour
         theText.text = lineOfText;
         isTyping = false;
         cancelTyping = false;
-        canCancel = true;
     }
 
     public void EnableTextBox()
@@ -170,7 +172,6 @@ public class TextBoxManager : MonoBehaviour
         option2.enabled = true;
         option1Text.enabled = true;
         option2Text.enabled = true;
-        canCancel = false;
 
     }
     public void DeactivateButtons()

@@ -3760,7 +3760,7 @@ MonoBehaviour:
   option2: Aren't you an oracle?
   option2Line: 13
   option2EndLine: 16
-  typingSpeed: 0.05
+  typingSpeed: 0.03
   lastOne: 0
   expression:
   - {fileID: 21300000, guid: 083e78783b26b4b92b8df8b8a51edde7, type: 3}

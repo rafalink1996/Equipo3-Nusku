@@ -39,16 +39,13 @@ public class SelHealth : MonoBehaviour
         {
             anim.SetBool("Dead", true);
             Audio.PlayOneShot(death, 1);
-
+            sel.canMove = false;
             arm.SetActive(false);
             body.color = Color.white;
             StopCoroutine("Flashing");
             dead = true;
         }
-        if (dead)
-        {
-            sel.canMove = false;
-        }
+
     }
 
     public void TakeDamage(int damageTaken)
@@ -56,8 +53,8 @@ public class SelHealth : MonoBehaviour
         if (invincible == false)
         {
             health = health - damageTaken;
-            PlayerPrefs.SetInt("health", health);
-            PlayerPrefs.Save();
+            //PlayerPrefs.SetInt("health", health);
+            //PlayerPrefs.Save();
 
             invincible = true;
             StartCoroutine("Flashing");
@@ -68,8 +65,8 @@ public class SelHealth : MonoBehaviour
     public void RecoverHealth(int healthRecovered)
     {
         health = health + healthRecovered;
-        PlayerPrefs.SetInt("health", health);
-        PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("health", health);
+        //PlayerPrefs.Save();
     }
     IEnumerator Flashing()
     {
