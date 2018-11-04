@@ -17,9 +17,7 @@ public class JurDialogue : MonoBehaviour {
     public bool requireButtonPress;
     public bool hasOptions;
     public string option1;
-    public int option1Line, option1EndLine;
     public string option2;
-    public int option2Line, option2EndLine;
     bool waitForPress;
     public float typingSpeed;
     public bool lastOne;
@@ -34,9 +32,7 @@ public class JurDialogue : MonoBehaviour {
         if (hasOptions)
         {
             lastOne = false;
-        }
-        else
-        {
+        }else{
             lastOne = true;
         }
     }
@@ -56,7 +52,10 @@ public class JurDialogue : MonoBehaviour {
             theTextBox.characterName.text = characterName;
             theTextBox.image = characterImage;
 
-
+            //if (destroyWhenActivated)
+            //{
+            //        Destroy(gameObject);
+            //}
             if (hasOptions == true)
             {
                 theTextBox.choices = true;
@@ -77,8 +76,7 @@ public class JurDialogue : MonoBehaviour {
             }
         }
         //Cuando tiene que ir de una línea a otra
-        if (theTextBox.currentLine == 8)
-        {
+        if (theTextBox.currentLine == 8){
             theTextBox.currentLine = 16;
             theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         }
@@ -148,7 +146,6 @@ public class JurDialogue : MonoBehaviour {
             if (theTextBox.currentLine == 70)
             {
                 theTextBox.image = expression[10];
-                print("destroy");
                 Destroy(gameObject);
 
             }
@@ -210,8 +207,8 @@ public class JurDialogue : MonoBehaviour {
     }
     public void Option1() //Sel
     {
-        theTextBox.currentLine = option1Line;
-        theTextBox.endAtLine = option1EndLine;
+        theTextBox.currentLine = 7;
+        theTextBox.endAtLine = 16;
         theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         theTextBox.DeactivateButtons();
         theTextBox.option1.onClick.AddListener(Option3);
@@ -222,8 +219,8 @@ public class JurDialogue : MonoBehaviour {
     }
     public void Option2() //Aren't you an oracle?
     {
-        theTextBox.currentLine = option2Line;
-        theTextBox.endAtLine = option2EndLine;
+        theTextBox.currentLine = 13;
+        theTextBox.endAtLine = 16;
         theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         theTextBox.DeactivateButtons();
         theTextBox.option1.onClick.AddListener(Option3);

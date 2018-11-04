@@ -57,8 +57,8 @@ public class TextBoxManager : MonoBehaviour
             DisableTextBox();
         }
 
-        //option1.Select();
-        //option1.OnSelect(null);
+        option1.Select();
+        option1.OnSelect(null);
     }
 
     void Update()
@@ -104,8 +104,8 @@ public class TextBoxManager : MonoBehaviour
             if (!isTyping && currentLine == endAtLine && !buttonSelected)
             {
                 ActivateButtons();
-                //option1.Select();
-                //option1.OnSelect(null);
+                option1.Select();
+                option1.OnSelect(null);
                 buttonSelected = true;
             }
         }
@@ -117,7 +117,7 @@ public class TextBoxManager : MonoBehaviour
 
     }
 
-    public IEnumerator TextScroll(string lineOfText)
+    public IEnumerator TextScroll (string lineOfText)
     {
         int letter = 0;
         theText.text = "";
