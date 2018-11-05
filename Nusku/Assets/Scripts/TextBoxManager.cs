@@ -31,6 +31,7 @@ public class TextBoxManager : MonoBehaviour
     AudioSource audioSource;
     public GameObject HUD;
     bool buttonSelected;
+    public bool canCancel = true; // todo
 
 
     // Use this for initialization
@@ -80,10 +81,10 @@ public class TextBoxManager : MonoBehaviour
 
         if (Input.GetButtonDown("Interact"))
         {
-            if (!isTyping)
+            if (!isTyping && !canCancel) //todo
             {
                 currentLine += 1;
-
+                canCancel = true;
 
                 if (currentLine > endAtLine && !choices)
                 {
@@ -94,9 +95,9 @@ public class TextBoxManager : MonoBehaviour
                     StartCoroutine(TextScroll(textlines[currentLine]));
                 }
             }
-            else if (isTyping == !cancelTyping)
+            else if (isTyping == !cancelTyping && canCancel) //todo
             {
-                cancelTyping = true;
+                cancelTyping = true; //TODO
             }
         }
         if (choices)
@@ -109,30 +110,28 @@ public class TextBoxManager : MonoBehaviour
                 buttonSelected = true;
             }
         }
-        //if (selectButtons >= 2 || selectButtons <= 5)
-        //{
-        //    option1.Select();
-        //    option1.OnSelect(null);
-        //}
+
 
     }
 
-    public IEnumerator TextScroll (string lineOfText)
+    public IEnumerator TextScroll(string lineOfText)
     {
         int letter = 0;
         theText.text = "";
         isTyping = true;
-        cancelTyping = false;
-        while (isTyping && !cancelTyping && (letter < lineOfText.Length - 1))
+        cancelTyping = false; //TODO
+        while (isTyping && !cancelTyping && (letter < lineOfText.Length - 1)) //TODO
         {
             theText.text += lineOfText[letter];
             letter += 1;
             yield return new WaitForSeconds(typeSpeed);
             audioSource.Play();
+            canCancel = true;
         }
         theText.text = lineOfText;
         isTyping = false;
-        cancelTyping = false;
+        cancelTyping = false; //TODO
+        canCancel = false; //todo 
     }
 
     public void EnableTextBox()
@@ -172,6 +171,7 @@ public class TextBoxManager : MonoBehaviour
         option2.enabled = true;
         option1Text.enabled = true;
         option2Text.enabled = true;
+        canCancel = false; //todo
 
     }
     public void DeactivateButtons()
