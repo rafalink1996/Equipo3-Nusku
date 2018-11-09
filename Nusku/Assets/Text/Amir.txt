@@ -12,16 +12,16 @@
 11. AMIR: Of course not, little one! Here you go.
 12. AMIR: These gloves can control the light of the bottles.
 13. AMIR: In case you need to defend yourself, just hold Z and release to shoot.
-14. AMIR: Use them wisely, you can only shoot what you have in the bottle.
+14. AMIR: Use them wisely, you may have a lot of enemies.
 15. AMIR: Good luck with the zombies.
 16. ...What am I supposed to do?
-17. AMIR: We have knowledge that they are keeping the sun god in the sun temple.
+17. AMIR: We have knowledge that they are keeping the sun god in his temple.
 18. AMIR: We need your help to save him and bring the light to everyone again.
 19. SEL: By myself?
 20. AMIR: Don´t worry, it’s not like we are throwing you alone on this mission.
 21. AMIR: We’re not going with you either, but take this. These gloves can control the light of the bottles.
 13. AMIR: In case you need to defend yourself, just hold Z and release to shoot.
-14. AMIR: Use them wisely, you can only shoot what you have in the bottle.
+14. AMIR: Use them wisely, you may have a lot of enemies.
 15. AMIR: Good luck with the zombies.
 22. What do I have to do?
 23. AMIR: Ah, I like that spirit!
