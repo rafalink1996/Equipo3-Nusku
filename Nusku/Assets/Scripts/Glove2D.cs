@@ -10,6 +10,7 @@ public class Glove2D : MonoBehaviour {
     bool attacking = false;
     PlayerMovement2D player;
     public AudioClip shoot;
+    public bool hasGlove = true;
 
 
     void Start()
@@ -20,7 +21,7 @@ public class Glove2D : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (!player.canMove)
+        if (!player.canMove || !hasGlove)
         {
             return;
         }

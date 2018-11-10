@@ -22,6 +22,7 @@ public class AmirDialogue : MonoBehaviour {
     public float typingSpeed;
     public bool lastOne;
     public Sprite[] expression;
+    Glove2D glove;
 
 
 
@@ -29,6 +30,7 @@ public class AmirDialogue : MonoBehaviour {
     void Start()
     {
         theTextBox = FindObjectOfType<TextBoxManager>();
+        glove = FindObjectOfType<Glove2D>();
         if (hasOptions)
         {
             lastOne = false;
@@ -97,48 +99,37 @@ public class AmirDialogue : MonoBehaviour {
         else
         {
             theTextBox.characterName.text = characterName;
-            theTextBox.image = characterImage;
 
             //Expresiones de Amir
-        //    if (theTextBox.currentLine == 0 || theTextBox.currentLine == 16 || theTextBox.currentLine == 32)
-        //    {
-        //        theTextBox.image = expression[0];
-        //    }
-        //    if (theTextBox.currentLine == 13 || theTextBox.currentLine == 49 || theTextBox.currentLine == 50 || theTextBox.currentLine == 60 || theTextBox.currentLine == 64 || theTextBox.currentLine == 65)
-        //    {
-        //        theTextBox.image = expression[1];
-        //    }
-        //    if (theTextBox.currentLine == 7 || theTextBox.currentLine == 66)
-        //    {
-        //        theTextBox.image = expression[2];
-        //    }
-        //    if (theTextBox.currentLine == 15)
-        //    {
-        //        theTextBox.image = expression[3];
-        //    }
-        //    if (theTextBox.currentLine == 22 || theTextBox.currentLine == 23 || theTextBox.currentLine == 25 || theTextBox.currentLine == 38)
-        //    {
-        //        theTextBox.image = expression[5];
-        //    }
-        //    if (theTextBox.currentLine == 45 || theTextBox.currentLine == 67)
-        //    {
-        //        theTextBox.image = expression[7];
-        //    }
-        //    if (theTextBox.currentLine == 60 || theTextBox.currentLine == 61 || theTextBox.currentLine == 62)
-        //    {
-        //        theTextBox.image = expression[8];
-        //    }
-        //    if (theTextBox.currentLine == 69)
-        //    {
-        //        theTextBox.image = expression[9];
-        //    }
-        //    if (theTextBox.currentLine == 70)
-        //    {
-        //        theTextBox.image = expression[10];
-        //        //print("destroy");
-        //        //Destroy(gameObject);
-
-        //    }
+            if (theTextBox.currentLine == 0 || theTextBox.currentLine == 3 || theTextBox.currentLine == 12 || theTextBox.currentLine == 18 || theTextBox.currentLine == 28 || theTextBox.currentLine == 32 || theTextBox.currentLine == 40 || theTextBox.currentLine == 22)
+            {
+                theTextBox.image = expression[0];
+            }
+            if (theTextBox.currentLine == 4 || theTextBox.currentLine == 14 || theTextBox.currentLine == 20 || theTextBox.currentLine == 23 || theTextBox.currentLine == 37)
+            {
+                theTextBox.image = expression[2];
+            }
+            if (theTextBox.currentLine == 6 || theTextBox.currentLine == 9 || theTextBox.currentLine == 15 || theTextBox.currentLine == 24 || theTextBox.currentLine == 31 || theTextBox.currentLine == 36 || theTextBox.currentLine == 39)
+            {
+                theTextBox.image = expression[3];
+            }
+            if (theTextBox.currentLine == 8 || theTextBox.currentLine == 26 || theTextBox.currentLine == 42)
+            {
+                theTextBox.image = expression[4];
+            }
+            if (theTextBox.currentLine == 11 || theTextBox.currentLine == 21 || theTextBox.currentLine == 35 || theTextBox.currentLine == 45)
+            {
+                theTextBox.image = expression[5];
+            }
+            if (theTextBox.currentLine == 2 || theTextBox.currentLine == 17 || theTextBox.currentLine == 27)
+            {
+                theTextBox.image = expression[6];
+            }
+        }
+        //Final activa el guante
+        if (theTextBox.currentLine == 15 || theTextBox.currentLine == 24)
+        {
+            glove.hasGlove = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
