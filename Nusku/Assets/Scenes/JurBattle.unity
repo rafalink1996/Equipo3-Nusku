@@ -4757,6 +4757,10 @@ Prefab:
       propertyPath: HUD
       value: 
       objectReference: {fileID: 1651286422}
+    - target: {fileID: 1172875110563418, guid: 7be92edd153494160862323fe7638633, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7be92edd153494160862323fe7638633, type: 2}
   m_IsPrefabAsset: 0

@@ -9,7 +9,7 @@ public class PlayerMovement2D : MonoBehaviour {
     bool diagonal; // determina si está en diagonal
     public float walkSpeed; // velocidad normal de caminar, el valor se pone en el inspector
     Rigidbody rb;
-    Animator anim;
+    public Animator anim;
     Animator armAnim;
     public AudioSource caminata;
     //public AudioSource salto;
@@ -26,7 +26,8 @@ public class PlayerMovement2D : MonoBehaviour {
     }
     void Update()
     {
-        
+        armAnim.SetFloat("LastX", anim.GetFloat("LastX"));
+        armAnim.SetFloat("LastY", anim.GetFloat("LastY"));
         if (!canMove){
             anim.SetBool("IsMoving",false);
             armAnim.SetBool("IsMoving",false);

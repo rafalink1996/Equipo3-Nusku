@@ -20,6 +20,7 @@ public class DialogueBox : MonoBehaviour
     public string option2;
     bool waitForPress;
     public float typingSpeed;
+    public SpriteRenderer icon;
 
 
 
@@ -44,6 +45,7 @@ public class DialogueBox : MonoBehaviour
             theTextBox.typeSpeed = typingSpeed;
             theTextBox.characterName.text = characterName;
             theTextBox.image = characterImage;
+            icon.enabled = false;
 
             if (destroyWhenActivated)
             {
@@ -81,6 +83,7 @@ public class DialogueBox : MonoBehaviour
             if (requireButtonPress)
             {
                 waitForPress = true;
+                icon.enabled = true;
                 return;
             }
             theTextBox.ReloadScript(theText);
@@ -124,6 +127,7 @@ public class DialogueBox : MonoBehaviour
         if (other.tag == "Player")
         {
             waitForPress = false;
+            icon.enabled = false;
         }
     }
 }

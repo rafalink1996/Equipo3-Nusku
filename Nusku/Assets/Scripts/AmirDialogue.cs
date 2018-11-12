@@ -23,6 +23,7 @@ public class AmirDialogue : MonoBehaviour {
     public bool lastOne;
     public Sprite[] expression;
     Glove2D glove;
+    public SpriteRenderer icon;
 
 
 
@@ -55,7 +56,7 @@ public class AmirDialogue : MonoBehaviour {
             theTextBox.typeSpeed = typingSpeed;
             theTextBox.characterName.text = characterName;
             theTextBox.image = characterImage;
-
+            icon.enabled = false;
 
             if (hasOptions == true)
             {
@@ -138,6 +139,7 @@ public class AmirDialogue : MonoBehaviour {
         {
             if (requireButtonPress)
             {
+                icon.enabled = true;
                 waitForPress = true;
                 return;
             }
@@ -184,6 +186,7 @@ public class AmirDialogue : MonoBehaviour {
         if (other.tag == "Player")
         {
             waitForPress = false;
+            icon.enabled = false;
         }
     }
     public void Option1() //Well, I was in the train...
