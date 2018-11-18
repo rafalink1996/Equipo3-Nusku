@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour {
+
+public class Door : MonoBehaviour
+{
 
     public SpriteRenderer icon;
     public Vector2 destination;
@@ -10,21 +12,28 @@ public class Door : MonoBehaviour {
     public int selDirectionY;
     GameObject sel;
     bool canInteract;
+    public GameObject activateCamera;
+    public GameObject deactivateCamera;
+    Animator black;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         sel = GameObject.FindWithTag("Player");
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        black = GameObject.Find("Canvas/Black").GetComponent<Animator>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         if (canInteract && Input.GetButtonDown("Interact"))
         {
-            sel.transform.position = destination;
-            sel.GetComponentInChildren<Animator>().SetFloat("LastX", selDirectionX);
-            sel.GetComponentInChildren<Animator>().SetFloat("LastY", selDirectionY);
+            black.SetTrigger("Fade");
+            Invoke("Switch", 0.5f);
+
         }
-	}
+
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -40,5 +49,13 @@ public class Door : MonoBehaviour {
             icon.enabled = false;
             canInteract = false;
         }
+    }
+    void Switch()
+    {
+            sel.transform.position = destination;
+            sel.GetComponentInChildren<Animator>().SetFloat("LastX", selDirectionX);
+            sel.GetComponentInChildren<Animator>().SetFloat("LastY", selDirectionY);
+            activateCamera.SetActive(true);
+            deactivateCamera.SetActive(false);
     }
 }

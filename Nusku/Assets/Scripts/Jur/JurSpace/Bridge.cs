@@ -8,14 +8,14 @@ public class Bridge : MonoBehaviour {
     public Animator column;
     public Animator column2;
     public Animator jur;
-    FollowPlayer cam;
+    public GameObject activateCamera;
+    public GameObject deactivateCamera;
     public AudioSource audio;
     public AudioClip end;
     // Use this for initialization
     void Start()
     {
         anim = GetComponentInParent<Animator>();
-        cam = FindObjectOfType<FollowPlayer>();
     }
 
     // Update is called once per frame
@@ -31,7 +31,8 @@ public class Bridge : MonoBehaviour {
             column.SetTrigger("Fade");
             column2.SetTrigger("Fade");
             jur.SetTrigger("Emerge");
-            cam.player = null;
+            activateCamera.SetActive(true);
+            deactivateCamera.SetActive(false);
             Destroy(this.gameObject);
             audio.PlayOneShot(end, 1);
         }
