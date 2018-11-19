@@ -9,12 +9,12 @@ EditorBuildSettings:
     path: Assets/3D/Scenes/MenuScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/Amir.unity
+    guid: c7c27007a91e14c2288c69d68a694ff1
+  - enabled: 1
+    path: Assets/Scenes/Town.unity
+    guid: a5075d1f88ab24b8f811b5da6bed7894
+  - enabled: 1
     path: Assets/Scenes/JurBattle.unity
     guid: be62f7d1bf4f34813a5bdf1e549050db
-  - enabled: 0
-    path: Assets/3D/Scenes/Jur_Cave.unity
-    guid: c4a1156558d674452801c5ff8de9fb03
-  - enabled: 0
-    path: Assets/3D/Scenes/Jur_Battle.unity
-    guid: 3478dbea830c44c71bb274032d8aeb37
   m_configObjects: {}
