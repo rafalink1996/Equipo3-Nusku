@@ -22,6 +22,9 @@ public class PlayerMovement2D : MonoBehaviour {
     {
         anim = GetComponentInChildren<Animator>();
         armAnim = this.transform.Find("Graphics/Arm").gameObject.GetComponent<Animator>();
+        transform.position = GameStats.stats.position;
+        anim.SetFloat("LastX", GameStats.stats.selDirectionX);
+        anim.SetFloat("LastY", GameStats.stats.selDirectionY);
 
     }
     void Update()

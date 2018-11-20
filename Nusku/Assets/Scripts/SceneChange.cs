@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 public class SceneChange : MonoBehaviour {
 
     public string sceneToLoad;
+    public Vector2 destination;
+    public int selDirectionX;
+    public int selDirectionY;
+    Animator anim;
+
 	// Use this for initialization
 	void Start () {
-		
+        anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -20,7 +25,14 @@ public class SceneChange : MonoBehaviour {
     {
         if (collision.tag == "Player")
         {
-            SceneManager.LoadScene(sceneToLoad);
+            anim.SetTrigger("Fade");
+            FindObjectOfType<PlayerMovement2D>().canMove = false;
         }
+    }
+    void LoadScene(){
+        GameStats.stats.position = destination;
+        GameStats.stats.selDirectionX = selDirectionX;
+        GameStats.stats.selDirectionY = selDirectionY;
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

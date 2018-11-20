@@ -28,6 +28,7 @@ public class SelHealth : MonoBehaviour
         arm = GameObject.Find("Sel/Graphics/Arm");
         body = GetComponentInChildren<SpriteRenderer>();
         armG = this.transform.Find("Graphics/Arm").gameObject.GetComponent<SpriteRenderer>();
+        health = GameStats.stats.health;
     }
 
     // Update is called once per frame

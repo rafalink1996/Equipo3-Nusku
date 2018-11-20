@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameStats : MonoBehaviour {
 
     public static GameStats stats;
-    public Vector2 destination;
+    public Vector2 position;
     public int selDirectionX;
     public int selDirectionY;
     public int health;
@@ -26,6 +26,6 @@ public class GameStats : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+        health = selHealth.health;
 	}
 }
