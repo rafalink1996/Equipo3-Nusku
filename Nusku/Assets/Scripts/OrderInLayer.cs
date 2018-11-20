@@ -4,21 +4,33 @@ using UnityEngine;
 
 public class OrderInLayer : MonoBehaviour {
 
-    Transform sel;
-    public int frontLayer;
-    public int behindLayer;
+    public SpriteRenderer sel;
+    SpriteRenderer order;
+    int selLayer = 5;
 	// Use this for initialization
 	void Start () {
-        sel = GameObject.FindWithTag("Player").transform;
+        order = GetComponent<SpriteRenderer>();
+        sel = GameObject.Find("Sel/Graphics").GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (sel.position.y < transform.position.y)
-        {
-            GetComponent<SpriteRenderer>().sortingOrder = behindLayer;
-        }else{
-            GetComponent<SpriteRenderer>().sortingOrder = frontLayer;
-        }
+        
 	}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            sel.sortingOrder = order.sortingOrder - 3;
+
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
+            sel.sortingOrder = selLayer;
+
+        }
+    }
 }

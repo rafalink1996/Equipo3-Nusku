@@ -11,16 +11,21 @@ public class Glove2D : MonoBehaviour {
     PlayerMovement2D player;
     public AudioClip shoot;
     public bool hasGlove = true;
+    SpriteRenderer body;
+    SpriteRenderer arm;
 
 
     void Start()
     {
         player = FindObjectOfType<PlayerMovement2D>();
+        body = GameObject.Find("Sel/Graphics").GetComponent<SpriteRenderer>();
+        arm = GetComponentInParent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        arm.sortingOrder = body.sortingOrder + 1;
         if (!player.canMove || !hasGlove)
         {
             

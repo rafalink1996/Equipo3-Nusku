@@ -14,6 +14,9 @@ public class SceneChange : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
+        if (GetComponent<SpriteRenderer>().enabled == false){
+            GetComponent<SpriteRenderer>().enabled = true;
+        }
 	}
 	
 	// Update is called once per frame

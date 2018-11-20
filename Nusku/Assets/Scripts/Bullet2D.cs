@@ -9,12 +9,14 @@ public class Bullet2D : MonoBehaviour {
     PlayerMovement2D sel;
     Animator selAnim;
     public AudioClip charge;
+    SpriteRenderer body;
 
     void Start()
     {
         sel = FindObjectOfType<PlayerMovement2D>();
         selAnim = GameObject.Find("Sel/Graphics").GetComponent<Animator>();
         GetComponent<AudioSource>().PlayOneShot(charge, 4);
+        body = GameObject.Find("Sel/Graphics").GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -31,11 +33,11 @@ public class Bullet2D : MonoBehaviour {
         if (this.transform.parent != null){
             this.transform.position = this.transform.parent.position;
             if (selAnim.GetFloat("LastY") == 1){
-                this.GetComponent<ParticleSystemRenderer>().sortingOrder = 4;
+                this.GetComponent<ParticleSystemRenderer>().sortingOrder = body.sortingOrder - 1;
             }
             if (selAnim.GetFloat("LastY") == -1)
             {
-                this.GetComponent<ParticleSystemRenderer>().sortingOrder = 7;
+                this.GetComponent<ParticleSystemRenderer>().sortingOrder = body.sortingOrder + 2;
             }
             if (Input.GetAxisRaw("Fire1") == 0)
             {

@@ -6,10 +6,12 @@ public class AttackLoad : MonoBehaviour {
 
     PlayerMovement2D sel;
     Animator selAnim;
+    SpriteRenderer body;
 	
 	void Start () {
         sel = FindObjectOfType<PlayerMovement2D>();
         selAnim = GameObject.Find("Sel/Graphics").GetComponent<Animator>();
+        body = GameObject.Find("Sel/Graphics").GetComponent<SpriteRenderer>();
 	}
 	
 	
@@ -21,11 +23,11 @@ public class AttackLoad : MonoBehaviour {
         this.transform.position = this.transform.parent.position;
         if (selAnim.GetFloat("LastY") == 1)
         {
-            this.GetComponent<ParticleSystemRenderer>().sortingOrder = 4;
+            this.GetComponent<ParticleSystemRenderer>().sortingOrder = body.sortingOrder - 1;
         }
         if (selAnim.GetFloat("LastY") == -1)
         {
-            this.GetComponent<ParticleSystemRenderer>().sortingOrder = 6;
+            this.GetComponent<ParticleSystemRenderer>().sortingOrder = body .sortingOrder + 2;
         }
 	}
 }
