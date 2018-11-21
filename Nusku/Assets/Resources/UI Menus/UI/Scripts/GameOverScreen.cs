@@ -22,7 +22,7 @@ public class GameOverScreen : MonoBehaviour {
     }
     public void OnClickQuit()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Menu");
 
     }
 }
