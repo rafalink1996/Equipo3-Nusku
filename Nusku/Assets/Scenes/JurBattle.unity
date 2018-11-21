@@ -210,7 +210,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &260387907
 GameObject:
@@ -312,7 +312,7 @@ Prefab:
     - target: {fileID: 224547127794723302, guid: d597187e6fa9748448459e90d38006f5,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224547127794723302, guid: d597187e6fa9748448459e90d38006f5,
         type: 2}
@@ -1939,17 +1939,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4776465448570102, guid: bc88604f2c6554642ba6d2821d665bb2, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114248710295299450, guid: bc88604f2c6554642ba6d2821d665bb2,
         type: 2}
       propertyPath: destination.y
-      value: 11.66
+      value: -1.52
       objectReference: {fileID: 0}
     - target: {fileID: 114248710295299450, guid: bc88604f2c6554642ba6d2821d665bb2,
         type: 2}
       propertyPath: destination.x
-      value: -33.68
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 114248710295299450, guid: bc88604f2c6554642ba6d2821d665bb2,
         type: 2}
@@ -1979,6 +1979,11 @@ Prefab:
     - target: {fileID: 4776465448570102, guid: bc88604f2c6554642ba6d2821d665bb2, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -37.926003
+      objectReference: {fileID: 0}
+    - target: {fileID: 114248710295299450, guid: bc88604f2c6554642ba6d2821d665bb2,
+        type: 2}
+      propertyPath: sceneToLoad
+      value: Cave
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc88604f2c6554642ba6d2821d665bb2, type: 2}
@@ -2920,6 +2925,11 @@ Prefab:
         type: 2}
       propertyPath: position.y
       value: -5.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 114891925064860588, guid: 8655b7aef1eb74a93bc4bab2ebd62ee0,
+        type: 2}
+      propertyPath: currentScene
+      value: JurBattle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8655b7aef1eb74a93bc4bab2ebd62ee0, type: 2}
@@ -5225,7 +5235,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4991646025707624, guid: 7be92edd153494160862323fe7638633, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114067127869571506, guid: 7be92edd153494160862323fe7638633,
         type: 2}

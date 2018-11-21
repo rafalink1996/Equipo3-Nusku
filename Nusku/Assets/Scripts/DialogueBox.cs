@@ -28,6 +28,7 @@ public class DialogueBox : MonoBehaviour
     void Start()
     {
         theTextBox = FindObjectOfType<TextBoxManager>();
+        icon = GameObject.Find("Sel/Interact_Icon").GetComponent<SpriteRenderer>();
 
     }
 

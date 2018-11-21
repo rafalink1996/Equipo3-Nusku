@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SelHealth : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class SelHealth : MonoBehaviour
             body.color = Color.white;
             StopCoroutine("Flashing");
             dead = true;
+            Invoke("GameOver", 4f);
         }
 
     }
@@ -84,6 +86,9 @@ public class SelHealth : MonoBehaviour
         invincible = false;
         StopCoroutine("Flashing");
         body.color = Color.white;
+    }
+    void GameOver(){
+        SceneManager.LoadScene("GameOver");
     }
 }
 

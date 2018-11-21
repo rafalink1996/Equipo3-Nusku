@@ -16,6 +16,6 @@ public class LevelChanger : MonoBehaviour {
 		
 	}
     public void LoadScene (){
-        SceneManager.LoadScene("JurBattle");
+        SceneManager.LoadScene("Amir");
     }
 }

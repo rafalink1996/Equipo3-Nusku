@@ -9,6 +9,8 @@ public class GameStats : MonoBehaviour {
     public int selDirectionX;
     public int selDirectionY;
     public int health;
+    public bool hasGlove;
+    public string currentScene;
     SelHealth selHealth;
 	// Use this for initialization
 	void Awake () {
@@ -26,6 +28,6 @@ public class GameStats : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        health = selHealth.health;
+        //health = selHealth.health;
 	}
 }

@@ -23,7 +23,7 @@ public class Jur_Idle : StateMachineBehaviour {
         animator.ResetTrigger("Bullet");
         animator.ResetTrigger("Javalin");
         animator.ResetTrigger("Dive");
-        FindObjectOfType<PlayerMovement2D>().canMove = true;
+        //FindObjectOfType<PlayerMovement2D>().canMove = true;
         jur = GameObject.Find("Jur").GetComponent<AudioSource>();
 	}
 

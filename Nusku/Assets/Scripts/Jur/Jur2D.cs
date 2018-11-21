@@ -174,4 +174,7 @@ public class Jur2D : MonoBehaviour {
     {
         jurAudio.PlayOneShot(change, 1);
     }
+    void SelMove(){
+        sel.GetComponent<PlayerMovement2D>().canMove = true;
+    }
 }

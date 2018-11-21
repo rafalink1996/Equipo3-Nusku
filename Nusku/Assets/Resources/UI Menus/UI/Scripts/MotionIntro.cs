@@ -18,18 +18,22 @@ public class MotionIntro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetButtonDown("Interact"))
+        {
+            anim.SetTrigger("FadeOut");
+            Destroy(GameObject.Find("Menus/MotionIntro/Button"));
+        }
     }
     void EndReached(UnityEngine.Video.VideoPlayer vp)
     {
         anim.SetTrigger("FadeOut");
         Destroy(GameObject.Find("Menus/MotionIntro/Button"));
     }
-    public void OnClickSkip(){
+    //public void OnClickSkip(){
 
-        anim.SetTrigger("FadeOut");
-        Destroy(GameObject.Find("Menus/MotionIntro/Button"));
-    }
+    //    anim.SetTrigger("FadeOut");
+    //    Destroy(GameObject.Find("Menus/MotionIntro/Button"));
+    //}
 
 }
 

@@ -20,6 +20,7 @@ public class Glove2D : MonoBehaviour {
         player = FindObjectOfType<PlayerMovement2D>();
         body = GameObject.Find("Sel/Graphics").GetComponent<SpriteRenderer>();
         arm = GetComponentInParent<SpriteRenderer>();
+        hasGlove = GameStats.stats.hasGlove;
     }
 
     // Update is called once per frame

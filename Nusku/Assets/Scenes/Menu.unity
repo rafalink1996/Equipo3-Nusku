@@ -114,6 +114,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &26500374 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114857761151828970, guid: 6bd210e8a578b43ed90eb90fc2120852,
+    type: 2}
+  m_PrefabInternal: {fileID: 264698860}
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,6 +191,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1069350861608992, guid: 6bd210e8a578b43ed90eb90fc2120852,
     type: 2}
   m_PrefabInternal: {fileID: 264698860}
+--- !u!114 &260068700 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114172361637313356, guid: 6bd210e8a578b43ed90eb90fc2120852,
+    type: 2}
+  m_PrefabInternal: {fileID: 264698860}
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &264698860
 Prefab:
   m_ObjectHideFlags: 0
@@ -297,6 +309,20 @@ Prefab:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 851973413}
+    - target: {fileID: 1360484313675124, guid: 6bd210e8a578b43ed90eb90fc2120852, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114172361637313356, guid: 6bd210e8a578b43ed90eb90fc2120852,
+        type: 2}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 26500374}
+    - target: {fileID: 114857761151828970, guid: 6bd210e8a578b43ed90eb90fc2120852,
+        type: 2}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 260068700}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd210e8a578b43ed90eb90fc2120852, type: 2}
   m_IsPrefabAsset: 0

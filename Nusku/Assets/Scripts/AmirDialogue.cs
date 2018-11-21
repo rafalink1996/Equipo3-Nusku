@@ -131,6 +131,7 @@ public class AmirDialogue : MonoBehaviour {
         if (theTextBox.currentLine == 15 || theTextBox.currentLine == 24)
         {
             glove.hasGlove = true;
+            GameStats.stats.hasGlove = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D other)

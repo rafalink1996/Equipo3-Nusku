@@ -7,7 +7,8 @@ public class GameOverScreen : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Destroy(GameObject.Find("Canvas/HUD"));
+        //Destroy(GameObject.Find("Canvas/HUD"));
+
 	}
 	
 	// Update is called once per frame
@@ -15,7 +16,8 @@ public class GameOverScreen : MonoBehaviour {
 		
 	}
     public void OnClickMenu(){
-        SceneManager.LoadScene("MenuScene");
+        //GameStats.stats.health = 100;
+        SceneManager.LoadScene(GameStats.stats.currentScene);
         Time.timeScale = 1f;
     }
     public void OnClickQuit()

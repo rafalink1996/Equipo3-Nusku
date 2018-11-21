@@ -11,6 +11,7 @@ public class SceneChange : MonoBehaviour {
     public int selDirectionY;
     Animator anim;
 
+
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
@@ -29,6 +30,7 @@ public class SceneChange : MonoBehaviour {
         if (collision.tag == "Player")
         {
             anim.SetTrigger("Fade");
+            GameStats.stats.health = FindObjectOfType<SelHealth>().health;
             FindObjectOfType<PlayerMovement2D>().canMove = false;
         }
     }
@@ -36,6 +38,7 @@ public class SceneChange : MonoBehaviour {
         GameStats.stats.position = destination;
         GameStats.stats.selDirectionX = selDirectionX;
         GameStats.stats.selDirectionY = selDirectionY;
+        GameStats.stats.currentScene = sceneToLoad;
         SceneManager.LoadScene(sceneToLoad);
     }
 }
