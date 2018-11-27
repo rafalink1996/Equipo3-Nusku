@@ -24,6 +24,10 @@ public class OrderInLayer : MonoBehaviour {
             sel.sortingOrder = order.sortingOrder - 3;
 
         }
+        if (collision.tag == "Enemy")
+        {
+            collision.GetComponent<SpriteRenderer>().sortingOrder = order.sortingOrder - 3;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -31,6 +35,10 @@ public class OrderInLayer : MonoBehaviour {
         {
             sel.sortingOrder = selLayer;
 
+        }
+        if (collision.tag == "Enemy")
+        {
+            collision.GetComponent<SpriteRenderer>().sortingOrder = selLayer;
         }
     }
 }

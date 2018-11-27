@@ -71,7 +71,7 @@ public class Zombie : MonoBehaviour
         }
         if (FindObjectOfType<Glove2D>().hasGlove)
         {
-            speed = 1.5f;
+            speed = 1.1f;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
