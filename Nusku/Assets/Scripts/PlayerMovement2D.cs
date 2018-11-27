@@ -31,6 +31,18 @@ public class PlayerMovement2D : MonoBehaviour {
     {
         armAnim.SetFloat("LastX", anim.GetFloat("LastX"));
         armAnim.SetFloat("LastY", anim.GetFloat("LastY"));
+        if (Input.GetButtonDown("Pause"))
+        {
+            if (canMove && Time.timeScale == 1.0f)
+            {
+                Time.timeScale = 0;
+                canMove = false;
+            }
+            //if (!canMove && Time.timeScale == 0)
+            //{
+            //    Time.timeScale = 1;
+            //}
+        }
         if (!canMove){
             anim.SetBool("IsMoving",false);
             armAnim.SetBool("IsMoving",false);
