@@ -17,9 +17,9 @@ public class OrderInLayer : MonoBehaviour {
 	void Update () {
         
 	}
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && sel.sortingOrder >= order.sortingOrder)
         {
             sel.sortingOrder = order.sortingOrder - 3;
 
