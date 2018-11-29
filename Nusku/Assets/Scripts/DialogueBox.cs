@@ -17,7 +17,9 @@ public class DialogueBox : MonoBehaviour
     public bool requireButtonPress;
     public bool hasOptions;
     public string option1;
+    public int option1Line, option1EndLine;
     public string option2;
+    public int option2Line, option2EndLine;
     bool waitForPress;
     public float typingSpeed;
     public SpriteRenderer icon;
@@ -58,6 +60,8 @@ public class DialogueBox : MonoBehaviour
                 theTextBox.choices = true;
                 theTextBox.option1Text.text = option1;
                 theTextBox.option2Text.text = option2;
+                theTextBox.option1.onClick.AddListener(Option1);
+                theTextBox.option2.onClick.AddListener(Option2);
                 //theTextBox.option1.enabled = true;
                 //theTextBox.option2.enabled = true;
                 //theTextBox.option1Text.enabled = true;
@@ -130,5 +134,24 @@ public class DialogueBox : MonoBehaviour
             waitForPress = false;
             icon.enabled = false;
         }
+    }
+    public void Option1() //Well, I was in the train...
+    {
+
+        theTextBox.currentLine = option1Line;
+        theTextBox.endAtLine = option1EndLine;
+        theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
+        theTextBox.DeactivateButtons();
+        theTextBox.choices = false;
+
+    }
+    public void Option2() //Who are you?
+    {
+        theTextBox.currentLine = option2Line;
+        theTextBox.endAtLine = option2EndLine;
+        theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
+        theTextBox.DeactivateButtons();
+        theTextBox.choices = false;
+
     }
 }
