@@ -26,7 +26,7 @@ Lena: Maybe I should ask the oracle how we could replace him…
 Forridge: Aye should be the mayor ‘ere. Terrible captain, aye tell ye
 Forridge: Wachout for eel! May bite and lie
 Forridge: Ye wouldn’t believe what me eye ‘as seen
-Forridge: Defeat all three or ye’ll get sunburt
+Forridge: Defeat all three or ye’ll get sunburnt
 -----
 
 Roddick: Can you spare something to eat or see?
@@ -39,8 +39,8 @@ Lora: Thank you for the light, it will help my dad see better.
 Roddick: Oh, don’t worry, that’s ok. 
 
 --------
-Rox: Oh, so you got your eyes on the prize, huh? Tell you what. Beat me and the rod is yours!
-Rox: Hehe… dream on, kid. 
+Rox: Hey kid! you shouldn't be here!
+Rox: Ohhh, so you got your eyes on the prize, huh? Tell you what. Beat me and the rod is yours!
 
 (cuando uno pierde)
 Rox: What’s the matter? Not so tough anymore?
