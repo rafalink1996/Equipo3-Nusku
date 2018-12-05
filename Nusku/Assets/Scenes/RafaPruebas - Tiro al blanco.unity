@@ -221,7 +221,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 177963094}
+  score: 0
   speed: 1.8
+  shooting: 0
+  target: {x: 0, y: 0}
 --- !u!1 &134114374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,6 +1964,48 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Cinemachine.CinemachineBrain+VcamActivatedEvent, Cinemachine, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1001 &1501936479
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4999655978697662, guid: 747f51b27c07a41afa05260bf41e346c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999655978697662, guid: 747f51b27c07a41afa05260bf41e346c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999655978697662, guid: 747f51b27c07a41afa05260bf41e346c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999655978697662, guid: 747f51b27c07a41afa05260bf41e346c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999655978697662, guid: 747f51b27c07a41afa05260bf41e346c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999655978697662, guid: 747f51b27c07a41afa05260bf41e346c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999655978697662, guid: 747f51b27c07a41afa05260bf41e346c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999655978697662, guid: 747f51b27c07a41afa05260bf41e346c, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 747f51b27c07a41afa05260bf41e346c, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1623776012
 GameObject:
   m_ObjectHideFlags: 0
