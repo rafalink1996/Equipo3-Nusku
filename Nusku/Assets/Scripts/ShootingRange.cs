@@ -8,7 +8,7 @@ public class ShootingRange : MonoBehaviour
 
 
     public Slider slider;
-    public float score;
+    public static float score;
     bool right = true;
     public float speed;
     float aim;
