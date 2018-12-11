@@ -28,6 +28,7 @@ public class Bullet2D : MonoBehaviour {
         if (transform.parent == null)
         {
             this.transform.Translate(speed * Time.deltaTime, 0, 0);
+            GetComponent<CircleCollider2D>().enabled = true;
             Destroy(this.gameObject, 1);
         }
         if (this.transform.parent != null){

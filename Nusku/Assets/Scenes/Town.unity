@@ -239,6 +239,145 @@ Transform:
   m_Father: {fileID: 1705972753}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &36576551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36576552}
+  - component: {fileID: 36576554}
+  - component: {fileID: 36576553}
+  - component: {fileID: 36576556}
+  - component: {fileID: 36576555}
+  m_Layer: 0
+  m_Name: Darts
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &36576552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36576551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.14, y: -4.1, z: 0}
+  m_LocalScale: {x: 4.9751, y: 4.9751, z: 4.9751}
+  m_Children: []
+  m_Father: {fileID: 1334189337}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &36576553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36576551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0617c963962d642c2865a337c7b88be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rox
+  characterImage: {fileID: 21300000, guid: 15fcb758b660acf4eb4567c141e0b730, type: 3}
+  theText: {fileID: 4900000, guid: dab3deab792fc4f848eea75755f75f57, type: 3}
+  startLine: 11
+  endLine: 11
+  theTextBox: {fileID: 0}
+  destroyWhenActivated: 0
+  requireButtonPress: 1
+  hasOptions: 1
+  option1: Yes
+  option1Line: 0
+  option1EndLine: 0
+  option2: No
+  option2Line: 0
+  option2EndLine: 0
+  typingSpeed: 0
+  icon: {fileID: 2141003313}
+--- !u!58 &36576554
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36576551}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.23
+--- !u!95 &36576555
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36576551}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3a982be3d8b7d422a92129c9d47dc86d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &36576556
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36576551}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 892
+  m_Sprite: {fileID: 21300000, guid: 300ac27251e4248788be6162e1c99ddf, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &39006654
 GameObject:
   m_ObjectHideFlags: 0
@@ -4086,7 +4225,7 @@ GameObject:
   - component: {fileID: 929491215}
   - component: {fileID: 929491216}
   - component: {fileID: 929491218}
-  - component: {fileID: 929491217}
+  - component: {fileID: 929491219}
   m_Layer: 0
   m_Name: Rox 1_0
   m_TagString: Untagged
@@ -4153,34 +4292,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &929491217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 929491214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee7d4ea05cb4141c8b6b28125be47f86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Rox
-  characterImage: {fileID: 21300000, guid: 1e13bd54bc5764bf3bf87b9adf24a5af, type: 3}
-  theText: {fileID: 4900000, guid: 08893239198364c58924eb71544cdc0a, type: 3}
-  startLine: 41
-  endLine: 42
-  theTextBox: {fileID: 0}
-  destroyWhenActivated: 0
-  requireButtonPress: 1
-  hasOptions: 0
-  option1: 
-  option1Line: 0
-  option1EndLine: 0
-  option2: 
-  option2Line: 0
-  option2EndLine: 0
-  typingSpeed: 0.05
-  icon: {fileID: 212293340588276814, guid: 7be92edd153494160862323fe7638633, type: 2}
 --- !u!58 &929491218
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4196,6 +4307,34 @@ CircleCollider2D:
   m_Offset: {x: -4.596417, y: -5.504355}
   serializedVersion: 2
   m_Radius: 4.2279377
+--- !u!114 &929491219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929491214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b2954ec9da3493d858b998504608dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rox
+  characterImage: {fileID: 21300000, guid: 15fcb758b660acf4eb4567c141e0b730, type: 3}
+  theText: {fileID: 4900000, guid: dab3deab792fc4f848eea75755f75f57, type: 3}
+  startLine: 0
+  endLine: 1
+  theTextBox: {fileID: 0}
+  destroyWhenActivated: 0
+  requireButtonPress: 1
+  hasOptions: 0
+  option1: 
+  option1Line: 0
+  option1EndLine: 0
+  option2: 
+  option2Line: 0
+  option2EndLine: 0
+  typingSpeed: 0
+  icon: {fileID: 2141003313}
 --- !u!1 &944944727
 GameObject:
   m_ObjectHideFlags: 0
@@ -4777,6 +4916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1067925420}
+  - component: {fileID: 1067925421}
   m_Layer: 0
   m_Name: Sounds
   m_TagString: Untagged
@@ -4799,6 +4939,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1067925421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067925419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373088f27b9ca47ffbb89772b78dacc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1068995524
 Prefab:
   m_ObjectHideFlags: 0
@@ -6865,6 +7016,7 @@ Transform:
   - {fileID: 1705972753}
   - {fileID: 929491215}
   - {fileID: 1218897057}
+  - {fileID: 36576552}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

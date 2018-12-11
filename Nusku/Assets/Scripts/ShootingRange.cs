@@ -16,6 +16,7 @@ public class ShootingRange : MonoBehaviour
     bool shot;
     public bool shooting;
     public Vector2 target;
+
     // Use this for initialization
     void Start()
     {
@@ -50,7 +51,7 @@ public class ShootingRange : MonoBehaviour
         }
         if (shot)
         {
-            if (slider.value >= 49 && slider.value <= 51)
+            if (slider.value > 48 && slider.value < 52)
             {
                 score = score + 1000;
                 target = new Vector2(4.817f, 0.637f);
@@ -60,27 +61,27 @@ public class ShootingRange : MonoBehaviour
                 score = score + 800;
                 target = new Vector2(Random.Range(4.62f, 5.13f), Random.Range(0.31f, 1.03f));
             }
-            if (slider.value >= 30 && slider.value <= 39 || slider.value >= 61 && slider.value <= 70)
+            if (slider.value >= 30 && slider.value < 40 || slider.value > 60 && slider.value <= 70)
             {
                 score = score + 600;
                 target = new Vector2(Random.Range(4.62f, 5.13f), Random.Range(0.31f, 1.03f));
             }
-            if (slider.value >= 20 && slider.value <= 29 || slider.value >= 71 && slider.value <= 80)
+            if (slider.value >= 20 && slider.value < 30 || slider.value > 70 && slider.value <= 80)
             {
                 score = score + 400;
                 target = new Vector2(Random.Range(4.62f, 5.13f), Random.Range(0.31f, 1.03f));
             }
-            if (slider.value >= 10 && slider.value <= 19 || slider.value >= 81 && slider.value <= 90)
+            if (slider.value >= 10 && slider.value < 20 || slider.value > 80 && slider.value <= 90)
             {
                 score = score + 200;
                 target = new Vector2(Random.Range(4.62f, 5.13f), Random.Range(0.31f, 1.03f));
             }
-            if (slider.value >= 5 && slider.value <= 9 || slider.value >= 91 && slider.value <= 96)
+            if (slider.value >= 5 && slider.value < 10 || slider.value > 90 && slider.value <= 96)
             {
                 score = score + 100;
                 target = new Vector2(Random.Range(4.62f, 5.13f), Random.Range(0.31f, 1.03f));
             }
-            if (slider.value <= 4 || slider.value >= 97)
+            if (slider.value < 5 || slider.value > 96)
             {
                 target = new Vector2(Random.Range(4.325f, 4.425f), Random.Range(1.065f, 1.165f));
             }

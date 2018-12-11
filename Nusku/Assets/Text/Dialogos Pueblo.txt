@@ -11,7 +11,7 @@ Medri: I… lost my fishing rod! Yeah… that’s it
 (Después de tener la caña de pescar)
 Medri: Ohhhh, you got a fishing rod… yayy… 
 Sel: ?
-Medri: Now you can go fish!
+Medri: Now you can go fishing!
 Sel: ??
 Medri: Lucky you!
 Sel: ???
@@ -50,5 +50,6 @@ Rox: Damn kid, you've got skills! Just hope you don’t catch the monster when y
 Rox: Rumor has it that “big blue” controls the weather. Get it out of the water and everything freezes
 Rox: Not that it isn’t already freezing…
 
-
+---------
+Do you want to play?
 

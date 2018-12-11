@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 
 public class Leaderboard : MonoBehaviour {
-	public static int scoreRox = 4850;
+	public static int scoreRox = 4550;
 	public static int scoreAmir = 3950;
 	public static int scoreHernan = 3550;
 
