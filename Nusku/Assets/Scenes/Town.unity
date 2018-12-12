@@ -5180,11 +5180,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4776465448570102, guid: bc88604f2c6554642ba6d2821d665bb2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -35.371403
+      value: 2.98
       objectReference: {fileID: 0}
     - target: {fileID: 4776465448570102, guid: bc88604f2c6554642ba6d2821d665bb2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 12.865878
+      value: 12.24
       objectReference: {fileID: 0}
     - target: {fileID: 4776465448570102, guid: bc88604f2c6554642ba6d2821d665bb2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5232,22 +5232,22 @@ Prefab:
     - target: {fileID: 114248710295299450, guid: bc88604f2c6554642ba6d2821d665bb2,
         type: 2}
       propertyPath: sceneToLoad
-      value: Cave
+      value: Lake
       objectReference: {fileID: 0}
     - target: {fileID: 114248710295299450, guid: bc88604f2c6554642ba6d2821d665bb2,
         type: 2}
       propertyPath: destination.y
-      value: -4.255578
+      value: -4.27
       objectReference: {fileID: 0}
     - target: {fileID: 114248710295299450, guid: bc88604f2c6554642ba6d2821d665bb2,
         type: 2}
       propertyPath: destination.x
-      value: 7.36
+      value: -7.68
       objectReference: {fileID: 0}
     - target: {fileID: 114248710295299450, guid: bc88604f2c6554642ba6d2821d665bb2,
         type: 2}
       propertyPath: selDirectionX
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1585801301750220, guid: bc88604f2c6554642ba6d2821d665bb2, type: 2}
       propertyPath: m_IsActive
@@ -7386,7 +7386,7 @@ Transform:
   m_GameObject: {fileID: 1430526039}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.77, y: 1.24, z: -2.7476034}
-  m_LocalScale: {x: 0.19176999, y: 0.19176999, z: 0.09588499}
+  m_LocalScale: {x: 0.22327779, y: 0.22327779, z: 0.111638896}
   m_Children: []
   m_Father: {fileID: 1674808530}
   m_RootOrder: 3
