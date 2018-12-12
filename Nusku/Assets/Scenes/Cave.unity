@@ -525,6 +525,11 @@ Prefab:
       propertyPath: HUD
       value: 
       objectReference: {fileID: 1981245956}
+    - target: {fileID: 58604824190346212, guid: 7be92edd153494160862323fe7638633,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7be92edd153494160862323fe7638633, type: 2}
   m_IsPrefabAsset: 0
@@ -693,6 +698,8 @@ GameObject:
   - component: {fileID: 1388378389}
   - component: {fileID: 1388378390}
   - component: {fileID: 1388378391}
+  - component: {fileID: 1388378392}
+  - component: {fileID: 1388378393}
   m_Layer: 0
   m_Name: fuente (1)
   m_TagString: Untagged
@@ -1020,6 +1027,33 @@ PolygonCollider2D:
       - {x: -8.756249, y: -5.5312495}
       - {x: -8.812499, y: -5.56875}
       - {x: -8.79375, y: -5.56875}
+--- !u!58 &1388378392
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1388378388}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000038146973, y: 0.0000038146973}
+  serializedVersion: 2
+  m_Radius: 13.016327
+--- !u!114 &1388378393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1388378388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93a1f6035fe446e782b0c0c365c3971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
 --- !u!1001 &1466732571
 Prefab:
   m_ObjectHideFlags: 0

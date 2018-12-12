@@ -16,13 +16,18 @@ public class ShootingRange : MonoBehaviour
     bool shot;
     public bool shooting;
     public Vector2 target;
+    public GameObject sceneChanger;
+    AudioSource sound;
+    public AudioClip shootSound;
+
 
     // Use this for initialization
     void Start()
     {
+        sound = GetComponent<AudioSource>();
         aim = speed;
         slider.value = 0;
-
+        score = 0;
     }
 
     // Update is called once per frame
@@ -87,6 +92,13 @@ public class ShootingRange : MonoBehaviour
             }
             shot = false;
         }
+        if (shots == 0)
+        {
+            sceneChanger.transform.position = Vector2.MoveTowards(sceneChanger.transform.position, transform.position, 0.05f * Time.deltaTime);
+            if (score > Leaderboard.scoreRox){
+                GameStats.stats.hasWonDarts = true;
+            }
+        }
     }
     public void Shoot()
     {
@@ -95,6 +107,8 @@ public class ShootingRange : MonoBehaviour
         shot = true;
         shooting = true;
         shots = shots - 1;
+        sound.Stop();
+        sound.PlayOneShot(shootSound);
         if (shots > 0)
         {
             Invoke("Reload", 3);
@@ -108,5 +122,6 @@ public class ShootingRange : MonoBehaviour
         shooting = false;
         GameObject dart = GameObject.Instantiate(Resources.Load("Prefabs/Dart") as GameObject);
         dart.transform.position = new Vector2(2.512f, -1.123f);
+        sound.Play();
     }
 }

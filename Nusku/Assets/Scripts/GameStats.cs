@@ -14,6 +14,7 @@ public class GameStats : MonoBehaviour {
     SelHealth selHealth;
     public bool hasPlayedDarts;
     public bool hasWonDarts;
+    public bool canCrossBridge;
 	// Use this for initialization
 	void Awake () {
         if (stats == null)

@@ -254,7 +254,7 @@ GameObject:
   m_Layer: 0
   m_Name: Darts
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -297,7 +297,7 @@ MonoBehaviour:
   option2: No
   option2Line: 0
   option2EndLine: 0
-  typingSpeed: 0
+  typingSpeed: 0.05
   icon: {fileID: 2141003313}
 --- !u!58 &36576554
 CircleCollider2D:
@@ -4333,7 +4333,7 @@ MonoBehaviour:
   option2: 
   option2Line: 0
   option2EndLine: 0
-  typingSpeed: 0
+  typingSpeed: 0.05
   icon: {fileID: 2141003313}
 --- !u!1 &944944727
 GameObject:
@@ -5282,6 +5282,7 @@ GameObject:
   - component: {fileID: 1128122964}
   - component: {fileID: 1128122968}
   - component: {fileID: 1128122967}
+  - component: {fileID: 1128122969}
   m_Layer: 0
   m_Name: Medri
   m_TagString: Untagged
@@ -5369,7 +5370,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1128122963}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee7d4ea05cb4141c8b6b28125be47f86, type: 3}
   m_Name: 
@@ -5406,6 +5407,35 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -1.761501}
   serializedVersion: 2
   m_Radius: 1.7352692
+--- !u!114 &1128122969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1128122963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b67a4636c9f0442cfb059ae45cc07000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Medri
+  characterImage: {fileID: 21300000, guid: a9cc77a6820ca4cc98228916714f90ea, type: 3}
+  selImage: {fileID: 21300000, guid: 1b2ec8bec654c4ce7b9afd17dc09aa48, type: 3}
+  theText: {fileID: 4900000, guid: 08893239198364c58924eb71544cdc0a, type: 3}
+  startLine: 1
+  endLine: 8
+  theTextBox: {fileID: 0}
+  destroyWhenActivated: 0
+  requireButtonPress: 1
+  hasOptions: 0
+  option1: 
+  option1Line: 0
+  option1EndLine: 0
+  option2: 
+  option2Line: 0
+  option2EndLine: 0
+  typingSpeed: 0.05
+  icon: {fileID: 2141003313}
 --- !u!1001 &1139097453
 Prefab:
   m_ObjectHideFlags: 0
@@ -6989,6 +7019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334189337}
   - component: {fileID: 1334189338}
+  - component: {fileID: 1334189340}
   m_Layer: 0
   m_Name: Espacio taberna
   m_TagString: Untagged
@@ -7051,6 +7082,19 @@ PolygonCollider2D:
       - {x: 16.574368, y: -10.624568}
       - {x: 16.6058, y: -5.3253746}
       - {x: 16.607765, y: 6.235421}
+--- !u!114 &1334189340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1334189336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ccba40e562d64fdd9c1270820bf3698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 635909047}
+  cam2: {fileID: 1324428197}
 --- !u!1 &1354649040
 GameObject:
   m_ObjectHideFlags: 0

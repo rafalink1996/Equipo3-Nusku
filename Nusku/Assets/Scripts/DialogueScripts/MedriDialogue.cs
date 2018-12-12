@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class SwitchToDarts : MonoBehaviour {
+public class MedriDialogue : MonoBehaviour {
 
     public string characterName;
     public Sprite characterImage;
+    public Sprite selImage;
     public TextAsset theText;
     public int startLine;
     public int endLine;
@@ -35,6 +35,18 @@ public class SwitchToDarts : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+       
+        if (GameStats.stats.hasWonDarts == false)
+        {
+            startLine = 1;
+            endLine = 8;
+        }
+        if (GameStats.stats.hasWonDarts == true)
+        {
+            startLine = 11;
+            endLine = 17;
+        }
+
 
         if (waitForPress && Input.GetButtonDown("Interact"))
         {
@@ -78,6 +90,10 @@ public class SwitchToDarts : MonoBehaviour {
         }
 
 
+        if (theTextBox.currentLine == 17)
+        {
+            GameStats.stats.canCrossBridge = true;
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -108,8 +124,6 @@ public class SwitchToDarts : MonoBehaviour {
                 theTextBox.choices = true;
                 theTextBox.option1Text.text = option1;
                 theTextBox.option2Text.text = option2;
-                theTextBox.option1.onClick.AddListener(Option3);
-                theTextBox.option2.onClick.AddListener(Option4);
                 //theTextBox.option1.enabled = true;
                 //theTextBox.option2.enabled = true;
                 //theTextBox.option1Text.enabled = true;
@@ -135,44 +149,23 @@ public class SwitchToDarts : MonoBehaviour {
             icon.enabled = false;
         }
     }
-    public void Option1() //Yes
+    public void Option1() //Well, I was in the train...
     {
-        theTextBox.DisableTextBox();
-        theTextBox.DeactivateButtons();
-        GetComponent<Animator>().SetTrigger("Fade");
-        theTextBox.choices = false;
-        GameStats.stats.hasPlayedDarts = true;
 
-    }
-    public void Option2() //No
-    {
-        theTextBox.DisableTextBox();
+        theTextBox.currentLine = option1Line;
+        theTextBox.endAtLine = option1EndLine;
+        theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         theTextBox.DeactivateButtons();
         theTextBox.choices = false;
 
     }
-    public void Option3() //Yes
+    public void Option2() //Who are you?
     {
-        theTextBox.DisableTextBox();
+        theTextBox.currentLine = option2Line;
+        theTextBox.endAtLine = option2EndLine;
+        theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         theTextBox.DeactivateButtons();
-        SceneManager.LoadScene("Darts");
         theTextBox.choices = false;
-
-    }
-    public void Option4() //No
-    {
-        theTextBox.DisableTextBox();
-        theTextBox.DeactivateButtons();
-        GetComponent<Animator>().SetTrigger("Fade");
-        theTextBox.choices = false;
-
-
-    }
-    public void Change()
-    {
-        
-            SceneManager.LoadScene("Darts");
-
 
     }
 }

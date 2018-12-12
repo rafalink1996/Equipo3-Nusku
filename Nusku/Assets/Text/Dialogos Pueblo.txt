@@ -1,7 +1,7 @@
 (Antes de tener la caña de pescar)
 Medri: Oh, you want to buy something? Sorry, no fish. 
 Medri: Can’t go fishing with that THING in the pond
-Sel: ?
+...
 Medri: You haven´t heard? There’s a huge monster deep underwater
 Medri: Some people say it is made of light, and if you look at it directly, you become blind.
 Medri: Only that crazy man has seen it and survived…
@@ -10,11 +10,11 @@ Medri: I… lost my fishing rod! Yeah… that’s it
 
 (Después de tener la caña de pescar)
 Medri: Ohhhh, you got a fishing rod… yayy… 
-Sel: ?
+...
 Medri: Now you can go fishing!
-Sel: ??
+...
 Medri: Lucky you!
-Sel: ???
+...
 Medri: Best of luck!
 -----
 

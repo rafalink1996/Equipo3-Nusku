@@ -907,7 +907,11 @@ MonoBehaviour:
   requireButtonPress: 0
   hasOptions: 0
   option1: 
+  option1Line: 0
+  option1EndLine: 0
   option2: 
+  option2Line: 0
+  option2EndLine: 0
   typingSpeed: 0.1
   icon: {fileID: 0}
 --- !u!68 &441147661

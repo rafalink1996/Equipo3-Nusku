@@ -5,9 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class TownMusic : MonoBehaviour {
 
+    public static TownMusic music;
 	// Use this for initialization
 	void Awake () {
-        DontDestroyOnLoad(this);
+        if (music == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            music = this;
+        }
+        else if (music != this)
+        {
+            Destroy(gameObject);
+        }
+
 	}
 	
 	// Update is called once per frame
