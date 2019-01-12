@@ -1,0 +1,55 @@
+(Antes de tener la caña de pescar)
+Medri: Oh, you want to buy something? Sorry, no fish. 
+Medri: Can’t go fishing with that THING in the pond
+...
+Medri: You haven´t heard? There’s a huge monster deep underwater
+Medri: Some people say it is made of light, and if you look at it directly, you become blind.
+Medri: Only that crazy man has seen it and survived…
+Medri: Not that it scares me… no … I can’t fish because… uhh…
+Medri: I… lost my fishing rod! Yeah… that’s it
+
+(Después de tener la caña de pescar)
+Medri: Ohhhh, you got a fishing rod… yayy… 
+...
+Medri: Now you can go fishing!
+...
+Medri: Lucky you!
+...
+Medri: Best of luck!
+-----
+
+Lena: There’s so much trouble
+Lena: We really need a change. The mayor clearly doesn´t know what he’s doing
+Lena: Maybe I should ask the oracle how we could replace him…
+-----
+
+Forridge: Aye should be the mayor ‘ere. Terrible captain, aye tell ye
+Forridge: Wachout for eel! May bite and lie
+Forridge: Ye wouldn’t believe what me eye ‘as seen
+Forridge: Defeat all three or ye’ll get sunburnt
+-----
+
+Roddick: Can you spare something to eat or see?
+Botones: 1:Give bottle of light / 2:Keep talking
+Outcomes:
+1:
+Roddick: May the sun bless you, child. Thank you, from both of us.
+Lora: Thank you for the light, it will help my dad see better. 
+2: 
+Roddick: Oh, don’t worry, that’s ok. 
+
+--------
+Rox: Hey kid! you shouldn't be here!
+Rox: Ohhh, so you got your eyes on the prize, huh? Tell you what. Beat me and the rod is yours!
+
+(cuando uno pierde)
+Rox: What’s the matter? Not so tough anymore?
+
+(cuando uno gana)
+Rox: Damn kid, you've got skills! Just hope you don’t catch the monster when you’re fishing.
+Rox: Rumor has it that “big blue” controls the weather. Get it out of the water and everything freezes
+Rox: Not that it isn’t already freezing…
+
+---------
+Do you want to play?
+
