@@ -8,7 +8,7 @@ public class LakeBrdige : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         coll = GetComponent<EdgeCollider2D>();
-        if (GameStats.stats.canCrossBridge)
+        if (GameStats.stats.fishes >= 3)
         {
             coll.enabled = false;
         }else{

@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Lake.unity
     guid: 410c300f76a8d4b249d3c3c1bec61706
   - enabled: 1
+    path: Assets/Scenes/Fishing.unity
+    guid: 8c25688c2127b40df943528ebe9a4000
+  - enabled: 1
     path: Assets/Scenes/Cave.unity
     guid: 332769b8960804c78a0f63729eec2f30
   - enabled: 1

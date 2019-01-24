@@ -90,10 +90,7 @@ public class MedriDialogue : MonoBehaviour {
         }
 
 
-        if (theTextBox.currentLine == 17)
-        {
-            GameStats.stats.canCrossBridge = true;
-        }
+
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
