@@ -12,6 +12,10 @@ public class Fishing : MonoBehaviour {
     float bitingTime = 3f;
     bool bite;
     public int fishes = 0;
+    int isFish;
+    bool away = false;
+    bool test;
+    float testTime = 0.1f;
 
 	// Use this for initialization
 	void Start () {
@@ -20,14 +24,34 @@ public class Fishing : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        print("isFishing = " + isFishing); 
         GameStats.stats.fishes = fishes;
-        if (Input.GetButtonDown("Interact") && !isFishing) //empieza a pescar
+        // El jugador presiona antes de que muerda el pez entonces no saca nada
+        if (Input.GetButtonDown("Interact") && bitingTime > 0 && isFishing)
+        {
+            anim.SetTrigger("noFish");//todo
+            isFishing = false;
+            bitingTime = 3f;
+            test = true;
+            anim.SetBool("Again", true);
+        }
+        if (test)
+        {
+            testTime -= Time.deltaTime;
+        }
+        if (testTime <= 0)
+        {
+            test = false;
+        }
+        if (Input.GetButtonDown("Interact") && !isFishing && !test) //empieza a pescar
         {
             anim.SetBool("isFishing", true); //todo
+            isFish = (Random.Range(0, 3));
             //anim.SetTrigger("backToFishing");
             isFishing = true;
             bitingTime = Random.Range(3f, 7f);
             bite = false;
+            testTime = 0.1f;
             if(anim.GetBool("Again") == true && fishes < 3){
                 anim.SetTrigger("Throw");
             }else
@@ -38,30 +62,44 @@ public class Fishing : MonoBehaviour {
                 Invoke("Back", 0.3f);
             }
         }
-        //if (Input.GetButtonDown("Interact") && anim.GetBool("Again") == true && !isFishing)
-        //{
-        //    anim.SetTrigger("Throw");
-        //    anim.SetBool("Again", false);
-        //    print("hello");
-        //}
+      
         if (isFishing)
         {
             bitingTime -= Time.deltaTime;
         }
+        //El jugador presionó a tiempo para sacar el pez
         if (Input.GetButtonDown("Interact") && bite)
         {
             CancelInvoke("FishGotAway");
-            anim.SetTrigger("Fish"); //todo
+            // Sacó un pez
+            if (isFish == 0 || isFish == 1)
+            {
+                anim.SetTrigger("Fish"); //todo
+                fishes = fishes + 1;
+            }
+            //Sacó un pez muerto. Es aleatorio
+            if (isFish == 2){
+                anim.SetTrigger("deadFish"); //todo
+            }
             isFishing = false;
-            fishes = fishes + 1;
+
             anim.SetBool("Again", true);
         }
+        // El pez muerde y el jugador tiene 0.5 segundos para presionar y sacar el pez
         if (bitingTime <= 0 && !bite)
         {
             anim.SetTrigger("Bite");//todo
             bite = true;
             Invoke("FishGotAway", 0.5f); 
         }
+        // El jugador presiona después de que se fue el pez entonces no saca nada
+        if (Input.GetButtonDown("Interact") && away)
+        {
+            anim.SetTrigger("noFish");//todo
+            bitingTime = 3f;
+            isFishing = false;
+        }
+
         //if (Input.GetButtonDown("Interact") && fishes == 3){
         //    anim.SetBool("isFishing", false);
         //}
@@ -69,9 +107,8 @@ public class Fishing : MonoBehaviour {
     void FishGotAway(){
         bite = false;
         //sprite.enabled = false; //todo
-        anim.SetTrigger("noFish");//todo
-        bitingTime = 3f;
-        isFishing = false;
+        away = true;
+
         anim.SetBool("Again", true);
     }
     void Back(){

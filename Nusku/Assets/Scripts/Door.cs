@@ -21,6 +21,7 @@ public class Door : MonoBehaviour
     {
         sel = GameObject.FindWithTag("Player");
         black = GameObject.Find("Canvas/Black").GetComponent<Animator>();
+        icon = GameObject.Find("Sel/Interact_Icon").GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
