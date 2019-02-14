@@ -28,9 +28,15 @@ public class GameStats : MonoBehaviour {
         selHealth = FindObjectOfType<SelHealth>();
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Start()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    // Update is called once per frame
+    void Update () {
         //health = selHealth.health;
 	}
 }
