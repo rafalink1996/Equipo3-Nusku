@@ -19,6 +19,8 @@ public class ShootingRange : MonoBehaviour
     public GameObject sceneChanger;
     AudioSource sound;
     public AudioClip shootSound;
+    int minValue = 48;
+    int maxValue = 52;
 
 
     // Use this for initialization
@@ -28,11 +30,17 @@ public class ShootingRange : MonoBehaviour
         aim = speed;
         slider.value = 0;
         score = 0;
+        if (GameStats.stats.dartsTries >= 12)
+        {
+            minValue = 43;
+            maxValue = 57;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         print("shots = " + shots);
         if (right)
         {
@@ -56,12 +64,12 @@ public class ShootingRange : MonoBehaviour
         }
         if (shot)
         {
-            if (slider.value > 48 && slider.value < 52)
+            if (slider.value > minValue && slider.value < maxValue)
             {
                 score = score + 1000;
                 target = new Vector2(4.817f, 0.637f);
             }
-            if (slider.value >= 40 && slider.value <= 48 || slider.value >= 52 && slider.value <= 60)
+            if (slider.value >= 40 && slider.value <= minValue || slider.value >= maxValue && slider.value <= 60)
             {
                 score = score + 800;
                 target = new Vector2(Random.Range(4.62f, 5.13f), Random.Range(0.31f, 1.03f));

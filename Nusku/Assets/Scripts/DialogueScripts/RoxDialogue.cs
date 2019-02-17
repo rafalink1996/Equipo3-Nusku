@@ -51,6 +51,8 @@ public class RoxDialogue : MonoBehaviour {
 
         if (waitForPress && Input.GetButtonDown("Interact"))
         {
+            theTextBox.option1.onClick.RemoveAllListeners();
+            theTextBox.option2.onClick.RemoveAllListeners();
             theTextBox.ReloadScript(theText);
             theTextBox.currentLine = startLine;
             theTextBox.endAtLine = endLine;
@@ -102,6 +104,8 @@ public class RoxDialogue : MonoBehaviour {
                 icon.enabled = true;
                 return;
             }
+            theTextBox.option1.onClick.RemoveAllListeners();
+            theTextBox.option2.onClick.RemoveAllListeners();
             theTextBox.ReloadScript(theText);
             theTextBox.currentLine = startLine;
             theTextBox.endAtLine = endLine;

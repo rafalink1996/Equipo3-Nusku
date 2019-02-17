@@ -15,6 +15,7 @@ public class GameStats : MonoBehaviour {
     public bool hasPlayedDarts;
     public bool hasWonDarts;
     public int fishes;
+    public int dartsTries = 0;
 	// Use this for initialization
 	void Awake () {
         if (stats == null)
@@ -31,8 +32,8 @@ public class GameStats : MonoBehaviour {
 
     private void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

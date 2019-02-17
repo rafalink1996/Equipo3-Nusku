@@ -14,10 +14,10 @@ public class SwitchToDarts : MonoBehaviour {
     public bool destroyWhenActivated;
     public bool requireButtonPress;
     public bool hasOptions;
-    public string option1;
-    public int option1Line, option1EndLine;
-    public string option2;
-    public int option2Line, option2EndLine;
+    public string opttion1;
+    public int opttion1Line, opttion1EndLine;
+    public string opttion2;
+    public int opttion2Line, opttion2EndLine;
     bool waitForPress;
     public float typingSpeed;
     public SpriteRenderer icon;
@@ -38,6 +38,8 @@ public class SwitchToDarts : MonoBehaviour {
 
         if (waitForPress && Input.GetButtonDown("Interact"))
         {
+            theTextBox.option1.onClick.RemoveAllListeners();
+            theTextBox.option2.onClick.RemoveAllListeners();
             theTextBox.ReloadScript(theText);
             theTextBox.currentLine = startLine;
             theTextBox.endAtLine = endLine;
@@ -56,10 +58,10 @@ public class SwitchToDarts : MonoBehaviour {
             if (hasOptions == true)
             {
                 theTextBox.choices = true;
-                theTextBox.option1Text.text = option1;
-                theTextBox.option2Text.text = option2;
-                theTextBox.option1.onClick.AddListener(Option1);
-                theTextBox.option2.onClick.AddListener(Option2);
+                theTextBox.option1Text.text = opttion1;
+                theTextBox.option2Text.text = opttion2;
+                theTextBox.option1.onClick.AddListener(Opttion1);
+                theTextBox.option2.onClick.AddListener(Opttion2);
                 //theTextBox.option1.enabled = true;
                 //theTextBox.option2.enabled = true;
                 //theTextBox.option1Text.enabled = true;
@@ -68,8 +70,8 @@ public class SwitchToDarts : MonoBehaviour {
             }
             else
             {
-                option1 = null;
-                option2 = null;
+                opttion1 = null;
+                opttion2 = null;
                 theTextBox.option1.enabled = false;
                 theTextBox.option2.enabled = false;
                 theTextBox.option1Text.enabled = false;
@@ -89,6 +91,8 @@ public class SwitchToDarts : MonoBehaviour {
                 icon.enabled = true;
                 return;
             }
+            theTextBox.option1.onClick.RemoveAllListeners();
+            theTextBox.option2.onClick.RemoveAllListeners();
             theTextBox.ReloadScript(theText);
             theTextBox.currentLine = startLine;
             theTextBox.endAtLine = endLine;
@@ -106,10 +110,10 @@ public class SwitchToDarts : MonoBehaviour {
             if (hasOptions == true)
             {
                 theTextBox.choices = true;
-                theTextBox.option1Text.text = option1;
-                theTextBox.option2Text.text = option2;
-                theTextBox.option1.onClick.AddListener(Option3);
-                theTextBox.option2.onClick.AddListener(Option4);
+                theTextBox.option1Text.text = opttion1;
+                theTextBox.option2Text.text = opttion2;
+                theTextBox.option1.onClick.AddListener(Opttion3);
+                theTextBox.option2.onClick.AddListener(Opttion4);
                 //theTextBox.option1.enabled = true;
                 //theTextBox.option2.enabled = true;
                 //theTextBox.option1Text.enabled = true;
@@ -118,8 +122,8 @@ public class SwitchToDarts : MonoBehaviour {
             }
             else
             {
-                option1 = null;
-                option2 = null;
+                opttion1 = null;
+                opttion2 = null;
                 theTextBox.option1.enabled = false;
                 theTextBox.option2.enabled = false;
                 theTextBox.option1Text.enabled = false;
@@ -135,23 +139,24 @@ public class SwitchToDarts : MonoBehaviour {
             icon.enabled = false;
         }
     }
-    public void Option1() //Yes
+    public void Opttion1() //Yes
     {
         theTextBox.DisableTextBox();
         theTextBox.DeactivateButtons();
         GetComponent<Animator>().SetTrigger("Fade");
         theTextBox.choices = false;
         GameStats.stats.hasPlayedDarts = true;
+        GameStats.stats.dartsTries = GameStats.stats.dartsTries + 1;
 
     }
-    public void Option2() //No
+    public void Opttion2() //No
     {
         theTextBox.DisableTextBox();
         theTextBox.DeactivateButtons();
         theTextBox.choices = false;
 
     }
-    public void Option3() //Yes
+    public void Opttion3() //Yes
     {
         theTextBox.DisableTextBox();
         theTextBox.DeactivateButtons();
@@ -159,7 +164,7 @@ public class SwitchToDarts : MonoBehaviour {
         theTextBox.choices = false;
 
     }
-    public void Option4() //No
+    public void Opttion4() //No
     {
         theTextBox.DisableTextBox();
         theTextBox.DeactivateButtons();
