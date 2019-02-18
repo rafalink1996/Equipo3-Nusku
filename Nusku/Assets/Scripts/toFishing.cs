@@ -19,6 +19,9 @@ public class toFishing : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact") && canFish && GameStats.stats.fishes < 3){
             SceneManager.LoadScene("Fishing");
+            GameStats.stats.position = new Vector2(0.41f, -0.12f);
+            GameStats.stats.selDirectionX = 1;
+            GameStats.stats.selDirectionY = -1;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

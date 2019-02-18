@@ -40,11 +40,10 @@ public class ShootingRange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        print("shots = " + shots);
+        print("aim = " + aim); 
         if (right)
         {
-            slider.value += aim;
+            slider.value += aim * Time.deltaTime;
         }
         if (slider.value >= 100)
         {
@@ -52,7 +51,7 @@ public class ShootingRange : MonoBehaviour
         }
         if (!right)
         {
-            slider.value -= aim;
+            slider.value -= aim * Time.deltaTime;
         }
         if (slider.value <= 0)
         {
