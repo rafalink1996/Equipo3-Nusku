@@ -30,7 +30,7 @@ public class ShootingRange : MonoBehaviour
         aim = speed;
         slider.value = 0;
         score = 0;
-        if (GameStats.stats.dartsTries >= 12)
+        if (GameStats.stats.dartsTries >= 10)
         {
             minValue = 43;
             maxValue = 57;

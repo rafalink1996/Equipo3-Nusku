@@ -21,6 +21,9 @@ public class MedriDialogue : MonoBehaviour {
     bool waitForPress;
     public float typingSpeed;
     public SpriteRenderer icon;
+    bool talking;
+    Animator anim;
+    bool end;
 
 
 
@@ -29,7 +32,7 @@ public class MedriDialogue : MonoBehaviour {
     {
         theTextBox = FindObjectOfType<TextBoxManager>();
         icon = GameObject.Find("Sel/Interact_Icon").GetComponent<SpriteRenderer>();
-
+        anim = GetComponentInParent<Animator>();
     }
 
     // Update is called once per frame
@@ -50,6 +53,8 @@ public class MedriDialogue : MonoBehaviour {
 
         if (waitForPress && Input.GetButtonDown("Interact"))
         {
+            end = false;
+            anim.ResetTrigger("TurnBack");
             theTextBox.option1.onClick.RemoveAllListeners();
             theTextBox.option2.onClick.RemoveAllListeners();
             theTextBox.ReloadScript(theText);
@@ -61,6 +66,7 @@ public class MedriDialogue : MonoBehaviour {
             theTextBox.characterName.text = characterName;
             theTextBox.image = characterImage;
             icon.enabled = false;
+            anim.SetTrigger("Turn");
 
             if (destroyWhenActivated)
             {
@@ -74,10 +80,7 @@ public class MedriDialogue : MonoBehaviour {
                 theTextBox.option2Text.text = option2;
                 theTextBox.option1.onClick.AddListener(Option1);
                 theTextBox.option2.onClick.AddListener(Option2);
-                //theTextBox.option1.enabled = true;
-                //theTextBox.option2.enabled = true;
-                //theTextBox.option1Text.enabled = true;
-                //theTextBox.option2Text.enabled = true;
+             
 
             }
             else
@@ -90,7 +93,15 @@ public class MedriDialogue : MonoBehaviour {
                 theTextBox.option2Text.enabled = false;
             }
         }
-
+        if (theTextBox.currentLine == theTextBox.endAtLine && theTextBox.isTyping == false && !theTextBox.choices)
+        {
+            end = true;
+        }
+        if (Input.GetButtonDown("Interact") && end)
+        {
+            anim.SetTrigger("TurnBack");
+            end = false;
+        }
 
 
     }
@@ -125,10 +136,6 @@ public class MedriDialogue : MonoBehaviour {
                 theTextBox.choices = true;
                 theTextBox.option1Text.text = option1;
                 theTextBox.option2Text.text = option2;
-                //theTextBox.option1.enabled = true;
-                //theTextBox.option2.enabled = true;
-                //theTextBox.option1Text.enabled = true;
-                //theTextBox.option2Text.enabled = true;
 
             }
             else
@@ -148,6 +155,7 @@ public class MedriDialogue : MonoBehaviour {
         {
             waitForPress = false;
             icon.enabled = false;
+            talking = false;
         }
     }
     public void Option1() //Well, I was in the train...

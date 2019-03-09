@@ -3,7 +3,12 @@ guid: 2c841cfb2c99a4b149d9fa8b9cf431a2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - healthSlider: {instanceID: 0}
+  - Audio: {instanceID: 0}
+  - Hit: {instanceID: 0}
+  - death: {instanceID: 0}
+  - moreHealth: {fileID: 8300000, guid: f1679c1f2a29249a7be596b59639093c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

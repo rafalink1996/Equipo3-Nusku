@@ -19,6 +19,7 @@ public class SelHealth : MonoBehaviour
     public AudioSource Audio;
     public AudioClip Hit;
     public AudioClip death;
+    public AudioClip moreHealth;
 
     // Use this for initialization
     void Start()
@@ -68,6 +69,7 @@ public class SelHealth : MonoBehaviour
     public void RecoverHealth(int healthRecovered)
     {
         health = health + healthRecovered;
+        Audio.PlayOneShot(moreHealth);
         //PlayerPrefs.SetInt("health", health);
         //PlayerPrefs.Save();
     }

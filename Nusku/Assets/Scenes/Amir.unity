@@ -987,6 +987,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 754139640}
     m_Modifications:
+    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
+      propertyPath: m_Name
+      value: Armol Muerto 2 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalPosition.x
       value: -35.18
@@ -1030,10 +1034,6 @@ PrefabInstance:
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.99999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
-      propertyPath: m_Name
-      value: Armol Muerto 2 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
@@ -4724,6 +4724,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 754139640}
     m_Modifications:
+    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
+      propertyPath: m_Name
+      value: Armol Muerto 2 (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalPosition.x
       value: 15.82
@@ -4767,10 +4771,6 @@ PrefabInstance:
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.99999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
-      propertyPath: m_Name
-      value: Armol Muerto 2 (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
@@ -6760,6 +6760,133 @@ Transform:
   m_Father: {fileID: 89443448}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &449223930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 449223931}
+  - component: {fileID: 449223932}
+  m_Layer: 0
+  m_Name: Amir Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &449223931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449223930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1997443583}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &449223932
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449223930}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: bde16a3dbaa084fc69677f44dca7ec93, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &452063391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7022,7 +7149,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f7eab2180aaf74918b6bef0d2bbf1e06, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -10066,6 +10193,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1337673778720518, guid: d597187e6fa9748448459e90d38006f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 224676233467282994, guid: d597187e6fa9748448459e90d38006f5,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -12270,6 +12401,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 754139640}
     m_Modifications:
+    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
+      propertyPath: m_Name
+      value: Armol Muerto 2 (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalPosition.x
       value: -25.23
@@ -12313,10 +12448,6 @@ PrefabInstance:
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.99999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
-      propertyPath: m_Name
-      value: Armol Muerto 2 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
@@ -17495,6 +17626,7 @@ GameObject:
   - component: {fileID: 1183319169}
   - component: {fileID: 1183319172}
   - component: {fileID: 1183319174}
+  - component: {fileID: 1183319173}
   m_Layer: 0
   m_Name: Amir
   m_TagString: Untagged
@@ -17609,6 +17741,102 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 0.7084055}
   m_EdgeRadius: 0
+--- !u!82 &1183319173
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183319168}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f1679c1f2a29249a7be596b59639093c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1183319174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17621,9 +17849,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fb23295288b4b1aad118ea6e213911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: AMIR
+  characterName: Amir
   characterImage: {fileID: 21300000, guid: 0e7b07911afa445a48529661201b51b0, type: 3}
   selImage: {fileID: 21300000, guid: 1b2ec8bec654c4ce7b9afd17dc09aa48, type: 3}
+  gloves: {fileID: 21300000, guid: a860e70c74e6343c5b02c196cecdb2a9, type: 3}
   theText: {fileID: 4900000, guid: f732c29771493485492b4c335f1ade15, type: 3}
   startLine: 0
   endLine: 0
@@ -17648,6 +17877,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3b20a953a21ad4d7480aa2467d620ed5, type: 3}
   - {fileID: 21300000, guid: 9ec2c9637d72d43809bb75c2cb3827c0, type: 3}
   icon: {fileID: 933948022}
+  mainMusic: {fileID: 1889236069}
+  amirMusic: {fileID: 449223930}
 --- !u!1 &1183375856
 GameObject:
   m_ObjectHideFlags: 0
@@ -19964,6 +20195,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 754139640}
     m_Modifications:
+    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
+      propertyPath: m_Name
+      value: Armol Muerto 2 (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalPosition.x
       value: -6.66
@@ -20007,10 +20242,6 @@ PrefabInstance:
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.99999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
-      propertyPath: m_Name
-      value: Armol Muerto 2 (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
@@ -21487,6 +21718,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 754139640}
     m_Modifications:
+    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
+      propertyPath: m_Name
+      value: Armol Muerto 2 (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalPosition.x
       value: -28.04
@@ -21530,10 +21765,6 @@ PrefabInstance:
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.99999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
-      propertyPath: m_Name
-      value: Armol Muerto 2 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
@@ -21778,6 +22009,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 754139640}
     m_Modifications:
+    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
+      propertyPath: m_Name
+      value: Armol Muerto 2 (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalPosition.x
       value: 27.24
@@ -21821,10 +22056,6 @@ PrefabInstance:
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.99999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
-      propertyPath: m_Name
-      value: Armol Muerto 2 (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
@@ -24706,6 +24937,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 754139640}
     m_Modifications:
+    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
+      propertyPath: m_Name
+      value: Armol Muerto 2 (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalPosition.x
       value: -29.82
@@ -24749,10 +24984,6 @@ PrefabInstance:
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.99999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
-      propertyPath: m_Name
-      value: Armol Muerto 2 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
@@ -28173,6 +28404,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 754139640}
     m_Modifications:
+    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
+      propertyPath: m_Name
+      value: Armol Muerto 2 (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalPosition.x
       value: 18.13
@@ -28216,10 +28451,6 @@ PrefabInstance:
     - target: {fileID: 4760349037358564, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.99999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408398648367898, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
-      propertyPath: m_Name
-      value: Armol Muerto 2 (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b642fc4213dd4e689430af92cecd241, type: 2}
@@ -29584,6 +29815,7 @@ Transform:
   m_Children:
   - {fileID: 468007090}
   - {fileID: 1889236070}
+  - {fileID: 449223931}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32402,11 +32634,6 @@ PrefabInstance:
       propertyPath: HUD
       value: 
       objectReference: {fileID: 669242602}
-    - target: {fileID: 114960206458638532, guid: 7be92edd153494160862323fe7638633,
-        type: 3}
-      propertyPath: hasGlove
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 58604824190346212, guid: 7be92edd153494160862323fe7638633,
         type: 3}
       propertyPath: m_Offset.y
@@ -32416,6 +32643,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Radius
       value: 0.221142
+      objectReference: {fileID: 0}
+    - target: {fileID: 114960206458638532, guid: 7be92edd153494160862323fe7638633,
+        type: 3}
+      propertyPath: hasGlove
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7be92edd153494160862323fe7638633, type: 3}

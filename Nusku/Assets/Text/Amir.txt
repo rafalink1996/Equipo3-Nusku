@@ -7,13 +7,13 @@ What society?
 We are a group of people that believe that the sun is still alive somewhere.
 Where?
 You are really spirited!
-Highest peak to the north
+Past the town and the aristocracy.
 Am I going by myself?
 Of course not, little one! Here you go.
 These gloves can control the light of the bottles.
 In case you need to defend yourself, just hold Z and release to shoot.
 Try destroying that fallen tree that's blocking the way to town
-Good luck with the zombies.
+You got the gloves!
 ...What am I supposed to do?
 We have knowledge that they are keeping the sun god in his temple.
 We need your help to save him and bring the light to everyone again.
@@ -22,7 +22,7 @@ Don´t worry, it’s not like we are throwing you alone on this mission.
 We’re not going with you either, but take this. These gloves can control the light of the bottles.
 In case you need to defend yourself, just hold Z and release to shoot.
 Try destroying that fallen tree that's blocking the way to town
-Good luck with the zombies.
+You got the gloves!
 What do I have to do?
 Ah, I like that spirit!
 We have knowledge that they are keeping the sun god in the sun temple.
@@ -43,4 +43,9 @@ I understand you have quite a sense of justice.
 Yes, we know, but we praise you for it.
 
 Have you been spying on me?
-AMIR: Sorry, not sorry
+Sorry, not sorry
+
+You got the gloves!
+
+What’s wrong, little one? Couldn’t destroy the fallen tree?
+Try holding Z or J to charge and releasing to shoot.

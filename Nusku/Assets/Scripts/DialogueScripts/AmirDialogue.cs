@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+    using UnityEngine;
 
 public class AmirDialogue : MonoBehaviour {
 
     public string characterName;
     public Sprite characterImage;
     public Sprite selImage;
+    public Sprite gloves;
     public TextAsset theText;
     public int startLine;
     public int endLine;
@@ -24,6 +25,9 @@ public class AmirDialogue : MonoBehaviour {
     public Sprite[] expression;
     Glove2D glove;
     public SpriteRenderer icon;
+    bool end;
+    public GameObject mainMusic;
+    public GameObject amirMusic;
 
 
 
@@ -45,9 +49,18 @@ public class AmirDialogue : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (GameStats.stats.hasGlove == true)
+        {
+            startLine = 49;
+            endLine = 50;
+            hasOptions = false;
+        }
 
         if (waitForPress && Input.GetButtonDown("Interact"))
         {
+            mainMusic.SetActive(false);
+            amirMusic.SetActive(true);
+            end = false;
             theTextBox.option1.onClick.RemoveAllListeners();
             theTextBox.option2.onClick.RemoveAllListeners();
             theTextBox.ReloadScript(theText);
@@ -83,21 +96,23 @@ public class AmirDialogue : MonoBehaviour {
         if (theTextBox.currentLine == 43)
         {
             theTextBox.currentLine = 16;
-            theTextBox.endAtLine = 24;
+            theTextBox.endAtLine = 25;
             theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         }
         if (theTextBox.currentLine == 46)
         {
             theTextBox.currentLine = 16;
-            theTextBox.endAtLine = 24;
+            theTextBox.endAtLine = 25;
             theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         }
+        //if (theTextBox.currentLine == )
 
         //Nombre e imagen de Sel
         if (theTextBox.currentLine == 29 || theTextBox.currentLine == 10 || theTextBox.currentLine == 16 || theTextBox.currentLine == 19)
         {
             theTextBox.image = selImage;
-            theTextBox.characterName.text = "SEL";
+            theTextBox.characterName.text = "Sel";
+
         }
         else
         {
@@ -128,12 +143,28 @@ public class AmirDialogue : MonoBehaviour {
             {
                 theTextBox.image = expression[6];
             }
+            if (theTextBox.currentLine == 15 || theTextBox.currentLine == 24)
+            {
+                theTextBox.image = gloves;
+                theTextBox.characterName.text = "";
+            }
         }
         //Final activa el guante
         if (theTextBox.currentLine == 15 || theTextBox.currentLine == 24)
         {
             glove.hasGlove = true;
             GameStats.stats.hasGlove = true;
+            GetComponent<AudioSource>().enabled = true;
+        }
+        if (theTextBox.currentLine == theTextBox.endAtLine && theTextBox.isTyping == false && !theTextBox.choices)
+        {
+            end = true;
+        }
+        if (Input.GetButtonDown("Interact") && end)
+        {
+            end = false;
+            mainMusic.SetActive(true);
+            amirMusic.SetActive(false);
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -272,7 +303,7 @@ public class AmirDialogue : MonoBehaviour {
     public void Option7() //What am I supposed to do?
     {
         theTextBox.currentLine = 17;
-        theTextBox.endAtLine = 23;
+        theTextBox.endAtLine = 24;
         theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         theTextBox.DeactivateButtons();
         theTextBox.option1.onClick.AddListener(Option1);
@@ -285,7 +316,7 @@ public class AmirDialogue : MonoBehaviour {
     public void Option8() //Where is this temple?
     {
         theTextBox.currentLine = 8;
-        theTextBox.endAtLine = 15;
+        theTextBox.endAtLine = 16;
         theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         theTextBox.DeactivateButtons();
         theTextBox.option1.onClick.AddListener(Option1);

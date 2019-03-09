@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shield : MonoBehaviour {
 
@@ -23,6 +24,8 @@ public class Shield : MonoBehaviour {
             gotShield.name = "GotShield";
             GameObject canvas = GameObject.Find("Canvas");
             gotShield.transform.SetParent(canvas.transform, false);
+            gotShield.GetComponentInChildren<Button>().Select();
+            gotShield.GetComponentInChildren<Button>().OnSelect(null);
             //gotShield.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
             //gotShield.GetComponent<RectTransform>().localPosition = Vector2.zero;
         }

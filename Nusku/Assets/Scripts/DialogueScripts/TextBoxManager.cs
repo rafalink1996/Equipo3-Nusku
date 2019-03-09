@@ -25,7 +25,7 @@ public class TextBoxManager : MonoBehaviour
     public PlayerMovement2D player;
     public bool isActive;
     public bool stopPlayerMovement;
-    bool isTyping = false;
+    public bool isTyping = false;
     bool cancelTyping = false;
     public float typeSpeed;
     AudioSource audioSource;

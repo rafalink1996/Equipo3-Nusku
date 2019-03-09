@@ -7,6 +7,7 @@ public class Fountain : MonoBehaviour {
     public SpriteRenderer icon;
     bool press;
     SelHealth selHealth;
+    public AudioClip health;
 	// Use this for initialization
 	void Start () {
         icon = GameObject.Find("Sel/Interact_Icon").GetComponent<SpriteRenderer>();
@@ -17,6 +18,7 @@ public class Fountain : MonoBehaviour {
 	void Update () {
         if (Input.GetButtonDown("Interact") && press){
             selHealth.health = 100;
+            GetComponent<AudioSource>().PlayOneShot(health);
         }
 	}
     private void OnTriggerEnter2D(Collider2D collision)

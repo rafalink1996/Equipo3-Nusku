@@ -35,18 +35,18 @@ public class RoxDialogue : MonoBehaviour {
     void Update()
     {
         if (GameStats.stats.hasPlayedDarts == false && GameStats.stats.hasWonDarts == false){
-            startLine = 0;
-            endLine = 1;
+            startLine = 41;
+            endLine = 42;
         }
         if (GameStats.stats.hasPlayedDarts == true && GameStats.stats.hasWonDarts == false)
         {
-            startLine = 4;
-            endLine = 4;
+            startLine = 45;
+            endLine = 45;
         }
         if (GameStats.stats.hasPlayedDarts == true && GameStats.stats.hasWonDarts == true)
         {
-            startLine = 7;
-            endLine = 9;
+            startLine = 48;
+            endLine = 50;
         }
 
         if (waitForPress && Input.GetButtonDown("Interact"))
