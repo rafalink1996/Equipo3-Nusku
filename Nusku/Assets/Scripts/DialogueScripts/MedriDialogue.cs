@@ -39,12 +39,12 @@ public class MedriDialogue : MonoBehaviour {
     void Update()
     {
        
-        if (GameStats.stats.hasWonDarts == false)
+        if (GameStats.stats.hasFishingRod == false)
         {
             startLine = 1;
             endLine = 8;
         }
-        if (GameStats.stats.hasWonDarts == true)
+        if (GameStats.stats.hasFishingRod == true)
         {
             startLine = 11;
             endLine = 17;

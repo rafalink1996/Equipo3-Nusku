@@ -316,7 +316,7 @@ public class AmirDialogue : MonoBehaviour {
     public void Option8() //Where is this temple?
     {
         theTextBox.currentLine = 8;
-        theTextBox.endAtLine = 16;
+        theTextBox.endAtLine = 15;
         theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         theTextBox.DeactivateButtons();
         theTextBox.option1.onClick.AddListener(Option1);

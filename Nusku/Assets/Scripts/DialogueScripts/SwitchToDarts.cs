@@ -35,7 +35,9 @@ public class SwitchToDarts : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        if (GameStats.stats.hasWonDarts){
+            Destroy(gameObject);
+        }
         if (waitForPress && Input.GetButtonDown("Interact"))
         {
             theTextBox.option1.onClick.RemoveAllListeners();

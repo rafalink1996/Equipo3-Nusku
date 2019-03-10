@@ -12,6 +12,7 @@ public class TownsfolkDialogueImages : MonoBehaviour
     public Sprite Roddick;
     public Sprite Lora;
     public Sprite Sel;
+    public Sprite Rod;
 
     public TextBoxManager theTextBox;
 
@@ -53,6 +54,11 @@ public class TownsfolkDialogueImages : MonoBehaviour
         {
             theTextBox.image = Rox;
             theTextBox.characterName.text = "Rox";
+        }
+        if (theTextBox.currentLine == 51)
+        {
+            theTextBox.image = Rod;
+            theTextBox.characterName.text = "";
         }
         if (theTextBox.currentLine == 3 || theTextBox.currentLine == 12 || theTextBox.currentLine == 14 || theTextBox.currentLine == 16)
         {

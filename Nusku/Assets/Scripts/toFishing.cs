@@ -18,7 +18,7 @@ public class toFishing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameStats.stats.hasWonDarts){
+        if (GameStats.stats.hasFishingRod){
             Destroy(cantFish);
         }
         if (Input.GetButtonDown("Interact") && canFish && GameStats.stats.fishes < 3){
@@ -30,7 +30,7 @@ public class toFishing : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (GameStats.stats.fishes < 3 && GameStats.stats.hasWonDarts)
+        if (GameStats.stats.fishes < 3 && GameStats.stats.hasFishingRod)
         {
             icon.enabled = true;
             canFish = true;

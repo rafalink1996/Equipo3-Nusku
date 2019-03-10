@@ -20,6 +20,7 @@ public class SelHealth : MonoBehaviour
     public AudioClip Hit;
     public AudioClip death;
     public AudioClip moreHealth;
+    AudioSource deathMusic;
 
     // Use this for initialization
     void Start()
@@ -31,6 +32,7 @@ public class SelHealth : MonoBehaviour
         body = GetComponentInChildren<SpriteRenderer>();
         armG = this.transform.Find("Graphics/Arm").gameObject.GetComponent<SpriteRenderer>();
         health = GameStats.stats.health;
+        deathMusic = GameObject.Find("GameStats").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -47,7 +49,8 @@ public class SelHealth : MonoBehaviour
             body.color = Color.white;
             StopCoroutine("Flashing");
             dead = true;
-            Invoke("GameOver", 4f);
+            Invoke("DeathMusic", 2f); 
+            Invoke("GameOver", 6f);
         }
 
     }
@@ -88,6 +91,13 @@ public class SelHealth : MonoBehaviour
         invincible = false;
         StopCoroutine("Flashing");
         body.color = Color.white;
+    }
+    void DeathMusic(){
+        AudioSource[] audios = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource aud in audios)
+            aud.volume = 0;
+        deathMusic.enabled = true;
+        deathMusic.volume = 1;
     }
     void GameOver(){
         SceneManager.LoadScene("GameOver");

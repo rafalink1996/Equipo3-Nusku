@@ -29,7 +29,7 @@ public class JurDialogue : MonoBehaviour {
     void Start()
     {
         theTextBox = FindObjectOfType<TextBoxManager>();
-        if (hasOptions)
+        if (GameStats.stats.hasBattledJur == false)
         {
             lastOne = false;
         }else{
@@ -40,7 +40,13 @@ public class JurDialogue : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        if (GameStats.stats.hasBattledJur == true)
+        {
+            startLine = 72;
+            endLine = 72;
+            //lastOne = true;
+            hasOptions = false;
+        }
         if (waitForPress && Input.GetButtonDown("Interact"))
         {
             theTextBox.option1.onClick.RemoveAllListeners();
@@ -53,7 +59,7 @@ public class JurDialogue : MonoBehaviour {
             theTextBox.typeSpeed = typingSpeed;
             theTextBox.characterName.text = characterName;
             theTextBox.image = characterImage;
-
+            GameStats.stats.hasBattledJur = true;
             //if (destroyWhenActivated)
             //{
             //        Destroy(gameObject);
@@ -171,6 +177,7 @@ public class JurDialogue : MonoBehaviour {
             theTextBox.typeSpeed = typingSpeed;
             theTextBox.characterName.text = characterName;
             theTextBox.image = characterImage;
+            GameStats.stats.hasBattledJur = true;
 
 
             if (destroyWhenActivated)

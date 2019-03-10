@@ -31,6 +31,12 @@ public class TitleScreen : MonoBehaviour {
         GameStats.stats.selDirectionY = -1;
         GameStats.stats.health = 100;
         GameStats.stats.hasGlove = false;
+        GameStats.stats.hasPlayedDarts = false;
+        GameStats.stats.hasWonDarts = false;
+        GameStats.stats.hasFishingRod = false;
+        GameStats.stats.fishes = 0;
+        GameStats.stats.dartsTries = 0;
+        GameStats.stats.hasBattledJur = false;
 
     }
     public void OnClickQuit() {

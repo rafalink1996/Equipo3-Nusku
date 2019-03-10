@@ -23,11 +23,13 @@ public class Fishing : MonoBehaviour {
     public AudioClip throwLine;
     public AudioClip pullOut;
     public AudioSource fishSound;
+    SpriteRenderer icon;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>(); //todo
         sound = GetComponent<AudioSource>();
+        icon = GameObject.Find("Icon").GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -53,7 +55,7 @@ public class Fishing : MonoBehaviour {
         //}
         if (Input.GetButtonDown("Interact") && !isFishing && !test) //empieza a pescar
         {
-            print("start"); 
+            icon.enabled = false; 
             anim.SetBool("isFishing", true); //todo
             isFish = (Random.Range(0, 3));
             //anim.SetTrigger("backToFishing");
@@ -141,12 +143,14 @@ public class Fishing : MonoBehaviour {
         sound.PlayOneShot(fish);
         anim.SetBool("Again", true);
         test = false;
+        icon.enabled = true;
     }
     void NoFish(){
         sound.PlayOneShot(noFish);
         anim.SetBool("Again", true);
         test = false;
         isFishing = false;
+        icon.enabled = true;
     }
     void PullOut(){
         sound.PlayOneShot(pullOut);

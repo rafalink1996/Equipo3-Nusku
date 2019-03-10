@@ -14,9 +14,12 @@ public class PlayerMovement2D : MonoBehaviour {
     public AudioSource caminata;
     //public AudioSource salto;
     //public AudioSource muerte;
-    //bool pause = false;
+    bool pause = false;
     public bool canMove = true;
     public GameObject HUD;
+    AudioSource pauseSound;
+    public AudioClip pauseClip;
+
   
     void Start()
     {
@@ -25,6 +28,8 @@ public class PlayerMovement2D : MonoBehaviour {
         transform.position = GameStats.stats.position;
         anim.SetFloat("LastX", GameStats.stats.selDirectionX);
         anim.SetFloat("LastY", GameStats.stats.selDirectionY);
+        pauseSound = GetComponent<AudioSource>();
+
 
     }
     void Update()
@@ -33,15 +38,27 @@ public class PlayerMovement2D : MonoBehaviour {
         armAnim.SetFloat("LastY", anim.GetFloat("LastY"));
         if (Input.GetButtonDown("Pause"))
         {
-            if (canMove && Time.timeScale == 1.0f)
+            if (canMove && Time.timeScale == 1.0f && !pause)
             {
                 Time.timeScale = 0;
-                canMove = false;
+                pause = true;
+                AudioSource[] audios = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+                foreach (AudioSource aud in audios)
+                    aud.volume = 0;
+                pauseSound.volume = 1;
+                pauseSound.PlayOneShot(pauseClip);
+            }else{
+                Time.timeScale = 1;
+                pause = false;
+                AudioSource[] audios = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+                foreach (AudioSource aud in audios)
+                    aud.volume = 1;
+                pauseSound.PlayOneShot(pauseClip);
             }
-            //if (!canMove && Time.timeScale == 0)
-            //{
-            //    Time.timeScale = 1;
-            //}
+  
+        }
+        if (pause){
+            return;
         }
         if (!canMove){
             anim.SetBool("IsMoving",false);

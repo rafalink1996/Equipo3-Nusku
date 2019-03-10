@@ -46,7 +46,7 @@ public class RoxDialogue : MonoBehaviour {
         if (GameStats.stats.hasPlayedDarts == true && GameStats.stats.hasWonDarts == true)
         {
             startLine = 48;
-            endLine = 50;
+            endLine = 51;
         }
 
         if (waitForPress && Input.GetButtonDown("Interact"))
@@ -92,7 +92,11 @@ public class RoxDialogue : MonoBehaviour {
             }
         }
 
-
+        if (theTextBox.currentLine == 51)
+        {
+            GameStats.stats.hasFishingRod = true;
+            GetComponent<AudioSource>().enabled = true;
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

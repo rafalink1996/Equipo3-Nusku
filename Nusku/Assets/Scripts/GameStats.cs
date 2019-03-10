@@ -14,8 +14,10 @@ public class GameStats : MonoBehaviour {
     SelHealth selHealth;
     public bool hasPlayedDarts;
     public bool hasWonDarts;
+    public bool hasFishingRod;
     public int fishes;
     public int dartsTries = 0;
+    public bool hasBattledJur;
 
 	// Use this for initialization
 	void Awake () {
@@ -40,5 +42,8 @@ public class GameStats : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         //health = selHealth.health;
+        if (GetComponent<AudioSource>().isPlaying == false){
+            GetComponent<AudioSource>().enabled = false;
+        }
 	}
 }

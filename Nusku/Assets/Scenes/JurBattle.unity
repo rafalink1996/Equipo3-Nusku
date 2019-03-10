@@ -2616,6 +2616,11 @@ PrefabInstance:
       propertyPath: HUD
       value: 
       objectReference: {fileID: 1651286422}
+    - target: {fileID: 114505832987329484, guid: ce878ce3a41184a798bea190e0758ed3,
+        type: 3}
+      propertyPath: endAtLine
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce878ce3a41184a798bea190e0758ed3, type: 3}
 --- !u!1 &1055278248
@@ -2999,6 +3004,11 @@ PrefabInstance:
         type: 3}
       propertyPath: currentScene
       value: JurBattle
+      objectReference: {fileID: 0}
+    - target: {fileID: 114891925064860588, guid: 8655b7aef1eb74a93bc4bab2ebd62ee0,
+        type: 3}
+      propertyPath: hasBattledJur
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8655b7aef1eb74a93bc4bab2ebd62ee0, type: 3}
