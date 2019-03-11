@@ -24,6 +24,7 @@ public class Fishing : MonoBehaviour {
     public AudioClip pullOut;
     public AudioSource fishSound;
     SpriteRenderer icon;
+    public GameObject[] fishIcons;
 
 	// Use this for initialization
 	void Start () {
@@ -34,6 +35,7 @@ public class Fishing : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
         
         GameStats.stats.fishes = fishes;
         // El jugador presiona antes de que muerda el pez entonces no saca nada
@@ -144,6 +146,18 @@ public class Fishing : MonoBehaviour {
         anim.SetBool("Again", true);
         test = false;
         icon.enabled = true;
+        if (GameStats.stats.fishes == 1)
+        {
+            fishIcons[0].SetActive(true);
+        }
+        if (GameStats.stats.fishes == 2)
+        {
+            fishIcons[1].SetActive(true);
+        }
+        if (GameStats.stats.fishes == 3)
+        {
+            fishIcons[2].SetActive(true);
+        }
     }
     void NoFish(){
         sound.PlayOneShot(noFish);
