@@ -18,7 +18,7 @@ public class MotionIntro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetButtonDown("Interact") || Input.GetButtonDown("Pause"))
         {
             anim.SetTrigger("FadeOut");
             Destroy(GameObject.Find("Menus/MotionIntro/Button"));

@@ -25,12 +25,25 @@ public class Fishing : MonoBehaviour {
     public AudioSource fishSound;
     SpriteRenderer icon;
     public GameObject[] fishIcons;
+    public GameObject reel;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>(); //todo
         sound = GetComponent<AudioSource>();
         icon = GameObject.Find("Icon").GetComponent<SpriteRenderer>();
+        if (GameStats.stats.fishes == 1)
+        {
+            fishIcons[0].SetActive(true);
+        }
+        if (GameStats.stats.fishes == 2)
+        {
+            fishIcons[1].SetActive(true);
+        }
+        if (GameStats.stats.fishes == 3)
+        {
+            fishIcons[2].SetActive(true);
+        }
 	}
 	
 	// Update is called once per frame
@@ -77,6 +90,13 @@ public class Fishing : MonoBehaviour {
                 fade.SetTrigger("Fade");
                 Invoke("Back", 0.3f);
             }
+
+        }
+        if (Input.GetButtonDown("Pause") && fishes < 3)
+        {
+            anim.SetBool("isFishing", false);
+            fade.SetTrigger("Fade");
+            Invoke("Back", 0.3f);
         }
       
         if (isFishing)
@@ -101,6 +121,7 @@ public class Fishing : MonoBehaviour {
             bitingTime = timing;
             test = true;
             bite = false;
+            reel.SetActive(false);
             //anim.SetBool("Again", true);
         }
         // El pez muerde y el jugador tiene 0.5 segundos para presionar y sacar el pez
@@ -111,6 +132,7 @@ public class Fishing : MonoBehaviour {
             Invoke("FishGotAway", 0.5f);
             bitingTime = timing;
             fishSound.enabled = true;
+            reel.SetActive(true);
         }
         // El jugador presiona después de que se fue el pez entonces no saca nada
         if (Input.GetButtonDown("Interact") && away)
@@ -132,6 +154,7 @@ public class Fishing : MonoBehaviour {
         away = true;
         //anim.SetTrigger("noFish");
         isFishing = false;
+        reel.SetActive(false);
         //test = true;
        // anim.SetBool("Again", true);
         //bitingTime = timing;

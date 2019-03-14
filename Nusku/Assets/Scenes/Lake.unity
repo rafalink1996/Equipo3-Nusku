@@ -366,7 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7b4f543bb2546f8864a664a20d0a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Juanes
+  characterName: Chet
   characterImage: {fileID: 21300000, guid: 9111c90888ddb422da5e372e462566a1, type: 3}
   selImage: {fileID: 21300000, guid: 1b2ec8bec654c4ce7b9afd17dc09aa48, type: 3}
   theText: {fileID: 4900000, guid: dab3deab792fc4f848eea75755f75f57, type: 3}

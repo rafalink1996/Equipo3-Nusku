@@ -57,7 +57,7 @@ public class ShootingRange : MonoBehaviour
         {
             right = true;
         }
-        if (Input.GetButtonDown("Fire1") && shots > 0 && !shot && !shooting)
+        if (Input.GetButtonDown("Interact") && shots > 0 && !shot && !shooting)
         {
             Shoot();
         }

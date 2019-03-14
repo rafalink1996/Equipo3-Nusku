@@ -47,6 +47,9 @@ public class RoxDialogue : MonoBehaviour {
         {
             startLine = 48;
             endLine = 51;
+            if (GameStats.stats.hasFishingRod){
+                endLine = 50;
+            }
         }
 
         if (waitForPress && Input.GetButtonDown("Interact"))
