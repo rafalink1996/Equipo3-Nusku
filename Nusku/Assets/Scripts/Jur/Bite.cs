@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bite : MonoBehaviour {
 
     public float speed;
-    float scale = 0.04f;
+    float scale = 2f;
     public int damage = 10;
     SelHealth sel;
 
@@ -18,7 +18,7 @@ public class Bite : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         this.transform.Translate(speed * Time.deltaTime, 0, 0);
-        transform.localScale += new Vector3(scale, scale, scale);
+        transform.localScale += new Vector3(scale * Time.deltaTime, scale * Time.deltaTime, scale * Time.deltaTime);
 	}
     private void OnCollisionEnter2D(Collision2D collision)
     {

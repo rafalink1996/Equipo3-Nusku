@@ -150,6 +150,7 @@ public class Jur2D : MonoBehaviour {
             child.SetFloat("LastX", -1f);
             child.SetFloat("LastY", 1f);
         }
+        sel.GetComponent<PlayerMovement2D>().canMove = false;
         
     }
     void DiveSound() {

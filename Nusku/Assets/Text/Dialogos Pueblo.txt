@@ -1,12 +1,12 @@
 (Antes de tener la caña de pescar)
 Oh, you want to buy something? Sorry, no fish. 
-Can’t go fishing with that THING in the lake
+Can’t go fishing with that THING in the lake.
 ...
-You haven´t heard? There’s a huge monster deep underwater
+You haven´t heard? There’s a huge monster deep underwater.
 Some people say it is made of light, and if you look at it directly, you become blind.
 Only that crazy man has seen it and survived…
 Not that it scares me… no … I can’t fish because… uhh…
-I… lost my fishing rod! Yeah… that’s it
+I… lost my fishing rod! Yeah… that’s it.
 
 (Después de tener la caña de pescar)
 Ohhhh, you got a fishing rod… yayy… 
@@ -18,15 +18,15 @@ Lucky you!
 Best of luck!
 -----
 
-There’s so much trouble
-We really need a change. The mayor clearly doesn´t know what he’s doing
+There’s so much trouble.
+We really need a change. The mayor clearly doesn´t know what he’s doing.
 Maybe I should ask the oracle how we could replace him…
 -----
 
-Aye should be the mayor ‘ere. Terrible one, aye tell ye
-Wachout for eel! May bite and lie
-Ye wouldn’t believe what me eye ‘as seen
-Defeat all three or ye’ll get sunburnt
+Aye should be the mayor ‘ere. Terrible one, aye tell ye.
+Wachout for eel! May bite and lie.
+Ye wouldn’t believe what me eye ‘as seen.
+Defeat all three or ye’ll get sunburnt.
 -----
 
 Can you spare something to eat or see?
@@ -47,7 +47,7 @@ What’s the matter? Not so tough anymore?
 
 (cuando uno gana)
 Damn kid, you've got skills! Just hope you don’t catch the monster when you’re fishing.
-Rumor has it that “big blue” controls the weather. Get it out of the water and everything freezes
+Rumor has it that “big blue” controls the weather. Get it out of the water and everything freezes.
 Not that it isn’t already freezing…
 You got a fishing rod!
 ---------

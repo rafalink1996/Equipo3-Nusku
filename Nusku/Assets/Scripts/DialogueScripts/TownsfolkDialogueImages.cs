@@ -13,6 +13,8 @@ public class TownsfolkDialogueImages : MonoBehaviour
     public Sprite Lora;
     public Sprite Sel;
     public Sprite Rod;
+    public AudioClip bottle;
+    bool gave;
 
     public TextBoxManager theTextBox;
 
@@ -45,10 +47,15 @@ public class TownsfolkDialogueImages : MonoBehaviour
             theTextBox.image = Roddick;
             theTextBox.characterName.text = "Roddick";
         }
+        if (theTextBox.currentLine == 35 && !gave){
+            gave = true;
+            GetComponent<AudioSource>().PlayOneShot(bottle);
+        }
         if (theTextBox.currentLine == 36)
         {
             theTextBox.image = Lora;
             theTextBox.characterName.text = "Lora";
+            gave = false;
         }
         if (theTextBox.currentLine == 41 || theTextBox.currentLine == 42 || theTextBox.currentLine == 45 || theTextBox.currentLine == 48 || theTextBox.currentLine == 49 || theTextBox.currentLine == 50)
         {

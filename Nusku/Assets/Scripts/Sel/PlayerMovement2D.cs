@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement2D : MonoBehaviour {
 
@@ -19,6 +20,7 @@ public class PlayerMovement2D : MonoBehaviour {
     public GameObject HUD;
     AudioSource pauseSound;
     public AudioClip pauseClip;
+    Text paused;
 
   
     void Start()
@@ -29,7 +31,7 @@ public class PlayerMovement2D : MonoBehaviour {
         anim.SetFloat("LastX", GameStats.stats.selDirectionX);
         anim.SetFloat("LastY", GameStats.stats.selDirectionY);
         pauseSound = GetComponent<AudioSource>();
-
+        paused = GameObject.Find("Canvas/Paused").GetComponent<Text>();
 
     }
     void Update()
@@ -47,6 +49,7 @@ public class PlayerMovement2D : MonoBehaviour {
                     aud.volume = 0;
                 pauseSound.volume = 1;
                 pauseSound.PlayOneShot(pauseClip);
+                paused.enabled = true;
             }else{
                 Time.timeScale = 1;
                 pause = false;
@@ -54,6 +57,7 @@ public class PlayerMovement2D : MonoBehaviour {
                 foreach (AudioSource aud in audios)
                     aud.volume = 1;
                 pauseSound.PlayOneShot(pauseClip);
+                paused.enabled = false;
             }
   
         }

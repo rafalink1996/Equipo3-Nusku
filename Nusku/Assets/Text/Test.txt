@@ -28,7 +28,7 @@ This was the second one
 
 
 
-It is locked
+It is locked.
 
 You shall not pass!
 
@@ -49,4 +49,4 @@ Just don't touch anything
 
 I have no idea what I'm doing
 
-You can't fish without rod.
+You can't fish without a rod.
