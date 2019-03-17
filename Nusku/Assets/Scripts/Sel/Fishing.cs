@@ -29,19 +29,21 @@ public class Fishing : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        fishes = GameStats.stats.fishes;
         anim = GetComponent<Animator>(); //todo
         sound = GetComponent<AudioSource>();
         icon = GameObject.Find("Icon").GetComponent<SpriteRenderer>();
-        if (GameStats.stats.fishes == 1)
+        if (GameStats.stats.fishes >= 1)
         {
             fishIcons[0].SetActive(true);
         }
-        if (GameStats.stats.fishes == 2)
+        if (GameStats.stats.fishes >= 2)
         {
             fishIcons[1].SetActive(true);
         }
-        if (GameStats.stats.fishes == 3)
+        if (GameStats.stats.fishes >= 3)
         {
+            
             fishIcons[2].SetActive(true);
         }
 	}

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Snow : MonoBehaviour {
 
+    public AudioSource tree;
 	// Use this for initialization
 	void Start () {
         if (GameStats.stats.hasGlove)
@@ -20,6 +21,7 @@ public class Snow : MonoBehaviour {
     {
         if (collision.collider.name == "Bullet")
         {
+            tree.enabled = true;
             Destroy(gameObject);
         }
     }

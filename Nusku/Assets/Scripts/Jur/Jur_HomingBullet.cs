@@ -23,13 +23,14 @@ public class Jur_HomingBullet : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag != "Stalactite" && collision.collider.name != "Bullet")
-        {
-            Destroy(this.gameObject);
-        }
+        //if (collision.collider.tag != "Stalactite" && collision.collider.name != "Bullet" && collision.collider.name != "Enemy")
+        //{
+        //    Destroy(this.gameObject);
+        //}
         if (collision.collider.tag == "Player")
         {
             sel.TakeDamage(damage);
+            Destroy(this.gameObject);
         }
     }
 }

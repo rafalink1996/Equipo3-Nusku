@@ -51,13 +51,16 @@ public class PlayerMovement2D : MonoBehaviour {
                 pauseSound.PlayOneShot(pauseClip);
                 paused.enabled = true;
             }else{
-                Time.timeScale = 1;
-                pause = false;
-                AudioSource[] audios = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
-                foreach (AudioSource aud in audios)
-                    aud.volume = 1;
-                pauseSound.PlayOneShot(pauseClip);
-                paused.enabled = false;
+                if (pause)
+                {
+                    Time.timeScale = 1;
+                    pause = false;
+                    AudioSource[] audios = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+                    foreach (AudioSource aud in audios)
+                        aud.volume = 1;
+                    pauseSound.PlayOneShot(pauseClip);
+                    paused.enabled = false;
+                }
             }
   
         }
