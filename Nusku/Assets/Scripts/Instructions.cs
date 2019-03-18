@@ -10,6 +10,7 @@ public class Instructions : MonoBehaviour
     SpriteRenderer icon;
     bool press;
     bool active;
+    public bool first;
     PlayerMovement2D sel;
 
     // Start is called before the first frame update
@@ -18,6 +19,11 @@ public class Instructions : MonoBehaviour
         anim = instructions.GetComponent<Animator>();
         icon = GameObject.Find("Sel/Interact_Icon").GetComponent<SpriteRenderer>();
         sel = FindObjectOfType<PlayerMovement2D>();
+        if (first){
+            instructions.SetActive(true);
+            Invoke("Active", 0.5f);
+            sel.canMove = false;
+        }
     }
 
     // Update is called once per frame

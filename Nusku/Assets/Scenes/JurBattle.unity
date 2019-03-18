@@ -480,9 +480,8 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114843933053456142, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_Enabled
+    - target: {fileID: 1337673778720518, guid: d597187e6fa9748448459e90d38006f5, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224547127794723302, guid: d597187e6fa9748448459e90d38006f5,
@@ -575,10 +574,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1337673778720518, guid: d597187e6fa9748448459e90d38006f5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 224417583204479682, guid: d597187e6fa9748448459e90d38006f5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -592,6 +587,11 @@ PrefabInstance:
     - target: {fileID: 224676233467282994, guid: d597187e6fa9748448459e90d38006f5,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114843933053456142, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2174,7 +2174,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6, y: 6}
+  m_Size: {x: 6.5, y: 6.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -3164,7 +3164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995857868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -46.9, y: 19, z: 0}
+  m_LocalPosition: {x: -74.3, y: 7.1, z: 0}
   m_LocalScale: {x: 0.8261056, y: 0.8261056, z: 0.082251385}
   m_Children: []
   m_Father: {fileID: 1178247112}
@@ -5470,7 +5470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Jur
-  characterImage: {fileID: 21300000, guid: 752be3d45eea645e9aab9e8497ccd455, type: 3}
+  characterImage: {fileID: 21300000, guid: df050f7e2592c43ffbc57586627e6238, type: 3}
   selImage: {fileID: 21300000, guid: 1b2ec8bec654c4ce7b9afd17dc09aa48, type: 3}
   theText: {fileID: 4900000, guid: 0845af37ee12d46a1b22f5d77c4c0493, type: 3}
   startLine: 0
@@ -6989,16 +6989,16 @@ PrefabInstance:
       propertyPath: HUD
       value: 
       objectReference: {fileID: 1651286422}
-    - target: {fileID: 82547265453309538, guid: 7be92edd153494160862323fe7638633,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 98341cdec0f7a4a0dbbdbda2fcc72850, type: 3}
     - target: {fileID: 114587567111623966, guid: 7be92edd153494160862323fe7638633,
         type: 3}
       propertyPath: moreHealth
       value: 
       objectReference: {fileID: 8300000, guid: f1679c1f2a29249a7be596b59639093c, type: 3}
+    - target: {fileID: 82547265453309538, guid: 7be92edd153494160862323fe7638633,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 98341cdec0f7a4a0dbbdbda2fcc72850, type: 3}
     - target: {fileID: 1172875110563418, guid: 7be92edd153494160862323fe7638633, type: 3}
       propertyPath: m_IsActive
       value: 0

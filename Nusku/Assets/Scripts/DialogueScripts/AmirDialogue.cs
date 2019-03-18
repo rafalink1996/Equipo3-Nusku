@@ -52,7 +52,7 @@ public class AmirDialogue : MonoBehaviour {
         if (GameStats.stats.hasGlove == true)
         {
             startLine = 49;
-            endLine = 50;
+            endLine = 51;
             hasOptions = false;
         }
 

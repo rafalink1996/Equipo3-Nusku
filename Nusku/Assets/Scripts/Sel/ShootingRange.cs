@@ -21,6 +21,7 @@ public class ShootingRange : MonoBehaviour
     public AudioClip shootSound;
     int minValue = 48;
     int maxValue = 52;
+    public GameObject[] dart;
 
 
     // Use this for initialization
@@ -40,7 +41,26 @@ public class ShootingRange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print("aim = " + aim); 
+        if (shots <= 4){
+            dart[0].SetActive(false);
+        }
+        if (shots <= 3)
+        {
+            dart[1].SetActive(false);
+        }
+        if (shots <= 2)
+        {
+            dart[2].SetActive(false);
+        }
+        if (shots <= 1)
+        {
+            dart[3].SetActive(false);
+        }
+        if (shots <= 0)
+        {
+            dart[4].SetActive(false);
+        }
+
         if (right)
         {
             slider.value += aim * Time.deltaTime;

@@ -26,7 +26,7 @@ public class TitleScreen : MonoBehaviour {
         motionIntro.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
         motionIntro.GetComponent<RectTransform>().localPosition = Vector2.zero;
         GameStats.stats.currentScene = "Amir";
-        GameStats.stats.position = new Vector2(-65.22f, 13.5f);
+        GameStats.stats.position = new Vector2(-65.22f, 14.84f);
         GameStats.stats.selDirectionX = 1;
         GameStats.stats.selDirectionY = -1;
         GameStats.stats.health = 100;

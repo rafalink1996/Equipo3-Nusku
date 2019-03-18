@@ -11,7 +11,7 @@ Past the town and the aristocracy.
 Am I going by myself?
 Of course not, little one! Here you go.
 These gloves can control the light of the bottles.
-In case you need to defend yourself, just hold Z and release to shoot.
+In case you need to defend yourself, hold up your hand and focus your power.
 Try destroying that fallen tree that's blocking the way to town.
 You got the gloves!
 ...What am I supposed to do?
@@ -20,7 +20,7 @@ We need your help to save him and bring the light to everyone again.
 By myself?
 Don´t worry, it’s not like we are throwing you alone on this mission.
 We’re not going with you either, but take this. These gloves can control the light of the bottles.
-In case you need to defend yourself, just hold Z and release to shoot.
+In case you need to defend yourself, hold up your hand and focus your power.
 Try destroying that fallen tree that's blocking the way to town.
 You got the gloves!
 What do I have to do?
@@ -48,4 +48,5 @@ Sorry, not sorry
 You got the gloves!
 
 What’s wrong, little one? Couldn’t destroy the fallen tree?
-Try holding Z or J to charge and release it to shoot.
+Head east. 
+Hold up your hand and focus your power to clear the way.
