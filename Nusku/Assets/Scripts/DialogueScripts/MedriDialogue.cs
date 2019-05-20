@@ -51,7 +51,7 @@ public class MedriDialogue : MonoBehaviour {
         }
 
 
-        if (waitForPress && Input.GetButtonDown("Interact"))
+        if (waitForPress && Input.GetButtonDown("Interact") && !GameObject.FindObjectOfType<PlayerMovement2D>().pause)
         {
             end = false;
             anim.ResetTrigger("TurnBack");

@@ -12,6 +12,7 @@ public class Bridge : MonoBehaviour {
     public GameObject deactivateCamera;
     public AudioSource audio;
     public AudioClip end;
+    public GameObject outZone;
     // Use this for initialization
     void Start()
     {
@@ -35,6 +36,7 @@ public class Bridge : MonoBehaviour {
             deactivateCamera.SetActive(false);
             Destroy(this.gameObject);
             audio.PlayOneShot(end, 1);
+            outZone.SetActive(true);
         }
     }
 }

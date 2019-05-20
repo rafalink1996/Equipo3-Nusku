@@ -56,7 +56,7 @@ public class AmirDialogue : MonoBehaviour {
             hasOptions = false;
         }
 
-        if (waitForPress && Input.GetButtonDown("Interact"))
+        if (waitForPress && Input.GetButtonDown("Interact") && !GameObject.FindObjectOfType<PlayerMovement2D>().pause)
         {
             mainMusic.SetActive(false);
             amirMusic.SetActive(true);
@@ -96,13 +96,13 @@ public class AmirDialogue : MonoBehaviour {
         if (theTextBox.currentLine == 43)
         {
             theTextBox.currentLine = 16;
-            theTextBox.endAtLine = 25;
+            theTextBox.endAtLine = 24;
             theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         }
         if (theTextBox.currentLine == 46)
         {
             theTextBox.currentLine = 16;
-            theTextBox.endAtLine = 25;
+            theTextBox.endAtLine = 24;
             theTextBox.StartCoroutine(theTextBox.TextScroll(theTextBox.textlines[theTextBox.currentLine]));
         }
         //if (theTextBox.currentLine == )

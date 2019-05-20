@@ -15,7 +15,7 @@ public class PlayerMovement2D : MonoBehaviour {
     public AudioSource caminata;
     //public AudioSource salto;
     //public AudioSource muerte;
-    bool pause = false;
+    public bool pause = false;
     public bool canMove = true;
     public GameObject HUD;
     AudioSource pauseSound;

@@ -35,7 +35,7 @@ public class NPCTestDialogue : MonoBehaviour {
     void Update()
     {
 
-        if (waitForPress && Input.GetButtonDown("Interact"))
+        if (waitForPress && Input.GetButtonDown("Interact") && !GameObject.FindObjectOfType<PlayerMovement2D>().pause)
         {
             theTextBox.ReloadScript(theText);
             theTextBox.currentLine = startLine;

@@ -38,7 +38,7 @@ public class SwitchToDarts : MonoBehaviour {
         if (GameStats.stats.hasWonDarts){
             Destroy(gameObject);
         }
-        if (waitForPress && Input.GetButtonDown("Interact"))
+        if (waitForPress && Input.GetButtonDown("Interact") && !GameObject.FindObjectOfType<PlayerMovement2D>().pause)
         {
             theTextBox.option1.onClick.RemoveAllListeners();
             theTextBox.option2.onClick.RemoveAllListeners();

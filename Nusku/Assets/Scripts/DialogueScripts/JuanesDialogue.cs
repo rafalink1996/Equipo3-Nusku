@@ -60,7 +60,7 @@ public class JuanesDialogue : MonoBehaviour
         }
 
 
-        if (waitForPress && Input.GetButtonDown("Interact"))
+        if (waitForPress && Input.GetButtonDown("Interact") && !GameObject.FindObjectOfType<PlayerMovement2D>().pause)
         {
             
             theTextBox.option1.onClick.RemoveAllListeners();

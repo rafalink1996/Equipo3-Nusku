@@ -47,7 +47,7 @@ public class JurDialogue : MonoBehaviour {
             //lastOne = true;
             hasOptions = false;
         }
-        if (waitForPress && Input.GetButtonDown("Interact"))
+        if (waitForPress && Input.GetButtonDown("Interact") && !GameObject.FindObjectOfType<PlayerMovement2D>().pause)
         {
             theTextBox.option1.onClick.RemoveAllListeners();
             theTextBox.option2.onClick.RemoveAllListeners();

@@ -41,7 +41,7 @@ public class TownDialogues : MonoBehaviour
     void Update()
     {
 
-        if (waitForPress && Input.GetButtonDown("Interact"))
+        if (waitForPress && Input.GetButtonDown("Interact") && !GameObject.FindObjectOfType<PlayerMovement2D>().pause)
         {
             end = false;
             anim.ResetTrigger("TurnBack");

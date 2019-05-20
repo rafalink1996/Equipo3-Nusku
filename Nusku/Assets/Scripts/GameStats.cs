@@ -18,6 +18,7 @@ public class GameStats : MonoBehaviour {
     public int fishes;
     public int dartsTries = 0;
     public bool hasBattledJur;
+    public bool firstInstructions = false;
 
 	// Use this for initialization
 	void Awake () {

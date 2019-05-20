@@ -60,7 +60,7 @@ public class TownsfolkDialogueImages : MonoBehaviour
         if (theTextBox.currentLine == 41 || theTextBox.currentLine == 42 || theTextBox.currentLine == 45 || theTextBox.currentLine == 48 || theTextBox.currentLine == 49 || theTextBox.currentLine == 50)
         {
             theTextBox.image = Rox;
-            theTextBox.characterName.text = "Rox";
+            theTextBox.characterName.text = "Red";
         }
         if (theTextBox.currentLine == 51)
         {
