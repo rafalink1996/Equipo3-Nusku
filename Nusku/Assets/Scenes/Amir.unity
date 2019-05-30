@@ -10182,6 +10182,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1337673778720518, guid: d597187e6fa9748448459e90d38006f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 224547127794723302, guid: d597187e6fa9748448459e90d38006f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10270,10 +10274,6 @@ PrefabInstance:
     - target: {fileID: 224547127794723302, guid: d597187e6fa9748448459e90d38006f5,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1337673778720518, guid: d597187e6fa9748448459e90d38006f5, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224765773900264620, guid: d597187e6fa9748448459e90d38006f5,
@@ -33305,6 +33305,11 @@ PrefabInstance:
       propertyPath: HUD
       value: 
       objectReference: {fileID: 669242602}
+    - target: {fileID: 114067127869571506, guid: 7be92edd153494160862323fe7638633,
+        type: 3}
+      propertyPath: canMove
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 58604824190346212, guid: 7be92edd153494160862323fe7638633,
         type: 3}
       propertyPath: m_Offset.y
