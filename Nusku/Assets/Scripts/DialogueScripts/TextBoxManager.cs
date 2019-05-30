@@ -49,14 +49,14 @@ public class TextBoxManager : MonoBehaviour
             endAtLine = textlines.Length - 1;
         }
 
-        if (isActive)
-        {
-            EnableTextBox();
-        }
-        else
-        {
-            DisableTextBox();
-        }
+        //if (isActive)
+        //{
+        //    EnableTextBox();
+        //}
+        //else
+        //{
+        //    DisableTextBox();
+        //}
 
         option1.Select();
         option1.OnSelect(null);
