@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: 71aa91ced29ed401380b2e7b25fb21cb
+guid: 33f336cd43842447b90445b87b21ef6a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: SS sel fishing 1_0
+      213: -4578692971659982263
+    second: NEO Fishing loop_0
   - first:
-      213: 21300002
-    second: SS sel fishing 1_1
+      213: 5203482618362882090
+    second: NEO Fishing loop_1
   - first:
-      213: 21300004
-    second: SS sel fishing 1_2
+      213: 1703372702278682708
+    second: NEO Fishing loop_2
   - first:
-      213: 21300006
-    second: SS sel fishing 1_3
+      213: 7003649504419282382
+    second: NEO Fishing loop_3
   - first:
-      213: 21300008
-    second: SS sel fishing 1_4
+      213: 7648661285602602625
+    second: NEO Fishing loop_4
   - first:
-      213: 21300010
-    second: SS sel fishing 1_5
+      213: 7444612939045199778
+    second: NEO Fishing loop_5
   - first:
-      213: 21300012
-    second: SS sel fishing 1_6
+      213: -6534488152923385465
+    second: NEO Fishing loop_6
   - first:
-      213: 21300014
-    second: SS sel fishing 1_7
+      213: 4042922889634211708
+    second: NEO Fishing loop_7
   - first:
-      213: 21300016
-    second: SS sel fishing 1_8
+      213: -3726608031114443550
+    second: NEO Fishing loop_8
   - first:
-      213: 21300018
-    second: SS sel fishing 1_9
+      213: 3602867240084345759
+    second: NEO Fishing loop_9
   - first:
-      213: 21300020
-    second: SS sel fishing 1_10
+      213: 7690771949212844871
+    second: NEO Fishing loop_10
   - first:
-      213: 21300022
-    second: SS sel fishing 1_11
+      213: 4484738825513467058
+    second: NEO Fishing loop_11
   - first:
-      213: 21300024
-    second: SS sel fishing 1_12
+      213: 5575356468208088383
+    second: NEO Fishing loop_12
   - first:
-      213: 21300026
-    second: SS sel fishing 1_13
+      213: -829389911687428370
+    second: NEO Fishing loop_13
   - first:
-      213: 21300028
-    second: SS sel fishing 1_14
+      213: 5371120831077641314
+    second: NEO Fishing loop_14
   - first:
-      213: 21300030
-    second: SS sel fishing 1_15
+      213: 7112449393658646300
+    second: NEO Fishing loop_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -132,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SS sel fishing 1_0
+      name: NEO Fishing loop_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
-        width: 200
-        height: 200
+        y: 1500
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9377df8923c9f489383f08e5afd693a9
-      internalID: 21300000
+      spriteID: 92395f382e091454aa389aaa5735d17c
+      internalID: -4578692971659982263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS sel fishing 1_1
+      name: NEO Fishing loop_1
       rect:
         serializedVersion: 2
-        x: 200
-        y: 600
-        width: 200
-        height: 200
+        x: 300
+        y: 1500
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,41 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bae581d793642476a993bf03dfb832de
-      internalID: 21300002
+      spriteID: a716fa9f1eb6f410b84fa9fba5ed6ca7
+      internalID: 5203482618362882090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS sel fishing 1_2
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 600
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8afefe001a8b846fa9fecc497f269d1f
-      internalID: 21300004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SS sel fishing 1_3
+      name: NEO Fishing loop_2
       rect:
         serializedVersion: 2
         x: 600
-        y: 600
-        width: 200
-        height: 200
+        y: 1500
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +188,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f779445086f44a70a39185c4fb7d764
-      internalID: 21300006
+      spriteID: a4a4d34f586cc42f394fcdf90a1322ee
+      internalID: 1703372702278682708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS sel fishing 1_4
+      name: NEO Fishing loop_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54002dae5844540e4b49837291562364
+      internalID: 7003649504419282382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO Fishing loop_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5b73bfbb4664b109d654139379d682
+      internalID: 7648661285602602625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO Fishing loop_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2005aea76abf4127956aade6f57b16f
+      internalID: 7444612939045199778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO Fishing loop_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 400
-        width: 200
-        height: 200
+        y: 1200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +272,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af8378befbd334ffea0e31f953968000
-      internalID: 21300008
+      spriteID: 8cf3efb2419154e2a9cc14db3217d7ff
+      internalID: -6534488152923385465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS sel fishing 1_5
+      name: NEO Fishing loop_7
       rect:
         serializedVersion: 2
-        x: 200
-        y: 400
-        width: 200
-        height: 200
+        x: 300
+        y: 1200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,41 +293,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cbe3ea49333547868c65c4863be10ba
-      internalID: 21300010
+      spriteID: 03bf0b19e64a94110a5e92939629fb01
+      internalID: 4042922889634211708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS sel fishing 1_6
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 400
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7347a4ce58c7a481aaa1e0dfdbc32e47
-      internalID: 21300012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SS sel fishing 1_7
+      name: NEO Fishing loop_8
       rect:
         serializedVersion: 2
         x: 600
-        y: 400
-        width: 200
-        height: 200
+        y: 1200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,20 +314,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64137d02757224f9fae1e5a0d43d55c9
-      internalID: 21300014
+      spriteID: afbd303fbb2c548589f72fbd7cca9732
+      internalID: -3726608031114443550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS sel fishing 1_8
+      name: NEO Fishing loop_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb6d70465cd14f8ab68fc497d270d17
+      internalID: 3602867240084345759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO Fishing loop_10
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68852d2603bb64e1b8102cc2935ce3c6
+      internalID: 7690771949212844871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO Fishing loop_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e329638756244aba88ca11330693050
+      internalID: 4484738825513467058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO Fishing loop_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 200
-        width: 200
-        height: 200
+        y: 900
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,20 +398,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55b0fb86c96c4482fb2218652c970878
-      internalID: 21300016
+      spriteID: 7c7f813129cd0410490400089e3dc2ff
+      internalID: 5575356468208088383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS sel fishing 1_9
+      name: NEO Fishing loop_13
       rect:
         serializedVersion: 2
-        x: 200
-        y: 200
-        width: 200
-        height: 200
+        x: 300
+        y: 900
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,41 +419,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fb0cb229edf34db8ba9ccd978c5b20f
-      internalID: 21300018
+      spriteID: 12cb1328e769d47968b3399278a96d87
+      internalID: -829389911687428370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS sel fishing 1_10
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 200
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6d0748c78fc44943a0fd13a3c536bbb
-      internalID: 21300020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SS sel fishing 1_11
+      name: NEO Fishing loop_14
       rect:
         serializedVersion: 2
         x: 600
-        y: 200
-        width: 200
-        height: 200
+        y: 900
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -377,20 +440,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c46d150a3add4ca19b19bc8df4efc01
-      internalID: 21300022
+      spriteID: a230369aedaee4a23be2db53ba88f971
+      internalID: 5371120831077641314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS sel fishing 1_12
+      name: NEO Fishing loop_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 200
-        height: 200
+        x: 900
+        y: 900
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -398,71 +461,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 218de59d2eae04e4ea9814f6c4b330a5
-      internalID: 21300024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SS sel fishing 1_13
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3d25454495284ad1ae43855de7b55ff
-      internalID: 21300026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SS sel fishing 1_14
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29f870365b9bc4bc9814693f4d57d52c
-      internalID: 21300028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SS sel fishing 1_15
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88a3c4b7ab0274dcf8f4dec7c660a8f2
-      internalID: 21300030
+      spriteID: 72b18d75df46b440884d4b02e502ab24
+      internalID: 7112449393658646300
       vertices: []
       indices: 
       edges: []
@@ -470,7 +470,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 937421db7395448adbc7fbf09bbfe367
+    spriteID: cc4f34b7b3cf84039bd86aeefb2d72ec
     internalID: 0
     vertices: []
     indices: 

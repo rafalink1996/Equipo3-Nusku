@@ -1,127 +1,151 @@
 fileFormatVersion: 2
-guid: 43a26843d0dad4f05ac2c0413b4b909e
+guid: 1781cf081ee6f4721850f1acd5b752d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: Sel Arm attack_0
+      213: 542601799136056095
+    second: NEO DEAD FISH_0
   - first:
-      213: 21300002
-    second: Sel Arm attack_1
+      213: -3642863504390309535
+    second: NEO DEAD FISH_1
   - first:
-      213: 21300004
-    second: Sel Arm attack_2
+      213: 9157910049644268831
+    second: NEO DEAD FISH_2
   - first:
-      213: 21300006
-    second: Sel Arm attack_3
+      213: -622234983517769359
+    second: NEO DEAD FISH_3
   - first:
-      213: 21300008
-    second: Sel Arm attack_4
+      213: -96992394365427565
+    second: NEO DEAD FISH_4
   - first:
-      213: 21300010
-    second: Sel Arm attack_5
+      213: -762812533720187431
+    second: NEO DEAD FISH_5
   - first:
-      213: 21300012
-    second: Sel Arm attack_6
+      213: 8954578047882236226
+    second: NEO DEAD FISH_6
   - first:
-      213: 21300014
-    second: Sel Arm attack_7
+      213: -8879543118458401662
+    second: NEO DEAD FISH_7
   - first:
-      213: 21300016
-    second: Sel Arm attack_8
+      213: 6440070767721466139
+    second: NEO DEAD FISH_8
   - first:
-      213: 21300018
-    second: Sel Arm attack_9
+      213: -5886145742654840814
+    second: NEO DEAD FISH_9
   - first:
-      213: 21300020
-    second: Sel Arm attack_10
+      213: -2457169775942569702
+    second: NEO DEAD FISH_10
   - first:
-      213: 21300022
-    second: Sel Arm attack_11
+      213: 5782952947239784796
+    second: NEO DEAD FISH_11
   - first:
-      213: 21300024
-    second: Sel Arm attack_12
+      213: 2856941182867085532
+    second: NEO DEAD FISH_12
   - first:
-      213: 21300026
-    second: Sel Arm attack_13
+      213: 7584045272973811226
+    second: NEO DEAD FISH_13
   - first:
-      213: 21300028
-    second: Sel Arm attack_14
+      213: 2815768911524382354
+    second: NEO DEAD FISH_14
   - first:
-      213: 21300030
-    second: Sel Arm attack_15
+      213: 4060184104860417424
+    second: NEO DEAD FISH_15
   - first:
-      213: 21300032
-    second: Sel Arm attack_16
+      213: 4575626702923493690
+    second: NEO DEAD FISH_16
   - first:
-      213: 21300034
-    second: Sel Arm attack_17
+      213: 2705637650850246727
+    second: NEO DEAD FISH_17
   - first:
-      213: 21300036
-    second: Sel Arm attack_18
+      213: -2979384010764470606
+    second: NEO DEAD FISH_18
   - first:
-      213: 21300038
-    second: Sel Arm attack_19
+      213: -5425967126455174484
+    second: NEO DEAD FISH_19
   - first:
-      213: 21300040
-    second: Sel Arm attack_20
+      213: 6223853961078672789
+    second: NEO DEAD FISH_20
   - first:
-      213: 21300042
-    second: Sel Arm attack_21
+      213: -2877072785335603241
+    second: NEO DEAD FISH_21
   - first:
-      213: 21300044
-    second: Sel Arm attack_22
+      213: 7257980828060441697
+    second: NEO DEAD FISH_22
   - first:
-      213: 21300046
-    second: Sel Arm attack_23
+      213: -6592342502389481380
+    second: NEO DEAD FISH_23
   - first:
-      213: 21300048
-    second: Sel Arm attack_24
+      213: 6561282358477624624
+    second: NEO DEAD FISH_24
   - first:
-      213: 21300050
-    second: Sel Arm attack_25
+      213: -6131896092508237635
+    second: NEO DEAD FISH_25
   - first:
-      213: 21300052
-    second: Sel Arm attack_26
+      213: 1213869973775744684
+    second: NEO DEAD FISH_26
   - first:
-      213: 21300054
-    second: Sel Arm attack_27
+      213: 1745783960371936406
+    second: NEO DEAD FISH_27
   - first:
-      213: 21300056
-    second: Sel Arm attack_28
+      213: -302822752479633853
+    second: NEO DEAD FISH_28
   - first:
-      213: 21300058
-    second: Sel Arm attack_29
+      213: -1040244168251072885
+    second: NEO DEAD FISH_29
   - first:
-      213: 21300060
-    second: Sel Arm attack_30
+      213: -2549805088856620100
+    second: NEO DEAD FISH_30
   - first:
-      213: 21300062
-    second: Sel Arm attack_31
+      213: 8630843847392005210
+    second: NEO DEAD FISH_31
   - first:
-      213: 21300064
-    second: Sel Arm attack_32
+      213: 5422510315467206089
+    second: NEO DEAD FISH_32
   - first:
-      213: 21300066
-    second: Sel Arm attack_33
+      213: 693101211188446414
+    second: NEO DEAD FISH_33
   - first:
-      213: 21300068
-    second: Sel Arm attack_34
+      213: -9166926500104476729
+    second: NEO DEAD FISH_34
   - first:
-      213: 21300070
-    second: Sel Arm attack_35
+      213: 3582766502645815059
+    second: NEO DEAD FISH_35
   - first:
-      213: 21300072
-    second: Sel Arm attack_36
+      213: 6537808784621107486
+    second: NEO DEAD FISH_36
   - first:
-      213: 21300074
-    second: Sel Arm attack_37
+      213: -6146070741172624914
+    second: NEO DEAD FISH_37
   - first:
-      213: 21300076
-    second: Sel Arm attack_38
+      213: -9035046954040466641
+    second: NEO DEAD FISH_38
   - first:
-      213: 21300078
-    second: Sel Arm attack_39
+      213: 237543753177674240
+    second: NEO DEAD FISH_39
+  - first:
+      213: 667805754158665301
+    second: NEO DEAD FISH_40
+  - first:
+      213: 590249692674141506
+    second: NEO DEAD FISH_41
+  - first:
+      213: -5840062947615770454
+    second: NEO DEAD FISH_42
+  - first:
+      213: 54957064755645278
+    second: NEO DEAD FISH_43
+  - first:
+      213: -5252420649818315133
+    second: NEO DEAD FISH_44
+  - first:
+      213: 1186730047211315593
+    second: NEO DEAD FISH_45
+  - first:
+      213: 9008914161235459012
+    second: NEO DEAD FISH_46
+  - first:
+      213: 7691540822800445192
+    second: NEO DEAD FISH_47
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -183,7 +207,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -194,7 +218,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -204,13 +228,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sel Arm attack_0
+      name: NEO DEAD FISH_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 800
-        width: 200
-        height: 200
+        y: 1800
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d69f7320e093a4222b8658f8641db4a0
-      internalID: 21300000
+      spriteID: 9d04c90375f00453cbc2a629b647c2d7
+      internalID: 542601799136056095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_1
+      name: NEO DEAD FISH_1
       rect:
         serializedVersion: 2
-        x: 200
-        y: 800
-        width: 200
-        height: 200
+        x: 450
+        y: 1800
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61b30fe1a526e4cca9c7ee257836ca63
-      internalID: 21300002
+      spriteID: a152736c69f2544598320c5230d86ca5
+      internalID: -3642863504390309535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_2
+      name: NEO DEAD FISH_2
       rect:
         serializedVersion: 2
-        x: 400
-        y: 800
-        width: 200
-        height: 200
+        x: 900
+        y: 1800
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd013e25c71e54dc0adbbe063dd38082
-      internalID: 21300004
+      spriteID: a7b081dce00d64598971988b446c63b0
+      internalID: 9157910049644268831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_3
+      name: NEO DEAD FISH_3
       rect:
         serializedVersion: 2
-        x: 600
-        y: 800
-        width: 200
-        height: 200
+        x: 1350
+        y: 1800
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: feb98631cab444f00b803d10a5532de5
-      internalID: 21300006
+      spriteID: 9474f2e06323c4d84a0be7b7d37d320d
+      internalID: -622234983517769359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_4
+      name: NEO DEAD FISH_4
       rect:
         serializedVersion: 2
-        x: 800
-        y: 800
-        width: 200
-        height: 200
+        x: 1800
+        y: 1800
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 196db1eb10d4342dabf139f8ed1163a7
-      internalID: 21300008
+      spriteID: 87325fdabed5443c089fc01370fd3d71
+      internalID: -96992394365427565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_5
+      name: NEO DEAD FISH_5
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 800
-        width: 200
-        height: 200
+        x: 2250
+        y: 1800
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edc9930f3c1374c57b1e8293c6a8247f
-      internalID: 21300010
+      spriteID: 12cea435a1a004e8087353c8be33f81e
+      internalID: -762812533720187431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_6
+      name: NEO DEAD FISH_6
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 800
-        width: 200
-        height: 200
+        x: 2700
+        y: 1800
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,20 +368,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9457f3deb60c14895b0da7022f262308
-      internalID: 21300012
+      spriteID: c8967115a3c8c4cdbbcf4529e9bf037c
+      internalID: 8954578047882236226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_7
+      name: NEO DEAD FISH_7
       rect:
         serializedVersion: 2
-        x: 1400
-        y: 800
-        width: 200
-        height: 200
+        x: 3150
+        y: 1800
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,20 +389,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1f851ee4cf4a4e6693bd384001da5a6
-      internalID: 21300014
+      spriteID: dbb88812803894723801dd44bcd38e47
+      internalID: -8879543118458401662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_8
+      name: NEO DEAD FISH_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 600
-        width: 200
-        height: 200
+        x: 3600
+        y: 1800
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,20 +410,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0786eef225ce74447bdb366567283f55
-      internalID: 21300016
+      spriteID: 1500a61087c3d4fd9b4036f7258fabe5
+      internalID: 6440070767721466139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_9
+      name: NEO DEAD FISH_9
       rect:
         serializedVersion: 2
-        x: 200
-        y: 600
-        width: 200
-        height: 200
+        x: 4050
+        y: 1800
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,146 +431,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 157689a43ffa044b097fb2c068a9ad51
-      internalID: 21300018
+      spriteID: 7a16f403d7ae54ac4b1a48dceae70fa2
+      internalID: -5886145742654840814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_10
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 600
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4272c6100bd446e791d0edc7b29b4a0
-      internalID: 21300020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sel Arm attack_11
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 600
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2759edf9128a544cf9debebf9490b28a
-      internalID: 21300022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sel Arm attack_12
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 600
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9c1eb0b2206f48758f85f88caaf0c9f
-      internalID: 21300024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sel Arm attack_13
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 600
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1d202df184e046e0ac4489f0337ffed
-      internalID: 21300026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sel Arm attack_14
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 600
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85b87f4ff0333450cab588c28c09e55b
-      internalID: 21300028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sel Arm attack_15
-      rect:
-        serializedVersion: 2
-        x: 1400
-        y: 600
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26fb033e8891e475c85ed4b821f865d4
-      internalID: 21300030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sel Arm attack_16
+      name: NEO DEAD FISH_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 400
-        width: 200
-        height: 200
+        y: 1350
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,20 +452,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ea13dcef01b44cefb610b4314f27912
-      internalID: 21300032
+      spriteID: eaaa73e38ddc54f9f9bc661957175e6e
+      internalID: -2457169775942569702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_17
+      name: NEO DEAD FISH_11
       rect:
         serializedVersion: 2
-        x: 200
-        y: 400
-        width: 200
-        height: 200
+        x: 450
+        y: 1350
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,20 +473,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcf1633ce477447128560caea98fda89
-      internalID: 21300034
+      spriteID: be39cd2977f1b4070b5ce2d273879a60
+      internalID: 5782952947239784796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_18
+      name: NEO DEAD FISH_12
       rect:
         serializedVersion: 2
-        x: 400
-        y: 400
-        width: 200
-        height: 200
+        x: 900
+        y: 1350
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,20 +494,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4ebab2a98d114c1a8ffdcec3ee9a331
-      internalID: 21300036
+      spriteID: 398e55291b8ac4dc4b251233a7d835c3
+      internalID: 2856941182867085532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_19
+      name: NEO DEAD FISH_13
       rect:
         serializedVersion: 2
-        x: 600
-        y: 400
-        width: 200
-        height: 200
+        x: 1350
+        y: 1350
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,20 +515,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a09f422fc55b64e1dbb55443f70d7c2f
-      internalID: 21300038
+      spriteID: b43ee087eba4a46bca31894e4d4dd498
+      internalID: 7584045272973811226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_20
+      name: NEO DEAD FISH_14
       rect:
         serializedVersion: 2
-        x: 800
-        y: 400
-        width: 200
-        height: 200
+        x: 1800
+        y: 1350
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,20 +536,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1de1547fc315f4bca84402dcd2dbd39d
-      internalID: 21300040
+      spriteID: 88d33fb548f17472684c7a87e82c8442
+      internalID: 2815768911524382354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_21
+      name: NEO DEAD FISH_15
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 400
-        width: 200
-        height: 200
+        x: 2250
+        y: 1350
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,20 +557,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ed2d1228e23b465d8343fa922c7d499
-      internalID: 21300042
+      spriteID: 486269dc462e44299b8fded5e45a599f
+      internalID: 4060184104860417424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_22
+      name: NEO DEAD FISH_16
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 400
-        width: 200
-        height: 200
+        x: 2700
+        y: 1350
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,20 +578,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f764e387983145d393d7536f9d563d3
-      internalID: 21300044
+      spriteID: 2282c7f2ccd54422aac254ee7136b1c5
+      internalID: 4575626702923493690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_23
+      name: NEO DEAD FISH_17
       rect:
         serializedVersion: 2
-        x: 1400
-        y: 400
-        width: 200
-        height: 200
+        x: 3150
+        y: 1350
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,20 +599,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7155be54c053a4a96a7df59669133754
-      internalID: 21300046
+      spriteID: a5c45a734a8e34f9fb937f995b5b4641
+      internalID: 2705637650850246727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_24
+      name: NEO DEAD FISH_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 200
-        width: 200
-        height: 200
+        x: 3600
+        y: 1350
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,20 +620,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14bb88ce9402f47efa7f6e9102cfdd77
-      internalID: 21300048
+      spriteID: 2458b928e585d4041b207c6c0d19c49c
+      internalID: -2979384010764470606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_25
+      name: NEO DEAD FISH_19
       rect:
         serializedVersion: 2
-        x: 200
-        y: 200
-        width: 200
-        height: 200
+        x: 4050
+        y: 1350
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -743,146 +641,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89f4eac4f70c14fd5991e8a4065c54ea
-      internalID: 21300050
+      spriteID: 423b4d848a30e495fb14c03dac968af5
+      internalID: -5425967126455174484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_26
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 200
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d6fd15cd32c34e1a85fd82bb6b2d62b
-      internalID: 21300052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sel Arm attack_27
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 200
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b49b9ff821f044b4fbda0c30881ceb61
-      internalID: 21300054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sel Arm attack_28
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 200
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0a79edc936114231bc1a75471af2130
-      internalID: 21300056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sel Arm attack_29
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 200
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 662e0adf8569d486fa74a0b29d3f9325
-      internalID: 21300058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sel Arm attack_30
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 200
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fc5b5b1300a640f98e35cea3cc07f5f
-      internalID: 21300060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sel Arm attack_31
-      rect:
-        serializedVersion: 2
-        x: 1400
-        y: 200
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1526473b6a2164daf98a87d2eaeb6651
-      internalID: 21300062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sel Arm attack_32
+      name: NEO DEAD FISH_20
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 200
-        height: 200
+        y: 900
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -890,20 +662,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 080ccd101bd094a4e80f2462b87763e4
-      internalID: 21300064
+      spriteID: 06afcf3faaa1d4ca0bc87c2b616e8419
+      internalID: 6223853961078672789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_33
+      name: NEO DEAD FISH_21
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 200
-        height: 200
+        x: 450
+        y: 900
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -911,20 +683,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55e52e90c09924074b1dff0a3c042029
-      internalID: 21300066
+      spriteID: 6dd01d82c65894151acfcce215258152
+      internalID: -2877072785335603241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_34
+      name: NEO DEAD FISH_22
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0
-        width: 200
-        height: 200
+        x: 900
+        y: 900
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -932,20 +704,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3881d0a627f6944d3859282276c140bc
-      internalID: 21300068
+      spriteID: 5f527198b28ad4062a3b8fdd487be20a
+      internalID: 7257980828060441697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_35
+      name: NEO DEAD FISH_23
       rect:
         serializedVersion: 2
-        x: 600
-        y: 0
-        width: 200
-        height: 200
+        x: 1350
+        y: 900
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -953,20 +725,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5586e33cfc39a44488b835fb4f51b9ed
-      internalID: 21300070
+      spriteID: 0c12a7baded6449498e93f2681880aac
+      internalID: -6592342502389481380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_36
+      name: NEO DEAD FISH_24
       rect:
         serializedVersion: 2
-        x: 800
-        y: 0
-        width: 200
-        height: 200
+        x: 1800
+        y: 900
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -974,20 +746,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bab7fe398416a4538bce0ea23a934449
-      internalID: 21300072
+      spriteID: 06d93a67d1173448e8d63e028e44be85
+      internalID: 6561282358477624624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_37
+      name: NEO DEAD FISH_25
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 200
-        height: 200
+        x: 2250
+        y: 900
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -995,20 +767,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d9b3834009884d169c99b3c4841fc76
-      internalID: 21300074
+      spriteID: eb81b1d95019b45929a213f475cba804
+      internalID: -6131896092508237635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_38
+      name: NEO DEAD FISH_26
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 200
-        height: 200
+        x: 2700
+        y: 900
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1016,20 +788,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 259559bfc8f2949d39818aab3ab7c811
-      internalID: 21300076
+      spriteID: 9046c31e86b0b464f974c89b60d83f6c
+      internalID: 1213869973775744684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sel Arm attack_39
+      name: NEO DEAD FISH_27
       rect:
         serializedVersion: 2
-        x: 1400
-        y: 0
-        width: 200
-        height: 200
+        x: 3150
+        y: 900
+        width: 450
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1037,8 +809,428 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d9659a6422da471095d609d70fb0038
-      internalID: 21300078
+      spriteID: 717f3ea0b11e64a8ba743a4df989f015
+      internalID: 1745783960371936406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_28
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a83ef404e0942998bc1fdd29bd802a
+      internalID: -302822752479633853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_29
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 900
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969f81002d367410fb1b76999e76889e
+      internalID: -1040244168251072885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5d276c2284f4f658e277b30c7d4274
+      internalID: -2549805088856620100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_31
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26aaf7b3c931e42a6a4c850f414cc7d8
+      internalID: 8630843847392005210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_32
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5eb3df3bb3b14e94b1de5fa2d205dc6
+      internalID: 5422510315467206089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_33
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc643117c7c50405a9278afb6a7d0337
+      internalID: 693101211188446414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_34
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdc9a40d762a4f4f9471f8c338168ee
+      internalID: -9166926500104476729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_35
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468f00661556e46a68fddcefe6e47088
+      internalID: 3582766502645815059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_36
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7169c44decdd4348b2c020c1a49a12a
+      internalID: 6537808784621107486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_37
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781fa7c5402f24440846ef277f73bb13
+      internalID: -6146070741172624914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_38
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f575a866a0ba48e0826ac60b5dcd45c
+      internalID: -9035046954040466641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_39
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 450
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d6c3a7e26e947448f32f74b690957b
+      internalID: 237543753177674240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f39d9c9c49f74d44bec99610e14af52
+      internalID: 667805754158665301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_41
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6267cdf8b10e04eefa195ff4f9b67dc7
+      internalID: 590249692674141506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_42
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f298cb207f74781bd4bddb2e487686
+      internalID: -5840062947615770454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_43
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2ecd8c23f0b4d27ac3b63e919426b9
+      internalID: 54957064755645278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_44
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e312b5985c1f437b8dde9383b000833
+      internalID: -5252420649818315133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_45
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ed23c78263d4c09a5e116faac94e0e
+      internalID: 1186730047211315593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_46
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6618487008d448479730ae991f50063
+      internalID: 9008914161235459012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEO DEAD FISH_47
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 0
+        width: 450
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713f5fa736408424d9a581fbfa430191
+      internalID: 7691540822800445192
       vertices: []
       indices: 
       edges: []
@@ -1046,7 +1238,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 140ecf336de9f49659c421b5d6e235f8
+    spriteID: 2034b9dc434a24b1dbd2b56c208aa473
     internalID: 0
     vertices: []
     indices: 
