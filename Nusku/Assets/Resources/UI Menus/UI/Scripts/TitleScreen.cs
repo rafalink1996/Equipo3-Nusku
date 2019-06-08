@@ -22,6 +22,7 @@ public class TitleScreen : MonoBehaviour {
         GameObject motionIntro = GameObject.Instantiate(Resources.Load("UI Menus/UI/Screens/MotionIntro") as GameObject);
         motionIntro.name = "MotionIntro";
         GameObject canvas = GameObject.Find("Canvas");
+        GameObject.Find("Music").GetComponent<AudioSource>().Stop();
         motionIntro.transform.parent = canvas.transform;
         motionIntro.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
         motionIntro.GetComponent<RectTransform>().localPosition = Vector2.zero;

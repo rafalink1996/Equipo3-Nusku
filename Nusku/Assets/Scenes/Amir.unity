@@ -10292,7 +10292,7 @@ PrefabInstance:
     - target: {fileID: 224417583204479682, guid: d597187e6fa9748448459e90d38006f5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -13.299789
+      value: -13.299805
       objectReference: {fileID: 0}
     - target: {fileID: 224676233467282994, guid: d597187e6fa9748448459e90d38006f5,
         type: 3}
@@ -11403,11 +11403,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 781926098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.379562, y: -0.34172374, z: 1.0684627}
-  m_LocalScale: {x: 0.28924996, y: 0.28924996, z: 0.086775}
+  m_LocalPosition: {x: 0.06385231, y: -0.13632011, z: 1.0684627}
+  m_LocalScale: {x: 0.08677499, y: 0.08677499, z: 0.086775}
   m_Children: []
-  m_Father: {fileID: 1779210793}
-  m_RootOrder: 4
+  m_Father: {fileID: 1183319171}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &781926101
 PolygonCollider2D:
@@ -17736,6 +17736,7 @@ GameObject:
   - component: {fileID: 1183319173}
   - component: {fileID: 1183319176}
   - component: {fileID: 1183319175}
+  - component: {fileID: 1183319177}
   m_Layer: 0
   m_Name: Amir
   m_TagString: Untagged
@@ -17822,6 +17823,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2045068502}
+  - {fileID: 781926100}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18033,6 +18035,18 @@ PolygonCollider2D:
       - {x: -0.039754868, y: 0.40882778}
       - {x: 0.20720863, y: 0.39360523}
       - {x: 0.15945625, y: 0.5830326}
+--- !u!114 &1183319177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183319168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2e44a381f0ce4d3f99e542eda07e445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1183375856
 GameObject:
   m_ObjectHideFlags: 0
@@ -26252,7 +26266,6 @@ Transform:
   - {fileID: 1805276407}
   - {fileID: 996211380}
   - {fileID: 1560492014}
-  - {fileID: 781926100}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

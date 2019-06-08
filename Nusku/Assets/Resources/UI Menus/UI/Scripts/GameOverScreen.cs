@@ -6,12 +6,13 @@ using UnityEngine.UI;
 
 public class GameOverScreen : MonoBehaviour
 {
-
+    public Button continueB;
     // Use this for initialization
     void Start()
     {
         //Destroy(GameObject.Find("Canvas/HUD"));
-
+        continueB.Select();
+        continueB.OnSelect(null);
     }
 
     // Update is called once per frame
@@ -32,8 +33,8 @@ public class GameOverScreen : MonoBehaviour
     }
     public void SelectButton()
     {
-        GetComponentInChildren<Button>().Select();
-        GetComponentInChildren<Button>().OnSelect(null);
+        //GetComponentInChildren<Button>().Select();
+        //GetComponentInChildren<Button>().OnSelect(null);
     }
 
 }
