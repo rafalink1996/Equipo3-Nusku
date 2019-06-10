@@ -151,7 +151,7 @@ public class JurDialogue : MonoBehaviour {
             {
                 theTextBox.image = expression[9];
             }
-            if (theTextBox.currentLine == 70)
+            if (theTextBox.currentLine == 70 || theTextBox.currentLine == 72)
             {
                 theTextBox.image = expression[10];
                 Destroy(gameObject);

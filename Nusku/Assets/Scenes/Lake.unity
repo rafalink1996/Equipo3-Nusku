@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 12
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
@@ -62,6 +62,7 @@ LightmapSettings:
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
@@ -76,10 +77,16 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVRFilteringMode: 1
+    m_PVREnvironmentMIS: 0
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
@@ -88,6 +95,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -367,8 +375,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Chet
-  characterImage: {fileID: 21300000, guid: 9111c90888ddb422da5e372e462566a1, type: 3}
-  selImage: {fileID: 21300000, guid: 1b2ec8bec654c4ce7b9afd17dc09aa48, type: 3}
+  characterImage: {fileID: 21300000, guid: a45e5a39e8f124336b6227a8db734b23, type: 3}
+  selImage: {fileID: 21300000, guid: 50914ebc9a8b74c949b55d2e95e11e43, type: 3}
   theText: {fileID: 4900000, guid: dab3deab792fc4f848eea75755f75f57, type: 3}
   startLine: 0
   endLine: 8
@@ -644,6 +652,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc88604f2c6554642ba6d2821d665bb2, type: 3}
+--- !u!114 &462790465 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3422828806333869943, guid: d597187e6fa9748448459e90d38006f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 733608085}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &573782826 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1473907777111886, guid: d597187e6fa9748448459e90d38006f5,
@@ -1167,11 +1187,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224765773900264620, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -2.2248535
-      objectReference: {fileID: 0}
     - target: {fileID: 1337673778720518, guid: d597187e6fa9748448459e90d38006f5, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1180,11 +1195,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -13.300049
-      objectReference: {fileID: 0}
-    - target: {fileID: 3461990970801561339, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224676233467282994, guid: d597187e6fa9748448459e90d38006f5,
         type: 3}
@@ -1195,6 +1205,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3461990970801561339, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224765773900264620, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.2248535
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d597187e6fa9748448459e90d38006f5, type: 3}
@@ -1439,6 +1459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instructions: {fileID: 1990511574}
+  first: 0
 --- !u!58 &929942311
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1663,7 +1684,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterImage
       value: 
-      objectReference: {fileID: 1705211898}
+      objectReference: {fileID: 462790465}
     - target: {fileID: 114505832987329484, guid: ce878ce3a41184a798bea190e0758ed3,
         type: 3}
       propertyPath: option1
@@ -1779,9 +1800,10 @@ Camera:
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -1921,6 +1943,7 @@ MonoBehaviour:
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
+  m_CenterOnActivate: 1
   m_GroupFramingMode: 2
   m_AdjustmentMode: 2
   m_GroupFramingSize: 0.8
@@ -2362,18 +2385,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2130001808}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1705211898 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114493235791459962, guid: d597187e6fa9748448459e90d38006f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 733608085}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1889060789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2536,11 +2547,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4260073405131308, guid: eb2c9d296bc444fd8956085715688b72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55.2
+      value: 54.7
       objectReference: {fileID: 0}
     - target: {fileID: 4260073405131308, guid: eb2c9d296bc444fd8956085715688b72, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.2
+      value: 4.7
       objectReference: {fileID: 0}
     - target: {fileID: 4260073405131308, guid: eb2c9d296bc444fd8956085715688b72, type: 3}
       propertyPath: m_LocalPosition.z

@@ -38,6 +38,7 @@ public class SelHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         healthSlider.value = health;
         armG.color = body.color;
         if (health <= 0 && !dead)
@@ -51,6 +52,10 @@ public class SelHealth : MonoBehaviour
             dead = true;
             Invoke("DeathMusic", 2f); 
             Invoke("GameOver", 6f);
+        }
+        if (health > 100)
+        {
+            health = 100;
         }
 
     }

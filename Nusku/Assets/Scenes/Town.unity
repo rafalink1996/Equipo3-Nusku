@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 12
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
@@ -62,6 +62,7 @@ LightmapSettings:
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
@@ -76,10 +77,16 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVRFilteringMode: 1
+    m_PVREnvironmentMIS: 0
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
@@ -88,6 +95,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -565,7 +573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Rox
-  characterImage: {fileID: 21300000, guid: 38e9f0e3391bf4e138fc73d382870ef3, type: 3}
+  characterImage: {fileID: 21300000, guid: 4f4dc14101a7146c4954f24be35673d3, type: 3}
   theText: {fileID: 4900000, guid: 08893239198364c58924eb71544cdc0a, type: 3}
   startLine: 53
   endLine: 53
@@ -1195,7 +1203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Forrer
-  characterImage: {fileID: 21300000, guid: 76ec07f5db9e34689ae02862904df790, type: 3}
+  characterImage: {fileID: 21300000, guid: e34d30a8df468416ebb9dafd2f9eaf67, type: 3}
   theText: {fileID: 4900000, guid: 08893239198364c58924eb71544cdc0a, type: 3}
   startLine: 60
   endLine: 61
@@ -2618,9 +2626,10 @@ Camera:
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -5443,18 +5452,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1601154458}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &643266234 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114493235791459962, guid: d597187e6fa9748448459e90d38006f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1764763739}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &643300506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6093,7 +6090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: 
-  characterImage: {fileID: 21300000, guid: 1fff5c678a84f4d11a47364c996c5e58, type: 3}
+  characterImage: {fileID: 21300000, guid: 2ccdbf24cab924566b327160061b45b9, type: 3}
   theText: {fileID: 4900000, guid: 08893239198364c58924eb71544cdc0a, type: 3}
   startLine: 63
   endLine: 63
@@ -7824,7 +7821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Red
-  characterImage: {fileID: 21300000, guid: 3ccf598c6517e47889d2a7b7979d94be, type: 3}
+  characterImage: {fileID: 21300000, guid: f69ba793e67144fd68221014eda644e6, type: 3}
   theText: {fileID: 4900000, guid: 08893239198364c58924eb71544cdc0a, type: 3}
   startLine: 41
   endLine: 42
@@ -9567,7 +9564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Medri
-  characterImage: {fileID: 21300000, guid: a9cc77a6820ca4cc98228916714f90ea, type: 3}
+  characterImage: {fileID: 21300000, guid: 87e9cee3872e74f2d8fde086be6f1130, type: 3}
   theText: {fileID: 4900000, guid: 08893239198364c58924eb71544cdc0a, type: 3}
   startLine: 1
   endLine: 8
@@ -11649,7 +11646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: 
-  characterImage: {fileID: 21300000, guid: 1fff5c678a84f4d11a47364c996c5e58, type: 3}
+  characterImage: {fileID: 21300000, guid: 2ccdbf24cab924566b327160061b45b9, type: 3}
   theText: {fileID: 4900000, guid: 08893239198364c58924eb71544cdc0a, type: 3}
   startLine: 63
   endLine: 63
@@ -11810,6 +11807,7 @@ MonoBehaviour:
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
+  m_CenterOnActivate: 1
   m_GroupFramingMode: 2
   m_AdjustmentMode: 2
   m_GroupFramingSize: 0.8
@@ -14385,7 +14383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Arfa
-  characterImage: {fileID: 21300000, guid: b2d9348d853944e2f97f3d2f86a5adeb, type: 3}
+  characterImage: {fileID: 21300000, guid: 69b66e40836c64141a8f6b118d188c59, type: 3}
   theText: {fileID: 4900000, guid: 08893239198364c58924eb71544cdc0a, type: 3}
   startLine: 57
   endLine: 58
@@ -15043,15 +15041,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4277bcabea618469c8f906d3aa146ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Medri: {fileID: 21300000, guid: f59d3eece006341149881bd7382dc05e, type: 3}
-  Mila: {fileID: 21300000, guid: 66dad1e7ab5d84c0aa02edf03dc80894, type: 3}
-  Rox: {fileID: 21300000, guid: 3ccf598c6517e47889d2a7b7979d94be, type: 3}
-  Rafa: {fileID: 21300000, guid: b2d9348d853944e2f97f3d2f86a5adeb, type: 3}
-  Loco: {fileID: 21300000, guid: ded88a98548804b46991d4cda1c6ffa7, type: 3}
-  Roddick: {fileID: 21300000, guid: e7bf92bf0b1844e9fb5ba0ea85a68915, type: 3}
-  Lora: {fileID: 21300000, guid: 2ec08cf8d3c8541939e6c4fca690c60f, type: 3}
-  Sel: {fileID: 21300000, guid: 1b2ec8bec654c4ce7b9afd17dc09aa48, type: 3}
-  Rod: {fileID: 21300000, guid: 823006a2c9c114a98b1b3815d04a143a, type: 3}
+  Medri: {fileID: 21300000, guid: 87e9cee3872e74f2d8fde086be6f1130, type: 3}
+  Mila: {fileID: 21300000, guid: cdd95d570689748c5adcdb7065ae0b06, type: 3}
+  Rox: {fileID: 21300000, guid: f69ba793e67144fd68221014eda644e6, type: 3}
+  Rafa: {fileID: 21300000, guid: 69b66e40836c64141a8f6b118d188c59, type: 3}
+  Loco: {fileID: 21300000, guid: 228a462fe28ec43a5858b10998e1dda0, type: 3}
+  Roddick: {fileID: 21300000, guid: 4002634449f55436a8459bdbeff9fe97, type: 3}
+  Lora: {fileID: 21300000, guid: 48f36d266acfe4f4b9d967ee47ff5784, type: 3}
+  Sel: {fileID: 21300000, guid: 50914ebc9a8b74c949b55d2e95e11e43, type: 3}
+  Rod: {fileID: 21300000, guid: 00ae4e3f1119c4ec58b704e1404bb5af, type: 3}
   bottle: {fileID: 8300000, guid: f1679c1f2a29249a7be596b59639093c, type: 3}
   theTextBox: {fileID: 0}
 --- !u!82 &1674808532
@@ -15916,46 +15914,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114603947858527464, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114603947858527464, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114603947858527464, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114843933053456142, guid: d597187e6fa9748448459e90d38006f5,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114566925159305948, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_Navigation.m_Mode
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114566925159305948, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_Navigation.m_SelectOnLeft
-      value: 
-      objectReference: {fileID: 774195660}
-    - target: {fileID: 114566925159305948, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_Navigation.m_SelectOnRight
-      value: 
-      objectReference: {fileID: 774195660}
-    - target: {fileID: 114179377222306102, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114698769158402860, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_Navigation.m_Mode
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114698769158402860, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_Navigation.m_SelectOnLeft
-      value: 
-      objectReference: {fileID: 281646734}
-    - target: {fileID: 114698769158402860, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_Navigation.m_SelectOnRight
-      value: 
-      objectReference: {fileID: 281646734}
     - target: {fileID: 224547127794723302, guid: d597187e6fa9748448459e90d38006f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16050,26 +16028,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114603947858527464, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114603947858527464, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114603947858527464, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224765773900264620, guid: d597187e6fa9748448459e90d38006f5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -2.2248535
-      objectReference: {fileID: 0}
     - target: {fileID: 224417583204479682, guid: d597187e6fa9748448459e90d38006f5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16085,13 +16043,70 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114179377222306102, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114698769158402860, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114698769158402860, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_Navigation.m_SelectOnLeft
+      value: 
+      objectReference: {fileID: 281646734}
+    - target: {fileID: 114698769158402860, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_Navigation.m_SelectOnRight
+      value: 
+      objectReference: {fileID: 281646734}
+    - target: {fileID: 114566925159305948, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114566925159305948, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_Navigation.m_SelectOnLeft
+      value: 
+      objectReference: {fileID: 774195660}
+    - target: {fileID: 114566925159305948, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_Navigation.m_SelectOnRight
+      value: 
+      objectReference: {fileID: 774195660}
     - target: {fileID: 3461990970801561339, guid: d597187e6fa9748448459e90d38006f5,
         type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 224765773900264620, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.2248535
+      objectReference: {fileID: 0}
+    - target: {fileID: 114493235791459962, guid: d597187e6fa9748448459e90d38006f5,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d597187e6fa9748448459e90d38006f5, type: 3}
+--- !u!114 &1764763740 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3422828806333869943, guid: d597187e6fa9748448459e90d38006f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1764763739}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1765814707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16221,7 +16236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Lena
-  characterImage: {fileID: 21300000, guid: 66dad1e7ab5d84c0aa02edf03dc80894, type: 3}
+  characterImage: {fileID: 21300000, guid: cdd95d570689748c5adcdb7065ae0b06, type: 3}
   theText: {fileID: 4900000, guid: 08893239198364c58924eb71544cdc0a, type: 3}
   startLine: 20
   endLine: 22
@@ -17040,7 +17055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: 
-  characterImage: {fileID: 21300000, guid: 64cdd4d52826d428682675f97454e876, type: 3}
+  characterImage: {fileID: 21300000, guid: 2ccdbf24cab924566b327160061b45b9, type: 3}
   theText: {fileID: 4900000, guid: 08893239198364c58924eb71544cdc0a, type: 3}
   startLine: 65
   endLine: 65
@@ -17786,7 +17801,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterImage
       value: 
-      objectReference: {fileID: 643266234}
+      objectReference: {fileID: 1764763740}
     - target: {fileID: 114505832987329484, guid: ce878ce3a41184a798bea190e0758ed3,
         type: 3}
       propertyPath: textBox

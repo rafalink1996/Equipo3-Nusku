@@ -33,8 +33,8 @@ public class GameOverScreen : MonoBehaviour
     }
     public void SelectButton()
     {
-        //GetComponentInChildren<Button>().Select();
-        //GetComponentInChildren<Button>().OnSelect(null);
+        GetComponentInChildren<Button>().Select();
+        GetComponentInChildren<Button>().OnSelect(null);
     }
 
 }
